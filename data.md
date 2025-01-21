@@ -29,7 +29,9 @@ Digitized data refers to analogue information that has been converted into digit
 Born-digital data is inherently created in digital environments and exists only in these formats—databases, digital texts, or media files that have never been in physical, analogue form. This distinction highlights how digital-first practices shape contemporary research in the humanities, emphasizing real-time creation and accessibility through digital platforms.
 
 
-::: exercise 
+::: challenge
+
+## Exercise
 
 Let’s explore some examples of these types of data!
 
