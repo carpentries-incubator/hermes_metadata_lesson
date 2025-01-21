@@ -1,18 +1,18 @@
 ---
 title: "Introduction"
 teaching: 10
-exercises: 2
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- TODO
+- What does digitalization mean for the humanities? How is digitalization changing the humanities?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- TODO
+- Providing a basic explanation of the theoretical and methodological implications of working with data.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introduction
