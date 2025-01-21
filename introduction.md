@@ -21,20 +21,17 @@ Digitalization profoundly impacts the humanities by transforming how knowledge i
 
 This lesson is being developed specifically for researchers in the humanities and cultural studies, with the goal of becoming part of a future humanities curriculum within the Data Carpentry lesson program. It is designed for learners with no prior experience. It is visible at https://github.com/HERMES-DKZ/OpenRefine-humanities.
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown](https://pandoc.org/MANUAL.txt) for static files and
-[R Markdown][r-markdown] for dynamic files that can render code into output. 
+This is a lesson created via The Carpentries Workbench.  
 Please refer to the [Introduction to The Carpentries 
 Workbench]() for full documentation.
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson:
+There are a few sections in each episode of this lesson:
 
  1. `questions` are displayed at the beginning of the episode to prime the
     learner for the content.
  2. `objectives` are the learning objectives for an episode displayed with
     the questions.
- 3. `challenges` are addressing problems and encourage critical thinking
+ 3. `challenges` are addressing problems and encourage critical thinking.
  4. `keypoints` are displayed at the end of the episode to reinforce the
     objectives.
 
