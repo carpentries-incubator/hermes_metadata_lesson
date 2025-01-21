@@ -288,6 +288,18 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="metadataformats.html">5. Metadata formats</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -761,7 +773,7 @@ we have here?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>We cannot present analogue data here because everything we display on
 the monitor is digital!</p>
@@ -949,7 +961,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>TODO</p>
 </div>
@@ -974,7 +986,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>It depends on the context wether it is data (the book itself) or
 metadata (title in a library catalogue)</p>
@@ -1010,7 +1022,142 @@ with both.</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section>
+</section></section><section id="aio-metadataformats"><p>Content from <a href="metadataformats.html">Metadata formats</a></p>
+<hr>
+<p>Last updated on 2025-01-21 |
+
+        <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/metadataformats.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What is a CSV file and how is its content structured?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Knowledge of CSV, XML &amp; JSON formats for storing and processing
+metadata.</li>
+<li>Familiar with the structure of a simple CSV, XML and JSON file.</li>
+<li>Able to write extracted metadata in a simple XML and JSON
+format.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level1">
+<h1 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</h1>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>In which formats can data and metadata be stored in a structured
+way?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Knowledge of CSV, XML &amp; JSON formats for storing and processing
+metadata.</li>
+<li>Familiar with the structure of a simple CSV, XML and JSON file.</li>
+<li>Able to write extracted metadata in a simple XML and JSON
+format.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>In which formats can data and metadata be stored in a structured
+way?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Familiar with a simple way of structured recording and storage of
+data and metadata.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="question-do-you-konw-formats-in-which-data-can-be-stored-in-a-structured-way" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="question-do-you-konw-formats-in-which-data-can-be-stored-in-a-structured-way" class="callout-inner">
+<h3 class="callout-title">Question: Do you konw formats in which data
+can be stored in a structured way?</h3>
+<div class="callout-content">
+
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>A simple way to store data in a structured way is using a spreadsheet
+like Excel.</p>
+</div>
+</div>
+</div>
+</div>
+<p>In order to store metadata and make it usable in other contexts,
+appropriate formats are required. The most common file formats in which
+metadata is stored include XML and JSON. A lot of data is also stored in
+the more familiar CSV format.</p>
+<p>The advantage of using such a format is the interoperability of the
+data. This means that the data is recorded and stored by one person and
+can be opened and processed elsewhere, for example extended or
+integrated into another system, i.e. it can be operated with. Data from
+different sources can also be merged.</p>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</div></section>
 </div>
     </main>
 </div>
