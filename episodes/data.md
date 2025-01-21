@@ -18,9 +18,7 @@ exercises: 0
 - Explore the implications of data types for research methods and outcomes.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Introduction
-
-::::::::::::::::::::::::::::::::::::: keyconcepts 
+## Data
 
 Analogue Data:
 Analogue data originates in physical, non-digital formats like handwritten documents, photographs, or physical artefacts.
@@ -30,7 +28,6 @@ Digitized data refers to analogue information that has been converted into digit
 
 Born-Digital Data:
 Born-digital data is inherently created in digital environments and exists only in these formats—databases, digital texts, or media files that have never been in physical, analogue form. This distinction highlights how digital-first practices shape contemporary research in the humanities, emphasizing real-time creation and accessibility through digital platforms.
-::::::::::::::::::::::::::::::::::::::::::::::::
 
 Let’s explore some examples of these types of data!
 
@@ -48,6 +45,7 @@ Oops! We have a challenge!
 
 We cannot present analogue data here because everything we display on the monitor is digital!
 :::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::
 
 Analogue Data are physical artefacts in the museum: The museum's collection includes numerous physical objects such as sculptures, paintings, and artefacts that exist solely in their original, non-digital form. For instance, the collection of ancient Egyptian art in the Metropolitan Museum comprises approximately 30,000 objects: https://www.metmuseum.org/about-the-met/collection-areas/egyptian-art.
 
