@@ -39,7 +39,7 @@ Oops! We have a challenge!
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Can you identify what kind of problem do we have here?
+Can you identify what kind of problem do we have here?
 
 :::::::::::::::::::::::: solution 
 
