@@ -68,6 +68,7 @@ contact: 'Corinna Berg' # FIXME
 episodes: 
 - introduction.md
 - getting_started.md
+- data.md
 
 # Information for Learners
 learners: 
