@@ -67,6 +67,7 @@ contact: 'Corinna Berg' # FIXME
 # Order of episodes in your lesson
 episodes: 
 - introduction.md
+- getting_started.md
 
 # Information for Learners
 learners: 
