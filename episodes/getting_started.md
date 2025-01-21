@@ -4,20 +4,13 @@ teaching: 30
 exercises: 0
 ---
 
-
-
-
 :::::::::::::::::::::::::::::::::::::: questions 
-
-## Questions
 
 - What does digitalization mean for the humanities? How is digitalization changing the humanities?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
-
-## Objectives
 
 -Providing a basic explanation of the theoretical and methodological implications of working with data.
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -39,8 +32,6 @@ Think about how many aspects of your work and daily life are now digital—and h
 
 
 ::::::::::::::::::::::::::::::::::::: challenge 
-
-## Challenge: Reflection
 
 Reflect on the last topic you worked on. Look for online resources that could support your research or deepen your understanding. 
 What challenges do you encounter when researching or interpreting information published online?
