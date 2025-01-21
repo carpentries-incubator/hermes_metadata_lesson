@@ -5,13 +5,19 @@ exercises: 0
 ---
 
 
+
+
 :::::::::::::::::::::::::::::::::::::: questions 
+
+## Questions
 
 - What does digitalization mean for the humanities? How is digitalization changing the humanities?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
+
+## Objectives
 
 -Providing a basic explanation of the theoretical and methodological implications of working with data.
 ::::::::::::::::::::::::::::::::::::::::::::::::
