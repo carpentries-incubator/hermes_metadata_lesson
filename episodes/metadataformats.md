@@ -17,7 +17,7 @@ exercises: 5
 - Able to write extracted metadata in a simple XML and JSON format. 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-# Introduction
+## 1 Introduction
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
@@ -44,3 +44,12 @@ A simple way to store data in a structured way is using a spreadsheet like Excel
 In order to store metadata and make it usable in other contexts, appropriate formats are required. The most common file formats in which metadata is stored include XML and JSON. A lot of data is also stored in the more familiar CSV format. 
 
 The advantage of using such a format is the interoperability of the data. This means that the data is recorded and stored by one person and can be opened and processed elsewhere, for example extended or integrated into another system, i.e. it can be operated with. Data from different sources can also be merged. 
+
+
+
+
+
+## 2 XML
+
+
+## 3 XML Schema
