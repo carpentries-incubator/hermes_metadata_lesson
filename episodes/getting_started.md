@@ -4,9 +4,6 @@ teaching: 30
 exercises: 0
 ---
 
-# Getting Started
-
-
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
