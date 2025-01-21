@@ -59,11 +59,11 @@ Born-Digital Data are some born-digital photographs or videos (https://www.metmu
 
 These types of data are utilized in different ways, each shaping and supporting distinct research practices.
 
-Analogue data, preserved in magazines, archives, or physical collections, provides the foundation for historical and material studies, offering direct engagement with original sources. Analogue data's tactile and contextual elements are invaluable for understanding its provenance and authenticity. Still, these data are often constrained by access limitations, requiring researchers to travel to specific locations.
+**Analogue data**, preserved in magazines, archives, or physical collections, provides the foundation for historical and material studies, offering direct engagement with original sources. Analogue data's tactile and contextual elements are invaluable for understanding its provenance and authenticity. Still, these data are often constrained by access limitations, requiring researchers to travel to specific locations.
 
-Digitized data transforms the accessibility of these physical sources, enabling remote access through digital platforms and repositories. This shift democratizes research by bridging geographic barriers and facilitating comparative studies. Additionally, digitization often incorporates metadata and search functionalities, enhancing the discoverability and usability of analogue sources. However, the process of digitization raises concerns about data integrity, potential loss of context, and the prioritization of certain collections over others.
+**Digitized data** transforms the accessibility of these physical sources, enabling remote access through digital platforms and repositories. This shift democratizes research by bridging geographic barriers and facilitating comparative studies. Additionally, digitization often incorporates metadata and search functionalities, enhancing the discoverability and usability of analogue sources. However, the process of digitization raises concerns about data integrity, potential loss of context, and the prioritization of certain collections over others.
 
-Born-digital data, by contrast, is inherently dynamic, designed for integration into digital environments. It supports collaborative and interdisciplinary research, as it can be shared, updated, and analyzed in real-time. The computational possibilities of born-digital data, including machine learning and data visualization, open new avenues for exploration, particularly in fields like Digital Humanities, data science, and social network analysis. Nonetheless, this type of data also poses challenges, such as ensuring long-term preservation, managing data privacy, and addressing the ephemerality of digital formats.
+**Born-digital data**, by contrast, is inherently dynamic, designed for integration into digital environments. It supports collaborative and interdisciplinary research, as it can be shared, updated, and analyzed in real-time. The computational possibilities of born-digital data, including machine learning and data visualization, open new avenues for exploration, particularly in fields like Digital Humanities, data science, and social network analysis. Nonetheless, this type of data also poses challenges, such as ensuring long-term preservation, managing data privacy, and addressing the ephemerality of digital formats.
 
 Moreover, these types of data often interact within hybrid research workflows. For instance, digitized analogue data can be enriched through computational analysis alongside born-digital datasets, creating new layers of insight. Similarly, born-digital data may prompt the re-examination of analogue sources, fostering a cyclical process of discovery and reinterpretation. This interplay highlights the evolving landscape of knowledge production, where diverse data types converge to address complex research questions. 
 
@@ -73,7 +73,7 @@ Moreover, these types of data often interact within hybrid research workflows. F
 
 How do institutional infrastructures, such as libraries, archives, and data centres, support these processes and navigate the challenges of balancing preservation, access, and innovation?
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
