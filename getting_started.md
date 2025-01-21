@@ -72,7 +72,12 @@ Digital humanities are inherently interdisciplinary, bringing together tradition
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Add Keypoints later
+- digitalization
+- research methods
+- dissemination
+- cultural heritage
+- collaboration
+- preservation 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
