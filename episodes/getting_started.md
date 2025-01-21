@@ -48,7 +48,7 @@ The foundation of digitalization is the creation of data. Whether it's text, ima
 
 
 When working with digital resources, both data and metadata are critical for organizing, searching, and interpreting information. Your challenges with researching online reflect the complexities of managing these elements—ensuring accuracy, maintaining context, and effectively handling large amounts of information.
-To convince you that we, as humanities scholars, need to engage with data—before moving on to the more practical part, let’s briefly discuss the areas where digitisation is important for the humanities.
+To convince you that we, as humanities scholars, need to engage with data—before moving on to the more practical part, let’s briefly discuss **the areas where digitisation is important for the humanities**.
 
 
 #### 1. Transformation of Research Methods
