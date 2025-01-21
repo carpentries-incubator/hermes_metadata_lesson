@@ -20,13 +20,13 @@ exercises: 0
 
 ## Data
 
-Analogue Data:
+**Analogue Data:**
 Analogue data originates in physical, non-digital formats like handwritten documents, photographs, or physical artefacts.
 
-Digitized Data:
+**Digitized Data:**
 Digitized data refers to analogue information that has been converted into digital formats through processes such as scanning, encoding, or transcription. This transition expands accessibility and usability of analogue resources, facilitating modern research methods. Grasping digitized data is critical for recognizing how traditional resources have been adapted to meet digital needs.
 
-Born-Digital Data:
+**Born-Digital Data:**
 Born-digital data is inherently created in digital environments and exists only in these formats—databases, digital texts, or media files that have never been in physical, analogue form. This distinction highlights how digital-first practices shape contemporary research in the humanities, emphasizing real-time creation and accessibility through digital platforms.
 
 Let’s explore some examples of these types of data!
@@ -37,7 +37,7 @@ Oops! We have a challenge!
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Can you identify it?
+## Can you identify what kind of problem do we have here?
 
 :::::::::::::::::::::::: solution 
 
@@ -72,4 +72,10 @@ Moreover, these types of data often interact within hybrid research workflows. F
 How do institutional infrastructures, such as libraries, archives, and data centres, support these processes and navigate the challenges of balancing preservation, access, and innovation?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
+
+- analogue data
+- digitized data
+- born-digital data
 
