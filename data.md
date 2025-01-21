@@ -20,14 +20,16 @@ exercises: 0
 
 ## Data
 
-Analogue Data:
+**Analogue Data:**
 Analogue data originates in physical, non-digital formats like handwritten documents, photographs, or physical artefacts.
 
-Digitized Data:
+**Digitized Data:**
 Digitized data refers to analogue information that has been converted into digital formats through processes such as scanning, encoding, or transcription. This transition expands accessibility and usability of analogue resources, facilitating modern research methods. Grasping digitized data is critical for recognizing how traditional resources have been adapted to meet digital needs.
 
-Born-Digital Data:
+**Born-Digital Data:**
 Born-digital data is inherently created in digital environments and exists only in these formats—databases, digital texts, or media files that have never been in physical, analogue form. This distinction highlights how digital-first practices shape contemporary research in the humanities, emphasizing real-time creation and accessibility through digital platforms.
+
+## Exercise
 
 Let’s explore some examples of these types of data!
 
@@ -37,7 +39,7 @@ Oops! We have a challenge!
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Can you identify it?
+Can you identify what kind of problem do we have here?
 
 :::::::::::::::::::::::: solution 
 
@@ -57,11 +59,11 @@ Born-Digital Data are some born-digital photographs or videos (https://www.metmu
 
 These types of data are utilized in different ways, each shaping and supporting distinct research practices.
 
-Analogue data, preserved in magazines, archives, or physical collections, provides the foundation for historical and material studies, offering direct engagement with original sources. Analogue data's tactile and contextual elements are invaluable for understanding its provenance and authenticity. Still, these data are often constrained by access limitations, requiring researchers to travel to specific locations.
+**Analogue data**, preserved in magazines, archives, or physical collections, provides the foundation for historical and material studies, offering direct engagement with original sources. Analogue data's tactile and contextual elements are invaluable for understanding its provenance and authenticity. Still, these data are often constrained by access limitations, requiring researchers to travel to specific locations.
 
-Digitized data transforms the accessibility of these physical sources, enabling remote access through digital platforms and repositories. This shift democratizes research by bridging geographic barriers and facilitating comparative studies. Additionally, digitization often incorporates metadata and search functionalities, enhancing the discoverability and usability of analogue sources. However, the process of digitization raises concerns about data integrity, potential loss of context, and the prioritization of certain collections over others.
+**Digitized data** transforms the accessibility of these physical sources, enabling remote access through digital platforms and repositories. This shift democratizes research by bridging geographic barriers and facilitating comparative studies. Additionally, digitization often incorporates metadata and search functionalities, enhancing the discoverability and usability of analogue sources. However, the process of digitization raises concerns about data integrity, potential loss of context, and the prioritization of certain collections over others.
 
-Born-digital data, by contrast, is inherently dynamic, designed for integration into digital environments. It supports collaborative and interdisciplinary research, as it can be shared, updated, and analyzed in real-time. The computational possibilities of born-digital data, including machine learning and data visualization, open new avenues for exploration, particularly in fields like Digital Humanities, data science, and social network analysis. Nonetheless, this type of data also poses challenges, such as ensuring long-term preservation, managing data privacy, and addressing the ephemerality of digital formats.
+**Born-digital data**, by contrast, is inherently dynamic, designed for integration into digital environments. It supports collaborative and interdisciplinary research, as it can be shared, updated, and analyzed in real-time. The computational possibilities of born-digital data, including machine learning and data visualization, open new avenues for exploration, particularly in fields like Digital Humanities, data science, and social network analysis. Nonetheless, this type of data also poses challenges, such as ensuring long-term preservation, managing data privacy, and addressing the ephemerality of digital formats.
 
 Moreover, these types of data often interact within hybrid research workflows. For instance, digitized analogue data can be enriched through computational analysis alongside born-digital datasets, creating new layers of insight. Similarly, born-digital data may prompt the re-examination of analogue sources, fostering a cyclical process of discovery and reinterpretation. This interplay highlights the evolving landscape of knowledge production, where diverse data types converge to address complex research questions. 
 
@@ -70,6 +72,13 @@ Moreover, these types of data often interact within hybrid research workflows. F
 ## Outcome
 
 How do institutional infrastructures, such as libraries, archives, and data centres, support these processes and navigate the challenges of balancing preservation, access, and innovation?
+:::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::: keypoints
+
+- analogue data
+- digitized data
+- born-digital data
+
+:::::::::::::::::::::::::::::::::::
 
