@@ -121,10 +121,12 @@ An XML document contains XML elements to structure the data. They are formed usi
 
 The tags are given a name that describes the content:
 
-``
+```
+
 <photographer>Walker Evans</photographer> 
 <name>Walker Evans</name>
 <artist>Walker Evans</artist>
+
 ```
 
 You may be familiar with this structure. The HTML language, which is used to organize web pages, has a similar structure. It is also based on SGML. HTML makes it possible to mark up the typical elements of a text-oriented document - such as headings, paragraphs, lists, or tables - as such on a web page and to structure the page semantically. 
