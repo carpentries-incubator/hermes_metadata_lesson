@@ -94,9 +94,9 @@ The data is separated by delimiters - usually commas or semicolons. The contents
 
 When entering data into spreadsheets, there are a number of issues to consider to ensure that the data can be processed correctly. In addition to the comma-separated fields mentioned above, which can cause problems, there are many more aspects. Another source of error can be unintentional blank characters, usually at the end of an entry. These need to be considered separately during automated processing. Dates are another major source of error. Different spellings can lead to misinterpretation. How do you interpret the date 25-01-11 when it is written in a single field?
 
-::: information
+::: callout
 
-For further reading see e.g., [Data Organization in Spreadsheets for Social Scientists[(https://datacarpentry.github.io/spreadsheets-socialsci/)
+For further reading see e.g., [Data Organization in Spreadsheets for Social Scientists](https://datacarpentry.github.io/spreadsheets-socialsci/)
 
 :::
 
