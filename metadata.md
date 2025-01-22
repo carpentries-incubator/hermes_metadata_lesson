@@ -58,7 +58,7 @@ Go back again to the online resources we reviewed. Find the data to which the me
 :::::::::::::::::::::::: solution 
 
 ## Output
-TODO
+The objects searchable in the Met Museum's online collection primarily feature descriptive metadata, such as title, author, date, and size. Administrative metadata is largely limited to the inventory number, though additional administrative (meta)data, potentially sensitive in nature, may remain unpublished. Structural metadata is generally scarce, despite the suitability of many well-documented art and cultural objects for such detailed representation. However, creating structural metadata would require extensive indexing, which is often impractical. Institutions typically prioritize basic cataloguing with minimal metadata, while in-depth cataloguing is frequently undertaken as part of specific projects.
 :::::::::::::::::::::::::::::::::
 
 
