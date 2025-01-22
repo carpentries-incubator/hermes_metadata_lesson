@@ -677,7 +677,7 @@ we have here?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>We cannot present analogue data here because everything we display on
 the monitor is digital!</p>
@@ -1517,13 +1517,12 @@ specifications for the definition of a content:</p>
 imperative that the XML data comprises the subject’s first name, name
 and date of birth. The employment of the &lt;xsd:sequence&gt; element
 stipulates that the data must be entered in the sequence delineated
-herein. This particular tag is designated as an ‘indicator’. It is
-important to note that there are other indicators that regulate various
-aspects, including the number of occurrences permitted for elements, the
-designation of elements as mandatory, and other related parameters. It
-is important to note that there are other forms of elements that
-regulate the structure of an XML schema. An XML that conforms to a
-schema is called valid.</p>
+herein. This particular tag is designated as an ‘indicator’. Note that
+there are other indicators that regulate various aspects, including the
+number of occurrences permitted for elements, the designation of
+elements as mandatory, and other related parameters. Other forms of
+elements are available to regulate the structure of an XML schema. An
+XML that conforms to a schema is called valid.</p>
 <div id="reference" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1541,10 +1540,145 @@ the web page.</p>
 </section><section><h2 class="section-heading" id="json">4 JSON<a class="anchor" aria-label="anchor" href="#json"></a>
 </h2>
 <hr class="half-width">
+<p>Another format in which metadata can be stored, annotated and
+exchanged is JSON (JavaScript Object Notation). Its syntax is inspired
+by JavaScript object notation.</p>
+<div id="json-keypoints" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div id="json-keypoints" class="callout-inner">
+<h3 class="callout-title">JSON keypoints</h3>
+<div class="callout-content">
+<ul>
+<li>(Meta)data elements are defined in key/value pairs.</li>
+<li>Keys are of data type string (in quotes).</li>
+<li>Values must be of data type string, number (float or integer),
+boolean, array or object.</li>
+<li>Elements are separated by commas.</li>
+<li>Curly braces hold objects.</li>
+<li>Square brackets hold arrays.</li>
+<li>In-line commenting is not supported.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section level4">
+<h4 id="json-data">JSON Data<a class="anchor" aria-label="anchor" href="#json-data"></a>
+</h4>
+<p>JSON data is written as key/value pairs. A key/value pair consists of
+a key, followed by a colon, followed by a value. The key is the name –
+the label – for the content in the value field. Keys are always written
+in double quotes. The indication of the value depends on its data type.
+The entire content is enclosed in curly brackets.</p>
+<div class="codewrapper sourceCode" id="cb18">
+<h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode json" tabindex="0"><code class="sourceCode json"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="fu">{</span><span class="er">„name“</span> <span class="fu">:</span> <span class="er">„Kim</span> <span class="er">Sneider“</span><span class="fu">,</span></span>
+<span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a><span class="er">„age“</span> <span class="fu">:</span> <span class="dv">39</span><span class="fu">,</span></span>
+<span id="cb18-3"><a href="#cb18-3" tabindex="-1"></a><span class="er">„children“</span> <span class="fu">:</span> <span class="ot">[</span><span class="er">„Ben“</span><span class="ot">,</span> <span class="er">„Tove“</span><span class="ot">,</span> <span class="er">„Nina“</span><span class="ot">]</span></span>
+<span id="cb18-4"><a href="#cb18-4" tabindex="-1"></a><span class="fu">}</span></span></code></pre>
+</div>
+</div>
+<div class="section level4">
+<h4 id="json-vs-xml">JSON vs XML<a class="anchor" aria-label="anchor" href="#json-vs-xml"></a>
+</h4>
+<ul>
+<li>Both are human and machine readable.</li>
+<li>Both can be structured hierarchical (values within values).</li>
+<li>Both can be parsed and used by lots of programming languages.</li>
+</ul>
+<p><strong>But</strong> JSON is shorter than XML and in data processing
+easier to use. JSON can use arrays, so that a set of multiple values can
+be stored and processed easily within one key but interpreted as
+multiple values. Whereas in XML multiple values can be written in one
+tag, but they will not be processed like that as the content of a tag is
+not interpreted as multiple values even if the data is separated with a
+comma or other characters.</p>
+</div>
+<div class="section level4">
+<h4 id="values">Values<a class="anchor" aria-label="anchor" href="#values"></a>
+</h4>
+<p>Values cannot be one of the following data types:</p>
+<ul>
+<li>a function</li>
+<li>a date (dates are written as strings in double quotes – so be aware
+of problems that may cause)</li>
+<li>undefined</li>
+</ul>
+<div id="boolean" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="boolean" class="callout-inner">
+<h3 class="callout-title">Boolean</h3>
+<div class="callout-content">
+<p>Boolean is the data type for truth values in programming languages.
+The Boolean data type can be either true (the binary equivalent of 1) or
+false (the binary equivalent of 0). Programmers use Booleans to test
+conditions.</p>
+</div>
+</div>
+</div>
+<table class="table">
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+</colgroup>
+<thead><tr class="header">
+<th>data type</th>
+<th>explanation</th>
+<th>example as JSON value</th>
+<th></th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>string</td>
+<td>set of character</td>
+<td>„Can be a sentence or a name or a date and is written in double
+quotes“</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>integer</td>
+<td>whole number</td>
+<td>12</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>float</td>
+<td>floating-point number</td>
+<td>3.5</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>boolean</td>
+<td>truth value</td>
+<td>true/false</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>array</td>
+<td>collection of values</td>
+<td>[„Didi“, 35, „Whatever“, true]</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>JSON object</td>
+<td>a set of JSON data</td>
+<td>{„name“ : „Kim“, „age“ : 39}</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- --></section><div class="footnotes footnotes-end-of-document">
+ -->
+</div>
+</section><div class="footnotes footnotes-end-of-document">
 <hr>
 <ol>
 <li id="fn1"><p>1<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
