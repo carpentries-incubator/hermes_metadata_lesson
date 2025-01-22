@@ -40,11 +40,7 @@ There are a few sections in each episode of this lesson:
 Inline instructor notes can help inform instructors of timing challenges
 associated with the lessons. They appear in the "Instructor View"
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-:::::::::::::::::::::::::::::::::
-
+::::::::::::::::::::::
 
 
 
