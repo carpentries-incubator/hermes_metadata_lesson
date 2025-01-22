@@ -21,16 +21,16 @@ exercises: 5
 
 ## 1 Introduction
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::: questions 
 
 - What is a CSV file and how is its content structured? 
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::: objectives
+::: objectives
 
 - Familiar with a simple way of structured recording and storage of data and metadata.
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ::: challenge
 
@@ -40,6 +40,7 @@ exercises: 5
 
 ### Show me the solution
 A simple way to store data in a structured way is using a spreadsheet like Excel. 
+
 :::
 :::
 
@@ -56,6 +57,7 @@ Open the artworks.csv file.
     - What form does the data take? 
     - What are the advantages of recording data in tabular form? 
     - Why is this data operable? 
+    
 ::: solution
 
 ## Show me the solution
@@ -65,6 +67,7 @@ Open the artworks.csv file.
     - The data is structured into individual fields.
     - Content is named, data is labled/marked up.
     - The data is available in a digital file format that can be processed and shared.
+    
 :::
 :::
 
@@ -74,7 +77,8 @@ Possible sources of error and problems that can occur and should be discussed ar
 
 The CSV (comma-separated values) format in this example is usually opened as a table in a spreadsheet so that it can be read by humans in a structured way. If you open the format in a text editor, you can see the structure of the file. 
 
-'''
+```
+
 ID;artist;title;date
 1;Salvador Dalí;The persistence of memory;1931
 2;Walker Evans;Allie Mae Burroughs, Wife of a Cotton Sharecropper, Hale County, Alabama;1936
@@ -83,7 +87,8 @@ ID;artist;title;date
 5;Berthe Morisot;The psyche mirror;1876
 1;Georgia O’Keeffe;Sky above clouds IV;1965
 3;Banksy;Girl with Ballon;2002
-'''
+
+```
 
 When you opened the file in the last exercise, some parameters were queried before you could even open it. Here we can see why:
 
@@ -92,7 +97,9 @@ The data is separated by delimiters - usually commas or semicolons. The contents
 When entering data into spreadsheets, there are a number of issues to consider to ensure that the data can be processed correctly. In addition to the comma-separated fields mentioned above, which can cause problems, there are many more aspects. Another source of error can be unintentional blank characters, usually at the end of an entry. These need to be considered separately during automated processing. Dates are another major source of error. Different spellings can lead to misinterpretation. How do you interpret the date 25-01-11 when it is written in a single field?
 
 ::: information
+
 For further reading see e.g., [Data Organization in Spreadsheets for Social Scientists[(https://datacarpentry.github.io/spreadsheets-socialsci/)
+
 :::
 
 An important part of recording metadata is annotating the data. Labelling categories for people, such as artist or photographer for Walker Evans, helps to understand the content. This marking allows the data to be interpreted and is used differently depending on the format. In the spreadsheet example it is the column heading. For dates, it is worth splitting the year, month and day into separate fields to avoid the problems described above. 
@@ -108,15 +115,18 @@ One of the most widely used metadata formats in the cultural sector is XML (eXte
 
 An XML document contains XML elements to structure the data. They are formed using angle brackets and are divided into an opening tag and a closing tag, indicated by a leading slash. The content is placed in between. 
 
-'''
+``
 <tag>element</tag>
-'''
+``
+
 The tags are given a name that describes the content:
-'''
+
+``
 <photographer>Walker Evans</photographer> 
 <name>Walker Evans</name>
 <artist>Walker Evans</artist>
-'''
+```
+
 You may be familiar with this structure. The HTML language, which is used to organize web pages, has a similar structure. It is also based on SGML. HTML makes it possible to mark up the typical elements of a text-oriented document - such as headings, paragraphs, lists, or tables - as such on a web page and to structure the page semantically. 
 
 ## 3 XML Schema
