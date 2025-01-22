@@ -144,18 +144,20 @@ XML also provides the ability to have comments that are not automatically read:
 <! - Here is the content of the comment, there is no closing tag - - >
 ```
 
-#### Rules for naming tags[^1]
+#### Rules for naming tags^[1]
 
 Names:
+
 * Must start with a letter or underscore. 
 * Cannot start with the letters xml (or XML, or Xml, etc). 
 * Can contain letters, digits, hyphens, underscores, and periods. 
 * Cannot contain spaces.
 
 Best Naming Practices:
+
 * Create descriptive names.
 * Create short and simple names.
-* Avoid - / . / : in the names, e.g. <first-name>, and be aware that : is reserved for namespaces which have a special function.
+* Avoid - / . / : in the names, e.g. \<first-name\>, and be aware that : is reserved for namespaces which have a special function.
 
 In XML, all elements must be properly nested within each other, which means that an element opened inside another element must be closed inside too:
 
