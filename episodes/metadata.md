@@ -80,8 +80,8 @@ For example, the text of Alice's Adventures in Wonderland itself—its words, ch
 
 This relativity highlights the importance of understanding the different levels at which we interact with information. In essence:
 
-- Data refers to the primary subject of study or use (e.g., the full text of the book).
-- Metadata refers to information about that data, designed to describe, contextualize, or facilitate its organization and retrieval (e.g., the title, author, or genre classification).
+- **Data refers to the primary subject of study or use (e.g., the full text of the book).**
+- **Metadata refers to information about that data, designed to describe, contextualize, or facilitate its organization and retrieval (e.g., the title, author, or genre classification).**
 
 This interplay between data and metadata underscores the layered nature of information management and the need for precision when working with both.
 
