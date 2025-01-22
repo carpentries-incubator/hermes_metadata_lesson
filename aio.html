@@ -444,7 +444,7 @@ reinforce the objectives.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Output </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -471,7 +471,7 @@ reinforce the objectives.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -773,7 +773,7 @@ we have here?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>We cannot present analogue data here because everything we display on
 the monitor is digital!</p>
@@ -961,7 +961,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>TODO</p>
 </div>
@@ -986,7 +986,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>It depends on the context wether it is data (the book itself) or
 metadata (title in a library catalogue)</p>
@@ -1136,7 +1136,7 @@ data and metadata.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>A simple way to store data in a structured way is using a spreadsheet
 like Excel.</p>
@@ -1171,7 +1171,7 @@ form? - Why is this data operable?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1216,12 +1216,12 @@ need to be considered separately during automated processing. Dates are
 another major source of error. Different spellings can lead to
 misinterpretation. How do you interpret the date 25-01-11 when it is
 written in a single field?</p>
-<div id="callout1" class="callout">
+<div id="find-out-more-on-data-organization" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout</h3>
+<div id="find-out-more-on-data-organization" class="callout-inner">
+<h3 class="callout-title">Find out more on Data Organization</h3>
 <div class="callout-content">
 <p>For further reading see e.g., <a href="https://datacarpentry.github.io/spreadsheets-socialsci/" class="external-link">Data
 Organization in Spreadsheets for Social Scientists</a></p>
@@ -1273,14 +1273,187 @@ used to organize web pages, has a similar structure. It is also based on
 SGML. HTML makes it possible to mark up the typical elements of a
 text-oriented document - such as headings, paragraphs, lists, or tables
 - as such on a web page and to structure the page semantically.</p>
+<div id="semantics" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="semantics" class="callout-inner">
+<h3 class="callout-title">Semantics</h3>
+<div class="callout-content">
+<p>Semantics examines the meaning of characters such as words, phrases,
+or symbols. Semantically correct HTML gives meaning to content.</p>
+</div>
+</div>
+</div>
+Unlike HTML, where there are rules for naming tags, such as
+<h1 id="xml-elements-1">
+<a class="anchor" aria-label="anchor" href="#xml-elements-1"></a>
+</h1>
+<p>for the heading, XML tags can be named freely, except for a few
+technical rules. This makes it particularly interesting for use in the
+development of metadata standards and ontologies.</p>
+<div id="metadata-standards" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="metadata-standards" class="callout-inner">
+<h3 class="callout-title">Metadata Standards</h3>
+<div class="callout-content">
+<p>Metadata standards are rules for how research data should be
+annotated, described, and stored in a format. For example, they specify
+the naming of tags if the data is stored in XML. They also govern the
+hierarchy of data or the relationships between data. More on this
+later.</p>
+<div class="section level2">
+<h2 id="ontology">Ontology<a class="anchor" aria-label="anchor" href="#ontology"></a>
+</h2>
+<p>Ontologies are linguistically and formally organized representations
+of concepts and the relationships between them in a given domain. In the
+cultural heritage field in particular, they specify the presentation of
+object data so that it can be placed in larger contexts. Ontologies are
+used to model and standardize information.</p>
+</div>
+</div>
+</div>
+</div>
+<p>XML also provides the ability to have comments that are not
+automatically read:</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="er">&lt;</span>! - Here is the content of the comment, there is no closing tag - - &gt;</span></code></pre>
+</div>
+</div>
+<div class="section level4">
+<h4 id="rules-for-naming-tags1">Rules for naming tags[^1]<a class="anchor" aria-label="anchor" href="#rules-for-naming-tags1"></a>
+</h4>
+<p>Names: - Must start with a letter or underscore. - Cannot start with
+the letters xml (or XML, or Xml, etc). - Can contain letters, digits,
+hyphens, underscores, and periods. - Cannot contain spaces.</p>
+<p>Best Naming Practices: - Create descriptive names. - Create short and
+simple names. - Avoid - / . / : in the names, e.g. <first-name>, and be
+aware that : is reserved for namespaces which have a special
+function.</first-name></p>
+<p>In XML, all elements must be properly nested within each other, which
+means that an element opened inside another element must be closed
+inside too:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>&lt;<span class="kw">collection</span>&gt;&lt;<span class="kw">place</span>&gt;collection of the MET in New York&lt;/<span class="kw">place</span>&gt;&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
+</div>
+</div>
+<div class="section level4">
+<h4 id="attributes">Attributes<a class="anchor" aria-label="anchor" href="#attributes"></a>
+</h4>
+<p>In XML, as in HTML, tags can also be assigned attributes, which
+define the content of the tags in more detail. They are named and the
+content is assigned to them with a = and enclosed in quotes:</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>&lt;<span class="kw">title</span><span class="ot"> lang=</span><span class="st">"author's original language"</span>&gt;Always give the title in the author's language&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>&lt;<span class="kw">commonTitle</span><span class="ot"> lang=</span><span class="st">"title as commonly known"</span>&gt;Always give the title as it is commonly known&lt;/<span class="kw">commonTitle</span>&gt;</span></code></pre>
+</div>
+<p>There are some rules for characters used in XML for structure. They
+are replaced by a special character string, so that it won’t cause
+problems if, for example, you want to use a &lt; in the content. This
+would cause an error because XML expects a closing tag. To avoid errors,
+the character is replaced with an entity reference:</p>
+<div class="line-block">&lt; | &lt; | less than |<br>
+&gt; | &gt; | greater than |<br>
+&amp; | &amp; | ampersand |<br>
+' | ’ | apostrophe |<br>
+" | ” | quotation mark |</div>
+<p>Attributes are also frequently used in a hierarchy to record
+information that applies to all underlying data:</p>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>&lt;<span class="kw">items</span><span class="ot"> collection=</span><span class="er">“archives</span> <span class="er">collection“</span> <span class="er">place=“location“&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>	<span class="er">&lt;item1&gt;&lt;/item1&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>	<span class="er">&lt;item2&gt;&lt;/item2&gt;……</span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="er">&lt;/items&gt;</span></span></code></pre>
+</div>
+<p>However, it should be noted that the information contained in the
+attributes is more likely to be seen as metadata related to the content.
+In this example, it may be worth creating the information about the
+collection and its location as separate tags above the items.</p>
+<div class="codewrapper sourceCode" id="cb9">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>&lt;<span class="kw">collection</span><span class="ot"> place=</span><span class="er">““/&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>	<span class="er">&lt;item1/&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>	<span class="er">&lt;item2/&gt;</span></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="er">&lt;collection/&gt;</span></span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a><span class="er">or</span> <span class="er">like</span> <span class="er">that:</span></span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a><span class="er">&lt;place/&gt;</span></span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a>	<span class="er">&lt;collection/&gt;</span></span>
+<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a>		<span class="er">&lt;item1/&gt;</span></span>
+<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a>		<span class="er">&lt;item2/&gt;</span></span>
+<span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a>	<span class="er">&lt;/collection&gt;</span></span>
+<span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a><span class="er">&lt;/place&gt;</span></span></code></pre>
+</div>
+<p>The indentation (using a tab) describes the hierarchy level. The
+collection is assigned to the location, and the items below it are on
+the same hierarchy level. The structure depends on the purpose of the
+collection and the data to be collected.</p>
+<p>The slash here at the end of the tag (self-closing tag) means that
+the element is empty and self-contained.</p>
+<div id="callout4" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p>In HTML, attributes often contain style information, such as the font
+color or the size and width of a section. This is also where the alt tag
+is created, which contains an alternative text to an image that is
+automatically read or displayed if the image cannot be retrieved:</p>
+<div class="codewrapper sourceCode" id="cb10">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>&lt;<span class="kw">p</span><span class="ot"> style=</span><span class="st">"color:blue;"</span><span class="ot"> width=</span><span class="st">"300"</span><span class="ot"> height=</span><span class="st">"500"</span>&gt;This is a blue paragraph.&lt;/<span class="kw">p</span>&gt;</span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>&lt;<span class="kw">img</span><span class="ot"> src=</span><span class="st">"image.jpg"</span><span class="ot"> alt=</span><span class="st">"a girl with a pearl earring is standing in front of a house"</span>&gt;&lt;/<span class="kw">image</span>&gt;</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<p>At the top of an XML document you will often find something called a
+prolog:</p>
+<div class="codewrapper sourceCode" id="cb11">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span></code></pre>
+</div>
+<p>It is optional, but provides information about the version and
+encoding used, and must be at the top if included.</p>
+<div id="callout5" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p>XML documents that conform to this syntax rules are said to be “Well
+Formed” XML documents.</p>
+</div>
+</div>
+</div>
 </div>
 </section><section><h2 class="section-heading" id="xml-schema">3 XML Schema<a class="anchor" aria-label="anchor" href="#xml-schema"></a>
 </h2>
 <hr class="half-width">
+<p>[¹] <a href="https://www.w3schools.com/xml/xml_elements.asp" class="external-link uri">https://www.w3schools.com/xml/xml_elements.asp</a></p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- --></section></section>
+ -->
+</section></section>
 </div>
     </main>
 </div>
