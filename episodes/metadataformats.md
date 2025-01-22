@@ -252,12 +252,13 @@ Open the xxxx.csv file. Use the given data and write it in an XML format.
 
 * Think about the headings in the spreadsheet. Do you agree with this labelling? 
 *  You can use tabs to create a hierarchy.
+
+:::
   
 ::: solution
 
 Here to place a xml code block with 1 or 2 examples and the note that there is not one right solution
 
-:::
 :::
 :::
 
@@ -277,4 +278,4 @@ Compare your XML with the documents of the other participants. What do you notic
 
 
 
-[¹]: <https://www.w3schools.com/xml/xml_elements.asp>  
+[1]: <https://www.w3schools.com/xml/xml_elements.asp>  
