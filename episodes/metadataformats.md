@@ -7,8 +7,9 @@ exercises: 5
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - In which formats can data and metadata be stored in a structured way?
+- What is a CSV file and how is its content structured?
 - How do you annotate data in XML and JSON?
-- What is a schema for XML or JSON?
+- What is a schema and why is it helpful?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -21,20 +22,10 @@ exercises: 5
 
 ## 1 Introduction
 
-:::: questions 
-
-- What is a CSV file and how is its content structured? 
-
-:::
-
-::: objectives
-
-- Familiar with a simple way of structured recording and storage of data and metadata.
-:::
-
 ::: challenge
 
-### Question: Do you know formats in which data can be stored in a structured way? 
+### Question: 
+Do you know formats in which data can be stored in a structured way? 
 
 ::: solution
 
@@ -53,20 +44,20 @@ The advantage of using such a format is the interoperability of the data. This m
 ## Challenge
 
 Open the artworks.csv file. 
-    - What do you notice? 
-    - What form does the data take? 
-    - What are the advantages of recording data in tabular form? 
-    - Why is this data operable? 
+    * What do you notice? 
+    * What form does the data take? 
+    * What are the advantages of recording data in tabular form? 
+    * Why is this data operable? 
     
 ::: solution
 
 ## Show me the solution
 
-    - Various parameters are queried when opening.
-    - The data is in a tabular form in a spreadsheet available.
-    - The data is structured into individual fields.
-    - Content is named, data is labled/marked up.
-    - The data is available in a digital file format that can be processed and shared.
+    * Various parameters are queried when opening.
+    * The data is in a tabular form in a spreadsheet available.
+    * The data is structured into individual fields.
+    * Content is named, data is labled/marked up.
+    * The data is available in a digital file format that can be processed and shared.
     
 :::
 :::
@@ -136,15 +127,13 @@ You may be familiar with this structure. The HTML language, which is used to org
 Semantics examines the meaning of characters such as words, phrases, or symbols. Semantically correct HTML gives meaning to content.
 :::
 
-Unlike HTML, where there are rules for naming tags, such as <h1></h1> for the heading, XML tags can be named freely, except for a few technical rules. This makes it particularly interesting for use in the development of metadata standards and ontologies.
+Unlike HTML, where there are rules for naming tags - such as \<h1\>\</h1\> for heading - XML tags can be named freely, except for a few technical rules. This makes it particularly interesting for use in the development of metadata standards and ontologies.
 
 ::: callout
 
-## Metadata Standards
+## Metadata Standards and Ontologies
 
 Metadata standards are rules for how research data should be annotated, described, and stored in a format. For example, they specify the naming of tags if the data is stored in XML. They also govern the hierarchy of data or the relationships between data. More on this later. 
-
-## Ontology 
 
 Ontologies are linguistically and formally organized representations of concepts and the relationships between them in a given domain. In the cultural heritage field in particular, they specify the presentation of object data so that it can be placed in larger contexts. Ontologies are used to model and standardize information. 
 :::
@@ -158,15 +147,15 @@ XML also provides the ability to have comments that are not automatically read:
 #### Rules for naming tags[^1]
 
 Names:
-- Must start with a letter or underscore. 
-- Cannot start with the letters xml (or XML, or Xml, etc). 
-- Can contain letters, digits, hyphens, underscores, and periods. 
-- Cannot contain spaces.
+* Must start with a letter or underscore. 
+* Cannot start with the letters xml (or XML, or Xml, etc). 
+* Can contain letters, digits, hyphens, underscores, and periods. 
+* Cannot contain spaces.
 
 Best Naming Practices:
-- Create descriptive names.
-- Create short and simple names.
-- Avoid - / . / : in the names, e.g. <first-name>, and be aware that : is reserved for namespaces which have a special function.
+* Create descriptive names.
+* Create short and simple names.
+* Avoid - / . / : in the names, e.g. <first-name>, and be aware that : is reserved for namespaces which have a special function.
 
 In XML, all elements must be properly nested within each other, which means that an element opened inside another element must be closed inside too:
 
@@ -186,33 +175,33 @@ In XML, as in HTML, tags can also be assigned attributes, which define the conte
 
 There are some rules for characters used in XML for structure. They are replaced by a special character string, so that it won’t cause problems if, for example, you want to use a < in the content. This would cause an error because XML expects a closing tag. To avoid errors, the character is replaced with an entity reference: 
 
-| &lt; | < | less than |
-| &gt; | > | greater than |
-| &amp; | & | ampersand |
-| &apos; | ' | apostrophe |
-| &quot; | " | quotation mark |
+| string | character | meaning | 
+| ---- | :-: | ---: | ---------|
+| \&lt; | < | less than |
+| \&gt; | > | greater than |
+| \&amp; | & | ampersand |
+| \&apos; | ' | apostrophe |
+| \&quot; | " | quotation mark |
 
 Attributes are also frequently used in a hierarchy to record information that applies to all underlying data:
 
 ```xml
-<items collection=“archives collection“ place=“location“>
+<items collection=“archives_collection“ place=“location“>
 	<item1></item1>
-	<item2></item2>……
+	<item2></item2>
 </items>
 ```
 
 However, it should be noted that the information contained in the attributes is more likely to be seen as metadata related to the content. In this example, it may be worth creating the information about the collection and its location as separate tags above the items.
 
 ```xml
-<collection place=““/>
+<collection place=““>
 	<item1/>
 	<item2/>
 <collection/>
 
-or like that:
-
 <place/>
-	<collection/>
+	<collection>
 		<item1/>
 		<item2/>
 	</collection>
@@ -225,7 +214,7 @@ The slash here at the end of the tag (self-closing tag) means that the element i
 ::: callout
 In HTML, attributes often contain style information, such as the font color or the size and width of a section. This is also where the alt tag is created, which contains an alternative text to an image that is automatically read or displayed if the image cannot be retrieved:
 
-```xml
+```html
 <p style="color:blue;" width="300" height="500">This is a blue paragraph.</p>
 <img src="image.jpg" alt="a girl with a pearl earring is standing in front of a house"></image>
 ```
@@ -250,4 +239,4 @@ XML documents that conform to this syntax rules are said to be "Well Formed" XML
 
 
 
-[¹] https://www.w3schools.com/xml/xml_elements.asp  
+[¹]: <https://www.w3schools.com/xml/xml_elements.asp>  
