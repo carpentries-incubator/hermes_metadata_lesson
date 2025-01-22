@@ -113,9 +113,9 @@ One of the most widely used metadata formats in the cultural sector is XML (eXte
 
 An XML document contains XML elements to structure the data. They are formed using angle brackets and are divided into an opening tag and a closing tag, indicated by a leading slash. The content is placed in between. 
 
-``
+```xml
 <tag>element</tag>
-``
+```
 
 The tags are given a name that describes the content:
 
