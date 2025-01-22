@@ -340,8 +340,9 @@
 <h3 class="card-title">Questions</h3>
 <ul><li>In which formats can data and metadata be stored in a structured
 way?</li>
+<li>What is a CSV file and how is its content structured?</li>
 <li>How do you annotate data in XML and JSON?</li>
-<li>What is a schema for XML or JSON?</li>
+<li>What is a schema and why is it helpful?</li>
 </ul></div>
 </div>
 </div>
@@ -360,61 +361,15 @@ format.</li>
 </div>
 </div>
 <section><h2 class="section-heading" id="introduction">1 Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a></h2>
-<hr class="half-width"><div class="overview card">
-<h2 class="card-header">Overview</h2>
-<div class="row g-0">
-<div class="col-md-4">
-<div class="card-body">
-<div class="inner">
-<h3 class="card-title">Questions</h3>
-<ul><li>What is a CSV file and how is its content structured?</li>
-</ul></div>
-</div>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-<div class="inner bordered">
-<h3 class="card-title">Objectives</h3>
-<ul><li>Knowledge of CSV, XML &amp; JSON formats for storing and processing
-metadata.</li>
-<li>Familiar with the structure of a simple CSV, XML and JSON file.</li>
-<li>Able to write extracted metadata in a simple XML and JSON
-format.</li>
-</ul></div>
-</div>
-</div>
-</div>
-</div>
-<div class="overview card">
-<h2 class="card-header">Overview</h2>
-<div class="row g-0">
-<div class="col-md-4">
-<div class="card-body">
-<div class="inner">
-<h3 class="card-title">Questions</h3>
-<ul><li>What is a CSV file and how is its content structured?</li>
-</ul></div>
-</div>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-<div class="inner bordered">
-<h3 class="card-title">Objectives</h3>
-<ul><li>Familiar with a simple way of structured recording and storage of
-data and metadata.</li>
-</ul></div>
-</div>
-</div>
-</div>
-</div>
-<div id="question-do-you-know-formats-in-which-data-can-be-stored-in-a-structured-way" class="callout challenge">
+<hr class="half-width"><div id="question" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="question-do-you-know-formats-in-which-data-can-be-stored-in-a-structured-way" class="callout-inner">
-<h3 class="callout-title">Question: Do you know formats in which data can be stored in a structured way?</h3>
+<div id="question" class="callout-inner">
+<h3 class="callout-title">Question:</h3>
 <div class="callout-content">
-
+<p>Do you know formats in which data can be stored in a structured
+way?</p>
 </div>
 </div>
 </div>
@@ -447,9 +402,9 @@ different sources can also be merged.</p>
 <div id="challenge" class="callout-inner">
 <h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
-<p>Open the artworks.csv file. - What do you notice? - What form does
-the data take? - What are the advantages of recording data in tabular
-form? - Why is this data operable?</p>
+<p>Open the artworks.csv file. * What do you notice? * What form does
+the data take? * What are the advantages of recording data in tabular
+form? * Why is this data operable?</p>
 </div>
 </div>
 </div>
@@ -463,11 +418,11 @@ form? - Why is this data operable?</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">-</span> Various parameters are queried when opening.</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="ex">-</span> The data is in a tabular form in a spreadsheet available.</span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ex">-</span> The data is structured into individual fields.</span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="ex">-</span> Content is named, data is labled/marked up.</span>
-<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="ex">-</span> The data is available in a digital file format that can be processed and shared.</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">*</span> Various parameters are queried when opening.</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="ex">*</span> The data is in a tabular form in a spreadsheet available.</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ex">*</span> The data is structured into individual fields.</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="ex">*</span> Content is named, data is labled/marked up.</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="ex">*</span> The data is available in a digital file format that can be processed and shared.</span></code></pre>
 </div>
 </div>
 </div>
@@ -569,32 +524,27 @@ or symbols. Semantically correct HTML gives meaning to content.</p>
 </div>
 </div>
 </div>
-Unlike HTML, where there are rules for naming tags, such as
-<h1 id="xml-elements-1">
-<a class="anchor" aria-label="anchor" href="#xml-elements-1"></a></h1>
-<p>for the heading, XML tags can be named freely, except for a few
-technical rules. This makes it particularly interesting for use in the
-development of metadata standards and ontologies.</p>
-<div id="metadata-standards" class="callout">
+<p>Unlike HTML, where there are rules for naming tags - such as
+&lt;h1&gt;&lt;/h1&gt; for heading - XML tags can be named freely, except
+for a few technical rules. This makes it particularly interesting for
+use in the development of metadata standards and ontologies.</p>
+<div id="metadata-standards-and-ontologies" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="metadata-standards" class="callout-inner">
-<h3 class="callout-title">Metadata Standards</h3>
+<div id="metadata-standards-and-ontologies" class="callout-inner">
+<h3 class="callout-title">Metadata Standards and Ontologies</h3>
 <div class="callout-content">
 <p>Metadata standards are rules for how research data should be
 annotated, described, and stored in a format. For example, they specify
 the naming of tags if the data is stored in XML. They also govern the
 hierarchy of data or the relationships between data. More on this
 later.</p>
-<div class="section level2">
-<h2 id="ontology">Ontology<a class="anchor" aria-label="anchor" href="#ontology"></a></h2>
 <p>Ontologies are linguistically and formally organized representations
 of concepts and the relationships between them in a given domain. In the
 cultural heritage field in particular, they specify the presentation of
 object data so that it can be placed in larger contexts. Ontologies are
 used to model and standardize information.</p>
-</div>
 </div>
 </div>
 </div>
@@ -608,11 +558,11 @@ automatically read:</p>
 </div>
 <div class="section level4">
 <h4 id="rules-for-naming-tags1">Rules for naming tags[^1]<a class="anchor" aria-label="anchor" href="#rules-for-naming-tags1"></a></h4>
-<p>Names: - Must start with a letter or underscore. - Cannot start with
-the letters xml (or XML, or Xml, etc). - Can contain letters, digits,
-hyphens, underscores, and periods. - Cannot contain spaces.</p>
-<p>Best Naming Practices: - Create descriptive names. - Create short and
-simple names. - Avoid - / . / : in the names, e.g. <first-name>, and be
+<p>Names: * Must start with a letter or underscore. * Cannot start with
+the letters xml (or XML, or Xml, etc). * Can contain letters, digits,
+hyphens, underscores, and periods. * Cannot contain spaces.</p>
+<p>Best Naming Practices: * Create descriptive names. * Create short and
+simple names. * Avoid - / . / : in the names, e.g. <first-name>, and be
 aware that : is reserved for namespaces which have a special
 function.</first-name></p>
 <p>In XML, all elements must be properly nested within each other, which
@@ -641,19 +591,38 @@ are replaced by a special character string, so that it won’t cause
 problems if, for example, you want to use a &lt; in the content. This
 would cause an error because XML expects a closing tag. To avoid errors,
 the character is replaced with an entity reference:</p>
-<div class="line-block">&lt; | &lt; | less than |<br>
-&gt; | &gt; | greater than |<br>
-&amp; | &amp; | ampersand |<br>
-' | ’ | apostrophe |<br>
-" | ” | quotation mark |</div>
-<p>Attributes are also frequently used in a hierarchy to record
+<table class="table"><thead><tr class="header"><th>string</th>
+<th align="center">character</th>
+<th align="right">meaning</th>
+<th></th>
+</tr></thead><tbody><tr class="odd"><td>&amp;lt;</td>
+<td align="center">&lt;</td>
+<td align="right">less than</td>
+<td></td>
+</tr><tr class="even"><td>&amp;gt;</td>
+<td align="center">&gt;</td>
+<td align="right">greater than</td>
+<td></td>
+</tr><tr class="odd"><td>&amp;amp;</td>
+<td align="center">&amp;</td>
+<td align="right">ampersand</td>
+<td></td>
+</tr><tr class="even"><td>&amp;apos;</td>
+<td align="center">’</td>
+<td align="right">apostrophe</td>
+<td></td>
+</tr><tr class="odd"><td>&amp;quot;</td>
+<td align="center">”</td>
+<td align="right">quotation mark</td>
+<td></td>
+</tr></tbody></table><p>Attributes are also frequently used in a hierarchy to record
 information that applies to all underlying data:</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>&lt;<span class="kw">items</span><span class="ot"> collection=</span><span class="er">“archives</span> <span class="er">collection“</span> <span class="er">place=“location“&gt;</span></span>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>&lt;<span class="kw">items</span><span class="ot"> collection=</span><span class="er">“archives_collection“</span> <span class="er">place=“location“&gt;</span></span>
 <span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>	<span class="er">&lt;item1&gt;&lt;/item1&gt;</span></span>
-<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>	<span class="er">&lt;item2&gt;&lt;/item2&gt;……</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>	<span class="er">&lt;item2&gt;&lt;/item2&gt;</span></span>
 <span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="er">&lt;/items&gt;</span></span></code></pre>
 </div>
 <p>However, it should be noted that the information contained in the
@@ -663,19 +632,17 @@ collection and its location as separate tags above the items.</p>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>&lt;<span class="kw">collection</span><span class="ot"> place=</span><span class="er">““/&gt;</span></span>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>&lt;<span class="kw">collection</span><span class="ot"> place=</span><span class="er">““&gt;</span></span>
 <span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>	<span class="er">&lt;item1/&gt;</span></span>
 <span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>	<span class="er">&lt;item2/&gt;</span></span>
 <span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="er">&lt;collection/&gt;</span></span>
 <span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a><span class="er">or</span> <span class="er">like</span> <span class="er">that:</span></span>
-<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a></span>
-<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a><span class="er">&lt;place/&gt;</span></span>
-<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a>	<span class="er">&lt;collection/&gt;</span></span>
-<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a>		<span class="er">&lt;item1/&gt;</span></span>
-<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a>		<span class="er">&lt;item2/&gt;</span></span>
-<span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a>	<span class="er">&lt;/collection&gt;</span></span>
-<span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a><span class="er">&lt;/place&gt;</span></span></code></pre>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a><span class="er">&lt;place/&gt;</span></span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>	<span class="er">&lt;collection&gt;</span></span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>		<span class="er">&lt;item1/&gt;</span></span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a>		<span class="er">&lt;item2/&gt;</span></span>
+<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a>	<span class="er">&lt;/collection&gt;</span></span>
+<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a><span class="er">&lt;/place&gt;</span></span></code></pre>
 </div>
 <p>The indentation (using a tab) describes the hierarchy level. The
 collection is assigned to the location, and the items below it are on
@@ -695,10 +662,10 @@ color or the size and width of a section. This is also where the alt tag
 is created, which contains an alternative text to an image that is
 automatically read or displayed if the image cannot be retrieved:</p>
 <div class="codewrapper sourceCode" id="cb10">
-<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+<h3 class="code-label">HTML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>&lt;<span class="kw">p</span><span class="ot"> style=</span><span class="st">"color:blue;"</span><span class="ot"> width=</span><span class="st">"300"</span><span class="ot"> height=</span><span class="st">"500"</span>&gt;This is a blue paragraph.&lt;/<span class="kw">p</span>&gt;</span>
-<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>&lt;<span class="kw">img</span><span class="ot"> src=</span><span class="st">"image.jpg"</span><span class="ot"> alt=</span><span class="st">"a girl with a pearl earring is standing in front of a house"</span>&gt;&lt;/<span class="kw">image</span>&gt;</span></code></pre>
+<pre class="sourceCode html" tabindex="0"><code class="sourceCode html"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:blue;"</span><span class="ot"> width</span><span class="op">=</span><span class="st">"300"</span><span class="ot"> height</span><span class="op">=</span><span class="st">"500"</span><span class="dt">&gt;</span>This is a blue paragraph.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"image.jpg"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">"a girl with a pearl earring is standing in front of a house"</span><span class="dt">&gt;&lt;/</span><span class="kw">image</span><span class="dt">&gt;</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -726,12 +693,10 @@ Formed” XML documents.</p>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="xml-schema">3 XML Schema<a class="anchor" aria-label="anchor" href="#xml-schema"></a></h2>
-<hr class="half-width"><p>[¹] <a href="https://www.w3schools.com/xml/xml_elements.asp" class="external-link uri">https://www.w3schools.com/xml/xml_elements.asp</a></p>
-<!--
+<hr class="half-width"><!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- -->
-</section></div> <!-- / div.lesson-content -->
+ --></section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="metadata.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
