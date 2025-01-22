@@ -1,7 +1,7 @@
 ---
 title: "Metadata"
 teaching: 30
-exercises: 2
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
