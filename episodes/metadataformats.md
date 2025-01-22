@@ -4,21 +4,21 @@ teaching: 120
 exercises: 5
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+::: questions 
 
 - In which formats can data and metadata be stored in a structured way?
 - What is a CSV file and how is its content structured?
 - How do you annotate data in XML and JSON?
 - What is a schema and why is it helpful?
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::: objectives
+::: objectives
 
 - Knowledge of CSV, XML & JSON formats for storing and processing metadata. 
 - Familiar with the structure of a simple CSV, XML and JSON file. 
 - Able to write extracted metadata in a simple XML and JSON format. 
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## 1 Introduction
 
@@ -178,7 +178,7 @@ In XML, as in HTML, tags can also be assigned attributes, which define the conte
 There are some rules for characters used in XML for structure. They are replaced by a special character string, so that it won’t cause problems if, for example, you want to use a < in the content. This would cause an error because XML expects a closing tag. To avoid errors, the character is replaced with an entity reference: 
 
 | string | character | meaning | 
-| ---- | :-: | ---: | ---------|
+| ---- | ---- | ---- | ----|
 | \&lt; | < | less than |
 | \&gt; | > | greater than |
 | \&amp; | & | ampersand |
@@ -259,6 +259,8 @@ Here to place a xml code block with 1 or 2 examples and the note that there is n
 
 :::
 :::
+:::
+
 
 ::: discussion
 
