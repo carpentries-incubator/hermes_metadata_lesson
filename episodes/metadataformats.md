@@ -275,7 +275,18 @@ Compare your XML with the documents of the other participants. What do you notic
 
 ## 3 XML Schema
 
+In the humanities in particular, there are standards for annotating data in XML. This ensures that data is available in a standardised form and is therefore interoperable. In XML, this is done by creating a schema. An XML Schema describes the structure of an XML document and establishes rules for annotating its content. The structure is essentially the same as XML. A schema is stored in the .xsd (XML Schema Definition) file format. It is characterised by the use of xs:schema as the container element for the whole document. Xs denotes the namespace for the schema (remember not to use : in XML tags, it is reserved for that!) 
 
+```xsd
+<xs:schema>
+
+</xs:schema>
+```
+A simple XML element is defined in the schema by the specification xs:element and the attributes name and type. Additional attributes may be set.
+
+```xml
+<xs:element name=“descriptive name“ type=“string“>
+```
 
 
 [1]: <https://www.w3schools.com/xml/xml_elements.asp>  
