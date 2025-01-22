@@ -141,7 +141,7 @@ Ontologies are linguistically and formally organized representations of concepts
 XML also provides the ability to have comments that are not automatically read:
 
 ```xml
-<! - Here is the content of the comment, there is no closing tag - - >
+<!-- Here is the content of the comment, there is no closing tag -- >
 ```
 
 #### Rules for naming tags^[1]
@@ -188,7 +188,7 @@ There are some rules for characters used in XML for structure. They are replaced
 Attributes are also frequently used in a hierarchy to record information that applies to all underlying data:
 
 ```xml
-<items collection=“archives_collection“ place=“location“>
+<items collection="archives_collection" place="location">
 	<item1/>
 	<item2/>
 </items>
@@ -197,7 +197,7 @@ Attributes are also frequently used in a hierarchy to record information that ap
 However, it should be noted that the information contained in the attributes is more likely to be seen as metadata related to the content. In this example, it may be worth creating the information about the collection and its location as separate tags above the items.
 
 ```xml
-<collection place=““>
+<collection place="New York">
 	<item1/>
 	<item2/>
 </collection>
@@ -235,6 +235,39 @@ It is optional, but provides information about the version and encoding used, an
 XML documents that conform to this syntax rules are said to be "Well Formed" XML documents.
 ::: 
 
+::: callout
+
+## Encoding
+
+In data processing, characters are encoded with a numerical value for transmission or storage (!Remember the rules for character we have just learned). Character encoding allows characters and symbols to be uniquely assigned within a character set. There are different character encodings, so it is important to know which one is being used. For example, the German Ü may be encoded with the decimal value 220 in one character set, while the same value in another character set encodes the curly bracket. To ensure that the data is displayed correctly when used, the form of encoding has to be specified. UTF-8 and UTF-16 are among the most common character sets you may encounter when processing data.
+:::
+
+::: challenge
+
+## Exercise
+
+Open the xxxx.csv file. Use the given data and write it in an XML format. 
+
+::: hint
+
+* Think about the headings in the spreadsheet. Do you agree with this labelling? 
+*  You can use tabs to create a hierarchy.
+  
+::: solution
+
+Here to place a xml code block with 1 or 2 examples and the note that there is not one right solution
+
+:::
+:::
+
+::: discussion
+
+## Discussion
+
+Compare your XML with the documents of the other participants. What do you notice?
+
+:::
+ 
 
 
 ## 3 XML Schema
