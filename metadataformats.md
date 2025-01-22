@@ -187,8 +187,8 @@ Attributes are also frequently used in a hierarchy to record information that ap
 
 ```xml
 <items collection=“archives_collection“ place=“location“>
-	<item1></item1>
-	<item2></item2>
+	<item1/>
+	<item2/>
 </items>
 ```
 
@@ -198,15 +198,16 @@ However, it should be noted that the information contained in the attributes is 
 <collection place=““>
 	<item1/>
 	<item2/>
-<collection/>
+</collection>
 
-<place/>
+<place>
 	<collection>
 		<item1/>
 		<item2/>
 	</collection>
 </place>
 ```
+
 The indentation (using a tab) describes the hierarchy level. The collection is assigned to the location, and the items below it are on the same hierarchy level. The structure depends on the purpose of the collection and the data to be collected. 
 
 The slash here at the end of the tag (self-closing tag) means that the element is empty and self-contained.
