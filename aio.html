@@ -865,7 +865,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The objects searchable in the Met Museum’s online collection
 primarily feature descriptive metadata, such as title, author, date, and
@@ -900,7 +900,7 @@ part of specific projects.</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>It depends on the context wether it is data (the book itself) or
 metadata (title in a library catalogue)</p>
@@ -1416,10 +1416,36 @@ do you notice?</p>
 </section><section><h2 class="section-heading" id="xml-schema">3 XML Schema<a class="anchor" aria-label="anchor" href="#xml-schema"></a>
 </h2>
 <hr class="half-width">
+<p>In the humanities in particular, there are standards for annotating
+data in XML. This ensures that data is available in a standardised form
+and is therefore interoperable. In XML, this is done by creating a
+schema. An XML Schema describes the structure of an XML document and
+establishes rules for annotating its content. The structure is
+essentially the same as XML. A schema is stored in the .xsd (XML Schema
+Definition) file format. It is characterised by the use of xs:schema as
+the container element for the whole document. Xs denotes the namespace
+for the schema (remember not to use : in XML tags, it is reserved for
+that!)</p>
+<div class="codewrapper sourceCode" id="cb12">
+<h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a>&lt;<span class="kw">xs:schema</span>&gt;</span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a>&lt;/<span class="kw">xs:schema</span>&gt;</span></code></pre>
+</div>
+<p>A simple XML element is defined in the schema by the specification
+xs:element and the attributes name and type. Additional attributes may
+be set.</p>
+<div class="codewrapper sourceCode" id="cb13">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“descriptive</span> <span class="er">name“</span> <span class="er">type=“string“&gt;</span></span></code></pre>
+</div>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- --></section><div class="footnotes footnotes-end-of-document">
+ -->
+</section><div class="footnotes footnotes-end-of-document">
 <hr>
 <ol>
 <li id="fn1"><p>1<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
