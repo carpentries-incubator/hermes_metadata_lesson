@@ -78,7 +78,6 @@ Possible sources of error and problems that can occur and should be discussed ar
 The CSV (comma-separated values) format in this example is usually opened as a table in a spreadsheet so that it can be read by humans in a structured way. If you open the format in a text editor, you can see the structure of the file. 
 
 ```
-
 ID;artist;title;date
 1;Salvador Dalí;The persistence of memory;1931
 2;Walker Evans;Allie Mae Burroughs, Wife of a Cotton Sharecropper, Hale County, Alabama;1936
@@ -87,7 +86,6 @@ ID;artist;title;date
 5;Berthe Morisot;The psyche mirror;1876
 1;Georgia O’Keeffe;Sky above clouds IV;1965
 3;Banksy;Girl with Ballon;2002
-
 ```
 
 When you opened the file in the last exercise, some parameters were queried before you could even open it. Here we can see why:
@@ -121,12 +119,10 @@ An XML document contains XML elements to structure the data. They are formed usi
 
 The tags are given a name that describes the content:
 
-```
-
+```xml
 <photographer>Walker Evans</photographer> 
 <name>Walker Evans</name>
 <artist>Walker Evans</artist>
-
 ```
 
 You may be familiar with this structure. The HTML language, which is used to organize web pages, has a similar structure. It is also based on SGML. HTML makes it possible to mark up the typical elements of a text-oriented document - such as headings, paragraphs, lists, or tables - as such on a web page and to structure the page semantically. 
