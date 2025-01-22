@@ -1,7 +1,7 @@
 ---
 title: "Data"
 teaching: 30
-exercises: 0
+exercises: 1
 ---
 
 ::: questions 
