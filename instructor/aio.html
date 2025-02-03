@@ -430,7 +430,7 @@ reinforce the objectives.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Inline instructor notes can help inform instructors of timing
 challenges associated with the lessons. They appear in the “Instructor
@@ -958,7 +958,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-metadataformats"><p>Content from <a href="metadataformats.html">Metadata formats</a></p>
 <hr>
-<p>Last updated on 2025-01-22 |
+<p>Last updated on 2025-02-03 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/metadataformats.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 125 minutes</p>
@@ -1138,317 +1138,6 @@ meta-language, which contains the basic concepts of markup languages,
 such as elements and attributes, and the rules for their use, the
 various markup languages are used to structure and format text and data
 in a machine-readable way.</p>
-</section><section><h2 class="section-heading" id="xml">2 XML<a class="anchor" aria-label="anchor" href="#xml"></a>
-</h2>
-<hr class="half-width">
-<p>One of the most widely used metadata formats in the cultural sector
-is XML (eXtensible Markup Language). It is used to describe, structure,
-hierarchise (if desired), store and transport data. XML refers to the
-file format and structure in which data is recorded.</p>
-<div class="section level4">
-<h4 id="xml-elements">XML elements<a class="anchor" aria-label="anchor" href="#xml-elements"></a>
-</h4>
-<p>An XML document contains XML elements to structure the data. They are
-formed using angle brackets and are divided into an opening tag and a
-closing tag, indicated by a leading slash. The content is placed in
-between.</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>&lt;<span class="kw">tag</span>&gt;element&lt;/<span class="kw">tag</span>&gt;</span></code></pre>
-</div>
-<p>The tags are given a name that describes the content:</p>
-<div class="codewrapper sourceCode" id="cb4">
-<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>&lt;<span class="kw">photographer</span>&gt;Walker Evans&lt;/<span class="kw">photographer</span>&gt; </span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>&lt;<span class="kw">name</span>&gt;Walker Evans&lt;/<span class="kw">name</span>&gt;</span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>&lt;<span class="kw">artist</span>&gt;Walker Evans&lt;/<span class="kw">artist</span>&gt;</span></code></pre>
-</div>
-<p>You may be familiar with this structure. The HTML language, which is
-used to organize web pages, has a similar structure. It is also based on
-SGML. HTML makes it possible to mark up the typical elements of a
-text-oriented document - such as headings, paragraphs, lists, or tables
-- as such on a web page and to structure the page semantically.</p>
-<div id="semantics" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="semantics" class="callout-inner">
-<h3 class="callout-title">Semantics</h3>
-<div class="callout-content">
-<p>Semantics examines the meaning of characters such as words, phrases,
-or symbols. Semantically correct HTML gives meaning to content.</p>
-</div>
-</div>
-</div>
-<p>Unlike HTML, where there are rules for naming tags - such as
-&lt;h1&gt;&lt;/h1&gt; for heading - XML tags can be named freely, except
-for a few technical rules. This makes it particularly interesting for
-use in the development of metadata standards and ontologies.</p>
-<div id="metadata-standards-and-ontologies" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="metadata-standards-and-ontologies" class="callout-inner">
-<h3 class="callout-title">Metadata Standards and Ontologies</h3>
-<div class="callout-content">
-<p>Metadata standards are rules for how research data should be
-annotated, described, and stored in a format. For example, they specify
-the naming of tags if the data is stored in XML. They also govern the
-hierarchy of data or the relationships between data. More on this
-later.</p>
-<p>Ontologies are linguistically and formally organized representations
-of concepts and the relationships between them in a given domain. In the
-cultural heritage field in particular, they specify the presentation of
-object data so that it can be placed in larger contexts. Ontologies are
-used to model and standardize information.</p>
-</div>
-</div>
-</div>
-<p>XML also provides the ability to have comments that are not
-automatically read:</p>
-<div class="codewrapper sourceCode" id="cb5">
-<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="co">&lt;!-- Here is the content of the comment, there is no closing tag </span><span class="er">--</span><span class="co"> &gt;</span></span></code></pre>
-</div>
-</div>
-<div class="section level4">
-<h4 id="rules-for-naming-tags">Rules for naming tags<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>
-<a class="anchor" aria-label="anchor" href="#rules-for-naming-tags"></a>
-</h4>
-<p>Names:</p>
-<ul>
-<li>Must start with a letter or underscore.</li>
-<li>Cannot start with the letters xml (or XML, or Xml, etc).</li>
-<li>Can contain letters, digits, hyphens, underscores, and periods.</li>
-<li>Cannot contain spaces.</li>
-</ul>
-<p>Best Naming Practices:</p>
-<ul>
-<li>Create descriptive names.</li>
-<li>Create short and simple names.</li>
-<li>Avoid - / . / : in the names, e.g. &lt;first-name&gt;, and be aware
-that : is reserved for namespaces which have a special function.</li>
-</ul>
-<p>In XML, all elements must be properly nested within each other, which
-means that an element opened inside another element must be closed
-inside too:</p>
-<div class="codewrapper sourceCode" id="cb6">
-<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>&lt;<span class="kw">collection</span>&gt;&lt;<span class="kw">place</span>&gt;collection of the MET in New York&lt;/<span class="kw">place</span>&gt;&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
-</div>
-</div>
-<div class="section level4">
-<h4 id="attributes">Attributes<a class="anchor" aria-label="anchor" href="#attributes"></a>
-</h4>
-<p>In XML, as in HTML, tags can also be assigned attributes, which
-define the content of the tags in more detail. They are named and the
-content is assigned to them with a = and enclosed in quotes:</p>
-<div class="codewrapper sourceCode" id="cb7">
-<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>&lt;<span class="kw">title</span><span class="ot"> lang=</span><span class="st">"author's original language"</span>&gt;Always give the title in the author's language&lt;/<span class="kw">title</span>&gt;</span>
-<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>&lt;<span class="kw">commonTitle</span><span class="ot"> lang=</span><span class="st">"title as commonly known"</span>&gt;Always give the title as it is commonly known&lt;/<span class="kw">commonTitle</span>&gt;</span></code></pre>
-</div>
-<p>There are some rules for characters used in XML for structure. They
-are replaced by a special character string, so that it won’t cause
-problems if, for example, you want to use a &lt; in the content. This
-would cause an error because XML expects a closing tag. To avoid errors,
-the character is replaced with an entity reference:</p>
-<table class="table">
-<thead><tr class="header">
-<th>string</th>
-<th>character</th>
-<th>meaning</th>
-<th></th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>&amp;lt;</td>
-<td>&lt;</td>
-<td>less than</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>&amp;gt;</td>
-<td>&gt;</td>
-<td>greater than</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>&amp;amp;</td>
-<td>&amp;</td>
-<td>ampersand</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>&amp;apos;</td>
-<td>’</td>
-<td>apostrophe</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>&amp;quot;</td>
-<td>”</td>
-<td>quotation mark</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Attributes are also frequently used in a hierarchy to record
-information that applies to all underlying data:</p>
-<div class="codewrapper sourceCode" id="cb8">
-<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>&lt;<span class="kw">items</span><span class="ot"> collection=</span><span class="st">"archives_collection"</span><span class="ot"> place=</span><span class="st">"location"</span>&gt;</span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>	&lt;<span class="kw">item1</span>/&gt;</span>
-<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>	&lt;<span class="kw">item2</span>/&gt;</span>
-<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>&lt;/<span class="kw">items</span>&gt;</span></code></pre>
-</div>
-<p>However, it should be noted that the information contained in the
-attributes is more likely to be seen as metadata related to the content.
-In this example, it may be worth creating the information about the
-collection and its location as separate tags above the items.</p>
-<div class="codewrapper sourceCode" id="cb9">
-<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>&lt;<span class="kw">collection</span><span class="ot"> place=</span><span class="st">"New York"</span>&gt;</span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>	&lt;<span class="kw">item1</span>/&gt;</span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>	&lt;<span class="kw">item2</span>/&gt;</span>
-<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a>&lt;/<span class="kw">collection</span>&gt;</span>
-<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a>&lt;<span class="kw">place</span>&gt;</span>
-<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>	&lt;<span class="kw">collection</span>&gt;</span>
-<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>		&lt;<span class="kw">item1</span>/&gt;</span>
-<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a>		&lt;<span class="kw">item2</span>/&gt;</span>
-<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a>	&lt;/<span class="kw">collection</span>&gt;</span>
-<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a>&lt;/<span class="kw">place</span>&gt;</span></code></pre>
-</div>
-<p>The indentation (using a tab) describes the hierarchy level. The
-collection is assigned to the location, and the items below it are on
-the same hierarchy level. The structure depends on the purpose of the
-collection and the data to be collected.</p>
-<p>The slash here at the end of the tag (self-closing tag) means that
-the element is empty and self-contained.</p>
-<div id="callout4" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout</h3>
-<div class="callout-content">
-<p>In HTML, attributes often contain style information, such as the font
-color or the size and width of a section. This is also where the alt tag
-is created, which contains an alternative text to an image that is
-automatically read or displayed if the image cannot be retrieved:</p>
-<div class="codewrapper sourceCode" id="cb10">
-<h3 class="code-label">HTML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode html" tabindex="0"><code class="sourceCode html"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:blue;"</span><span class="ot"> width</span><span class="op">=</span><span class="st">"300"</span><span class="ot"> height</span><span class="op">=</span><span class="st">"500"</span><span class="dt">&gt;</span>This is a blue paragraph.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
-<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"image.jpg"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">"a girl with a pearl earring is standing in front of a house"</span><span class="dt">&gt;&lt;/</span><span class="kw">image</span><span class="dt">&gt;</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<p>At the top of an XML document you will often find something called a
-prolog:</p>
-<div class="codewrapper sourceCode" id="cb11">
-<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span></code></pre>
-</div>
-<p>It is optional, but provides information about the version and
-encoding used, and must be at the top if included.</p>
-<div id="callout5" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout</h3>
-<div class="callout-content">
-<p>XML documents that conform to this syntax rules are said to be “Well
-Formed” XML documents.</p>
-</div>
-</div>
-</div>
-<div id="encoding" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="encoding" class="callout-inner">
-<h3 class="callout-title">Encoding</h3>
-<div class="callout-content">
-<p>In data processing, characters are encoded with a numerical value for
-transmission or storage (!Remember the rules for character we have just
-learned). Character encoding allows characters and symbols to be
-uniquely assigned within a character set. There are different character
-encodings, so it is important to know which one is being used. For
-example, the German Ü may be encoded with the decimal value 220 in one
-character set, while the same value in another character set encodes the
-curly bracket. To ensure that the data is displayed correctly when used,
-the form of encoding has to be specified. UTF-8 and UTF-16 are among the
-most common character sets you may encounter when processing data.</p>
-</div>
-</div>
-</div>
-<div id="exercise" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="exercise" class="callout-inner">
-<h3 class="callout-title">Exercise</h3>
-<div class="callout-content">
-<p>Open the xxxx.csv file. Use the given data and write it in an XML
-format.</p>
-</div>
-</div>
-</div>
-<div id="accordionHint1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
-  <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
-</button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
-<div class="accordion-body">
-<ul>
-<li>Think about the headings in the spreadsheet. Do you agree with this
-labelling?</li>
-<li>You can use tabs to create a hierarchy.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
-</button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
-<div class="accordion-body">
-<p>Here to place a xml code block with 1 or 2 examples and the note that
-there is not one right solution</p>
-</div>
-</div>
-</div>
-</div>
-<div id="discussion" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<div id="discussion" class="callout-inner">
-<h3 class="callout-title">Discussion</h3>
-<div class="callout-content">
-<p>Compare your XML with the documents of the other participants. What
-do you notice?</p>
-</div>
-</div>
-</div>
-</div>
 </section><section><h2 class="section-heading" id="xml-schema">3 XML Schema<a class="anchor" aria-label="anchor" href="#xml-schema"></a>
 </h2>
 <hr class="half-width">
@@ -1462,29 +1151,29 @@ Definition) file format. It is characterised by the use of xs:schema as
 the container element for the whole document. Xs denotes the namespace
 for the schema (remember not to use : in XML tags, it is reserved for
 that!)</p>
-<div class="codewrapper sourceCode" id="cb12">
+<div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a>&lt;<span class="kw">xs:schema</span>&gt;</span>
-<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a>&lt;/<span class="kw">xs:schema</span>&gt;</span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>&lt;<span class="kw">xs:schema</span>&gt;</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>&lt;/<span class="kw">xs:schema</span>&gt;</span></code></pre>
 </div>
 <p>A simple XML element is defined in the schema by the specification
 xs:element and the attributes name and type. Additional attributes may
 be set.</p>
-<div class="codewrapper sourceCode" id="cb13">
+<div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“descriptive</span> <span class="er">name“</span> <span class="er">type=“string“&gt;</span></span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“descriptive</span> <span class="er">name“</span> <span class="er">type=“string“&gt;</span></span></code></pre>
 </div>
 <p>For example, we can specify that a place is always called place and
 that the character type of the content is a string. This specification
 prevents the tag from being sometimes called place, sometimes location
 or even city:</p>
-<div class="codewrapper sourceCode" id="cb14">
+<div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“place“</span> <span class="er">type=“string“/&gt;</span></span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“place“</span> <span class="er">type=“string“/&gt;</span></span></code></pre>
 </div>
 <p>This defines the &lt;place&gt; XML tag such as &lt;place&gt;New
 York&lt;/place&gt;.</p>
@@ -1504,17 +1193,17 @@ floating point numbers are allowed.</p>
 </div>
 </div>
 <p>Content restrictions can be set using facets:</p>
-<div class="codewrapper sourceCode" id="cb15">
+<div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"age"</span>&gt;</span>
-<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a>  &lt;<span class="kw">xs:simpleType</span>&gt;</span>
-<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a>    &lt;<span class="kw">xs:restriction</span><span class="ot"> base=</span><span class="st">"xs:integer"</span>&gt;</span>
-<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a>      &lt;<span class="kw">xs:minInclusive</span><span class="ot"> value=</span><span class="st">"0"</span>/&gt;</span>
-<span id="cb15-5"><a href="#cb15-5" tabindex="-1"></a>      &lt;<span class="kw">xs:maxInclusive</span><span class="ot"> value=</span><span class="st">"120"</span>/&gt;</span>
-<span id="cb15-6"><a href="#cb15-6" tabindex="-1"></a>    &lt;/<span class="kw">xs:restriction</span>&gt;</span>
-<span id="cb15-7"><a href="#cb15-7" tabindex="-1"></a>  &lt;/<span class="kw">xs:simpleType</span>&gt;</span>
-<span id="cb15-8"><a href="#cb15-8" tabindex="-1"></a>&lt;/<span class="kw">xs:element</span>&gt;</span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"age"</span>&gt;</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>  &lt;<span class="kw">xs:simpleType</span>&gt;</span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>    &lt;<span class="kw">xs:restriction</span><span class="ot"> base=</span><span class="st">"xs:integer"</span>&gt;</span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a>      &lt;<span class="kw">xs:minInclusive</span><span class="ot"> value=</span><span class="st">"0"</span>/&gt;</span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a>      &lt;<span class="kw">xs:maxInclusive</span><span class="ot"> value=</span><span class="st">"120"</span>/&gt;</span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a>    &lt;/<span class="kw">xs:restriction</span>&gt;</span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a>  &lt;/<span class="kw">xs:simpleType</span>&gt;</span>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a>&lt;/<span class="kw">xs:element</span>&gt;</span></code></pre>
 </div>
 <p>With these restrictions, only values from 0 to 120 are allowed in the
 XML.</p>
@@ -1522,10 +1211,10 @@ XML.</p>
 elements can be nested within it, nor can content information be stored
 in attributes. To assign attributes to a tag in XML, this is also
 defined in the schema:</p>
-<div class="codewrapper sourceCode" id="cb16">
+<div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a>&lt;<span class="kw">xs:attribute</span><span class="ot"> name=</span><span class="st">"lang"</span><span class="ot"> type=</span><span class="st">"string"</span><span class="ot"> default=</span><span class="er">“EN“/&gt;</span></span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>&lt;<span class="kw">xs:attribute</span><span class="ot"> name=</span><span class="st">"lang"</span><span class="ot"> type=</span><span class="st">"string"</span><span class="ot"> default=</span><span class="er">“EN“/&gt;</span></span></code></pre>
 </div>
 <p>In the example above an attribute for the language is defined. In the
 absence of a specified language, ‘English’ is assumed as the default
@@ -1536,18 +1225,18 @@ XML element, unless the attribute is specified as &lt;tag
 use=“required“&gt;.</p>
 <p>A complexType is used to provide further information and
 specifications for the definition of a content:</p>
-<div class="codewrapper sourceCode" id="cb17">
+<div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“employee“&gt;</span></span>
-<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a>	<span class="er">&lt;xsd:complexType</span> <span class="er">name=</span><span class="st">"PersonTyp"</span><span class="ot"> abstract=</span><span class="st">"true"</span>&gt; </span>
-<span id="cb17-3"><a href="#cb17-3" tabindex="-1"></a>		&lt;<span class="kw">xsd:sequence</span>&gt; </span>
-<span id="cb17-4"><a href="#cb17-4" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Vorname"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span><span class="ot"> maxOccurs=</span><span class="st">"3"</span>/&gt; </span>
-<span id="cb17-5"><a href="#cb17-5" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Name"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span>/&gt; </span>
-<span id="cb17-6"><a href="#cb17-6" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Geburtsdatum"</span><span class="ot"> type=</span><span class="st">"xsd:date"</span>/&gt; </span>
-<span id="cb17-7"><a href="#cb17-7" tabindex="-1"></a>		&lt;/<span class="kw">xsd:sequence</span>&gt; </span>
-<span id="cb17-8"><a href="#cb17-8" tabindex="-1"></a>	&lt;/<span class="kw">xsd:complexType</span>&gt; </span>
-<span id="cb17-9"><a href="#cb17-9" tabindex="-1"></a><span class="er">&lt;</span>/xsd:element&gt;</span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“employee“&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>	<span class="er">&lt;xsd:complexType</span> <span class="er">name=</span><span class="st">"PersonTyp"</span><span class="ot"> abstract=</span><span class="st">"true"</span>&gt; </span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>		&lt;<span class="kw">xsd:sequence</span>&gt; </span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Vorname"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span><span class="ot"> maxOccurs=</span><span class="st">"3"</span>/&gt; </span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Name"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span>/&gt; </span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Geburtsdatum"</span><span class="ot"> type=</span><span class="st">"xsd:date"</span>/&gt; </span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a>		&lt;/<span class="kw">xsd:sequence</span>&gt; </span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a>	&lt;/<span class="kw">xsd:complexType</span>&gt; </span>
+<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a><span class="er">&lt;</span>/xsd:element&gt;</span></code></pre>
 </div>
 <p>This schema is proposed for the definition of an employee. It is
 imperative that the XML data comprises the subject’s first name, name
@@ -1607,13 +1296,13 @@ a key, followed by a colon, followed by a value. The key is the name –
 the label – for the content in the value field. Keys are always written
 in double quotes. The indication of the value depends on its data type.
 The entire content is enclosed in curly brackets.</p>
-<div class="codewrapper sourceCode" id="cb18">
+<div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode json" tabindex="0"><code class="sourceCode json"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="fu">{</span><span class="er">„name“</span> <span class="fu">:</span> <span class="er">„Kim</span> <span class="er">Sneider“</span><span class="fu">,</span></span>
-<span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a><span class="er">„age“</span> <span class="fu">:</span> <span class="dv">39</span><span class="fu">,</span></span>
-<span id="cb18-3"><a href="#cb18-3" tabindex="-1"></a><span class="er">„children“</span> <span class="fu">:</span> <span class="ot">[</span><span class="er">„Ben“</span><span class="ot">,</span> <span class="er">„Tove“</span><span class="ot">,</span> <span class="er">„Nina“</span><span class="ot">]</span></span>
-<span id="cb18-4"><a href="#cb18-4" tabindex="-1"></a><span class="fu">}</span></span></code></pre>
+<pre class="sourceCode json" tabindex="0"><code class="sourceCode json"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">{</span><span class="er">„name“</span> <span class="fu">:</span> <span class="er">„Kim</span> <span class="er">Sneider“</span><span class="fu">,</span></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="er">„age“</span> <span class="fu">:</span> <span class="dv">39</span><span class="fu">,</span></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="er">„children“</span> <span class="fu">:</span> <span class="ot">[</span><span class="er">„Ben“</span><span class="ot">,</span> <span class="er">„Tove“</span><span class="ot">,</span> <span class="er">„Nina“</span><span class="ot">]</span></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="fu">}</span></span></code></pre>
 </div>
 </div>
 <div class="section level4">
@@ -1714,12 +1403,7 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
 </div>
-</section><div class="footnotes footnotes-end-of-document">
-<hr>
-<ol>
-<li id="fn1"><p>1<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-</ol>
-</div></section>
+</section></section>
 </div>
     </main>
 </div>
