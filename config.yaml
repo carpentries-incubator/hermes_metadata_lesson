@@ -71,6 +71,8 @@ episodes:
 - data.md
 - metadata.md
 - metadataformats.md
+- xml.md
+- json.md
 
 # Information for Learners
 learners: 
