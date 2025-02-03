@@ -64,7 +64,7 @@ XML also provides the ability to have comments that are not automatically read:
 <!-- Here is the content of the comment, there is no closing tag -- >
 ```
 
-#### Rules for naming tags^[1]
+### Rules for naming tags^[1]
 
 Names:
 
@@ -85,7 +85,7 @@ In XML, all elements must be properly nested within each other, which means that
 <collection><place>collection of the MET in New York</place></collection>
 ```
 
-#### Attributes
+### Attributes
 
 In XML, as in HTML, tags can also be assigned attributes, which define the content of the tags in more detail. They are named and the content is assigned to them with a = and enclosed in quotes:
 
