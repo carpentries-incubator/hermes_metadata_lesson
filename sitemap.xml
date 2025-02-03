@@ -61,6 +61,9 @@
     <loc>https://HERMES-DKZ.github.io/metadata_lesson/instructor/introduction.html</loc>
   </url>
   <url>
+    <loc>https://HERMES-DKZ.github.io/metadata_lesson/instructor/json.html</loc>
+  </url>
+  <url>
     <loc>https://HERMES-DKZ.github.io/metadata_lesson/instructor/key-points.html</loc>
   </url>
   <url>
@@ -76,10 +79,16 @@
     <loc>https://HERMES-DKZ.github.io/metadata_lesson/instructor/reference.html</loc>
   </url>
   <url>
+    <loc>https://HERMES-DKZ.github.io/metadata_lesson/instructor/xml.html</loc>
+  </url>
+  <url>
     <loc>https://HERMES-DKZ.github.io/metadata_lesson/instructor-notes.html</loc>
   </url>
   <url>
     <loc>https://HERMES-DKZ.github.io/metadata_lesson/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://HERMES-DKZ.github.io/metadata_lesson/json.html</loc>
   </url>
   <url>
     <loc>https://HERMES-DKZ.github.io/metadata_lesson/key-points.html</loc>
@@ -95,5 +104,8 @@
   </url>
   <url>
     <loc>https://HERMES-DKZ.github.io/metadata_lesson/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://HERMES-DKZ.github.io/metadata_lesson/xml.html</loc>
   </url>
 </urlset>
