@@ -41,10 +41,10 @@ The advantage of using such a format is the interoperability of the data. This m
 ## Challenge
 
 Open the artworks.csv file. 
-    * What do you notice? 
-    * What form does the data take? 
-    * What are the advantages of recording data in tabular form? 
-    * Why is this data operable? 
+    - What do you notice? 
+    - What form does the data take? 
+    - What are the advantages of recording data in tabular form? 
+    - Why is this data operable? 
     
 ::: solution
 
