@@ -1,5 +1,5 @@
 ---
-title: "Metadata formats introduction"
+title: "Introduction to Metadata File Formats"
 teaching: 20
 exercises: 1
 ---
@@ -32,7 +32,7 @@ A simple way to store data in a structured way is using a spreadsheet like Excel
 :::
 :::
 
-In order to store metadata and make it usable in other contexts, appropriate formats are required. The most common file formats in which metadata is stored include XML and JSON. A lot of data is also stored in the more familiar CSV format. 
+In order to store metadata and make it usable in other contexts, appropriate formats are required. The most common file formats in which metadata is stored include XML and JSON. A lot of data is also stored in the more familiar CSV format as a real-life example will show later.
 
 The advantage of using such a format is the interoperability of the data. This means that the data is recorded and stored by one person and can be opened and processed elsewhere, for example extended or integrated into another system, i.e. it can be operated with. Data from different sources can also be merged. 
 
@@ -41,20 +41,24 @@ The advantage of using such a format is the interoperability of the data. This m
 ## Challenge
 
 Open the artworks.csv file. 
+
     - What do you notice? 
-    - What form does the data take? 
+    
+    - What form does the data take?
+    
     - What are the advantages of recording data in tabular form? 
+    
     - Why is this data operable? 
     
 ::: solution
 
 ## Show me the solution
 
-    * Various parameters are queried when opening.
-    * The data is in a tabular form in a spreadsheet available.
-    * The data is structured into individual fields.
-    * Content is named, data is labled/marked up.
-    * The data is available in a digital file format that can be processed and shared.
+    - Various parameters are queried when opening.
+    - The data is in a tabular form in a spreadsheet available.
+    - The data is structured into individual fields.
+    - Content is named, data is labled/marked up.
+    - The data is available in a digital file format that can be processed and shared.
     
 :::
 :::
@@ -78,7 +82,7 @@ ID;artist;title;date
 
 When you opened the file in the last exercise, some parameters were queried before you could even open it. Here we can see why:
 
-The data is separated by delimiters - usually commas or semicolons. The contents of the data fields can be enclosed in quotes. If these parameters are entered correctly when the file is opened, the data is transferred to the appropriate fields in the spreadsheet. The first line often defines the column headings. Individual records are separated by a line break.
+The data is separated by delimiters - usually commas or semicolons. In many files you may find the contents of the data fields enclosed in quotes. If these parameters are entered correctly when the file is opened, the data is transferred to the appropriate fields in the spreadsheet. The first line often defines the column headings. Individual records are separated by a line break.
 
 When entering data into spreadsheets, there are a number of issues to consider to ensure that the data can be processed correctly. In addition to the comma-separated fields mentioned above, which can cause problems, there are many more aspects. Another source of error can be unintentional blank characters, usually at the end of an entry. These need to be considered separately during automated processing. Dates are another major source of error. Different spellings can lead to misinterpretation. How do you interpret the date 25-01-11 when it is written in a single field?
 
