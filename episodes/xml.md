@@ -1,5 +1,5 @@
 ---
-title: "XML"
+title: "XML and XML schema"
 teaching: 60
 exercises: 2
 ---
@@ -7,7 +7,8 @@ exercises: 2
 ::: questions 
 
 - What is XML? 
-- How do you annotate data in XML? 
+- How do you annotate data in XML?
+- What is a XML schema?
 
 :::
 
@@ -15,7 +16,8 @@ exercises: 2
 
 - Knowledge of XML format for storing and processing metadata. 
 - Familiar with the structure of a simple XML file. 
-- Able to write extracted metadata in a simple XML format. 
+- Able to write extracted metadata in a simple XML format.
+- Knowledge of a XML schema ans its elements. 
 :::
 
 ## XML
@@ -192,4 +194,71 @@ Compare your XML with the documents of the other participants. What do you notic
 :::
  
 [1]: <https://www.w3schools.com/xml/xml_elements.asp>  
+
+## XML Schema
+
+In the humanities in particular, there are standards for annotating data in XML. This ensures that data is available in a standardised form and is therefore interoperable. In XML, this is done by creating a schema. An XML Schema describes the structure of an XML document and establishes rules for annotating its content. The structure is essentially the same as XML. A schema is stored in the .xsd (XML Schema Definition) file format. It is characterised by the use of xs:schema as the container element for the whole document. Xs denotes the namespace for the schema (remember not to use : in XML tags, it is reserved for that!) 
+
+```xsd
+<xs:schema>
+
+</xs:schema>
+```
+A simple XML element is defined in the schema by the specification xs:element and the attributes name and type. Additional attributes may be set.
+
+```xsd
+<xs:element name=“descriptive name“ type=“string“>
+```
+For example, we can specify that a place is always called place and that the character type of the content is a string. This specification prevents the tag from being sometimes called place, sometimes location or even city: 
+```xsd
+<xs:element name=“place“ type=“string“/>
+```
+This defines the \<place\> XML tag such as \<place\>New York\</place\>. 
+
+::: callout
+
+## String
+
+In computing, a string is a data type that contains a string of characters of fixed or variable length. It is mainly used to store words, sentences and whole texts. Other data types, for example for numbers, are integer or float. This specifies whether whole numbers or floating point numbers are allowed. 
+:::
+
+Content restrictions can be set using facets:
+```xsd
+<xs:element name="age">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="120"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+```
+With these restrictions, only values from 0 to 120 are allowed in the XML. 
+
+A simple element contains only one piece of information. No other elements can be nested within it, nor can content information be stored in attributes. To assign attributes to a tag in XML, this is also defined in the schema:
+```xsd
+<xs:attribute name="lang" type="string" default=“EN“/>
+```
+In the example above an attribute for the language is defined. In the absence of a specified language, 'English' is assumed as the default value. The attribute is specified with a fixed value, thus allowing for the specification of 'English' as the only permitted language. It should be noted that all attributes are optional by default when creating the XML element, unless the attribute is specified as \<tag use=“required“\>. 
+
+A complexType is used to provide further information and specifications for the definition of a content:
+``` xsd
+<xs:element name=“employee“>
+	<xsd:complexType name="PersonTyp" abstract="true"> 
+		<xsd:sequence> 
+			<xsd:element name="Vorname" type="xsd:string" maxOccurs="3"/> 
+			<xsd:element name="Name" type="xsd:string"/> 
+			<xsd:element name="Geburtsdatum" type="xsd:date"/> 
+		</xsd:sequence> 
+	</xsd:complexType> 
+</xsd:element>
+```
+This schema is proposed for the definition of an employee. It is imperative that the XML data comprises the subject's first name, name and date of birth. The employment of the \<xsd:sequence\> element stipulates that the data must be entered in the sequence delineated herein. This particular tag is designated as an 'indicator'. Note that there are other indicators that regulate various aspects, including the number of occurrences permitted for elements, the designation of elements as mandatory, and other related parameters. Other forms of elements are available to regulate the structure of an XML schema. An XML that conforms to a schema is called valid. 
+
+::: callout
+
+## Reference
+
+You can find tutorials on XML and XSD as well as the follwing topic on the webdevelopment portal [W3Schools](https://www.w3schools.com/). The tutorials have a built-in text editor, and people can try out the examples directly on the web page.
+:::
 
