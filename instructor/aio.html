@@ -292,7 +292,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="metadataformats.html">5. Metadata formats introduction</a>
+        <a href="metadataformats.html">5. Introduction to Metadata File Formats</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -454,7 +454,7 @@ reinforce the objectives.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Inline instructor notes can help inform instructors of timing
 challenges associated with the lessons. They appear in the “Instructor
@@ -909,7 +909,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The objects searchable in the Met Museum’s online collection
 primarily feature descriptive metadata, such as title, author, date, and
@@ -944,7 +944,7 @@ part of specific projects.</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>It depends on the context wether it is data (the book itself) or
 metadata (title in a library catalogue)</p>
@@ -980,7 +980,7 @@ with both.</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section><section id="aio-metadataformats"><p>Content from <a href="metadataformats.html">Metadata formats introduction</a></p>
+</section></section><section id="aio-metadataformats"><p>Content from <a href="metadataformats.html">Introduction to Metadata File Formats</a></p>
 <hr>
 <p>Last updated on 2025-02-03 |
 
@@ -1037,7 +1037,7 @@ way?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>A simple way to store data in a structured way is using a spreadsheet
 like Excel.</p>
@@ -1048,7 +1048,7 @@ like Excel.</p>
 <p>In order to store metadata and make it usable in other contexts,
 appropriate formats are required. The most common file formats in which
 metadata is stored include XML and JSON. A lot of data is also stored in
-the more familiar CSV format.</p>
+the more familiar CSV format as a real-life example will show later.</p>
 <p>The advantage of using such a format is the interoperability of the
 data. This means that the data is recorded and stored by one person and
 can be opened and processed elsewhere, for example extended or
@@ -1061,9 +1061,18 @@ different sources can also be merged.</p>
 <div id="challenge" class="callout-inner">
 <h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
-<p>Open the artworks.csv file. - What do you notice? - What form does
-the data take? - What are the advantages of recording data in tabular
-form? - Why is this data operable?</p>
+<p>Open the artworks.csv file.</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">-</span> What do you notice<span class="pp">?</span> </span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ex">-</span> What form does the data take<span class="pp">?</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="ex">-</span> What are the advantages of recording data in tabular form<span class="pp">?</span> </span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="ex">-</span> Why is this data operable<span class="pp">?</span> </span></code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -1072,16 +1081,16 @@ form? - Why is this data operable?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb1">
+<div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">*</span> Various parameters are queried when opening.</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="ex">*</span> The data is in a tabular form in a spreadsheet available.</span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ex">*</span> The data is structured into individual fields.</span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="ex">*</span> Content is named, data is labled/marked up.</span>
-<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="ex">*</span> The data is available in a digital file format that can be processed and shared.</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">-</span> Various parameters are queried when opening.</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="ex">-</span> The data is in a tabular form in a spreadsheet available.</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="ex">-</span> The data is structured into individual fields.</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="ex">-</span> Content is named, data is labled/marked up.</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="ex">-</span> The data is available in a digital file format that can be processed and shared.</span></code></pre>
 </div>
 </div>
 </div>
@@ -1092,7 +1101,7 @@ form? - Why is this data operable?</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Possible sources of error and problems that can occur and should be
 discussed are the separators. A title with commas was intentionally
@@ -1118,11 +1127,11 @@ structure of the file.</p>
 <p>When you opened the file in the last exercise, some parameters were
 queried before you could even open it. Here we can see why:</p>
 <p>The data is separated by delimiters - usually commas or semicolons.
-The contents of the data fields can be enclosed in quotes. If these
-parameters are entered correctly when the file is opened, the data is
-transferred to the appropriate fields in the spreadsheet. The first line
-often defines the column headings. Individual records are separated by a
-line break.</p>
+In many files you may find the contents of the data fields enclosed in
+quotes. If these parameters are entered correctly when the file is
+opened, the data is transferred to the appropriate fields in the
+spreadsheet. The first line often defines the column headings.
+Individual records are separated by a line break.</p>
 <p>When entering data into spreadsheets, there are a number of issues to
 consider to ensure that the data can be processed correctly. In addition
 to the comma-separated fields mentioned above, which can cause problems,
