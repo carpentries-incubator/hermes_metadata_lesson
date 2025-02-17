@@ -324,6 +324,18 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush9">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading9">
+        <a href="introduction_standards.html">8. Introduction to Metadata Standards and Schemas</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -1446,7 +1458,7 @@ format.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <ul>
 <li>Think about the headings in the spreadsheet. Do you agree with this
@@ -1462,7 +1474,7 @@ labelling?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Here to place a xml code block with 1 or 2 examples and the note that
 there is not one right solution</p>
@@ -1792,6 +1804,150 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
 </div>
+</section></section><section id="aio-introduction_standards"><p>Content from <a href="introduction_standards.html">Introduction to Metadata Standards and Schemas</a></p>
+<hr>
+<p>Last updated on 2025-02-17 |
+
+        <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/introduction_standards.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What is a metadata standard?</li>
+<li>What is a metadata schema?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Knowledge of the terms metadata standard and metadata schema.</li>
+<li>Familiar with the basic ideas of standards and schemas.</li>
+<li>Familiar with the basic concepts and data relationships for
+standards and schemas.<br>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</h2>
+<hr class="half-width">
+<p>The terms <em>metadata standard</em>, <em>metadata schema</em>, and
+<em>metadata model</em> are often used synonymously. The following is an
+attempt to differentiate between the terms <em>metadata standard</em>
+and <em>metadata schema</em>. The term <em>model</em> can be used
+synonymously with <em>schema</em>. However, it must be emphasized that
+this is not a universal claim; rather, it is intended to facilitate a
+better understanding of the structures of data standardization, as there
+are no universally accepted definitions of these terms.</p>
+<p>A metadata standard is defined by its function, which is to describe
+how data should be annotated. Each element or data field is uniquely
+named (e.g., author, title, etc.), specified by rules in the form of
+attributes (e.g., data type), and placed within a selected structure.
+This provides a basic description and organization of the data, thus
+standardizing it.</p>
+<p>The term <em>metadata schema</em> is mostly used for structuring data
+within a specific context, and there are countless standards for every
+discipline or specific purpose. During the development stage, an
+existing metadata standard can be integrated. Its rules then apply to
+the metadata fields, which are in turn placed within a larger context.
+For example, the data field standard for a person can be defined,
+according to extended rules, as an architect for a building or as a
+photographer for a photograph. With this classification, the photography
+of a building can be described more precisely: the photographer Lisa
+Miller photographed the Eiffel Tower of the architect Gustav Eiffel. The
+application of these rules is consistent across all individuals in the
+data set, with their classification occurring within the context of
+their respective functions or roles. Consequently, a schema positions
+the data within a desired context, thereby establishing the
+relationships between the data.</p>
+<p>In this context, the term “conceptual model” is frequently employed.
+Conceptual models, also referred to as semantic data models, are
+typically abstractions of real-world entities. They are utilized to
+formally articulate the data of a collection or a specialized domain in
+an abstract manner. An exemplar of such a model is the
+entity-relationship model, which delineates the relationship between two
+data entities. To illustrate, the relationship between the entity of the
+author “Franz Kafka” and the entity of the book “The Process” is defined
+by the relationship “has written”. This relationship has the advantage
+of enabling flexible interlinking of data. Additionally, the entity of
+the book can be linked to the entity of the publisher by the
+relationship “has published”.</p>
+<figure><img src="LINK" title="graphic on entity-relationship" alt="graphic" class="figure mx-auto d-block"><div class="figcaption">graphic</div>
+</figure><p>The data is modeled in the form of so-called triples. A triple
+consists of a subject, an object, and a predicate. The predicate
+describes the relationship between the subject and the object: author
+(subject) has written (predicate) book (object). An object can become
+the subject for another triple, and vice versa, as the above example
+illustrates.</p>
+<p>This approach is predominantly utilized in the domain of the semantic
+web, serving as the foundational framework for linked open data, which
+aims to achieve the maximum degree of interconnection among data
+records. The entities in this context are equipped with unique
+identifiers in the metadata, which in turn represent entities that
+possess their own metadata. To illustrate, an entity can be delineated
+by its identifier in the context of the Wikimedia Foundation’s knowledge
+base, known as “Wikidata.” By establishing these links, the data
+available in this repository is utilized indirectly.</p>
+<div id="exercise" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise" class="callout-inner">
+<h3 class="callout-title">Exercise:</h3>
+<div class="callout-content">
+<p>Discuss the following graphic in small groups. What is shown?</p>
+<figure><img src="LINK" title="graphic on entity-relationship" alt="graphic" class="figure mx-auto d-block"><div class="figcaption">graphic</div>
+</figure>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>Not only the name of the author entity, but also its identifier of
+the GND database is included. The Gemeinsame Normdatei, maintained by
+the German National Library, is a comprehensive database that describes
+persons, corporate bodies, conferences, geographies, subject headings,
+and works. Within the GND, the author entity is also a metadata entity,
+containing biographical data. Linking these two entities consolidates
+their data into a single record, eliminating the need for separate
+recording. The publication also has a data record in the GND, and this
+entity is linked to all the metadata associated with the publication,
+such as the year of publication.In this example, the publisher has a
+separate entity in the form of a “Wikidata” record to which it is
+linked. The metadata in this entity contains information about the
+publisher’s location, which is linked to an identifier.In this example,
+it is the TGN ID. The Getty Thesaurus of Geographic Names (TGN) serves
+as a standards database for geographic names, recording various
+spellings, including historical ones, as well as coordinates and country
+affiliation, among other attributes. This creates a network of data that
+can be expanded as required, depending on the availability of data.</p>
+</div>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
 </section></section>
 </div>
     </main>
