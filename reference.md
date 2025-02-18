@@ -4,6 +4,8 @@ title: 'Reference'
 
 ## Refrences
 
+Weller, Katrin. Knowledge Representation in the Social Semantic Web. De Gruyter Saur, 2010
+
 Terras, Melissa, Nyhan, Julianne, & Vanhoutte, Edward (Eds.). Defining Digital Humanities: A Reader. Routledge, 2013.
 
 ## Glossary
