@@ -16,6 +16,7 @@ exercises: 3
 - Knowledge of the basics of the Dublin Core Metadata Element Set. 
 - Familiar with the difference between a simple Dublin Core Set and a qualified set.
 :::
+:::
 
 ## Dublin Core Metadata Element Set
 
