@@ -4,13 +4,12 @@ title: 'Reference'
 
 ## Glossary
 
-This is a placeholder file. Please add content here. 
 
 The terms listed here are defined solely within this context and do not claim to be comprehensive, particularly regarding ongoing debates and potential controversies surrounding their scope.
 
-•	Authenticity – The debate over the authenticity and originality of digitized objects or texts.
-•	Authorship – Issues of authorship in the digital age, particularly concerning remixing, collaboration, and the use of algorithms.
-•	Cataloguing – The process of recording, describing, and systematizing data through metadata, particularly in libraries, archives, museums, and databases.
+**Authenticity** – The debate over the authenticity and originality of digitized objects or texts.
+**Authorship** – Issues of authorship in the digital age, particularly concerning remixing, collaboration, and the use of algorithms.
+**Cataloguing** – The process of recording, describing, and systematizing data through metadata, particularly in libraries, archives, museums, and databases.
 •	Computational Analysis – Digital methods for examining data, including machine learning and data visualization.
 •	Data Accessibility – The availability and usability of data for research and public use, especially through digital platforms and repositories.
 •	Data Integrity – Ensuring the accuracy, consistency, and reliability of data throughout its lifecycle.
