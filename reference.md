@@ -2,6 +2,10 @@
 title: 'Reference'
 ---
 
+## Refrences
+
+Terras, Melissa, Nyhan, Julianne, & Vanhoutte, Edward (Eds.). Defining Digital Humanities: A Reader. Routledge, 2013.
+
 ## Glossary
 
 
