@@ -76,7 +76,7 @@ field and why? Is there any information you are missing to fill in the fields? I
 
 This could be one of many possible solutions. 
 
-::: 
+::: challenge
 
 ### Discussion
 
@@ -104,7 +104,7 @@ dc.date.available or dc.date.issued
 
 Which of the elements you have just worked on that you could not assign clearly or at all would you expand with a qualifier and how? 
 
-::: 
+::: solution
 
 ### Examples
 
