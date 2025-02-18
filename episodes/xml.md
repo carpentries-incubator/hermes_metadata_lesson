@@ -193,7 +193,7 @@ Compare your XML with the documents of the other participants. What do you notic
 
 :::
  
-[1]: <https://www.w3schools.com/xml/xml_elements.asp>  
+[1]: [w3school: XML elements](https://www.w3schools.com/xml/xml_elements.asp>)  
 
 ## XML Schema
 
@@ -259,6 +259,6 @@ This schema is proposed for the definition of an employee. It is imperative that
 
 ## Reference
 
-You can find tutorials on XML and XSD as well as the follwing topic on the webdevelopment portal [W3Schools](https://www.w3schools.com/). The tutorials have a built-in text editor, and people can try out the examples directly on the web page.
+You can find tutorials on XML and XSD as well as the follwing topic on the webdevelopment portal [W3Schools](https://www.w3schools.com/). 
 :::
 
