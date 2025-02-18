@@ -76,5 +76,17 @@ as well as coordinates and country affiliation, among other attributes. This cre
 :::
 :::
 
+::: challenge 
+
+### Data Value Standards
+
+These standards provide controlled vocabularies, thesauri (hierarchical lists of related terms), and authority files (lists of standardized names or terms for entities such as authors, artists, or organizations) to ensure consistency in the terms used for describing resources (e.g., Getty Art & Architecture Thesaurus, Virtual International Authority File – VIAF).  
+Value standards are vital for enhancing discoverability and ensuring that metadata entries are consistent and accurate across different datasets and systems.
+:::
+
+Collections of cultural heritage objects are frequently characterized by significant heterogeneity in terms of their content, age, retro-digitization methods, and associated data acquisition processes. The nature and extent of the recorded metadata also exhibit considerable variation across collections. Variations in data acquisition and storage practices further contribute to the heterogeneity observed. However, the objective of consolidating collections into online portals for enhanced visibility and accessibility necessitates the implementation of data standardization to a maximum extent feasible.
+
+Standardization is necessary from a technical point of view in order to import data into corresponding portals. It also helps research to ensure comparability across large quantities of objects. However, standardizing large amounts of data from a wide variety of collections is costly in terms of time, money, and human resources, which are often in short supply. For this reason, minimum requirements for metadata have been discussed in recent years. A minimum data set developed in Germany will be briefly presented here. 
+
 
  
