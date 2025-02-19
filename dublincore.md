@@ -37,6 +37,7 @@ the simple version of the set consists of 15 core elements for describing a reso
 * Subject
 * Title
 * Type
+  
 All fields are optional, not mandatory, can appear multiple times, and, unlike other metadata standards or schemas, can appear in any order. 
 Dublin Core defines the metadata fields themselves, but not the structure for them, which is why it is often integrated with structuring standards such as METS. 
 
@@ -75,16 +76,18 @@ field and why? Is there any information you are missing to fill in the fields? I
 * type: Gelatin silver print
 
 This could be one of many possible solutions. 
+:::
+:::
 
-::: challenge
+::: discussion
 
 ### Discussion
 
 What did you discuss? What data was unclear? 
 
 :::
-:::
-:::
+
+
 
 This initial simple indexing of data using Dublin Core can be extended to more precise information. After all, how do we know which date is meant? The date of creation? The date of submission? 
 
