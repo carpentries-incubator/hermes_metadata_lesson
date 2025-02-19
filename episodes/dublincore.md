@@ -75,6 +75,7 @@ field and why? Is there any information you are missing to fill in the fields? I
 * type: Gelatin silver print
 
 This could be one of many possible solutions. 
+:::
 
 ::: challenge
 
