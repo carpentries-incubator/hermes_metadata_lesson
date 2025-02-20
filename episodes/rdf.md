@@ -13,6 +13,7 @@ exercises: 15
 
 - Knowledge of the basics of the Resource Description Framework (RDF). 
 :::
+:::
 
 RDF was originally conceived by the World Wide Web Consortium (W3C) as a standard for describing metadata. 
 It is now considered a fundamental building block of the Semantic Web and is similar to the classical methods 
