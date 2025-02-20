@@ -16,7 +16,7 @@ Objectives:
 - Recognize the role of metadata in the humanities
 :::
 
-::: prepreq
+::: prereq
 - You need a spreadsheet software (e.g., Excel or LibreOfficeCalc) as well as an editor.
 :::
 

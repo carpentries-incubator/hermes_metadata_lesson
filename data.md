@@ -10,6 +10,7 @@ exercises: 1
 - What are the distinctions between different types of data?
 
 :::
+
 ::: objectives
 
 - Differentiate between analogue data, digitized data, and born-digital data.
@@ -66,7 +67,7 @@ These types of data are utilized in different ways, each shaping and supporting 
 
 Moreover, these types of data often interact within hybrid research workflows. For instance, digitized analogue data can be enriched through computational analysis alongside born-digital datasets, creating new layers of insight. Similarly, born-digital data may prompt the re-examination of analogue sources, fostering a cyclical process of discovery and reinterpretation. This interplay highlights the evolving landscape of knowledge production, where diverse data types converge to address complex research questions. 
 
-::: outcome 
+::: callout
 
 ## Outcome
 
