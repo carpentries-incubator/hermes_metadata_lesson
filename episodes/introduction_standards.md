@@ -43,7 +43,7 @@ To illustrate, the relationship between the entity of the author "Franz Kafka" a
 This relationship has the advantage of enabling flexible interlinking of data. Additionally, the entity of the book can be linked to the entity of the publisher 
 by the relationship "has published". 
 
-![graphic](https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/fig/Author.png "graphic on entity-relationship")
+![graphic on entity-relationship](fig/Author.png)
 
 The data is modeled in the form of so-called triples. A triple consists of a subject, an object, and a predicate. 
 The predicate describes the relationship between the subject and the object: author (subject) has written (predicate) book (object). 
@@ -60,7 +60,7 @@ Wikimedia Foundation's knowledge base, known as "Wikidata." By establishing thes
 
 Discuss the following graphic in small groups. What is shown? 
 
-![graphic](https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/fig/metadata.png)
+![image title](fig/metadata.png)
 ::: solution
 
 ### Show me the solution
