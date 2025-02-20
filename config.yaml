@@ -77,6 +77,8 @@ episodes:
 - minimumrecord.md
 - mets.md
 - dublincore.md
+- rdf.md
+- lido.md
 
 # Information for Learners
 learners: 
