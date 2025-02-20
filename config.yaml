@@ -21,7 +21,7 @@ carpentry_description: 'Lesson Description'
 title: 'Data and Metadata in the Humanities'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: 2025-01-08 
+created: '2025-01-08' 
 
 # Comma-separated list of keywords for the lesson
 keywords: 'data, lesson, The Carpentries, Humanities, metadata, Digital Humanities, XML, JSON, metadata standards'
@@ -77,9 +77,14 @@ episodes:
 - minimumrecord.md
 - mets.md
 - dublincore.md
+- rdf.md
+- lido.md
 
 # Information for Learners
 learners: 
+- setup.md
+- reference.md
+
 
 # Information for Instructors
 instructors: 
