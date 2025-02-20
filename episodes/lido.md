@@ -16,6 +16,7 @@ exercises: 15
 
 :::
 
+
 As an XML Schema LIDO is strictly hierarchical. It summarizes each chunk of information about an object 
 in a set encapsulated by a wrapper element. LIDO provides descriptive as well as administrative information 
 about an object. 
