@@ -10,6 +10,7 @@ exercises: 1
 - What are the distinctions between different types of data?
 
 :::
+
 ::: objectives
 
 - Differentiate between analogue data, digitized data, and born-digital data.
