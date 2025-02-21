@@ -742,7 +742,7 @@ we have here?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>We cannot present analogue data here because everything we display on
 the monitor is digital!</p>
@@ -2475,7 +2475,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-rdf"><p>Content from <a href="rdf.html">Resource Description Framework (RDF)</a></p>
 <hr>
-<p>Last updated on 2025-02-20 |
+<p>Last updated on 2025-02-21 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/rdf.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2490,6 +2490,7 @@ any links that you are not going to use.
 <h3 class="card-title">Questions</h3>
 <ul>
 <li>What is the Resource Description Framework (RDF)?</li>
+<li>How are information linked using triple and URI?</li>
 </ul>
 </div>
 </div>
@@ -2501,6 +2502,8 @@ any links that you are not going to use.
 <ul>
 <li>Knowledge of the basics of the Resource Description Framework
 (RDF).</li>
+<li>Familiar with the core concept of using URIs for linking data in the
+RDF.</li>
 </ul>
 </div>
 </div>
@@ -2515,24 +2518,22 @@ Model mentioned in the introduction.</p>
 <p>Data in RDF are statements about resources. These statements are
 modeled as triples. The set of triples forms a (mathematical) graph and
 is called an RDF model.</p>
-<p>The model has features that facilitate data merging even if the
-underlying schemas differ, and it specifically supports the evolution of
-schemas over time without requiring all the data consumers to be
-changed:</p>
-<p>The subject and predicate are always resources. The object can be
+<p>The subject and predicate are always resources. This means that they
+are entities with an extended set of information. The object can be
 either a resource or a literal. Literals are strings that can be
-interpreted using a specified data type and can be specified as boolean
-values, numbers, or dates, for example. Unique identifiers (URIs) are
-used to identify resources. A Uniform Resource Identifier is an
-identifier consisting of a string of characters used to identify an
-abstract or physical resource. They are built in a similar way to a web
-address (URL). The aforementioned GND or Wikidata IDs are examples.
-Different sources can be linked together using the URIs. Remember the
-graphic in the introduction. The predicate is also defined by a URI.
-This is possible, for example, when the relationship is defined by a
-metadata standard. The metadata fields of the standards have their own
-URIs. The relationship between author and book can be modeled using the
-Dublin Core elements. The data format for RDF is typically XML.</p>
+interpreted using a specified data type like boolean values, numbers, or
+dates, for example. Unique identifiers (URIs) are used to identify
+resources.</p>
+<p>A Uniform Resource Identifier is an identifier consisting of a string
+of characters used to identify an abstract or physical resource. They
+are built in a similar way to a web address (URL). The aforementioned
+GND or Wikidata IDs are examples. Different sources can be linked
+together using the URIs. Remember the graphic in the introduction.</p>
+<p>The predicate is also defined by a URI. This is possible, for
+example, when the relationship is defined by a metadata standard. The
+metadata fields of the standards have their own URIs. The relationship
+between author and book can be modeled using the Dublin Core elements.
+The data format for RDF is typically XML.</p>
 <p>Grafik einbinden</p>
 <p>More content to be added!</p></section><section id="aio-lido"><p>Content from <a href="lido.html">Lightweight Information Describing Objects (LIDO)</a></p>
 <hr>
@@ -2620,8 +2621,8 @@ about an object.</p>
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/aio.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/aio.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-02-20",
-  "datePublished": "2025-02-20"
+  "dateModified": "2025-02-21",
+  "datePublished": "2025-02-21"
 }
 
   </script><script>
