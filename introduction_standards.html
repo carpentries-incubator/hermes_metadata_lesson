@@ -389,7 +389,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Introduction to Metadata Standards and Schemas</h1>
-        <p>Last updated on 2025-02-20 |
+        <p>Last updated on 2025-02-21 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/introduction_standards.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -435,55 +435,103 @@ synonymously with <em>schema</em>. However, it must be emphasized that
 this is not a universal claim; rather, it is intended to facilitate a
 better understanding of the structures of data standardization, as there
 are no universally accepted definitions of these terms.</p>
-<p>A metadata standard is defined by its function, which is to describe
-how data should be annotated. Each element or data field is uniquely
-named (e.g., author, title, etc.), specified by rules in the form of
-attributes (e.g., data type), and placed within a selected structure.
-This provides a basic description and organization of the data, thus
+<div class="section level3">
+<h3 id="metadata-standard">Metadata Standard<a class="anchor" aria-label="anchor" href="#metadata-standard"></a></h3>
+<p>A metadata standard is a technical specification, which describes how
+data should be annotated or structured, and includes principles and
+implementation issues for using the standard. There are two ways to
+standardize the data: Each element or data field is uniquely named
+(e.g., author, title, etc.) and can be specified by rules in the form of
+attributes (e.g., data type), or a structure for the data is selected.
+Both provide a basic description and organization of the data, thereby
 standardizing it.</p>
+<p>There are different standards for various issues and communities.
+This ensures that, for example, the rules for recording data in an
+archive or library are taken into account. The provenance principle in
+archives or the pertinence principle in libraries can be mapped in this
+way.</p>
+<div class="section level4">
+<h4 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a></h4>
+<p>Metadata structure:</p>
+<ul><li>Administrative metadata</li>
+<li>Descriptive metadata</li>
+<li>Structural metadata</li>
+<li>Technical metadata</li>
+</ul><p>Metadata elements:</p>
+<ul><li>creator</li>
+<li>publisher</li>
+<li>date</li>
+<li>rights</li>
+<li>pages</li>
+<li>file format</li>
+<li>title</li>
+</ul><p>Metadata elements within a structure:</p>
+<ul><li>Administrative metadata
+<ul><li>publisher</li>
+<li>rights</li>
+</ul></li>
+<li>Descriptive metadata
+<ul><li>creator</li>
+<li>date</li>
+<li>title</li>
+</ul></li>
+<li>Structural metadata
+<ul><li>pages</li>
+</ul></li>
+<li>Technical metadata
+<ul><li>file format</li>
+</ul></li>
+</ul></div>
+</div>
+<div class="section level3">
+<h3 id="metadata-schema">Metadata Schema<a class="anchor" aria-label="anchor" href="#metadata-schema"></a></h3>
 <p>The term <em>metadata schema</em> is mostly used for structuring data
 within a specific context, and there are countless standards for every
 discipline or specific purpose. During the development stage, an
 existing metadata standard can be integrated. Its rules then apply to
-the metadata fields, which are in turn placed within a larger context.
-For example, the data field standard for a person can be defined,
-according to extended rules, as an architect for a building or as a
-photographer for a photograph. With this classification, the photography
-of a building can be described more precisely: the photographer Lisa
-Miller photographed the Eiffel Tower of the architect Gustav Eiffel. The
-application of these rules is consistent across all individuals in the
-data set, with their classification occurring within the context of
-their respective functions or roles. Consequently, a schema positions
-the data within a desired context, thereby establishing the
-relationships between the data.</p>
-<p>In this context, the term “conceptual model” is frequently employed.
-Conceptual models, also referred to as semantic data models, are
-typically abstractions of real-world entities. They are utilized to
+the metadata fields, which are in turn placed within a larger
+context.</p>
+<p>Imagine you want to describe the photography of a building. There is
+the metadata element for the creator. Whose name would you annotate? The
+name of the photographer or the name of the architect? Now you could add
+a role as a metadata element to further describe the context of the
+personal data. You may also want to structure the data for the photo and
+the building it depicts separately to display the information
+accurately. A schema can map a custom structure or hierarchy of a
+collection, as well as define data fields for specific subjects.
+Consequently, a schema positions the data within a desired context,
+thereby establishing the relationships between the data.</p>
+<div class="section level4">
+<h4 id="conceptual-model">Conceptual Model<a class="anchor" aria-label="anchor" href="#conceptual-model"></a></h4>
+<p>In this context, the term <em>conceptual model</em> is frequently
+employed. Conceptual models, also referred to as semantic data models,
+are typically abstractions of real-world entities. They are utilized to
 formally articulate the data of a collection or a specialized domain in
 an abstract manner. An exemplar of such a model is the
 entity-relationship model, which delineates the relationship between two
 data entities. To illustrate, the relationship between the entity of the
-author “Franz Kafka” and the entity of the book “The Process” is defined
-by the relationship “has written”. This relationship has the advantage
-of enabling flexible interlinking of data. Additionally, the entity of
-the book can be linked to the entity of the publisher by the
+author “Franz Kafka” and the entity of the book “The Process” can be
+defined by the relationship “has written”. This relationship has the
+advantage of enabling flexible interlinking of data. Additionally, the
+entity of the book can be linked to the entity of the publisher by the
 relationship “has published”.</p>
 <figure><img src="fig/Author.png" alt="graphic on entity-relationship" class="figure mx-auto d-block"><div class="figcaption">graphic on entity-relationship</div>
 </figure><p>The data is modeled in the form of so-called triples. A triple
 consists of a subject, an object, and a predicate. The predicate
-describes the relationship between the subject and the object: author
-(subject) has written (predicate) book (object). An object can become
-the subject for another triple, and vice versa, as the above example
-illustrates.</p>
+describes the relationship between the subject and the object:</p>
+<p>author (subject) has written (predicate) book (object).</p>
+<p>An object can become the subject for another triple, and vice versa,
+as the above example illustrates.</p>
 <p>This approach is predominantly utilized in the domain of the semantic
-web, serving as the foundational framework for linked open data, which
-aims to achieve the maximum degree of interconnection among data
-records. The entities in this context are equipped with unique
-identifiers in the metadata, which in turn represent entities that
-possess their own metadata. To illustrate, an entity can be delineated
-by its identifier in the context of the Wikimedia Foundation’s knowledge
-base, known as “Wikidata.” By establishing these links, the data
-available in this repository is utilized indirectly.</p>
+web, serving as the foundational framework for linked open data[zur
+Lesson verlinken], which aims to achieve the maximum degree of
+interconnection among data records. The entities in this context are
+equipped with unique identifiers in the metadata, which in turn
+represent entities that possess their own metadata. To illustrate, an
+entity can be delineated by its identifier in the context of the
+Wikimedia Foundation’s knowledge base, known as “Wikidata.” By
+establishing these links, the data available in this repository is
+utilized indirectly.</p>
 <div id="exercise" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -507,7 +555,7 @@ entity is linked to all the metadata associated with the publication,
 such as the year of publication.In this example, the publisher has a
 separate entity in the form of a “Wikidata” record to which it is
 linked. The metadata in this entity contains information about the
-publisher’s location, which is linked to an identifier.In this example,
+publisher’s location, which is linked to an identifier. In this example,
 it is the TGN ID. The Getty Thesaurus of Geographic Names (TGN) serves
 as a standards database for geographic names, recording various
 spellings, including historical ones, as well as coordinates and country
@@ -518,9 +566,9 @@ can be expanded as required, depending on the availability of data.</p>
 </div>
 </div>
 <p>:::</p>
-<div id="data-value-standards" class="callout discussion">
+<div id="data-value-standards" class="callout">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="data-value-standards" class="callout-inner">
 <h3 class="callout-title">Data Value Standards</h3>
@@ -558,6 +606,8 @@ will be briefly presented here.</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
+</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="json.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
@@ -616,7 +666,7 @@ any links that you are not going to use.
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/introduction_standards.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/introduction_standards.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-02-20",
+  "dateModified": "2025-02-21",
   "datePublished": "2025-02-21"
 }
 
