@@ -941,7 +941,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The objects searchable in the Met Museum’s online collection
 primarily feature descriptive metadata, such as title, author, date, and
@@ -976,7 +976,7 @@ part of specific projects.</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>It depends on the context wether it is data (the book itself) or
 metadata (title in a library catalogue)</p>
@@ -1014,7 +1014,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-metadataformats"><p>Content from <a href="metadataformats.html">Introduction to Metadata File Formats</a></p>
 <hr>
-<p>Last updated on 2025-02-03 |
+<p>Last updated on 2025-02-24 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/metadataformats.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1040,8 +1040,11 @@ way?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Knowledge of CSV format for storing and processing metadata.</li>
+<li>Knowledge of basics of CSV format for storing and processing
+metadata.</li>
 <li>Familiar with the structure of a simple CSV file.</li>
+<li>Knowledge of the main difference between a xslx and a csv
+format.</li>
 </ul>
 </div>
 </div>
@@ -1096,13 +1099,13 @@ different sources can also be merged.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">-</span> What do you notice<span class="pp">?</span> </span>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">*</span> What do you notice<span class="pp">?</span> </span>
 <span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ex">-</span> What form does the data take<span class="pp">?</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ex">*</span> What form does the data take<span class="pp">?</span></span>
 <span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="ex">-</span> What are the advantages of recording data in tabular form<span class="pp">?</span> </span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="ex">*</span> What are the advantages of recording data in tabular form<span class="pp">?</span> </span>
 <span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="ex">-</span> Why is this data operable<span class="pp">?</span> </span></code></pre>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="ex">*</span> Why is this data operable<span class="pp">?</span> </span></code></pre>
 </div>
 </div>
 </div>
@@ -1117,11 +1120,11 @@ different sources can also be merged.</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">-</span> Various parameters are queried when opening.</span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="ex">-</span> The data is in a tabular form in a spreadsheet available.</span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="ex">-</span> The data is structured into individual fields.</span>
-<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="ex">-</span> Content is named, data is labled/marked up.</span>
-<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="ex">-</span> The data is available in a digital file format that can be processed and shared.</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">*</span> Various parameters are queried when opening.</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="ex">*</span> The data is in a tabular form in a spreadsheet available.</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="ex">*</span> The data is structured into individual fields.</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="ex">*</span> Content is named, data is labled/marked up.</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="ex">*</span> The data is available in a digital file format that can be processed and shared.</span></code></pre>
 </div>
 </div>
 </div>
@@ -1140,23 +1143,28 @@ structure of the file.</p>
 5;Berthe Morisot;The psyche mirror;1876
 1;Georgia O’Keeffe;Sky above clouds IV;1965
 3;Banksy;Girl with Ballon;2002</code></pre>
+<p>Whereas with an xslx format, data can be saved, formatted and
+provided with formulas in several spreadsheets, the CSV (comma-separated
+values) format stores tabular data in plain text.</p>
 <p>When you opened the file in the last exercise, some parameters were
 queried before you could even open it. Here we can see why:</p>
-<p>The data is separated by delimiters - usually commas or semicolons.
-In many files you may find the contents of the data fields enclosed in
-quotes. If these parameters are entered correctly when the file is
-opened, the data is transferred to the appropriate fields in the
-spreadsheet. The first line often defines the column headings.
-Individual records are separated by a line break.</p>
+<p>The data is separated by semicolons - the delimiters.
+Delimiter-separated files are often given a <em>.csv</em> extension even
+when the field separator is not a comma as the example demonstrate. In
+many files you may find the contents of the data fields enclosed in
+quotes. Individual records are separated by a line break. The first line
+often defines the column headings. If these parameters are entered
+correctly when the file is opened, the data is transferred to the
+appropriate fields in the spreadsheet.</p>
 <p>When entering data into spreadsheets, there are a number of issues to
 consider to ensure that the data can be processed correctly. In addition
 to the comma-separated fields mentioned above, which can cause problems,
 there are many more aspects. Another source of error can be
 unintentional blank characters, usually at the end of an entry. These
-need to be considered separately during automated processing. Dates are
-another major source of error. Different spellings can lead to
-misinterpretation. How do you interpret the date 25-01-11 when it is
-written in a single field?</p>
+need to be considered separately during automated processing in other
+formats. Dates are another major source of error. Different spellings
+can lead to misinterpretation. How do you interpret the date 25-01-11
+when it is written in a single field?</p>
 <div id="find-out-more-on-data-organization" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1173,15 +1181,34 @@ Organization in Spreadsheets for Social Scientists</a></p>
 Labelling categories for people, such as artist or photographer for
 Walker Evans, helps to understand the content. This marking allows the
 data to be interpreted and is used differently depending on the format.
-In the spreadsheet example it is the column heading. For dates, it is
-worth splitting the year, month and day into separate fields to avoid
-the problems described above.</p>
+In the spreadsheet example it is the column heading. When using a
+spreadsheet to annotate, for dates, it is worth splitting the year,
+month and day into separate fields to avoid the problems described
+above. Later, you will learn about other ways to display dates
+correctly.</p>
 <p>Choosing a different format can help to avoid some of these
 difficulties. One option is to use a markup language. Based on the SGML
 meta-language, which contains the basic concepts of markup languages,
 such as elements and attributes, and the rules for their use, the
 various markup languages are used to structure and format text and data
 in a machine-readable way.</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<p>To annotate data and metadata is it best to:</p>
+<ul>
+<li>mark up the data with for exmaple headers</li>
+<li>use a format which is interoperable like csv</li>
+<li>be aware of the problems the data and metadata can cause when
+annotating them, e.g., the dates or labels</li>
+</ul>
+</div>
+</div>
+</div>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
@@ -1498,7 +1525,7 @@ format.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <ul>
 <li>Think about the headings in the spreadsheet. Do you agree with this
@@ -1514,7 +1541,7 @@ labelling?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Here to place a xml code block with 1 or 2 examples and the note that
 there is not one right solution</p>
@@ -2421,7 +2448,7 @@ fields? If so, which ones and why? Discuss in small groups.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>contributor: MET (as a custodian and managing institution)</li>
@@ -2489,7 +2516,7 @@ assign clearly or at all would you expand with a qualifier and how?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Examples </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul>
 <li>dc.date.created: 1931</li>
@@ -2666,7 +2693,7 @@ about an object.</p>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.11" class="external-link">sandpaper (0.16.11)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.8" class="external-link">pegboard (0.7.8)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.5" class="external-link">varnish (1.0.5)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.11" class="external-link">sandpaper (0.16.11)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.5" class="external-link">varnish (1.0.5)</a></p>
 			</div>
 		</footer>
 </div> <!-- / div.container -->
@@ -2689,8 +2716,8 @@ about an object.</p>
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/aio.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/aio.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-02-21",
-  "datePublished": "2025-02-21"
+  "dateModified": "2025-02-24",
+  "datePublished": "2025-02-24"
 }
 
   </script><script>
