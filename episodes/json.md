@@ -16,9 +16,9 @@ exercises: 20
 - Familiar with the structure of a simple JSON file. 
 :::
 
-## JSON
 
 Another format in which metadata can be stored, annotated and exchanged is JSON (JavaScript Object Notation). Its syntax is inspired by JavaScript object notation. 
+
 
 ::: keypoints
 
@@ -33,9 +33,11 @@ Another format in which metadata can be stored, annotated and exchanged is JSON 
 * In-line commenting is not supported.
 :::
 
+
 #### JSON Data
 
 JSON data is written as key/value pairs. A key/value pair consists of a key, followed by a colon, followed by a value. The key is the name – the label – for the content in the value field. Keys are always written in double quotes. The indication of the value depends on its data type. The entire content is enclosed in curly brackets. 
+
 
 ```JSON
 {„name“ : „Kim Sneider“,
@@ -52,6 +54,7 @@ JSON data is written as key/value pairs. A key/value pair consists of a key, fol
 
 **But**
 JSON is shorter than XML and in data processing easier to use. JSON can use arrays, so that a set of multiple values can be stored and processed easily within one key but interpreted as multiple values. Whereas in XML multiple values can be written in one tag, but they will not be processed like that as the content of a tag is not interpreted as multiple values even if the data is separated with a comma or other characters. 
+
 
 #### Values
 
@@ -71,11 +74,12 @@ Values cannot be one of the following data types:
 | array | collection of values | "array" : [„Didi“, 35, „Whatever“, true] |
 | JSON object | a set of JSON data | "object" : {„name“ : „Kim“, „age“ : 39} |
 
+
 ::: exercise
 ### Exercise
 
 Use the artwork from the last exercise, which you have chosen from the moma_artwork.csv and write the data into a json format. 
-
+:::
 ::: solution
 
 ```json
@@ -281,12 +285,13 @@ You can use a validator to check that a json file is correct. This checks the sy
 :::
 
 
-::: discussion
+::: exercise
 ### Question
 
 What do you think? Why are the values, which contain the information about the artist, created as arrays (recognizable by the square brackets), although they only contain one value? 
-
+:::
 ::: solution
+
 
 Of course, there are works of art and objects made by several artists. As this is a case that certainly occurs more frequently, the data field for the value is defined directly in advance as an array in order to be able to map this case and not have to query it separately for each data record. 
 :::
