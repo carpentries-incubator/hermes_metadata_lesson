@@ -75,7 +75,7 @@ Values cannot be one of the following data types:
 | JSON object | a set of JSON data | "object" : {„name“ : „Kim“, „age“ : 39} |
 
 
-::: exercise
+::: challenge
 ### Exercise
 
 Use the artwork from the last exercise, which you have chosen from the moma_artwork.csv and write the data into a json format. 
@@ -286,7 +286,9 @@ You can use a validator to check that a json file is correct. This checks the sy
 :::
 
 
-::: exercise
+
+
+::: challenge
 ### Question
 
 What do you think? Why are the values, which contain the information about the artist, created as arrays (recognizable by the square brackets), although they only contain one value? 
