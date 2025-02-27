@@ -79,7 +79,7 @@ Values cannot be one of the following data types:
 ### Exercise
 
 Use the artwork from the last exercise, which you have chosen from the moma_artwork.csv and write the data into a json format. 
-:::
+
 ::: solution
 
 ```json
@@ -283,13 +283,14 @@ This is not the only correct way to annotate the data in a json file. You can fr
 
 You can use a validator to check that a json file is correct. This checks the syntax of the json for formal errors, e.g., [Json Formatter & Validator](https://jsonformatter.curiousconcept.com/). 
 :::
+:::
 
 
 ::: exercise
 ### Question
 
 What do you think? Why are the values, which contain the information about the artist, created as arrays (recognizable by the square brackets), although they only contain one value? 
-:::
+
 ::: solution
 
 
