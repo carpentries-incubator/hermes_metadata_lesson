@@ -941,7 +941,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The objects searchable in the Met Museum’s online collection
 primarily feature descriptive metadata, such as title, author, date, and
@@ -976,7 +976,7 @@ part of specific projects.</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>It depends on the context wether it is data (the book itself) or
 metadata (title in a library catalogue)</p>
@@ -1071,7 +1071,7 @@ way?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>A simple way to store data in a structured way is using a spreadsheet
 like Excel.</p>
@@ -1108,7 +1108,7 @@ different sources can also be merged.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1205,7 +1205,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-xml"><p>Content from <a href="xml.html">XML and XML schema</a></p>
 <hr>
-<p>Last updated on 2025-02-18 |
+<p>Last updated on 2025-02-27 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/xml.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1234,7 +1234,7 @@ any links that you are not going to use.
 <li>Knowledge of XML format for storing and processing metadata.</li>
 <li>Familiar with the structure of a simple XML file.</li>
 <li>Able to write extracted metadata in a simple XML format.</li>
-<li>Knowledge of a XML schema ans its elements.</li>
+<li>Knowledge of a XML schema and its main elements.</li>
 </ul>
 </div>
 </div>
@@ -1273,42 +1273,6 @@ used to organize web pages, has a similar structure. It is also based on
 SGML. HTML makes it possible to mark up the typical elements of a
 text-oriented document - such as headings, paragraphs, lists, or tables
 - as such on a web page and to structure the page semantically.</p>
-<div id="semantics" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="semantics" class="callout-inner">
-<h3 class="callout-title">Semantics</h3>
-<div class="callout-content">
-<p>Semantics examines the meaning of characters such as words, phrases,
-or symbols. Semantically correct HTML gives meaning to content.</p>
-</div>
-</div>
-</div>
-<p>Unlike HTML, where there are rules for naming tags - such as
-&lt;h1&gt;&lt;/h1&gt; for heading - XML tags can be named freely, except
-for a few technical rules. This makes it particularly interesting for
-use in the development of metadata standards and ontologies.</p>
-<div id="metadata-standards-and-ontologies" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="metadata-standards-and-ontologies" class="callout-inner">
-<h3 class="callout-title">Metadata Standards and Ontologies</h3>
-<div class="callout-content">
-<p>Metadata standards are rules for how research data should be
-annotated, described, and stored in a format. For example, they specify
-the naming of tags if the data is stored in XML. They also govern the
-hierarchy of data or the relationships between data. More on this
-later.</p>
-<p>Ontologies are linguistically and formally organized representations
-of concepts and the relationships between them in a given domain. In the
-cultural heritage field in particular, they specify the presentation of
-object data so that it can be placed in larger contexts. Ontologies are
-used to model and standardize information.</p>
-</div>
-</div>
-</div>
 <p>XML also provides the ability to have comments that are not
 automatically read:</p>
 <div class="codewrapper sourceCode" id="cb3">
@@ -1437,7 +1401,7 @@ the same hierarchy level. The structure depends on the purpose of the
 collection and the data to be collected.</p>
 <p>The slash here at the end of the tag (self-closing tag) means that
 the element is empty and self-contained.</p>
-<div id="callout3" class="callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -1466,7 +1430,7 @@ prolog:</p>
 </div>
 <p>It is optional, but provides information about the version and
 encoding used, and must be at the top if included.</p>
-<div id="callout4" class="callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -1478,26 +1442,6 @@ Formed” XML documents.</p>
 </div>
 </div>
 </div>
-<div id="encoding" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="encoding" class="callout-inner">
-<h3 class="callout-title">Encoding</h3>
-<div class="callout-content">
-<p>In data processing, characters are encoded with a numerical value for
-transmission or storage (!Remember the rules for character we have just
-learned). Character encoding allows characters and symbols to be
-uniquely assigned within a character set. There are different character
-encodings, so it is important to know which one is being used. For
-example, the German Ü may be encoded with the decimal value 220 in one
-character set, while the same value in another character set encodes the
-curly bracket. To ensure that the data is displayed correctly when used,
-the form of encoding has to be specified. UTF-8 and UTF-16 are among the
-most common character sets you may encounter when processing data.</p>
-</div>
-</div>
-</div>
 <div id="exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1505,7 +1449,8 @@ most common character sets you may encounter when processing data.</p>
 <div id="exercise" class="callout-inner">
 <h3 class="callout-title">Exercise</h3>
 <div class="callout-content">
-<p>Open the xxxx.csv file. Use the given data and write it in an XML
+<p>Open the <a href="https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/moma_artworks.csv" class="external-link">moma_artworks.csv
+file</a>. Use the given data of one artwork and write it in an XML
 format.</p>
 </div>
 </div>
@@ -1515,7 +1460,7 @@ format.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <ul>
 <li>Think about the headings in the spreadsheet. Do you agree with this
@@ -1531,10 +1476,160 @@ labelling?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>Here to place a xml code block with 1 or 2 examples and the note that
-there is not one right solution</p>
+<div class="codewrapper sourceCode" id="cb10">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>&lt;<span class="kw">artworks</span>&gt;</span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Green-Blue-Red (for Parkett no. 35)&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Gerhard Richter&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
+<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;4907&lt;/<span class="kw">constituentID</span>&gt;</span>
+<span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-10"><a href="#cb10-10" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;German, born 1932&lt;/<span class="kw">bio</span>&gt;</span>
+<span id="cb10-11"><a href="#cb10-11" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-12"><a href="#cb10-12" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;German&lt;/<span class="kw">nationality</span>&gt;</span>
+<span id="cb10-13"><a href="#cb10-13" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1932&lt;/<span class="kw">beginDate</span>&gt;</span>
+<span id="cb10-14"><a href="#cb10-14" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;0&lt;/<span class="kw">endDate</span>&gt;</span>
+<span id="cb10-15"><a href="#cb10-15" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
+<span id="cb10-16"><a href="#cb10-16" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;1993&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb10-17"><a href="#cb10-17" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Multiple of oil on canvas&lt;/<span class="kw">medium</span>&gt;</span>
+<span id="cb10-18"><a href="#cb10-18" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;composition: 11 7/16 × 15 3/4<span class="dv">&amp;quot;</span> (29 × 40 cm); sheet: 11 3/4 × 15 3/4<span class="dv">&amp;quot;</span> (29.9 × 40 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
+<span id="cb10-19"><a href="#cb10-19" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Riva Castleman Endowment Fund, Lily Auchincloss Fund, and Gift of Parkett&lt;/<span class="kw">creditLine</span>&gt;</span>
+<span id="cb10-20"><a href="#cb10-20" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;110.1998.1&lt;/<span class="kw">accessionNumber</span>&gt;</span>
+<span id="cb10-21"><a href="#cb10-21" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Multiple&lt;/<span class="kw">classification</span>&gt;</span>
+<span id="cb10-22"><a href="#cb10-22" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Drawings <span class="dv">&amp;amp;</span> Prints&lt;/<span class="kw">department</span>&gt;</span>
+<span id="cb10-23"><a href="#cb10-23" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1998-03-05&lt;/<span class="kw">dateAcquired</span>&gt;</span>
+<span id="cb10-24"><a href="#cb10-24" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
+<span id="cb10-25"><a href="#cb10-25" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;61953&lt;/<span class="kw">objectID</span>&gt;</span>
+<span id="cb10-26"><a href="#cb10-26" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/61953&lt;/<span class="kw">url</span>&gt;</span>
+<span id="cb10-27"><a href="#cb10-27" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;&lt;/<span class="kw">imageURL</span>&gt;</span>
+<span id="cb10-28"><a href="#cb10-28" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;&lt;/<span class="kw">onView</span>&gt;</span>
+<span id="cb10-29"><a href="#cb10-29" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;29.0&lt;/<span class="kw">height</span>&gt;</span>
+<span id="cb10-30"><a href="#cb10-30" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;40.0&lt;/<span class="kw">width</span>&gt;</span>
+<span id="cb10-31"><a href="#cb10-31" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-32"><a href="#cb10-32" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-33"><a href="#cb10-33" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Untitled&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb10-34"><a href="#cb10-34" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
+<span id="cb10-35"><a href="#cb10-35" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Blinky Palermo&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb10-36"><a href="#cb10-36" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
+<span id="cb10-37"><a href="#cb10-37" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;4474&lt;/<span class="kw">constituentID</span>&gt;</span>
+<span id="cb10-38"><a href="#cb10-38" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-39"><a href="#cb10-39" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;German, 1943–1977&lt;/<span class="kw">bio</span>&gt;</span>
+<span id="cb10-40"><a href="#cb10-40" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-41"><a href="#cb10-41" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;German&lt;/<span class="kw">nationality</span>&gt;</span>
+<span id="cb10-42"><a href="#cb10-42" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1943&lt;/<span class="kw">beginDate</span>&gt;</span>
+<span id="cb10-43"><a href="#cb10-43" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;1977&lt;/<span class="kw">endDate</span>&gt;</span>
+<span id="cb10-44"><a href="#cb10-44" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
+<span id="cb10-45"><a href="#cb10-45" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;1970&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb10-46"><a href="#cb10-46" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Dyed cotton mounted on muslin&lt;/<span class="kw">medium</span>&gt;</span>
+<span id="cb10-47"><a href="#cb10-47" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;6' 6 3/4\" x 6' 6 3/4\" (200 x 200 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
+<span id="cb10-48"><a href="#cb10-48" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Gift of Jo Carole and Ronald S. Lauder&lt;/<span class="kw">creditLine</span>&gt;</span>
+<span id="cb10-49"><a href="#cb10-49" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;650.1997&lt;/<span class="kw">accessionNumber</span>&gt;</span>
+<span id="cb10-50"><a href="#cb10-50" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Painting&lt;/<span class="kw">classification</span>&gt;</span>
+<span id="cb10-51"><a href="#cb10-51" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Painting <span class="dv">&amp;amp;</span> Sculpture&lt;/<span class="kw">department</span>&gt;</span>
+<span id="cb10-52"><a href="#cb10-52" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1997-06-02&lt;/<span class="kw">dateAcquired</span>&gt;</span>
+<span id="cb10-53"><a href="#cb10-53" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
+<span id="cb10-54"><a href="#cb10-54" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;78283&lt;/<span class="kw">objectID</span>&gt;</span>
+<span id="cb10-55"><a href="#cb10-55" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/78283&lt;/<span class="kw">url</span>&gt;</span>
+<span id="cb10-56"><a href="#cb10-56" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;https://www.moma.org/media/W1siZiIsIjE1MTQ0MCJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=c54d00f27ed284be&lt;/<span class="kw">imageURL</span>&gt;</span>
+<span id="cb10-57"><a href="#cb10-57" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;&lt;/<span class="kw">onView</span>&gt;</span>
+<span id="cb10-58"><a href="#cb10-58" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;200.0&lt;/<span class="kw">height</span>&gt;</span>
+<span id="cb10-59"><a href="#cb10-59" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;200.0&lt;/<span class="kw">width</span>&gt;</span>
+<span id="cb10-60"><a href="#cb10-60" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-61"><a href="#cb10-61" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-62"><a href="#cb10-62" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Daylight Savings Time&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb10-63"><a href="#cb10-63" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
+<span id="cb10-64"><a href="#cb10-64" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Pierre Roy&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb10-65"><a href="#cb10-65" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
+<span id="cb10-66"><a href="#cb10-66" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;5065&lt;/<span class="kw">constituentID</span>&gt;</span>
+<span id="cb10-67"><a href="#cb10-67" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-68"><a href="#cb10-68" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;French, 1880–1950&lt;/<span class="kw">bio</span>&gt;</span>
+<span id="cb10-69"><a href="#cb10-69" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-70"><a href="#cb10-70" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;French&lt;/<span class="kw">nationality</span>&gt;</span>
+<span id="cb10-71"><a href="#cb10-71" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1880&lt;/<span class="kw">beginDate</span>&gt;</span>
+<span id="cb10-72"><a href="#cb10-72" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;1950&lt;/<span class="kw">endDate</span>&gt;</span>
+<span id="cb10-73"><a href="#cb10-73" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
+<span id="cb10-74"><a href="#cb10-74" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;1929&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb10-75"><a href="#cb10-75" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Oil on canvas&lt;/<span class="kw">medium</span>&gt;</span>
+<span id="cb10-76"><a href="#cb10-76" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;21 1/2 x 15<span class="dv">&amp;quot;</span> (54.6 x 38.1 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
+<span id="cb10-77"><a href="#cb10-77" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Gift of Mrs. Ray Slater Murphy&lt;/<span class="kw">creditLine</span>&gt;</span>
+<span id="cb10-78"><a href="#cb10-78" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;1.1931&lt;/<span class="kw">accessionNumber</span>&gt;</span>
+<span id="cb10-79"><a href="#cb10-79" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Painting&lt;/<span class="kw">classification</span>&gt;</span>
+<span id="cb10-80"><a href="#cb10-80" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Painting <span class="dv">&amp;amp;</span> Sculpture&lt;/<span class="kw">department</span>&gt;</span>
+<span id="cb10-81"><a href="#cb10-81" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1931-01-19&lt;/<span class="kw">dateAcquired</span>&gt;</span>
+<span id="cb10-82"><a href="#cb10-82" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
+<span id="cb10-83"><a href="#cb10-83" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;78294&lt;/<span class="kw">objectID</span>&gt;</span>
+<span id="cb10-84"><a href="#cb10-84" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/78294&lt;/<span class="kw">url</span>&gt;</span>
+<span id="cb10-85"><a href="#cb10-85" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;https://www.moma.org/media/W1siZiIsIjIzMzkzNyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=74825d4c62cd5a8a&lt;/<span class="kw">imageURL</span>&gt;</span>
+<span id="cb10-86"><a href="#cb10-86" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;&lt;/<span class="kw">onView</span>&gt;</span>
+<span id="cb10-87"><a href="#cb10-87" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;54.6&lt;/<span class="kw">height</span>&gt;</span>
+<span id="cb10-88"><a href="#cb10-88" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;38.1&lt;/<span class="kw">width</span>&gt;</span>
+<span id="cb10-89"><a href="#cb10-89" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-90"><a href="#cb10-90" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-91"><a href="#cb10-91" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;The Bather&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb10-92"><a href="#cb10-92" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
+<span id="cb10-93"><a href="#cb10-93" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Paul Cézanne&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb10-94"><a href="#cb10-94" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
+<span id="cb10-95"><a href="#cb10-95" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;1053&lt;/<span class="kw">constituentID</span>&gt;</span>
+<span id="cb10-96"><a href="#cb10-96" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-97"><a href="#cb10-97" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;French, 1839–1906&lt;/<span class="kw">bio</span>&gt;</span>
+<span id="cb10-98"><a href="#cb10-98" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-99"><a href="#cb10-99" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;French&lt;/<span class="kw">nationality</span>&gt;</span>
+<span id="cb10-100"><a href="#cb10-100" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1839&lt;/<span class="kw">beginDate</span>&gt;</span>
+<span id="cb10-101"><a href="#cb10-101" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;1906&lt;/<span class="kw">endDate</span>&gt;</span>
+<span id="cb10-102"><a href="#cb10-102" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
+<span id="cb10-103"><a href="#cb10-103" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;c. 1885&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb10-104"><a href="#cb10-104" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Oil on canvas&lt;/<span class="kw">medium</span>&gt;</span>
+<span id="cb10-105"><a href="#cb10-105" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;50 x 38 1/8<span class="dv">&amp;quot;</span> (127 x 96.8 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
+<span id="cb10-106"><a href="#cb10-106" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Lillie P. Bliss Collection&lt;/<span class="kw">creditLine</span>&gt;</span>
+<span id="cb10-107"><a href="#cb10-107" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;1.1934&lt;/<span class="kw">accessionNumber</span>&gt;</span>
+<span id="cb10-108"><a href="#cb10-108" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Painting&lt;/<span class="kw">classification</span>&gt;</span>
+<span id="cb10-109"><a href="#cb10-109" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Painting <span class="dv">&amp;amp;</span> Sculpture&lt;/<span class="kw">department</span>&gt;</span>
+<span id="cb10-110"><a href="#cb10-110" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1934-09-23&lt;/<span class="kw">dateAcquired</span>&gt;</span>
+<span id="cb10-111"><a href="#cb10-111" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
+<span id="cb10-112"><a href="#cb10-112" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;78296&lt;/<span class="kw">objectID</span>&gt;</span>
+<span id="cb10-113"><a href="#cb10-113" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/78296&lt;/<span class="kw">url</span>&gt;</span>
+<span id="cb10-114"><a href="#cb10-114" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;https://www.moma.org/media/W1siZiIsIjQ0NjA2NyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=c6bd692fa0fe0685&lt;/<span class="kw">imageURL</span>&gt;</span>
+<span id="cb10-115"><a href="#cb10-115" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;<span class="dv">&amp;quot;</span>MoMA, Floor 2, 2 South<span class="dv">&amp;quot;</span>&lt;/<span class="kw">onView</span>&gt;</span>
+<span id="cb10-116"><a href="#cb10-116" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;127.0&lt;/<span class="kw">height</span>&gt;</span>
+<span id="cb10-117"><a href="#cb10-117" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;96.8&lt;/<span class="kw">width</span>&gt;</span>
+<span id="cb10-118"><a href="#cb10-118" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-119"><a href="#cb10-119" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-120"><a href="#cb10-120" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Syntheses of Naples&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb10-121"><a href="#cb10-121" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
+<span id="cb10-122"><a href="#cb10-122" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Enrico Prampolini&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb10-123"><a href="#cb10-123" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
+<span id="cb10-124"><a href="#cb10-124" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;4720&lt;/<span class="kw">constituentID</span>&gt;</span>
+<span id="cb10-125"><a href="#cb10-125" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-126"><a href="#cb10-126" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;Italian, 1894–1956&lt;/<span class="kw">bio</span>&gt;</span>
+<span id="cb10-127"><a href="#cb10-127" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-128"><a href="#cb10-128" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;Italian&lt;/<span class="kw">nationality</span>&gt;</span>
+<span id="cb10-129"><a href="#cb10-129" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1894&lt;/<span class="kw">beginDate</span>&gt;</span>
+<span id="cb10-130"><a href="#cb10-130" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;1956&lt;/<span class="kw">endDate</span>&gt;</span>
+<span id="cb10-131"><a href="#cb10-131" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
+<span id="cb10-132"><a href="#cb10-132" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;before 1930&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb10-133"><a href="#cb10-133" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Oil on canvas&lt;/<span class="kw">medium</span>&gt;</span>
+<span id="cb10-134"><a href="#cb10-134" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;39 3/8 x 39 1/2<span class="dv">&amp;quot;</span> (100 x 100.3 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
+<span id="cb10-135"><a href="#cb10-135" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Gift of Dr. Julius Spitzer&lt;/<span class="kw">creditLine</span>&gt;</span>
+<span id="cb10-136"><a href="#cb10-136" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;1.1942&lt;/<span class="kw">accessionNumber</span>&gt;</span>
+<span id="cb10-137"><a href="#cb10-137" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Painting&lt;/<span class="kw">classification</span>&gt;</span>
+<span id="cb10-138"><a href="#cb10-138" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Painting <span class="dv">&amp;amp;</span> Sculpture&lt;/<span class="kw">department</span>&gt;</span>
+<span id="cb10-139"><a href="#cb10-139" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1941-12-10&lt;/<span class="kw">dateAcquired</span>&gt;</span>
+<span id="cb10-140"><a href="#cb10-140" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
+<span id="cb10-141"><a href="#cb10-141" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;78299&lt;/<span class="kw">objectID</span>&gt;</span>
+<span id="cb10-142"><a href="#cb10-142" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/78299&lt;/<span class="kw">url</span>&gt;</span>
+<span id="cb10-143"><a href="#cb10-143" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;https://www.moma.org/media/W1siZiIsIjE4NjgzNSJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=9740d0c731c867c2&lt;/<span class="kw">imageURL</span>&gt;</span>
+<span id="cb10-144"><a href="#cb10-144" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;&lt;/<span class="kw">onView</span>&gt;</span>
+<span id="cb10-145"><a href="#cb10-145" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;100.0&lt;/<span class="kw">height</span>&gt;</span>
+<span id="cb10-146"><a href="#cb10-146" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;100.3&lt;/<span class="kw">width</span>&gt;</span>
+<span id="cb10-147"><a href="#cb10-147" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-148"><a href="#cb10-148" tabindex="-1"></a>&lt;/<span class="kw">artworks</span>&gt;</span></code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -1551,7 +1646,9 @@ do you notice?</p>
 </div>
 </div>
 </div>
-<p>[1]: <a href="https://www.w3schools.com/xml/xml_elements.asp%3E" class="external-link">w3school: XML
+
+<hr>
+<p>[1]: <a href="https://www.w3schools.com/xml/xml_elements.asp%3E" class="external-link">w3school XML
 elements</a></p>
 </div>
 </section><section><h2 class="section-heading" id="xml-schema">XML Schema<a class="anchor" aria-label="anchor" href="#xml-schema"></a>
@@ -1567,59 +1664,44 @@ Definition) file format. It is characterised by the use of xs:schema as
 the container element for the whole document. Xs denotes the namespace
 for the schema (remember not to use : in XML tags, it is reserved for
 that!)</p>
-<div class="codewrapper sourceCode" id="cb10">
+<div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>&lt;<span class="kw">xs:schema</span>&gt;</span>
-<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>&lt;/<span class="kw">xs:schema</span>&gt;</span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>&lt;<span class="kw">xs:schema</span>&gt;</span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a>&lt;/<span class="kw">xs:schema</span>&gt;</span></code></pre>
 </div>
 <p>A simple XML element is defined in the schema by the specification
 xs:element and the attributes name and type. Additional attributes may
 be set.</p>
-<div class="codewrapper sourceCode" id="cb11">
+<div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“descriptive</span> <span class="er">name“</span> <span class="er">type=“string“&gt;</span></span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“descriptive</span> <span class="er">name“</span> <span class="er">type=“string“&gt;</span></span></code></pre>
 </div>
 <p>For example, we can specify that a place is always called place and
 that the character type of the content is a string. This specification
 prevents the tag from being sometimes called place, sometimes location
 or even city:</p>
-<div class="codewrapper sourceCode" id="cb12">
-<h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“place“</span> <span class="er">type=“string“/&gt;</span></span></code></pre>
-</div>
-<p>This defines the &lt;place&gt; XML tag such as &lt;place&gt;New
-York&lt;/place&gt;.</p>
-<div id="string" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="string" class="callout-inner">
-<h3 class="callout-title">String</h3>
-<div class="callout-content">
-<p>In computing, a string is a data type that contains a string of
-characters of fixed or variable length. It is mainly used to store
-words, sentences and whole texts. Other data types, for example for
-numbers, are integer or float. This specifies whether whole numbers or
-floating point numbers are allowed.</p>
-</div>
-</div>
-</div>
-<p>Content restrictions can be set using facets:</p>
 <div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"age"</span>&gt;</span>
-<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>  &lt;<span class="kw">xs:simpleType</span>&gt;</span>
-<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a>    &lt;<span class="kw">xs:restriction</span><span class="ot"> base=</span><span class="st">"xs:integer"</span>&gt;</span>
-<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a>      &lt;<span class="kw">xs:minInclusive</span><span class="ot"> value=</span><span class="st">"0"</span>/&gt;</span>
-<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a>      &lt;<span class="kw">xs:maxInclusive</span><span class="ot"> value=</span><span class="st">"120"</span>/&gt;</span>
-<span id="cb13-6"><a href="#cb13-6" tabindex="-1"></a>    &lt;/<span class="kw">xs:restriction</span>&gt;</span>
-<span id="cb13-7"><a href="#cb13-7" tabindex="-1"></a>  &lt;/<span class="kw">xs:simpleType</span>&gt;</span>
-<span id="cb13-8"><a href="#cb13-8" tabindex="-1"></a>&lt;/<span class="kw">xs:element</span>&gt;</span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“place“</span> <span class="er">type=“string“/&gt;</span></span></code></pre>
+</div>
+<p>This defines the &lt;place&gt; XML tag such as &lt;place&gt;New
+York&lt;/place&gt;.</p>
+<p>Content restrictions can be set using facets:</p>
+<div class="codewrapper sourceCode" id="cb14">
+<h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"age"</span>&gt;</span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a>  &lt;<span class="kw">xs:simpleType</span>&gt;</span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a>    &lt;<span class="kw">xs:restriction</span><span class="ot"> base=</span><span class="st">"xs:integer"</span>&gt;</span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a>      &lt;<span class="kw">xs:minInclusive</span><span class="ot"> value=</span><span class="st">"0"</span>/&gt;</span>
+<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a>      &lt;<span class="kw">xs:maxInclusive</span><span class="ot"> value=</span><span class="st">"120"</span>/&gt;</span>
+<span id="cb14-6"><a href="#cb14-6" tabindex="-1"></a>    &lt;/<span class="kw">xs:restriction</span>&gt;</span>
+<span id="cb14-7"><a href="#cb14-7" tabindex="-1"></a>  &lt;/<span class="kw">xs:simpleType</span>&gt;</span>
+<span id="cb14-8"><a href="#cb14-8" tabindex="-1"></a>&lt;/<span class="kw">xs:element</span>&gt;</span></code></pre>
 </div>
 <p>With these restrictions, only values from 0 to 120 are allowed in the
 XML.</p>
@@ -1627,10 +1709,10 @@ XML.</p>
 elements can be nested within it, nor can content information be stored
 in attributes. To assign attributes to a tag in XML, this is also
 defined in the schema:</p>
-<div class="codewrapper sourceCode" id="cb14">
+<div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a>&lt;<span class="kw">xs:attribute</span><span class="ot"> name=</span><span class="st">"lang"</span><span class="ot"> type=</span><span class="st">"string"</span><span class="ot"> default=</span><span class="er">“EN“/&gt;</span></span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a>&lt;<span class="kw">xs:attribute</span><span class="ot"> name=</span><span class="st">"lang"</span><span class="ot"> type=</span><span class="st">"string"</span><span class="ot"> default=</span><span class="er">“EN“/&gt;</span></span></code></pre>
 </div>
 <p>In the example above an attribute for the language is defined. In the
 absence of a specified language, ‘English’ is assumed as the default
@@ -1641,18 +1723,18 @@ XML element, unless the attribute is specified as &lt;tag
 use=“required“&gt;.</p>
 <p>A complexType is used to provide further information and
 specifications for the definition of a content:</p>
-<div class="codewrapper sourceCode" id="cb15">
+<div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“employee“&gt;</span></span>
-<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a>	<span class="er">&lt;xsd:complexType</span> <span class="er">name=</span><span class="st">"PersonTyp"</span><span class="ot"> abstract=</span><span class="st">"true"</span>&gt; </span>
-<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a>		&lt;<span class="kw">xsd:sequence</span>&gt; </span>
-<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Vorname"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span><span class="ot"> maxOccurs=</span><span class="st">"3"</span>/&gt; </span>
-<span id="cb15-5"><a href="#cb15-5" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Name"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span>/&gt; </span>
-<span id="cb15-6"><a href="#cb15-6" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Geburtsdatum"</span><span class="ot"> type=</span><span class="st">"xsd:date"</span>/&gt; </span>
-<span id="cb15-7"><a href="#cb15-7" tabindex="-1"></a>		&lt;/<span class="kw">xsd:sequence</span>&gt; </span>
-<span id="cb15-8"><a href="#cb15-8" tabindex="-1"></a>	&lt;/<span class="kw">xsd:complexType</span>&gt; </span>
-<span id="cb15-9"><a href="#cb15-9" tabindex="-1"></a><span class="er">&lt;</span>/xsd:element&gt;</span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“employee“&gt;</span></span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a>	<span class="er">&lt;xsd:complexType</span> <span class="er">name=</span><span class="st">"PersonTyp"</span><span class="ot"> abstract=</span><span class="st">"true"</span>&gt; </span>
+<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a>		&lt;<span class="kw">xsd:sequence</span>&gt; </span>
+<span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Vorname"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span><span class="ot"> maxOccurs=</span><span class="st">"3"</span>/&gt; </span>
+<span id="cb16-5"><a href="#cb16-5" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Name"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span>/&gt; </span>
+<span id="cb16-6"><a href="#cb16-6" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Geburtsdatum"</span><span class="ot"> type=</span><span class="st">"xsd:date"</span>/&gt; </span>
+<span id="cb16-7"><a href="#cb16-7" tabindex="-1"></a>		&lt;/<span class="kw">xsd:sequence</span>&gt; </span>
+<span id="cb16-8"><a href="#cb16-8" tabindex="-1"></a>	&lt;/<span class="kw">xsd:complexType</span>&gt; </span>
+<span id="cb16-9"><a href="#cb16-9" tabindex="-1"></a><span class="er">&lt;</span>/xsd:element&gt;</span></code></pre>
 </div>
 <p>This schema is proposed for the definition of an employee. It is
 imperative that the XML data comprises the subject’s first name, name
