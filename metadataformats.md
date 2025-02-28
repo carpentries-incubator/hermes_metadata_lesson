@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Metadata File Formats"
-teaching: 15
-exercises: 10
+teaching: 20
+exercises: 15
 ---
 
 ::: questions 
@@ -42,7 +42,7 @@ The advantage of using such a format is the interoperability of the data. This m
 
 ## Challenge
 
-Open the [artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/artworks.csv) in your favorite spreadsheet application. 
+Open the [artworksShort.csv file](https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/artworksShort.csv) and the [artworksShort.xslx file](https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/artworksShort.xlsx) in your favorite spreadsheet application. 
 
 - What do you notice?    
 - What form does the data take?    
@@ -53,7 +53,8 @@ Open the [artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/blob/
 
 ## Show me the solution
 
-- Various parameters are queried when opening.
+- Various parameters are queried when opening the csv file.
+- Some data in the xslx file are formatted with colors as well as bold and italic text. You won't find this in the csv file. 
 - The data is in a tabular form in a spreadsheet available.
 - The data is structured into individual fields.
 - Content is named, data is labled/marked up.
@@ -79,13 +80,23 @@ ID;artist;title;date
 3;Banksy;Girl with Ballon;2002
 ```
 
-Whereas with an xslx format, data can be saved, formatted and provided with formulas in several spreadsheets, the CSV (comma-separated values) format stores tabular data in plain text. 
-
-When you opened the file in the last exercise, some parameters were queried before you could even open it. Here we can see why:
+When you opened the csv file, some parameters were queried before you could even open it. Here we can see why:
 
 The data is separated by semicolons - the delimiters. Delimiter-separated files are often given a *.csv* extension even when the field separator is not a comma as the example demonstrate. In many files you may find the contents of the data fields enclosed in quotes. Individual records are separated by a line break. The first line often defines the column headings. If these parameters are entered correctly when the file is opened, the data is transferred to the appropriate fields in the spreadsheet. 
 
-When entering data into spreadsheets, there are a number of issues to consider to ensure that the data can be processed correctly. In addition to the comma-separated fields mentioned above, which can cause problems, there are many more aspects. Dates are a major source of error. Different spellings can lead to misinterpretation. How do you interpret the date 25-01-11 when it is written in a single field?
+### Difference between csv and xslx files
+
+In an xslx format, data can be saved, formatted and provided with formulas in several spreadsheets in one file. The data is organized into cells, which are arranged in rows and columns. The cells as well as the data values can be formatted including font styles, colors or borders. The data can be manipulated by using built-in functions, e.g., for calculating or analysing. It is also possible to visualize the analyzed data within the spreadsheet software like Excel. 
+
+One of the disadvantages is the limitation of rows and columns (depending on the version, e.g. 1,048,576 rows and 16,385 columns per worksheet). Some features depend on the software version. Older tables may not always display correctly with the latest version due to lack of feature compatibility. 
+
+The CSV (comma-separated values) format stores tabular data in plain text which can be opened in a spreadsheet software. It is therefore humanreadable as well as machinereadable. There is always only one table. But more data can be stored because of the plain text format which makes it particularly efficient, since no superfluous data, such as formatting data, is stored. It is therefore suitable for data storage and exchange between applications or databases. 
+
+One of its disadvantages is that it can only store simple tabular data, not more complex structures. As the example above shows, certain characters must be escaped, which makes it sensitive to errors. 
+
+#### Data Organization
+
+When entering data into spreadsheets, there are a number of issues to consider to ensure that the data can be processed correctly. In addition to the comma-separated fields mentioned above, which can cause problems, there are many more aspects. Dates or names are a major source of error. Different spellings can lead to misinterpretation. How do you interpret the date 25-01-11 when it is written in a single field? Which part of the name is the first and which the last name of a person? 
 
 ::: callout
 
@@ -101,9 +112,10 @@ Choosing a different format can help to avoid some of these difficulties. One op
 
 ::: keypoints
 
-* marking up the data with for exmaple headers is helpful
-* use a format which is interoperable like csv
-* be aware of the problems the data and metadata can cause when annotating them, e.g., the dates 
+* Use a xslx format to store and analyze the data and if you need to format the data and the spreadsheet.
+* Use a format which is interoperable like csv for data storage or exchange and if you don't need to analyze or visualize the data with the application.
+* Marking up the data with for exmaple headers is helpful.
+* Be aware of the problems the data and metadata can cause when annotating them, e.g., the dates or names. 
 
 :::
 
