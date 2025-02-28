@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Metadata File Formats"
-teaching: 20
-exercises: 1
+teaching: 15
+exercises: 10
 ---
 
 ::: questions 
@@ -42,27 +42,28 @@ The advantage of using such a format is the interoperability of the data. This m
 
 ## Challenge
 
-Open the artworks.csv file in your favorite spreadsheet application. 
-    * What do you notice?    
-    * What form does the data take?    
-    * What are the advantages of recording data in tabular form?    
-    * Why is this data operable? 
+Open the [artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/artworks.csv) in your favorite spreadsheet application. 
+
+- What do you notice?    
+- What form does the data take?    
+- What are the advantages of recording data in tabular form?    
+- Why is this data operable? 
     
 ::: solution
 
 ## Show me the solution
 
-    * Various parameters are queried when opening.
-    * The data is in a tabular form in a spreadsheet available.
-    * The data is structured into individual fields.
-    * Content is named, data is labled/marked up.
-    * The data is available in a digital file format that can be processed and shared.
+- Various parameters are queried when opening.
+- The data is in a tabular form in a spreadsheet available.
+- The data is structured into individual fields.
+- Content is named, data is labled/marked up.
+- The data is available in a digital file format that can be processed and shared.
     
 :::
 :::
 
 ::: instructor
-Possible sources of error and problems that can occur and should be discussed are the separators. A title with commas was intentionally built into the file so that this title can be displayed across several fields when different separators are selected. There may also be some discussion about whether the names should be in two separate fields. 
+Possible sources of error and problems that can occur and should be discussed are the separators. A title with commas was intentionally built into the file so that this title can be displayed across several fields when different separators are selected. 
 :::
 
 The CSV (comma-separated values) format in this example is usually opened as a table in a spreadsheet so that it can be read by humans in a structured way. If you open the format in a text editor, you can see the structure of the file. 
@@ -100,11 +101,9 @@ Choosing a different format can help to avoid some of these difficulties. One op
 
 ::: keypoints
 
-To annotate data and metadata is it best to:
-
-* mark up the data with for exmaple headers
+* marking up the data with for exmaple headers is helpful
 * use a format which is interoperable like csv
-* be aware of the problems the data and metadata can cause when annotating them, e.g., the dates or labels
+* be aware of the problems the data and metadata can cause when annotating them, e.g., the dates 
 
 :::
 
