@@ -1,7 +1,7 @@
 ---
 title: "XML and XML schema"
-teaching: 60
-exercises: 2
+teaching: 30
+exercises: 20
 ---
 
 ::: questions 
@@ -22,9 +22,11 @@ exercises: 2
 
 ## XML
 
+
 One of the most widely used metadata formats in the cultural sector is XML (eXtensible Markup Language). It is used to describe, structure, hierarchise (if desired), store and transport data. XML refers to the file format and structure in which data is recorded. 
 
-### XML elements
+
+#### XML elements
 
 An XML document contains XML elements to structure the data. They are formed using angle brackets and are divided into an opening tag and a closing tag, indicated by a leading slash. The content is placed in between. 
 
@@ -48,7 +50,8 @@ XML also provides the ability to have comments that are not automatically read:
 <!-- Here is the content of the comment, there is no closing tag -- >
 ```
 
-### Rules for naming tags^[1]
+#### Rules for naming tags^[1]
+
 
 Names:
 
@@ -57,11 +60,13 @@ Names:
 * Can contain letters, digits, hyphens, underscores, and periods. 
 * Cannot contain spaces.
 
+
 Best Naming Practices:
 
 * Create descriptive names.
 * Create short and simple names.
 * Avoid - / . / : in the names, e.g. \<first-name\>, and be aware that : is reserved for namespaces which have a special function.
+
 
 In XML, all elements must be properly nested within each other, which means that an element opened inside another element must be closed inside too:
 
@@ -69,7 +74,8 @@ In XML, all elements must be properly nested within each other, which means that
 <collection><place>collection of the MET in New York</place></collection>
 ```
 
-### Attributes
+
+#### Attributes
 
 In XML, as in HTML, tags can also be assigned attributes, which define the content of the tags in more detail. They are named and the content is assigned to them with a = and enclosed in quotes:
 
@@ -78,6 +84,7 @@ In XML, as in HTML, tags can also be assigned attributes, which define the conte
 
 <commonTitle lang="title as commonly known">Always give the title as it is commonly known</commonTitle>
 ```
+
 
 There are some rules for characters used in XML for structure. They are replaced by a special character string, so that it won’t cause problems if, for example, you want to use a < in the content. This would cause an error because XML expects a closing tag. To avoid errors, the character is replaced with an entity reference: 
 
@@ -89,6 +96,7 @@ There are some rules for characters used in XML for structure. They are replaced
 | \&apos; | ' | apostrophe |
 | \&quot; | " | quotation mark |
 
+
 Attributes are also frequently used in a hierarchy to record information that applies to all underlying data:
 
 ```xml
@@ -97,6 +105,7 @@ Attributes are also frequently used in a hierarchy to record information that ap
 	<item2/>
 </items>
 ```
+
 
 However, it should be noted that the information contained in the attributes is more likely to be seen as metadata related to the content. In this example, it may be worth creating the information about the collection and its location as separate tags above the items.
 
@@ -114,9 +123,11 @@ However, it should be noted that the information contained in the attributes is 
 </place>
 ```
 
+
 The indentation (using a tab) describes the hierarchy level. The collection is assigned to the location, and the items below it are on the same hierarchy level. The structure depends on the purpose of the collection and the data to be collected. 
 
 The slash here at the end of the tag (self-closing tag) means that the element is empty and self-contained.
+
 
 ::: callout
 In HTML, attributes often contain style information, such as the font color or the size and width of a section. This is also where the alt tag is created, which contains an alternative text to an image that is automatically read or displayed if the image cannot be retrieved:
@@ -127,11 +138,13 @@ In HTML, attributes often contain style information, such as the font color or t
 ```
 :::
 
+
 At the top of an XML document you will often find something called a prolog:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 ```
+
 
 It is optional, but provides information about the version and encoding used, and must be at the top if included. 
 
@@ -141,7 +154,7 @@ XML documents that conform to this syntax rules are said to be "Well Formed" XML
 
 ::: challenge
 
-## Exercise
+### Exercise
 
 Open the [moma_artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/moma_artworks.csv). Use the given data of one artwork and write it in an XML format. 
 
@@ -310,7 +323,7 @@ Open the [moma_artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/
 
 ::: discussion
 
-## Discussion
+### Discussion
 
 Compare your XML with the documents of the other participants. What do you notice?
 
@@ -328,6 +341,7 @@ ______________________________________________
 
 ## XML Schema
 
+
 In the humanities in particular, there are standards for annotating data in XML. This ensures that data is available in a standardised form and is therefore interoperable. In XML, this is done by creating a schema. An XML Schema describes the structure of an XML document and establishes rules for annotating its content. The structure is essentially the same as XML. A schema is stored in the .xsd (XML Schema Definition) file format. It is characterised by the use of xs:schema as the container element for the whole document. Xs denotes the namespace for the schema (remember not to use : in XML tags, it is reserved for that!) 
 
 ```xsd
@@ -335,16 +349,19 @@ In the humanities in particular, there are standards for annotating data in XML.
 
 </xs:schema>
 ```
+
 A simple XML element is defined in the schema by the specification xs:element and the attributes name and type. Additional attributes may be set.
 
 ```xsd
 <xs:element name=“descriptive name“ type=“string“>
 ```
+
 For example, we can specify that a place is always called place and that the character type of the content is a string. This specification prevents the tag from being sometimes called place, sometimes location or even city: 
 ```xsd
 <xs:element name=“place“ type=“string“/>
 ```
 This defines the \<place\> XML tag such as \<place\>New York\</place\>. 
+
 
 Content restrictions can be set using facets:
 ```xsd
@@ -357,12 +374,15 @@ Content restrictions can be set using facets:
   </xs:simpleType>
 </xs:element>
 ```
+
 With these restrictions, only values from 0 to 120 are allowed in the XML. 
 
 A simple element contains only one piece of information. No other elements can be nested within it, nor can content information be stored in attributes. To assign attributes to a tag in XML, this is also defined in the schema:
+
 ```xsd
 <xs:attribute name="lang" type="string" default=“EN“/>
 ```
+
 In the example above an attribute for the language is defined. In the absence of a specified language, 'English' is assumed as the default value. The attribute is specified with a fixed value, thus allowing for the specification of 'English' as the only permitted language. It should be noted that all attributes are optional by default when creating the XML element, unless the attribute is specified as \<tag use=“required“\>. 
 
 A complexType is used to provide further information and specifications for the definition of a content:
@@ -377,11 +397,12 @@ A complexType is used to provide further information and specifications for the 
 	</xsd:complexType> 
 </xsd:element>
 ```
+
 This schema is proposed for the definition of an employee. It is imperative that the XML data comprises the subject's first name, name and date of birth. The employment of the \<xsd:sequence\> element stipulates that the data must be entered in the sequence delineated herein. This particular tag is designated as an 'indicator'. Note that there are other indicators that regulate various aspects, including the number of occurrences permitted for elements, the designation of elements as mandatory, and other related parameters. Other forms of elements are available to regulate the structure of an XML schema. An XML that conforms to a schema is called valid. 
 
 ::: callout
 
-## Reference
+### Reference
 
 You can find tutorials on XML and XSD as well as the follwing topic on the webdevelopment portal [W3Schools](https://www.w3schools.com/). 
 :::
