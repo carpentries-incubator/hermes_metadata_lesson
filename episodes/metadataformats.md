@@ -21,7 +21,6 @@ exercises: 15
 
 ## Introduction
 
-_______________________________________
 
 ::: challenge
 
@@ -42,7 +41,6 @@ In order to store metadata and make it usable in other contexts, appropriate for
 
 #### Interoperability
 
-_______________________________________
 
 The advantage of using such a format is the interoperability of the data. This means that the data is recorded and stored by one person and can be opened and processed elsewhere, for example extended or integrated into another system, i.e. it can be operated with. Data from different sources can also be merged. 
 
@@ -50,7 +48,7 @@ The advantage of using such a format is the interoperability of the data. This m
 
 ::: challenge
 
-## Challenge
+### Challenge
 
 Open the [artworksShort.csv file](https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/artworksShort.csv) and the [artworksShort.xslx file](https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/artworksShort.xlsx) in your favorite spreadsheet application. 
 
@@ -61,7 +59,7 @@ Open the [artworksShort.csv file](https://github.com/HERMES-DKZ/metadata_lesson/
     
 ::: solution
 
-## Show me the solution
+### Show me the solution
 
 - Various parameters are queried when opening the csv file.
 - Some data in the xslx file are formatted with colors as well as bold and italic text. You won't find this in the csv file. 
@@ -81,7 +79,6 @@ Possible sources of error and problems that can occur and should be discussed ar
 
 ## CSV files
 
-_______________________________________
 
 
 The CSV (comma-separated values) format in this example is usually opened as a table in a spreadsheet so that it can be read by humans in a structured way. If you open the format in a text editor, you can see the structure of the file. 
@@ -105,7 +102,6 @@ The data is separated by semicolons - the delimiters. Delimiter-separated files 
 
 ## Difference between csv and xslx files
 
-_______________________________________
 
 
 In an xslx format, data can be saved, formatted and provided with formulas in several spreadsheets in one file. The data is organized into cells, which are arranged in rows and columns. The cells as well as the data values can be formatted including font styles, colors or borders. The data can be manipulated by using built-in functions, e.g., for calculating or analysing. It is also possible to visualize the analyzed data within the spreadsheet software like Excel. 
@@ -120,7 +116,6 @@ One of its disadvantages is that it can only store simple tabular data, not more
 
 #### Data Organization
 
-_______________________________________
 
 
 When entering data into spreadsheets, there are a number of issues to consider to ensure that the data can be processed correctly. In addition to the comma-separated fields mentioned above, which can cause problems, there are many more aspects. Dates or names are a major source of error. Different spellings can lead to misinterpretation. How do you interpret the date 25-01-11 when it is written in a single field? Which part of the name is the first and which the last name of a person? 
@@ -128,7 +123,7 @@ When entering data into spreadsheets, there are a number of issues to consider t
 
 ::: callout
 
-## Find out more on Data Organization
+### Find out more on Data Organization
 
 For further reading see e.g., [Data Organization in Spreadsheets for Social Scientists](https://datacarpentry.github.io/spreadsheets-socialsci/)
 
