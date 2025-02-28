@@ -433,7 +433,7 @@ format.</li>
 </div>
 </div>
 <section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a></h2>
-<hr class="half-width"><div id="question" class="callout challenge">
+<hr class="half-width"><hr><div id="question" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -450,7 +450,7 @@ way?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>A simple way to store data in a structured way is using a spreadsheet
 like Excel.</p>
@@ -464,12 +464,12 @@ metadata is stored include XML and JSON. A lot of data is also stored in
 the more familiar CSV format as a real-life example will show later.</p>
 <div class="section level4">
 <h4 id="interoperability">Interoperability<a class="anchor" aria-label="anchor" href="#interoperability"></a></h4>
-<p>The advantage of using such a format is the interoperability of the
+<hr><p>The advantage of using such a format is the interoperability of the
 data. This means that the data is recorded and stored by one person and
 can be opened and processed elsewhere, for example extended or
 integrated into another system, i.e. it can be operated with. Data from
 different sources can also be merged.</p>
-<hr><div id="challenge" class="callout challenge">
+<div id="challenge" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -491,7 +491,7 @@ file</a> in your favorite spreadsheet application.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul><li>Various parameters are queried when opening the csv file.</li>
 <li>Some data in the xslx file are formatted with colors as well as bold
@@ -510,7 +510,7 @@ and shared.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Possible sources of error and problems that can occur and should be
 discussed are the separators. A title with commas was intentionally
@@ -520,9 +520,9 @@ fields when different separators are selected.</p>
 </div>
 </div>
 </div>
-<hr></div>
+</div>
 </section><section><h2 class="section-heading" id="csv-files">CSV files<a class="anchor" aria-label="anchor" href="#csv-files"></a></h2>
-<hr class="half-width"><p>The CSV (comma-separated values) format in this example is usually
+<hr class="half-width"><hr><p>The CSV (comma-separated values) format in this example is usually
 opened as a table in a spreadsheet so that it can be read by humans in a
 structured way. If you open the format in a text editor, you can see the
 structure of the file.</p>
@@ -544,8 +544,8 @@ quotes. Individual records are separated by a line break. The first line
 often defines the column headings. If these parameters are entered
 correctly when the file is opened, the data is transferred to the
 appropriate fields in the spreadsheet.</p>
-<hr></section><section><h2 class="section-heading" id="difference-between-csv-and-xslx-files">Difference between csv and xslx files<a class="anchor" aria-label="anchor" href="#difference-between-csv-and-xslx-files"></a></h2>
-<hr class="half-width"><p>In an xslx format, data can be saved, formatted and provided with
+</section><section><h2 class="section-heading" id="difference-between-csv-and-xslx-files">Difference between csv and xslx files<a class="anchor" aria-label="anchor" href="#difference-between-csv-and-xslx-files"></a></h2>
+<hr class="half-width"><hr><p>In an xslx format, data can be saved, formatted and provided with
 formulas in several spreadsheets in one file. The data is organized into
 cells, which are arranged in rows and columns. The cells as well as the
 data values can be formatted including font styles, colors or borders.
@@ -567,9 +567,9 @@ and exchange between applications or databases.</p>
 <p>One of its disadvantages is that it can only store simple tabular
 data, not more complex structures. As the example above shows, certain
 characters must be escaped, which makes it sensitive to errors.</p>
-<hr><div class="section level4">
+<div class="section level4">
 <h4 id="data-organization">Data Organization<a class="anchor" aria-label="anchor" href="#data-organization"></a></h4>
-<p>When entering data into spreadsheets, there are a number of issues to
+<hr><p>When entering data into spreadsheets, there are a number of issues to
 consider to ensure that the data can be processed correctly. In addition
 to the comma-separated fields mentioned above, which can cause problems,
 there are many more aspects. Dates or names are a major source of error.
