@@ -42,6 +42,7 @@ In order to store metadata and make it usable in other contexts, appropriate for
 
 The advantage of using such a format is the interoperability of the data. This means that the data is recorded and stored by one person and can be opened and processed elsewhere, for example extended or integrated into another system, i.e. it can be operated with. Data from different sources can also be merged. 
 
+_______________________________________
 
 ::: challenge
 
@@ -72,8 +73,9 @@ Open the [artworksShort.csv file](https://github.com/HERMES-DKZ/metadata_lesson/
 Possible sources of error and problems that can occur and should be discussed are the separators. A title with commas was intentionally built into the file so that this title can be displayed across several fields when different separators are selected. 
 :::
 
+_______________________________________
 
-### CSV files
+## CSV files
 
 
 The CSV (comma-separated values) format in this example is usually opened as a table in a spreadsheet so that it can be read by humans in a structured way. If you open the format in a text editor, you can see the structure of the file. 
@@ -93,8 +95,9 @@ When you opened the csv file, some parameters were queried before you could even
 
 The data is separated by semicolons - the delimiters. Delimiter-separated files are often given a *.csv* extension even when the field separator is not a comma as the example demonstrate. In many files you may find the contents of the data fields enclosed in quotes. Individual records are separated by a line break. The first line often defines the column headings. If these parameters are entered correctly when the file is opened, the data is transferred to the appropriate fields in the spreadsheet. 
 
+_______________________________________
 
-### Difference between csv and xslx files
+## Difference between csv and xslx files
 
 
 In an xslx format, data can be saved, formatted and provided with formulas in several spreadsheets in one file. The data is organized into cells, which are arranged in rows and columns. The cells as well as the data values can be formatted including font styles, colors or borders. The data can be manipulated by using built-in functions, e.g., for calculating or analysing. It is also possible to visualize the analyzed data within the spreadsheet software like Excel. 
@@ -104,6 +107,8 @@ One of the disadvantages is the limitation of rows and columns (depending on the
 The CSV (comma-separated values) format stores tabular data in plain text which can be opened in a spreadsheet software. It is therefore humanreadable as well as machinereadable. There is always only one table. But more data can be stored because of the plain text format which makes it particularly efficient, since no superfluous data, such as formatting data, is stored. It is therefore suitable for data storage and exchange between applications or databases. 
 
 One of its disadvantages is that it can only store simple tabular data, not more complex structures. As the example above shows, certain characters must be escaped, which makes it sensitive to errors. 
+
+_______________________________________
 
 #### Data Organization
 
@@ -124,6 +129,7 @@ An important part of recording metadata is annotating the data. Labelling catego
 
 Choosing a different format can help to avoid some of these difficulties. One option is to use a markup language. Based on the SGML meta-language, which contains the basic concepts of markup languages, such as elements and attributes, and the rules for their use, the various markup languages are used to structure and format text and data in a machine-readable way.
 
+_______________________________________
 
 ::: keypoints
 
