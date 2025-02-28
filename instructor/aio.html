@@ -1078,7 +1078,7 @@ way?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>A simple way to store data in a structured way is using a spreadsheet
 like Excel.</p>
@@ -1125,7 +1125,7 @@ file</a> in your favorite spreadsheet application.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
 <li>Various parameters are queried when opening the csv file.</li>
@@ -1146,7 +1146,7 @@ and shared.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Possible sources of error and problems that can occur and should be
 discussed are the separators. A title with commas was intentionally
@@ -1272,10 +1272,10 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-xml"><p>Content from <a href="xml.html">XML and XML schema</a></p>
 <hr>
-<p>Last updated on 2025-02-27 |
+<p>Last updated on 2025-02-28 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/xml.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 62 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 50 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -1316,9 +1316,9 @@ any links that you are not going to use.
 is XML (eXtensible Markup Language). It is used to describe, structure,
 hierarchise (if desired), store and transport data. XML refers to the
 file format and structure in which data is recorded.</p>
-<div class="section level3">
-<h3 id="xml-elements">XML elements<a class="anchor" aria-label="anchor" href="#xml-elements"></a>
-</h3>
+<div class="section level4">
+<h4 id="xml-elements">XML elements<a class="anchor" aria-label="anchor" href="#xml-elements"></a>
+</h4>
 <p>An XML document contains XML elements to structure the data. They are
 formed using angle brackets and are divided into an opening tag and a
 closing tag, indicated by a leading slash. The content is placed in
@@ -1349,10 +1349,10 @@ automatically read:</p>
 <pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co">&lt;!-- Here is the content of the comment, there is no closing tag </span><span class="er">--</span><span class="co"> &gt;</span></span></code></pre>
 </div>
 </div>
-<div class="section level3">
-<h3 id="rules-for-naming-tags">Rules for naming tags<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>
+<div class="section level4">
+<h4 id="rules-for-naming-tags">Rules for naming tags<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>
 <a class="anchor" aria-label="anchor" href="#rules-for-naming-tags"></a>
-</h3>
+</h4>
 <p>Names:</p>
 <ul>
 <li>Must start with a letter or underscore.</li>
@@ -1376,9 +1376,9 @@ inside too:</p>
 <pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>&lt;<span class="kw">collection</span>&gt;&lt;<span class="kw">place</span>&gt;collection of the MET in New York&lt;/<span class="kw">place</span>&gt;&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
 </div>
 </div>
-<div class="section level3">
-<h3 id="attributes">Attributes<a class="anchor" aria-label="anchor" href="#attributes"></a>
-</h3>
+<div class="section level4">
+<h4 id="attributes">Attributes<a class="anchor" aria-label="anchor" href="#attributes"></a>
+</h4>
 <p>In XML, as in HTML, tags can also be assigned attributes, which
 define the content of the tags in more detail. They are named and the
 content is assigned to them with a = and enclosed in quotes:</p>
@@ -2025,7 +2025,7 @@ the moma_artwork.csv and write the data into a json format.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2255,7 +2255,7 @@ brackets), although they only contain one value?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Of course, there are works of art and objects made by several
 artists. As this is a case that certainly occurs more frequently, the
@@ -2452,7 +2452,7 @@ utilized indirectly.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Not only the name of the author entity, but also its identifier of
 the GND database is included. The Gemeinsame Normdatei, maintained by
