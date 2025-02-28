@@ -25,7 +25,7 @@ The following is an attempt to differentiate between the terms *metadata standar
 The term *model* can be used synonymously with *schema*. However, it must be emphasized that this is not a universal claim; 
 rather, it is intended to facilitate a better understanding of the structures of data standardization, as there are no universally accepted definitions of these terms.
 
-### Metadata Standard
+## Metadata Standard
 
 A metadata standard is a technical specification, which describes how data should be annotated or structured, and includes principles and implementation issues for using the standard. There are two ways to standardize the data: Each element or data field is uniquely named (e.g., author, title, etc.) and can be specified by rules in the form of attributes (e.g., data type), or a structure for the data is selected. Both provide a basic description and organization of the data, thereby standardizing it. 
 
@@ -64,7 +64,7 @@ Metadata elements within a structure:
 * Technical metadata
   * file format
 
-### Metadata Schema
+## Metadata Schema
 
 The term *metadata schema* is mostly used for structuring data within a specific context, and there are countless standards for every discipline or specific purpose. 
 During the development stage, an existing metadata standard can be integrated. Its rules then apply to the metadata fields, which are in turn placed within a larger context. 
@@ -100,6 +100,8 @@ Wikimedia Foundation's knowledge base, known as "Wikidata." By establishing thes
 Discuss the following graphic in small groups. What is shown? 
 
 ![image title](fig/metadata.png)
+
+
 ::: solution
 
 ### Show me the solution
@@ -107,7 +109,7 @@ Not only the name of the author entity, but also its identifier of the GND datab
 The Gemeinsame Normdatei, maintained by the German National Library, is a comprehensive database that describes persons, corporate bodies, conferences, geographies, 
 subject headings, and works. Within the GND, the author entity is also a metadata entity, containing biographical data. Linking these two entities consolidates their 
 data into a single record, eliminating the need for separate recording. The publication also has a data record in the GND, and this entity is linked to all the metadata 
-associated with the publication, such as the year of publication.In this example, the publisher has a separate entity in the form of a "Wikidata" record to which it is linked.
+associated with the publication, such as the year of publication. In this example, the publisher has a separate entity in the form of a "Wikidata" record to which it is linked.
 The metadata in this entity contains information about the publisher's location, which is linked to an identifier. In this example, it is the TGN ID. 
 The Getty Thesaurus of Geographic Names (TGN) serves as a standards database for geographic names, recording various spellings, including historical ones, 
 as well as coordinates and country affiliation, among other attributes. This creates a network of data that can be expanded as required, depending on the availability of data.
