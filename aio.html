@@ -742,7 +742,7 @@ we have here?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>We cannot present analogue data here because everything we display on
 the monitor is digital!</p>
@@ -941,7 +941,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The objects searchable in the Met Museum’s online collection
 primarily feature descriptive metadata, such as title, author, date, and
@@ -976,7 +976,7 @@ part of specific projects.</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>It depends on the context wether it is data (the book itself) or
 metadata (title in a library catalogue)</p>
@@ -1071,7 +1071,7 @@ way?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>A simple way to store data in a structured way is using a spreadsheet
 like Excel.</p>
@@ -1095,7 +1095,8 @@ different sources can also be merged.</p>
 <div id="challenge" class="callout-inner">
 <h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
-<p>Open the <a href="https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/artworks.csv" class="external-link">artworks.csv
+<p>Open the <a href="https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/artworksShort.csv" class="external-link">artworksShort.csv
+file</a> and the <a href="https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/artworksShort.xlsx" class="external-link">artworksShort.xslx
 file</a> in your favorite spreadsheet application.</p>
 <ul>
 <li>What do you notice?<br>
@@ -1114,10 +1115,12 @@ file</a> in your favorite spreadsheet application.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul>
-<li>Various parameters are queried when opening.</li>
+<li>Various parameters are queried when opening the csv file.</li>
+<li>Some data in the xslx file are formatted with colors as well as bold
+and italic text. You won’t find this in the csv file.</li>
 <li>The data is in a tabular form in a spreadsheet available.</li>
 <li>The data is structured into individual fields.</li>
 <li>Content is named, data is labled/marked up.</li>
@@ -1141,11 +1144,8 @@ structure of the file.</p>
 5;Berthe Morisot;The psyche mirror;1876
 1;Georgia O’Keeffe;Sky above clouds IV;1965
 3;Banksy;Girl with Ballon;2002</code></pre>
-<p>Whereas with an xslx format, data can be saved, formatted and
-provided with formulas in several spreadsheets, the CSV (comma-separated
-values) format stores tabular data in plain text.</p>
-<p>When you opened the file in the last exercise, some parameters were
-queried before you could even open it. Here we can see why:</p>
+<p>When you opened the csv file, some parameters were queried before you
+could even open it. Here we can see why:</p>
 <p>The data is separated by semicolons - the delimiters.
 Delimiter-separated files are often given a <em>.csv</em> extension even
 when the field separator is not a comma as the example demonstrate. In
@@ -1154,12 +1154,41 @@ quotes. Individual records are separated by a line break. The first line
 often defines the column headings. If these parameters are entered
 correctly when the file is opened, the data is transferred to the
 appropriate fields in the spreadsheet.</p>
+<div class="section level3">
+<h3 id="difference-between-csv-and-xslx-files">Difference between csv and xslx files<a class="anchor" aria-label="anchor" href="#difference-between-csv-and-xslx-files"></a>
+</h3>
+<p>In an xslx format, data can be saved, formatted and provided with
+formulas in several spreadsheets in one file. The data is organized into
+cells, which are arranged in rows and columns. The cells as well as the
+data values can be formatted including font styles, colors or borders.
+The data can be manipulated by using built-in functions, e.g., for
+calculating or analysing. It is also possible to visualize the analyzed
+data within the spreadsheet software like Excel.</p>
+<p>One of the disadvantages is the limitation of rows and columns
+(depending on the version, e.g. 1,048,576 rows and 16,385 columns per
+worksheet). Some features depend on the software version. Older tables
+may not always display correctly with the latest version due to lack of
+feature compatibility.</p>
+<p>The CSV (comma-separated values) format stores tabular data in plain
+text which can be opened in a spreadsheet software. It is therefore
+humanreadable as well as machinereadable. There is always only one
+table. But more data can be stored because of the plain text format
+which makes it particularly efficient, since no superfluous data, such
+as formatting data, is stored. It is therefore suitable for data storage
+and exchange between applications or databases.</p>
+<p>One of its disadvantages is that it can only store simple tabular
+data, not more complex structures. As the example above shows, certain
+characters must be escaped, which makes it sensitive to errors.</p>
+<div class="section level4">
+<h4 id="data-organization">Data Organization<a class="anchor" aria-label="anchor" href="#data-organization"></a>
+</h4>
 <p>When entering data into spreadsheets, there are a number of issues to
 consider to ensure that the data can be processed correctly. In addition
 to the comma-separated fields mentioned above, which can cause problems,
-there are many more aspects. Dates are a major source of error.
+there are many more aspects. Dates or names are a major source of error.
 Different spellings can lead to misinterpretation. How do you interpret
-the date 25-01-11 when it is written in a single field?</p>
+the date 25-01-11 when it is written in a single field? Which part of
+the name is the first and which the last name of a person?</p>
 <div id="find-out-more-on-data-organization" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1195,10 +1224,14 @@ in a machine-readable way.</p>
 <h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul>
-<li>marking up the data with for exmaple headers is helpful</li>
-<li>use a format which is interoperable like csv</li>
-<li>be aware of the problems the data and metadata can cause when
-annotating them, e.g., the dates</li>
+<li>Use a xslx format to store and analyze the data and if you need to
+format the data and the spreadsheet.</li>
+<li>Use a format which is interoperable like csv for data storage or
+exchange and if you don’t need to analyze or visualize the data with the
+application.</li>
+<li>Marking up the data with for exmaple headers is helpful.</li>
+<li>Be aware of the problems the data and metadata can cause when
+annotating them, e.g., the dates or names.</li>
 </ul>
 </div>
 </div>
@@ -1207,6 +1240,8 @@ annotating them, e.g., the dates</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
+</div>
 </section></section><section id="aio-xml"><p>Content from <a href="xml.html">XML and XML schema</a></p>
 <hr>
 <p>Last updated on 2025-02-27 |
@@ -1464,7 +1499,7 @@ format.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <ul>
 <li>Think about the headings in the spreadsheet. Do you agree with this
@@ -1480,7 +1515,7 @@ labelling?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
