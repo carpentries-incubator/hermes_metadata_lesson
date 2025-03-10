@@ -339,66 +339,7 @@ ______________________________________________
 
 
 
-## XML Schema
 
-
-In the humanities in particular, there are standards for annotating data in XML. This ensures that data is available in a standardised form and is therefore interoperable. In XML, this is done by creating a schema. An XML Schema describes the structure of an XML document and establishes rules for annotating its content. The structure is essentially the same as XML. A schema is stored in the .xsd (XML Schema Definition) file format. It is characterised by the use of xs:schema as the container element for the whole document. Xs denotes the namespace for the schema (remember not to use : in XML tags, it is reserved for that!) 
-
-```xsd
-<xs:schema>
-
-</xs:schema>
-```
-
-A simple XML element is defined in the schema by the specification xs:element and the attributes name and type. Additional attributes may be set.
-
-```xsd
-<xs:element name=“descriptive name“ type=“string“>
-```
-
-For example, we can specify that a place is always called place and that the character type of the content is a string. This specification prevents the tag from being sometimes called place, sometimes location or even city: 
-```xsd
-<xs:element name=“place“ type=“string“/>
-```
-This defines the \<place\> XML tag such as \<place\>New York\</place\>. 
-
-
-Content restrictions can be set using facets:
-```xsd
-<xs:element name="age">
-  <xs:simpleType>
-    <xs:restriction base="xs:integer">
-      <xs:minInclusive value="0"/>
-      <xs:maxInclusive value="120"/>
-    </xs:restriction>
-  </xs:simpleType>
-</xs:element>
-```
-
-With these restrictions, only values from 0 to 120 are allowed in the XML. 
-
-A simple element contains only one piece of information. No other elements can be nested within it, nor can content information be stored in attributes. To assign attributes to a tag in XML, this is also defined in the schema:
-
-```xsd
-<xs:attribute name="lang" type="string" default=“EN“/>
-```
-
-In the example above an attribute for the language is defined. In the absence of a specified language, 'English' is assumed as the default value. The attribute is specified with a fixed value, thus allowing for the specification of 'English' as the only permitted language. It should be noted that all attributes are optional by default when creating the XML element, unless the attribute is specified as \<tag use=“required“\>. 
-
-A complexType is used to provide further information and specifications for the definition of a content:
-``` xsd
-<xs:element name=“employee“>
-	<xs:complexType name="personType" abstract="true"> 
-		<xs:sequence> 
-			<xs:element name="firstName" type="xs:string" maxOccurs="3"/> 
-			<xs:element name="name" type="xs:string"/> 
-			<xs:element name="dateofBirth" type="xs:date"/>
-		</xs:sequence> 
-	</xs:complexType> 
-</xs:element>
-```
-
-This schema is proposed for the definition of an employee. It is imperative that the XML data comprises the subject's first name, name and date of birth. The employment of the \<xs:sequence\> element stipulates that the data must be entered in the sequence delineated herein. This particular tag is designated as an 'indicator'. Note that there are other indicators that regulate various aspects, including the number of occurrences permitted for elements, the designation of elements as mandatory, and other related parameters. Other forms of elements are available to regulate the structure of an XML schema. An XML that conforms to a schema is called valid. 
 
 ::: callout
 
