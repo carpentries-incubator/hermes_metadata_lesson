@@ -1531,7 +1531,7 @@ format.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <ul>
 <li>Think about the headings in the spreadsheet. Do you agree with this
@@ -1547,7 +1547,7 @@ labelling?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1722,7 +1722,7 @@ do you notice?</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>The exercise can be carried out as group work if there are many
 participants. Otherwise, someone can also present their solution at the
@@ -1739,102 +1739,6 @@ exhibition.</p>
 <hr>
 <p>[1]: <a href="https://www.w3schools.com/xml/xml_elements.asp%3E" class="external-link">w3school XML
 elements</a></p>
-</div>
-</section><section><h2 class="section-heading" id="xml-schema">XML Schema<a class="anchor" aria-label="anchor" href="#xml-schema"></a>
-</h2>
-<hr class="half-width">
-<p>In the humanities in particular, there are standards for annotating
-data in XML. This ensures that data is available in a standardised form
-and is therefore interoperable. In XML, this is done by creating a
-schema. An XML Schema describes the structure of an XML document and
-establishes rules for annotating its content. The structure is
-essentially the same as XML. A schema is stored in the .xsd (XML Schema
-Definition) file format. It is characterised by the use of xs:schema as
-the container element for the whole document. Xs denotes the namespace
-for the schema (remember not to use : in XML tags, it is reserved for
-that!)</p>
-<div class="codewrapper sourceCode" id="cb11">
-<h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>&lt;<span class="kw">xs:schema</span>&gt;</span>
-<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a>&lt;/<span class="kw">xs:schema</span>&gt;</span></code></pre>
-</div>
-<p>A simple XML element is defined in the schema by the specification
-xs:element and the attributes name and type. Additional attributes may
-be set.</p>
-<div class="codewrapper sourceCode" id="cb12">
-<h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“descriptive</span> <span class="er">name“</span> <span class="er">type=“string“&gt;</span></span></code></pre>
-</div>
-<p>For example, we can specify that a place is always called place and
-that the character type of the content is a string. This specification
-prevents the tag from being sometimes called place, sometimes location
-or even city:</p>
-<div class="codewrapper sourceCode" id="cb13">
-<h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“place“</span> <span class="er">type=“string“/&gt;</span></span></code></pre>
-</div>
-<p>This defines the &lt;place&gt; XML tag such as &lt;place&gt;New
-York&lt;/place&gt;.</p>
-<p>Content restrictions can be set using facets:</p>
-<div class="codewrapper sourceCode" id="cb14">
-<h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"age"</span>&gt;</span>
-<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a>  &lt;<span class="kw">xs:simpleType</span>&gt;</span>
-<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a>    &lt;<span class="kw">xs:restriction</span><span class="ot"> base=</span><span class="st">"xs:integer"</span>&gt;</span>
-<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a>      &lt;<span class="kw">xs:minInclusive</span><span class="ot"> value=</span><span class="st">"0"</span>/&gt;</span>
-<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a>      &lt;<span class="kw">xs:maxInclusive</span><span class="ot"> value=</span><span class="st">"120"</span>/&gt;</span>
-<span id="cb14-6"><a href="#cb14-6" tabindex="-1"></a>    &lt;/<span class="kw">xs:restriction</span>&gt;</span>
-<span id="cb14-7"><a href="#cb14-7" tabindex="-1"></a>  &lt;/<span class="kw">xs:simpleType</span>&gt;</span>
-<span id="cb14-8"><a href="#cb14-8" tabindex="-1"></a>&lt;/<span class="kw">xs:element</span>&gt;</span></code></pre>
-</div>
-<p>With these restrictions, only values from 0 to 120 are allowed in the
-XML.</p>
-<p>A simple element contains only one piece of information. No other
-elements can be nested within it, nor can content information be stored
-in attributes. To assign attributes to a tag in XML, this is also
-defined in the schema:</p>
-<div class="codewrapper sourceCode" id="cb15">
-<h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a>&lt;<span class="kw">xs:attribute</span><span class="ot"> name=</span><span class="st">"lang"</span><span class="ot"> type=</span><span class="st">"string"</span><span class="ot"> default=</span><span class="er">“EN“/&gt;</span></span></code></pre>
-</div>
-<p>In the example above an attribute for the language is defined. In the
-absence of a specified language, ‘English’ is assumed as the default
-value. The attribute is specified with a fixed value, thus allowing for
-the specification of ‘English’ as the only permitted language. It should
-be noted that all attributes are optional by default when creating the
-XML element, unless the attribute is specified as &lt;tag
-use=“required“&gt;.</p>
-<p>A complexType is used to provide further information and
-specifications for the definition of a content:</p>
-<div class="codewrapper sourceCode" id="cb16">
-<h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“employee“&gt;</span></span>
-<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a>	<span class="er">&lt;xs:complexType</span> <span class="er">name=</span><span class="st">"personType"</span><span class="ot"> abstract=</span><span class="st">"true"</span>&gt; </span>
-<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a>		&lt;<span class="kw">xs:sequence</span>&gt; </span>
-<span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a>			&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"firstName"</span><span class="ot"> type=</span><span class="st">"xs:string"</span><span class="ot"> maxOccurs=</span><span class="st">"3"</span>/&gt; </span>
-<span id="cb16-5"><a href="#cb16-5" tabindex="-1"></a>			&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"name"</span><span class="ot"> type=</span><span class="st">"xs:string"</span>/&gt; </span>
-<span id="cb16-6"><a href="#cb16-6" tabindex="-1"></a>			&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"dateofBirth"</span><span class="ot"> type=</span><span class="st">"xs:date"</span>/&gt;</span>
-<span id="cb16-7"><a href="#cb16-7" tabindex="-1"></a>		&lt;/<span class="kw">xs:sequence</span>&gt; </span>
-<span id="cb16-8"><a href="#cb16-8" tabindex="-1"></a>	&lt;/<span class="kw">xs:complexType</span>&gt; </span>
-<span id="cb16-9"><a href="#cb16-9" tabindex="-1"></a><span class="er">&lt;</span>/xs:element&gt;</span></code></pre>
-</div>
-<p>This schema is proposed for the definition of an employee. It is
-imperative that the XML data comprises the subject’s first name, name
-and date of birth. The employment of the &lt;xs:sequence&gt; element
-stipulates that the data must be entered in the sequence delineated
-herein. This particular tag is designated as an ‘indicator’. Note that
-there are other indicators that regulate various aspects, including the
-number of occurrences permitted for elements, the designation of
-elements as mandatory, and other related parameters. Other forms of
-elements are available to regulate the structure of an XML schema. An
-XML that conforms to a schema is called valid.</p>
 <div id="reference" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1851,6 +1755,7 @@ on the webdevelopment portal <a href="https://www.w3schools.com/" class="externa
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
 </section><div class="footnotes footnotes-end-of-document">
 <hr>
 <ol>
@@ -2028,7 +1933,7 @@ the moma_artwork.csv and write the data into a json format.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2258,7 +2163,7 @@ brackets), although they only contain one value?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Of course, there are works of art and objects made by several
 artists. As this is a case that certainly occurs more frequently, the
