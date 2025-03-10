@@ -126,7 +126,7 @@ However, it should be noted that the information contained in the attributes is 
 
 The indentation (using a tab) describes the hierarchy level. The collection is assigned to the location, and the items below it are on the same hierarchy level. The structure depends on the purpose of the collection and the data to be collected. 
 
-The slash here at the end of the tag (self-closing tag) means that the element is empty and self-contained.
+The slash here at the end of the tag (self-closing tag) means that the element is currently empty and self-contained. It is not necessary to write an opening and closing tag if there are no other elements between them. You often see this in XML output when the metadata field has no content.   
 
 
 ::: callout
@@ -388,17 +388,17 @@ In the example above an attribute for the language is defined. In the absence of
 A complexType is used to provide further information and specifications for the definition of a content:
 ``` xsd
 <xs:element name=“employee“>
-	<xsd:complexType name="PersonTyp" abstract="true"> 
-		<xsd:sequence> 
-			<xsd:element name="Vorname" type="xsd:string" maxOccurs="3"/> 
-			<xsd:element name="Name" type="xsd:string"/> 
-			<xsd:element name="Geburtsdatum" type="xsd:date"/> 
-		</xsd:sequence> 
-	</xsd:complexType> 
-</xsd:element>
+	<xs:complexType name="personType" abstract="true"> 
+		<xs:sequence> 
+			<xs:element name="firstName" type="xs:string" maxOccurs="3"/> 
+			<xs:element name="name" type="xs:string"/> 
+			<xs:element name="dateofBirth" type="xs:date"/>
+		</xs:sequence> 
+	</xs:complexType> 
+</xs:element>
 ```
 
-This schema is proposed for the definition of an employee. It is imperative that the XML data comprises the subject's first name, name and date of birth. The employment of the \<xsd:sequence\> element stipulates that the data must be entered in the sequence delineated herein. This particular tag is designated as an 'indicator'. Note that there are other indicators that regulate various aspects, including the number of occurrences permitted for elements, the designation of elements as mandatory, and other related parameters. Other forms of elements are available to regulate the structure of an XML schema. An XML that conforms to a schema is called valid. 
+This schema is proposed for the definition of an employee. It is imperative that the XML data comprises the subject's first name, name and date of birth. The employment of the \<xs:sequence\> element stipulates that the data must be entered in the sequence delineated herein. This particular tag is designated as an 'indicator'. Note that there are other indicators that regulate various aspects, including the number of occurrences permitted for elements, the designation of elements as mandatory, and other related parameters. Other forms of elements are available to regulate the structure of an XML schema. An XML that conforms to a schema is called valid. 
 
 ::: callout
 
