@@ -1272,7 +1272,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-xml"><p>Content from <a href="xml.html">XML and XML schema</a></p>
 <hr>
-<p>Last updated on 2025-02-28 |
+<p>Last updated on 2025-03-10 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/xml.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 50 minutes</p>
@@ -1468,7 +1468,10 @@ collection is assigned to the location, and the items below it are on
 the same hierarchy level. The structure depends on the purpose of the
 collection and the data to be collected.</p>
 <p>The slash here at the end of the tag (self-closing tag) means that
-the element is empty and self-contained.</p>
+the element is currently empty and self-contained. It is not necessary
+to write an opening and closing tag if there are no other elements
+between them. You often see this in XML output when the metadata field
+has no content.</p>
 <div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1813,18 +1816,18 @@ specifications for the definition of a content:</p>
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“employee“&gt;</span></span>
-<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a>	<span class="er">&lt;xsd:complexType</span> <span class="er">name=</span><span class="st">"PersonTyp"</span><span class="ot"> abstract=</span><span class="st">"true"</span>&gt; </span>
-<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a>		&lt;<span class="kw">xsd:sequence</span>&gt; </span>
-<span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Vorname"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span><span class="ot"> maxOccurs=</span><span class="st">"3"</span>/&gt; </span>
-<span id="cb16-5"><a href="#cb16-5" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Name"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span>/&gt; </span>
-<span id="cb16-6"><a href="#cb16-6" tabindex="-1"></a>			&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"Geburtsdatum"</span><span class="ot"> type=</span><span class="st">"xsd:date"</span>/&gt; </span>
-<span id="cb16-7"><a href="#cb16-7" tabindex="-1"></a>		&lt;/<span class="kw">xsd:sequence</span>&gt; </span>
-<span id="cb16-8"><a href="#cb16-8" tabindex="-1"></a>	&lt;/<span class="kw">xsd:complexType</span>&gt; </span>
-<span id="cb16-9"><a href="#cb16-9" tabindex="-1"></a><span class="er">&lt;</span>/xsd:element&gt;</span></code></pre>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a>	<span class="er">&lt;xs:complexType</span> <span class="er">name=</span><span class="st">"personType"</span><span class="ot"> abstract=</span><span class="st">"true"</span>&gt; </span>
+<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a>		&lt;<span class="kw">xs:sequence</span>&gt; </span>
+<span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a>			&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"firstName"</span><span class="ot"> type=</span><span class="st">"xs:string"</span><span class="ot"> maxOccurs=</span><span class="st">"3"</span>/&gt; </span>
+<span id="cb16-5"><a href="#cb16-5" tabindex="-1"></a>			&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"name"</span><span class="ot"> type=</span><span class="st">"xs:string"</span>/&gt; </span>
+<span id="cb16-6"><a href="#cb16-6" tabindex="-1"></a>			&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"dateofBirth"</span><span class="ot"> type=</span><span class="st">"xs:date"</span>/&gt;</span>
+<span id="cb16-7"><a href="#cb16-7" tabindex="-1"></a>		&lt;/<span class="kw">xs:sequence</span>&gt; </span>
+<span id="cb16-8"><a href="#cb16-8" tabindex="-1"></a>	&lt;/<span class="kw">xs:complexType</span>&gt; </span>
+<span id="cb16-9"><a href="#cb16-9" tabindex="-1"></a><span class="er">&lt;</span>/xs:element&gt;</span></code></pre>
 </div>
 <p>This schema is proposed for the definition of an employee. It is
 imperative that the XML data comprises the subject’s first name, name
-and date of birth. The employment of the &lt;xsd:sequence&gt; element
+and date of birth. The employment of the &lt;xs:sequence&gt; element
 stipulates that the data must be entered in the sequence delineated
 herein. This particular tag is designated as an ‘indicator’. Note that
 there are other indicators that regulate various aspects, including the
@@ -2025,7 +2028,7 @@ the moma_artwork.csv and write the data into a json format.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2255,7 +2258,7 @@ brackets), although they only contain one value?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Of course, there are works of art and objects made by several
 artists. As this is a case that certainly occurs more frequently, the
@@ -2856,7 +2859,7 @@ fields? If so, which ones and why? Discuss in small groups.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>contributor: MET (as a custodian and managing institution)</li>
@@ -2924,7 +2927,7 @@ assign clearly or at all would you expand with a qualifier and how?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Examples </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul>
 <li>dc.date.created: 1931</li>
@@ -3126,8 +3129,8 @@ about an object.</p>
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/instructor/aio.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/instructor/aio.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-03-04",
-  "datePublished": "2025-03-04"
+  "dateModified": "2025-03-10",
+  "datePublished": "2025-03-10"
 }
 
   </script><script>
