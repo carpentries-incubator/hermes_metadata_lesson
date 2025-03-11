@@ -6,7 +6,11 @@ title: 'Reference'
 
 Weller, Katrin. Knowledge Representation in the Social Semantic Web. De Gruyter Saur, 2010
 
-Terras, Melissa, Nyhan, Julianne, & Vanhoutte, Edward (Eds.). Defining Digital Humanities: A Reader. Routledge, 2013.
+Terras, Melissa, Nyhan, Julianne, & Vanhoutte, Edward (eds.). Defining Digital Humanities: A Reader. Routledge, 2013.
+
+Flanders, Julia & Jannidis, Fotis (eds.). The Shape of Data in Digital Humanities: Modeling Texts and Text-based Resources. Routledge, 2019.
+
+DARIAH (2022). Guidelines for Research Data Management in the Humanities. (https://www.dariah.eu/)
 
 ## Glossary
 
