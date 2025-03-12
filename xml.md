@@ -1,14 +1,13 @@
 ---
-title: "XML and XML schema"
-teaching: 30
-exercises: 20
+title: "XML"
+teaching: 15
+exercises: 15
 ---
 
 ::: questions 
 
 - What is XML? 
 - How do you annotate data in XML?
-- What is a XML schema?
 
 :::
 
@@ -17,7 +16,7 @@ exercises: 20
 - Knowledge of XML format for storing and processing metadata. 
 - Familiar with the structure of a simple XML file. 
 - Able to write extracted metadata in a simple XML format.
-- Knowledge of a XML schema and its main elements. 
+
 :::
 
 ## XML
@@ -336,15 +335,3 @@ The exercise can be carried out as group work if there are many participants. Ot
 
 ______________________________________________
 [1]: [w3school XML elements](https://www.w3schools.com/xml/xml_elements.asp>)  
-
-
-
-
-
-::: callout
-
-### Reference
-
-You can find tutorials on XML and XSD as well as the follwing topic on the webdevelopment portal [W3Schools](https://www.w3schools.com/). 
-:::
-
