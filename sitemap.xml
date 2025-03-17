@@ -103,6 +103,9 @@
     <loc>https://HERMES-DKZ.github.io/metadata_lesson/instructor/xml.html</loc>
   </url>
   <url>
+    <loc>https://HERMES-DKZ.github.io/metadata_lesson/instructor/xml_schema.html</loc>
+  </url>
+  <url>
     <loc>https://HERMES-DKZ.github.io/metadata_lesson/instructor-notes.html</loc>
   </url>
   <url>
@@ -143,5 +146,8 @@
   </url>
   <url>
     <loc>https://HERMES-DKZ.github.io/metadata_lesson/xml.html</loc>
+  </url>
+  <url>
+    <loc>https://HERMES-DKZ.github.io/metadata_lesson/xml_schema.html</loc>
   </url>
 </urlset>
