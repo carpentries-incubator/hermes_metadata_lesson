@@ -120,7 +120,7 @@ You can also use an enumeration constraint to limit the content to a set of valu
 </xs:element>
 ```
 
-Using the /<xs:pattern value=““/> tag you can set restriction on a series of numbers or letters. There are other constraints for values in XML, e.g., whiteSpace or length:
+Using xs:pattern you can set restriction on a series of numbers or letters. There are other constraints for values in XML, e.g., whiteSpace or length:
 
 Restrictions for Datatypes
 
