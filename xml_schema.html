@@ -448,17 +448,16 @@ rules and is defined in the xsd file. Existing namespaces can also be
 integrated there and these rules are also referenced in an XML
 document.</p>
 <p>The namespace mechanism for XML data was developed by the W3
-Consortium<a href="The%20consortium%20develops%20standards%20and%20guidelines%20for%20World%20Wide%20Web%20technologies.%20There%20you%20can%20find%20all%20the%20specifications%20for%20XML%20and%20XML%20schema%20as%20well%20as%20many%20more.">1</a>.
-A namespace is a set of rules and therefore provides specifications of
-XML elements and attributes. It describes, for example, how elements and
-attributes are named or used. A namespace can be stored technically in
-the form of an xsd file or in the form of theoretical documentation.
-Technical specifications can be requirements for data types or minimum
-or maximum values. Documentation usually describes contextual
-relationships or rules for the use of controlled vocabularies or
-thesauri. Specifications from the documentation may be technically
-incorporated into the schema. Otherwise, they can be found in the file
-as comments.</p>
+Consortium[1]. A namespace is a set of rules and therefore provides
+specifications of XML elements and attributes. It describes, for
+example, how elements and attributes are named or used. A namespace can
+be stored technically in the form of an xsd file or in the form of
+theoretical documentation. Technical specifications can be requirements
+for data types or minimum or maximum values. Documentation usually
+describes contextual relationships or rules for the use of controlled
+vocabularies or thesauri. Specifications from the documentation may be
+technically incorporated into the schema. Otherwise, they can be found
+in the file as comments.</p>
 <p>Namespaces are specified for two reasons: First, they define elements
 and attributes more precisely, especially when they have different
 meanings in different sources and specifications from different
@@ -661,38 +660,128 @@ sequence. Each child element can occur from 0 to any number of times. In
 addition, the creator’s details are recorded in the second block, along
 with the life data. Only one creator’s name may be entered in this
 block, so if there are multiple, each will receive its own details in a
-separate block. Xsd provides more indicators to order the elements or to
-define occurrence of elements.</p>
-<p>Of course, it is also possible to assign further attributes to the
-elements of a complex type. To do this, the attribute itself is created
-in the form of a simple element and assigned to the corresponding
-element to which it is to apply.</p>
-<div class="codewrapper sourceCode" id="cb11">
+separate block.</p>
+<p>Xsd provides more indicators to order the elements or to define
+occurrence of elements:</p>
+<p>Order indicators, used to define the order of the elements, treated
+as tags:</p>
+<ul><li>All - The all indicator specifies that the child elements can appear
+in any order, and that each child element must occur only once.</li>
+<li>Choice - The choice indicator specifies that either one child
+element or another can occur.</li>
+<li>Sequence - The sequence indicator specifies that the child elements
+must appear in a specific order.</li>
+</ul><div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>&lt;<span class="kw">xs:attribute</span><span class="ot"> name=</span><span class="st">"lang"</span><span class="ot"> type=</span><span class="st">"string"</span><span class="ot"> default=</span><span class="er">“EN“/&gt;</span></span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"artist"</span>&gt;</span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a>  &lt;<span class="kw">xs:complexType</span>&gt;</span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a>    &lt;<span class="kw">xs:all</span>&gt;</span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a>      &lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"firstname"</span><span class="ot"> type=</span><span class="st">"xs:string"</span>/&gt;</span>
+<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a>      &lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"lastname"</span><span class="ot"> type=</span><span class="st">"xs:string"</span>/&gt;</span>
+<span id="cb11-7"><a href="#cb11-7" tabindex="-1"></a>    &lt;/<span class="kw">xs:all</span>&gt;</span>
+<span id="cb11-8"><a href="#cb11-8" tabindex="-1"></a>  &lt;/<span class="kw">xs:complexType</span>&gt;</span>
+<span id="cb11-9"><a href="#cb11-9" tabindex="-1"></a>&lt;/<span class="kw">xs:element</span>&gt;</span></code></pre>
+</div>
+<p>Occurrence indicators, used to define how often an element can occur,
+treated like attributes:</p>
+<ul><li>maxOccurs</li>
+<li>minOccurs</li>
+</ul><div class="codewrapper sourceCode" id="cb12">
+<h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="er">“object“&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a>	<span class="er">&lt;xs:complexType</span> <span class="er">name=</span><span class="st">"objectType"</span><span class="ot"> abstract=</span><span class="st">"true"</span>&gt; </span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a>		&lt;<span class="kw">xs:sequence</span>&gt; </span>
+<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a>			&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"creator"</span><span class="ot"> type=</span><span class="st">"xs:string"</span><span class="ot"> minOccurs=</span><span class="st">"1"</span><span class="ot"> maxOccurs=</span><span class="st">"3"</span>/&gt;</span>
+<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a>			<span class="co">&lt;!-- minimum one creator has to be added, maximum three can be added --&gt;</span></span>
+<span id="cb12-6"><a href="#cb12-6" tabindex="-1"></a>			&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"title"</span><span class="ot"> type=</span><span class="st">"xs:string"</span><span class="ot"> maxOccurs=</span><span class="st">"1"</span>/&gt;</span>
+<span id="cb12-7"><a href="#cb12-7" tabindex="-1"></a>			<span class="co">&lt;!-- only one title can be added --&gt;</span></span>
+<span id="cb12-8"><a href="#cb12-8" tabindex="-1"></a>&lt;/<span class="kw">xs:element</span>&gt;</span></code></pre>
+</div>
+<p>Group indicators, used to define related sets of elements, treated as
+tags:</p>
+<ul><li>Group name</li>
+<li>attributeGroup name</li>
+</ul><div class="codewrapper sourceCode" id="cb13">
+<h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a></span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>&lt;<span class="kw">xs:group</span><span class="ot"> name=</span><span class="st">"artistgroup"</span>&gt;</span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a>  &lt;<span class="kw">xs:sequence</span>&gt;</span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a>    &lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"firstname"</span><span class="ot"> type=</span><span class="st">"xs:string"</span>/&gt;</span>
+<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a>    &lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"lastname"</span><span class="ot"> type=</span><span class="st">"xs:string"</span>/&gt;</span>
+<span id="cb13-6"><a href="#cb13-6" tabindex="-1"></a>    &lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"nationality"</span><span class="ot"> type=</span><span class="st">"xs:string"</span>/&gt;</span>
+<span id="cb13-7"><a href="#cb13-7" tabindex="-1"></a>  &lt;/<span class="kw">xs:sequence</span>&gt;</span>
+<span id="cb13-8"><a href="#cb13-8" tabindex="-1"></a>&lt;/<span class="kw">xs:group</span>&gt; </span>
+<span id="cb13-9"><a href="#cb13-9" tabindex="-1"></a>``</span>
+<span id="cb13-10"><a href="#cb13-10" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="#cb13-11" tabindex="-1"></a>Of course, it is also possible to assign further attributes to the elements of a complex type. To do this, the attribute itself is created in the form of a simple element and assigned to the corresponding element to which it is to apply. </span>
+<span id="cb13-12"><a href="#cb13-12" tabindex="-1"></a></span>
+<span id="cb13-13"><a href="#cb13-13" tabindex="-1"></a>```xsd</span>
+<span id="cb13-14"><a href="#cb13-14" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name</span><span class="er">"object"</span> <span class="er">type</span><span class="ot">=</span><span class="st">"string"</span>&gt;</span>
+<span id="cb13-15"><a href="#cb13-15" tabindex="-1"></a>  &lt;<span class="kw">xs:complexType</span><span class="ot"> name=</span><span class="st">"objectType"</span><span class="ot"> abstract=</span><span class="st">"true"</span>&gt;</span>
+<span id="cb13-16"><a href="#cb13-16" tabindex="-1"></a>	&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"title"</span><span class="ot"> type=</span><span class="st">"string"</span><span class="ot"> maxOccurs=</span><span class="st">"1/&gt; </span></span>
+<span id="cb13-17"><a href="#cb13-17" tabindex="-1"></a><span class="st">	</span><span class="er">&lt;</span><span class="st">xs:attribute name="</span><span class="ot">lang</span><span class="er">"</span> <span class="er">type</span><span class="ot">=</span><span class="st">"string"</span><span class="ot"> default=</span><span class="er">“EN“/&gt;</span></span>
+<span id="cb13-18"><a href="#cb13-18" tabindex="-1"></a>  <span class="er">&lt;/xs:complexType&gt;</span></span>
+<span id="cb13-19"><a href="#cb13-19" tabindex="-1"></a><span class="er">&lt;/xs:element&gt;</span></span></code></pre>
 </div>
 <p>In the example above an attribute for the language is defined. In the
 absence of a specified language, ‘English’ is assumed as the default
 value. The attribute is specified with a fixed value, thus allowing for
 the specification of ‘English’ as the only permitted language:</p>
-<div class="codewrapper sourceCode" id="cb12">
+<div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a>&lt;<span class="kw">xs:attribute</span><span class="ot"> name=</span><span class="st">"lang"</span><span class="ot"> type=</span><span class="st">"string"</span><span class="ot"> fixed=</span><span class="er">“EN“/&gt;</span></span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a>&lt;<span class="kw">xs:attribute</span><span class="ot"> name=</span><span class="st">"lang"</span><span class="ot"> type=</span><span class="st">"string"</span><span class="ot"> fixed=</span><span class="er">“EN“/&gt;</span></span></code></pre>
 </div>
 <p>It should be noted that all attributes are optional by default when
 creating the XML element, unless the attribute is specified as</p>
-<div class="codewrapper sourceCode" id="cb13">
+<div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a> &lt;<span class="kw">xs:attribute</span><span class="ot"> name=</span><span class="er">“name“</span> <span class="er">use=“required“/&gt;</span></span></code></pre>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a> &lt;<span class="kw">xs:attribute</span><span class="ot"> name=</span><span class="er">“name“</span> <span class="er">use=“required“/&gt;</span></span></code></pre>
 </div>
 <p>An XML that conforms to a schema is called valid.</p>
-<hr><!--
+<div id="exercise" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise" class="callout-inner">
+<h3 class="callout-title">Exercise</h3>
+<div class="callout-content">
+<p>Use your example from the xml exercise. Write a short schema for the
+artist’s data. Integrate the following conditions:</p>
+<ul><li>
+</li></ul></div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb16">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr><p>[1]: [The World Wide Web Consortium (W3C)](<a href="https://www.w3schools.com/xml/xml_elements.asp" class="external-link uri">https://www.w3schools.com/xml/xml_elements.asp</a>&gt;](<a href="https://www.w3.org/" class="external-link uri">https://www.w3.org/</a>)<br>
+The consortium develops standards and guidelines for World Wide Web
+technologies. There you can find all the specifications for XML and XML
+schema as well as many more.</p>
+<!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- --></div>
+ -->
+</div>
 
 
 
