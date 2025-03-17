@@ -166,13 +166,70 @@ What you will see more often in metadata schemas is the so-called complexType. T
 ```
 
 This simple schema is proposed for the definition of an object, e.g., of the cultural heritage. Data fields are defined for the object itself, such as a title and creator or medium. At least one creator must be entered in the block for the object. The /<xs:sequence/> element (called „indicator“) specifies that the child elements must appear in the given sequence. Each child element can occur from 0 to any number of times. In addition, the creator's details are recorded in the second block, along with the life data. Only one creator's name may be entered in this block, so if there are multiple, each will receive its own details in a separate block. 
-Xsd provides more indicators to order the elements or to define occurrence of elements. 
 
+Xsd provides more indicators to order the elements or to define occurrence of elements:
+
+Order indicators, used to define the order of the elements, treated as tags:
+
+-  All - The all indicator specifies that the child elements can appear in any order, and that each child element must occur only once. 
+-  Choice - The choice indicator specifies that either one child element or another can occur.
+-  Sequence - The sequence indicator specifies that the child elements must appear in a specific order.
+
+```xsd
+
+<xs:element name="artist">
+  <xs:complexType>
+    <xs:all>
+      <xs:element name="firstname" type="xs:string"/>
+      <xs:element name="lastname" type="xs:string"/>
+    </xs:all>
+  </xs:complexType>
+</xs:element>
+``` 
+
+
+Occurrence indicators, used to define how often an element can occur, treated like attributes:
+
+- maxOccurs
+- minOccurs
+
+``` xsd
+<xs:element name=“object“>
+	<xs:complexType name="objectType" abstract="true"> 
+		<xs:sequence> 
+			<xs:element name="creator" type="xs:string" minOccurs="1" maxOccurs="3"/>
+			<!-- minimum one creator has to be added, maximum three can be added -->
+			<xs:element name="title" type="xs:string" maxOccurs="1"/>
+			<!-- only one title can be added -->
+</xs:element>
+```
+ 
+
+Group indicators, used to define related sets of elements, treated as tags:
+
+- Group name
+- attributeGroup name
+
+```xsd
+
+<xs:group name="artistgroup">
+  <xs:sequence>
+    <xs:element name="firstname" type="xs:string"/>
+    <xs:element name="lastname" type="xs:string"/>
+    <xs:element name="nationality" type="xs:string"/>
+  </xs:sequence>
+</xs:group> 
+``
 
 Of course, it is also possible to assign further attributes to the elements of a complex type. To do this, the attribute itself is created in the form of a simple element and assigned to the corresponding element to which it is to apply. 
 
 ```xsd
-<xs:attribute name="lang" type="string" default=“EN“/>
+<xs:element name"object" type="string">
+  <xs:complexType name="objectType" abstract="true">
+	<xs:element name="title" type="string" maxOccurs="1/> 
+	<xs:attribute name="lang" type="string" default=“EN“/>
+  </xs:complexType>
+</xs:element>
 ```
 
 In the example above an attribute for the language is defined. In the absence of a specified language, 'English' is assumed as the default value. The attribute is specified with a fixed value, thus allowing for the specification of 'English' as the only permitted language:
@@ -189,7 +246,7 @@ It should be noted that all attributes are optional by default when creating the
 
 An XML that conforms to a schema is called valid.
 
-:::
+::: challenge
 
 ### Exercise
 
