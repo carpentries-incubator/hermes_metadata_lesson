@@ -189,5 +189,21 @@ It should be noted that all attributes are optional by default when creating the
 
 An XML that conforms to a schema is called valid.
 
+### Exercise
+
+Use your example from the xml exercise. Write a short schema for the artist's data. Integrate the following conditions: 
+
+- 
+
+::: solution
+
+```xml
+
+```
+
+:::
+:::
+
 ----
-[1]:The consortium develops standards and guidelines for World Wide Web technologies. There you can find all the specifications for XML and XML schema as well as many more. 
+[1]: [The World Wide Web Consortium (W3C)](https://www.w3schools.com/xml/xml_elements.asp>](https://www.w3.org/)  
+ The consortium develops standards and guidelines for World Wide Web technologies. There you can find all the specifications for XML and XML schema as well as many more. 
