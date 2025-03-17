@@ -165,7 +165,7 @@ What you will see more often in metadata schemas is the so-called complexType. T
 </xs:element>
 ```
 
-This simple schema is proposed for the definition of an object, e.g., of the cultural heritage. Data fields are defined for the object itself, such as a title and creator or medium. At least one creator must be entered in the block for the object. The /<xs:sequence/> element (called „indicator“) specifies that the child elements must appear in the given sequence. Each child element can occur from 0 to any number of times. In addition, the creator's details are recorded in the second block, along with the life data. Only one creator's name may be entered in this block, so if there are multiple, each will receive its own details in a separate block. 
+This simple schema is proposed for the definition of an object, e.g., of the cultural heritage. Data fields are defined for the object itself, such as a title and creator or medium. At least one creator must be entered in the block for the object. The xs:sequence element (called „indicator“) specifies that the child elements must appear in the given sequence. Each child element can occur from 0 to any number of times. In addition, the creator's details are recorded in the second block, along with the life data. Only one creator's name may be entered in this block, so if there are multiple, each will receive its own details in a separate block. 
 
 Xsd provides more indicators to order the elements or to define occurrence of elements:
 
