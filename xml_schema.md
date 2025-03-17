@@ -219,7 +219,7 @@ Group indicators, used to define related sets of elements, treated as tags:
     <xs:element name="nationality" type="xs:string"/>
   </xs:sequence>
 </xs:group> 
-``
+``` 
 
 Of course, it is also possible to assign further attributes to the elements of a complex type. To do this, the attribute itself is created in the form of a simple element and assigned to the corresponding element to which it is to apply. 
 
