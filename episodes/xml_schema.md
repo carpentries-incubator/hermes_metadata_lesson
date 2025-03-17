@@ -189,6 +189,8 @@ It should be noted that all attributes are optional by default when creating the
 
 An XML that conforms to a schema is called valid.
 
+:::
+
 ### Exercise
 
 Use your example from the xml exercise. Write a short schema for the artist's data. Integrate the following conditions: 
