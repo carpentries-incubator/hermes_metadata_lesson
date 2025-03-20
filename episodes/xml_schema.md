@@ -147,21 +147,21 @@ What you will see more often in metadata schemas is the so-called complexType. T
 
 ``` xsd
 <xs:element name=“object“>
-	<xs:complexType name="objectType" abstract="true"> 
-		<xs:sequence> 
-			<xs:element name="creator" type="xs:string" minOccurs="1"/> 
-			<xs:element name="title" type="xs:string"/> 
-			<xs:element name="date" type="xs:date"/>
-			<xs:element name="medium" type="xs:string"/>
-		</xs:sequence> 
-	</xs:complexType> 
-	<xs:complexType name="creator" abstract="true"> 
-		<xs:sequence> 
-			<xs:element name="name" type="xs:string" maxOccurs="1"/> 
-			<xs:element name="dateOfBirth" type="xs:date"/> 
-			<xs:element name="dateOfDeath" type="xs:date"/>
-		</xs:sequence> 
-	</xs:complexType> 
+  <xs:complexType name="objectType" abstract="true"> 
+    <xs:sequence> 
+      <xs:element name="creator" type="xs:string" minOccurs="1"/> 
+      <xs:element name="title" type="xs:string"/> 
+      <xs:element name="date" type="xs:date"/>
+      <xs:element name="medium" type="xs:string"/>
+    </xs:sequence> 
+  </xs:complexType> 
+  <xs:complexType name="creator" abstract="true"> 
+    <xs:sequence> 
+      <xs:element name="name" type="xs:string" maxOccurs="1"/> 
+      <xs:element name="dateOfBirth" type="xs:date"/>
+      <xs:element name="dateOfDeath" type="xs:date"/>
+    </xs:sequence> 
+  </xs:complexType> 
 </xs:element>
 ```
 
@@ -195,12 +195,14 @@ Occurrence indicators, used to define how often an element can occur, treated li
 
 ``` xsd
 <xs:element name=“object“>
-	<xs:complexType name="objectType" abstract="true"> 
-		<xs:sequence> 
-			<xs:element name="creator" type="xs:string" minOccurs="1" maxOccurs="3"/>
-			<!-- minimum one creator has to be added, maximum three can be added -->
-			<xs:element name="title" type="xs:string" maxOccurs="1"/>
-			<!-- only one title can be added -->
+  <xs:complexType name="objectType" abstract="true"> 
+    <xs:sequence> 
+      <xs:element name="creator" type="xs:string" minOccurs="1" maxOccurs="3"/>
+      <!-- minimum one creator has to be added, maximum three can be added -->
+      <xs:element name="title" type="xs:string" maxOccurs="1"/>
+      <!-- only one title can be added -->
+    </xs:sequence>
+  </xs:complexType>
 </xs:element>
 ```
  
@@ -224,25 +226,57 @@ Group indicators, used to define related sets of elements, treated as tags:
 Of course, it is also possible to assign further attributes to the elements of a complex type. To do this, the attribute itself is created in the form of a simple element and assigned to the corresponding element to which it is to apply. 
 
 ```xsd
+<!-- attribute covers the object element -->
 <xs:element name"object" type="string">
   <xs:complexType name="objectType" abstract="true">
-	<xs:element name="title" type="string" maxOccurs="1/> 
-	<xs:attribute name="lang" type="string" default=“EN“/>
+    <xs:element name="title" type="string" maxOccurs="1/> 
+    <xs:attribute name="lang" type="string" default=“EN“/>
   </xs:complexType>
 </xs:element>
+
+<!-- attribute only for the place element within the archiv element -->
+<xsd:complexType name="archiv">
+  <xsd:sequence>
+    <xsd:element name="aufbewahrungsort" type="xsd:string" /><!-- depository -->
+    <xsd:element name="ort"><!-- place -->
+      <xsd:complexType>
+        <xsd:attribute name="gndid" type="lc:GNDID" />
+      </xsd:complexType> 
+    </xsd:element>
+  </xsd:sequence>
+</xsd:complexType>
 ```
 
-In the example above an attribute for the language is defined. In the absence of a specified language, 'English' is assumed as the default value. The attribute is specified with a fixed value, thus allowing for the specification of 'English' as the only permitted language:
+In the first example above an attribute for the language is defined which is valid for the entire element. In the absence of a specified language, 'English' is assumed as the default value. In the second example the attribute is defined as a child element of the element "place" and therefore only valid for this element. 
+
+Instead of a default value, the value can also be fixed:
 
 ```xsd
 <xs:attribute name="lang" type="string" fixed=“EN“/>
 ```
 
-It should be noted that all attributes are optional by default when creating the XML element, unless the attribute is specified as
+It should be noted that all attributes are optional by default when creating the XML element, unless the use of the attribute is specified as
 
 ```xsd
  <xs:attribute name=“name“ use=“required“/>
 ```
+
+If an attribute is allowed but should not be specified in more detail, the anyAttribute element is used: 
+
+```xsd
+
+<xs:element name="creator">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="firstname" type="xs:string"/>
+      <xs:element name="lastname" type="xs:string"/>
+    </xs:sequence>
+    <xs:anyAttribute/>
+  </xs:complexType>
+</xs:element>
+```
+
+Now the creator can have any attribute in the XML, like e.g. an identifier or an alternative name. 
 
 An XML that conforms to a schema is called valid.
 
@@ -250,7 +284,7 @@ An XML that conforms to a schema is called valid.
 
 ### Exercise
 
-Use your example from the xml exercise. Write a short schema for the artist's data. Integrate the following conditions: 
+
 
 - 
 
