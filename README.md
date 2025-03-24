@@ -14,7 +14,11 @@ Contents of the already existing lesson on scientific metadata were reused:
 [Fundamentals of Scientific Metadata](https://carpentries-incubator.github.io/scientific-metadata/)
 
 
-This lesson utilizes a slightly modified sample from [Metropolitan Museum of Art's Open Access Initiative](https://www.metmuseum.org/about-the-met/policies-and-documents/open-access) dataset. The original [dataset](https://github.com/metmuseum/openaccess) is available as an Open Access CSV and is provided under the [Creative Commons Zero license](https://creativecommons.org/publicdomain/zero/1.0/).
+This lesson utilizes slightly modified sample from:
+* [Metropolitan Museum of Art's Open Access Initiative](https://www.metmuseum.org/about-the-met/policies-and-documents/open-access) dataset. The original [dataset](https://github.com/metmuseum/openaccess) is available as an Open Access CSV and is provided under the [Creative Commons Zero license](https://creativecommons.org/publicdomain/zero/1.0/).
+* [The Museum of Modern Art (MoMA) Collection](https://github.com/MuseumofModernArt/collection) datasets. The original datasets are also available under the CCO licence.
+* a xsd file as a draft for the [Marburger Urkundenrepositorium - Datenbank des CAO und LBA](https://urkundenrepositorium.uni-marburg.de/home), kindly provided by the author Mathias Gutenbrunner, University Library Marburg. 
+
 
 ## Funding
 
@@ -22,9 +26,9 @@ This lesson is being developed as part of the joint project [HERMES – Humaniti
 
 ## Authors
 
-[Corinna Berg](https://github.com/KassieBee) (Maintainer)
+[Corinna Berg](https://github.com/KassieBee) (Maintainer) responsible for contents of episodes 5 - 13.
 
-[Ksenia Stanicka-Brzezicka](https://github.com/kseniastanicka) 
+[Ksenia Stanicka-Brzezicka](https://github.com/kseniastanicka) responsible for contents of episodes 1 - 4. 
 
 ## License
 Lesson content is published with a CC-BY license.
