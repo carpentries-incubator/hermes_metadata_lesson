@@ -250,7 +250,7 @@ Of course, it is also possible to assign further attributes to the elements of a
 
 ```xsd
 <!-- attribute covers the object element -->
-<xs:element name"object" type="string">
+<xs:element name="object" type="string">
   <xs:complexType name="objectType" abstract="true">
     <xs:element name="title" type="string" maxOccurs="1"/> 
     <xs:attribute name="lang" type="string" default="EN"/>
@@ -508,5 +508,5 @@ The element "datierung" has no content. It is only defined by its attribute whic
 
 ----
 [1]: [The World Wide Web Consortium (W3C)](https://www.w3schools.com/xml/xml_elements.asp>](https://www.w3.org/)  
- The consortium develops standards and guidelines for World Wide Web technologies. There you can find all the specifications for XML and XML schema as well as many more. 
+ The consortium develops standards and guidelines for World Wide Web technologies. There you can find all the specifications for XML and XML schema as well as many more.   
 [2]: LIDO – Lightweight Information Describing Objects is an XML harvesting schema. The LIDO schema is intended for delivering metadata, for use in a variety of online services, from an organization’s online collections database to portals of aggregated resources, as well as exposing, sharing, and connecting data on the web, [LIDO schema](http://www.lido-schema.org).  
