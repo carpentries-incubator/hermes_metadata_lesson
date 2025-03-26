@@ -8,18 +8,18 @@ exercises: 15
 
 - What is a XML schema? 
 - What are the basic elements of a XML schema? 
-- What is a schema used for?
+- What is a XML Schema used for?
 
 :::
 
 ::: objectives
 
-- Knowledge of basic elements of a XML schema.
+- Knowledge of basic elements of a XML Schema.
 - Familiar with the basic structure.
-- 
+- Ability to understand simple XML Schemas.
 :::
 
-As you have learned there are standards for annotating data in the Humanities. To ensure that the data is properly standardized and interoperable so it can be imported in for example databases for the cultural heritage, technical schemas are used. In the field of humanities and cultural studies, this is often done by using a XML Schema. This is not the only option, but it is the most common. It describes the structure and technical rules of an XML document as well as its elements and therefore establishes rules for annotating its content. The syntax is XML. A schema is stored in the .xsd (XML Schema Definition) file format. 
+As you have learned there are standards for annotating data in the Humanities. To ensure that the data is properly standardized and interoperable so it can be imported in for example databases for the cultural heritage, technical schemas are used. In the field of humanities and cultural studies, this is often done by using a XML Schema. This is not the only option, but it is the most common. It describes the structure and technical rules of an XML document as well as its elements and therefore establishes rules for annotating its content. The syntax is XML. A XML Schema is stored in the .xsd (XML Schema Definition) file format. 
 
 It is characterised by the use of a schema tag as the container element for the whole document: 
 
@@ -34,7 +34,7 @@ or
 
 </xsd:schema>
 ```
-The prefix „xs“ or "xsd" denotes the namespace for the schema (remember not to use : in XML tags, it is reserved for that!). 
+The prefix „xs“ or "xsd" denotes the namespace for the Schema (remember not to use : in XML tags, it is reserved for that!). 
 
 ### Namespaces
 
@@ -70,7 +70,7 @@ A namespace is assigned in the header of the file by specifying a URI.
 
 The xmlns specification and the URI behind it refer to the W3 consortium namespace for an XML Schema as the standard for the entire document. All elements and attributes are defined according to this namespace. The URI (Uniform Resource Identifier) serves as a unique identifier as a reference to the specifications, but does not have to be a web address. Ideally, a web address is used that points to the underlying standard in the form of the xsd file and/or its documentation. 
 
-If multiple standards are used, or parts of other schemas are adopted, a prefix should be assigned to the namespaces in order to know which elements or attributes belong to which standard:
+If multiple standards are used, or parts of other Schemas are adopted, a prefix should be assigned to the namespaces in order to know which elements or attributes belong to which standard:
 
 
 ```xsd
@@ -91,7 +91,7 @@ In addition, when creating an xsd file for a specially developed standard, a tar
   elementFormDefault="qualified"
   attributeFormDefault="unqualified">
 ```
-The default namespace in this example is the xsd namespace. A new namespace is created with this file: the lbacao namespace. All elements which does not refer to the xsd namespace are marked with the prefix lc. 
+The default namespace in this example is the xsd namespace. A new namespace is created with this file: the lbacao namespace. All elements which does not refer to the xsd namespace would be marked with the prefix lc. 
 
 Other namespaces can also be imported into the schema with the following specification, allowing additional software (validators) to check compliance with this standard:
 
@@ -99,11 +99,11 @@ Other namespaces can also be imported into the schema with the following specifi
 <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/03/xml.xsd">
 ```
 
-The schemaLocation refers directly to the associated schema - the xsd file - whose specifications are adopted for the document. Special software (validators) can be used to check whether an XML document conforms to the technical rules specified in an xsd file. 
+The schemaLocation refers directly to the associated Schema - the xsd file - whose specifications are adopted for the document. Special software (validators) can be used to check whether an XML document conforms to the technical rules specified in an xsd file. 
 
 ### Simple Element 
 
-A simple XML element is defined in the schema by the specification xs:element and minimum the attributes name and type. 
+A simple XML element is defined in the Schema by the specification xs:element and minimum the attributes name and type. 
 
 ```xsd
 <xs:element name=“descriptive name“ type=“string“>
@@ -250,7 +250,7 @@ Xsd provides more indicators to order the elements or to define occurrence of el
 </xs:group> 
 ``` 
 
-Of course, it is also possible to assign further attributes to the elements of a complex type. To do this, the attribute itself is created in the form of a simple element and assigned to the corresponding element to which it is to apply. 
+Of course, it is also possible to assign further attributes to the elements of a complexType. To do this, the attribute itself is created in the form of a simple element and assigned to the corresponding element to which it is to apply. 
 
 
 ```xsd
@@ -366,12 +366,12 @@ The element „ort“ itself is another complexType nested within the complexTyp
 
 
 ::: callout
-An XML that conforms to a schema is called valid.
+An XML that conforms to a Schema is called valid.
 :::
 
 
 
-::: challenge
+:::::: challenge
 
 ### Exercise
 
@@ -427,11 +427,11 @@ The example below shows the complexType from a real-world draft of an xsd for a 
     </xsd:element> 
    </xsd:sequence>
 </xsd:complexType>
-:::
-:::
+:::::
+::::::
 
 
-::: challenge
+:::::: challenge
 
 ### Advanced Exercise
 
@@ -482,12 +482,12 @@ March 2025 -->
 As you can see, most of the fields are empty, but some data must be added. Since the xsd namespace is referenced, its rules apply. The dating element (datierung) has the from (von) and to (bis) attributes, which use xs:date as the type.
 xs:date is specified in the following form "YYYY-MM-DD" and all components are requiered. Therefore in the XML any date in this format has to be added. 
 The element "siegel" where the amounts of original and preserved seals are annotated has the type xs:nonNegativeInteger. This type is defined by a number equal to or greater than 0, so a number must be specified here as well.
-:::
-:::
+:::::
+::::::
 
 
 
-::: challenge
+:::::: challenge
 
 ### Question
 
@@ -498,13 +498,16 @@ Did you try to add content to the element "datierung"? A validator would not acc
 The feedback from the validator would look something like this:
 > Cvc-complex-type.2.1: Element 'datierung' Must Have No Character Or Element Information Item [children], Because The Type's Content Type Is Empty.
 The element "datierung" has no content. It is only defined by its attribute which have to be used. It is called an empty element within a complexType.
-:::
-:::
+:::::
+::::::
 
 ::: keypoints
--
--
--
+- XML Schema is helpful to describe allowable document content.
+- It uses XML syntax. If you are familiar with this language you can use it easily.
+- An XML that conforms to a Schema is called valid.
+- It is easy to validate the correctness of data of an XML by using a validator.
+- Your Schema can be reused in other Schemas as well as you can reuse other Schemas.
+- You can create your own data types derived from the standard types of xs:schema.
 :::
 
 
