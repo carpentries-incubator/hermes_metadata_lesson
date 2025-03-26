@@ -486,10 +486,16 @@ Did you try to add content to the element "datierung"? A validator would not acc
 
 ::: solution
 The feedback from the validator would look something like this:
-> Cvc-complex-type.2.1: Element 'datierung' Must Have No Character Or Element Information Item [children], Because The Type's Content Type Is Empty.
+
+> Cvc-complex-type.2.1: Element 'datierung' Must Have No Character Or Element Information Item [children], Because the Type's Content Type Is Empty.
+ 
 The element "datierung" has no content. It is only defined by its attribute which have to be used. It is called an empty element within a complexType.
 :::
 :::
+
+
+
+  
 
 ::: keypoints
 - XML Schema is helpful to describe allowable document content.
