@@ -947,7 +947,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The objects searchable in the Met Museum’s online collection
 primarily feature descriptive metadata, such as title, author, date, and
@@ -982,7 +982,7 @@ part of specific projects.</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>It depends on the context wether it is data (the book itself) or
 metadata (title in a library catalogue)</p>
@@ -2346,7 +2346,7 @@ utilized indirectly.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Not only the name of the author entity, but also its identifier of
 the GND database is included. The Gemeinsame Normdatei, maintained by
@@ -3480,6 +3480,93 @@ historical person is then again used as a type for the element
 <p>The element “ort” itself is another complexType nested within the
 complexType “tArchiv”. This is done to assign a special attribute only
 to this element.</p>
+<div id="callout2" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p>An XML that conforms to a Schema is called valid.</p>
+</div>
+</div>
+</div>
+<div id="exercise" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise" class="callout-inner">
+<h3 class="callout-title">Exercise</h3>
+<div class="callout-content">
+<p>The example below shows the complexType from a real-world draft of an
+xsd for a charter collection. Add the indentations so that the elements
+are nested correctly as shown in the examples.</p>
+<div class="codewrapper sourceCode" id="cb22">
+<h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a>&lt;<span class="kw">xsd:complexType</span><span class="ot"> name=</span><span class="st">"tUrkunde"</span>&gt;</span>
+<span id="cb22-2"><a href="#cb22-2" tabindex="-1"></a>&lt;<span class="kw">xsd:sequence</span>&gt;</span>
+<span id="cb22-3"><a href="#cb22-3" tabindex="-1"></a>&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"id"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span> /&gt; <span class="co">&lt;!-- identifier --&gt;</span></span>
+<span id="cb22-4"><a href="#cb22-4" tabindex="-1"></a>&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"ausstellungsdatum"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span> /&gt;<span class="co">&lt;!-- date of issue --&gt;</span></span>
+<span id="cb22-5"><a href="#cb22-5" tabindex="-1"></a>&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"datierung"</span>&gt; <span class="co">&lt;!-- dating --&gt;&lt;!-- format: yyyy-mm-dd:yyyy-mm-dd --&gt;</span></span>
+<span id="cb22-6"><a href="#cb22-6" tabindex="-1"></a>&lt;<span class="kw">xsd:complexType</span>&gt; </span>
+<span id="cb22-7"><a href="#cb22-7" tabindex="-1"></a>&lt;<span class="kw">xsd:attribute</span><span class="ot"> name=</span><span class="st">"von"</span><span class="ot"> type=</span><span class="st">"xsd:date"</span> /&gt; </span>
+<span id="cb22-8"><a href="#cb22-8" tabindex="-1"></a>&lt;<span class="kw">xsd:attribute</span><span class="ot"> name=</span><span class="st">"bis"</span><span class="ot"> type=</span><span class="st">"xsd:date"</span> /&gt; </span>
+<span id="cb22-9"><a href="#cb22-9" tabindex="-1"></a>&lt;/<span class="kw">xsd:complexType</span>&gt; </span>
+<span id="cb22-10"><a href="#cb22-10" tabindex="-1"></a>&lt;/<span class="kw">xsd:element</span>&gt; </span>
+<span id="cb22-11"><a href="#cb22-11" tabindex="-1"></a>&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"aussteller"</span><span class="ot"> type=</span><span class="st">"lc:tHistoricalPerson"</span> /&gt;<span class="co">&lt;!-- author/creator of charter --&gt;</span></span>
+<span id="cb22-12"><a href="#cb22-12" tabindex="-1"></a>&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"mitsiegler"</span><span class="ot"> type=</span><span class="st">"lc:tSimpleHistoricalPerson"</span><span class="ot"> minOccurs=</span><span class="st">"0"</span><span class="ot"> maxOccurs=</span><span class="st">"unbounded"</span> /&gt;<span class="co">&lt;!-- sealer--&gt;</span></span>
+<span id="cb22-13"><a href="#cb22-13" tabindex="-1"></a>&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"ausstellungsort"</span><span class="ot"> type=</span><span class="st">"lc:tOrt"</span> /&gt;<span class="co">&lt;!-- place of issue --&gt;</span></span>
+<span id="cb22-14"><a href="#cb22-14" tabindex="-1"></a>&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"archiv"</span><span class="ot"> type=</span><span class="st">"lc:tArchiv"</span> /&gt;</span>
+<span id="cb22-15"><a href="#cb22-15" tabindex="-1"></a>&lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"siegel"</span>&gt; <span class="co">&lt;!-- seal --&gt;</span></span>
+<span id="cb22-16"><a href="#cb22-16" tabindex="-1"></a>&lt;<span class="kw">xsd:complexType</span>&gt;</span>
+<span id="cb22-17"><a href="#cb22-17" tabindex="-1"></a>&lt;<span class="kw">xsd:attribute</span><span class="ot"> name=</span><span class="st">"urspr"</span><span class="ot"> type=</span><span class="st">"xsd:nonNegativeInteger"</span> /&gt;<span class="co">&lt;!-- number of original seals --&gt;</span></span>
+<span id="cb22-18"><a href="#cb22-18" tabindex="-1"></a>&lt;<span class="kw">xsd:attribute</span><span class="ot"> name=</span><span class="st">"erha"</span><span class="ot"> type=</span><span class="st">"xsd:nonNegativeInteger"</span> /&gt;<span class="co">&lt;!-- number of preserved seals --&gt;</span></span>
+<span id="cb22-19"><a href="#cb22-19" tabindex="-1"></a>&lt;/<span class="kw">xsd:complexType</span>&gt;</span>
+<span id="cb22-20"><a href="#cb22-20" tabindex="-1"></a>&lt;/<span class="kw">xsd:element</span>&gt; </span>
+<span id="cb22-21"><a href="#cb22-21" tabindex="-1"></a>&lt;/<span class="kw">xsd:sequence</span>&gt;</span>
+<span id="cb22-22"><a href="#cb22-22" tabindex="-1"></a>&lt;/<span class="kw">xsd:complexType</span>&gt;</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb23">
+<h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a>&lt;<span class="kw">xsd:complexType</span><span class="ot"> name=</span><span class="st">"tUrkunde"</span>&gt;</span>
+<span id="cb23-2"><a href="#cb23-2" tabindex="-1"></a>  &lt;<span class="kw">xsd:sequence</span>&gt;</span>
+<span id="cb23-3"><a href="#cb23-3" tabindex="-1"></a>    &lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"id"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span> /&gt; <span class="co">&lt;!-- identifier --&gt;</span></span>
+<span id="cb23-4"><a href="#cb23-4" tabindex="-1"></a>    &lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"ausstellungsdatum"</span><span class="ot"> type=</span><span class="st">"xsd:string"</span> /&gt;<span class="co">&lt;!-- date of issue --&gt;</span></span>
+<span id="cb23-5"><a href="#cb23-5" tabindex="-1"></a>    &lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"datierung"</span>&gt; <span class="co">&lt;!-- dating --&gt;&lt;!-- format: yyyy-mm-dd:yyyy-mm-dd --&gt;</span></span>
+<span id="cb23-6"><a href="#cb23-6" tabindex="-1"></a>      &lt;<span class="kw">xsd:complexType</span>&gt; </span>
+<span id="cb23-7"><a href="#cb23-7" tabindex="-1"></a>        &lt;<span class="kw">xsd:attribute</span><span class="ot"> name=</span><span class="st">"von"</span><span class="ot"> type=</span><span class="st">"xsd:date"</span> /&gt; </span>
+<span id="cb23-8"><a href="#cb23-8" tabindex="-1"></a>        &lt;<span class="kw">xsd:attribute</span><span class="ot"> name=</span><span class="st">"bis"</span><span class="ot"> type=</span><span class="st">"xsd:date"</span> /&gt; </span>
+<span id="cb23-9"><a href="#cb23-9" tabindex="-1"></a>      &lt;/<span class="kw">xsd:complexType</span>&gt; </span>
+<span id="cb23-10"><a href="#cb23-10" tabindex="-1"></a>    &lt;/<span class="kw">xsd:element</span>&gt; </span>
+<span id="cb23-11"><a href="#cb23-11" tabindex="-1"></a>    &lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"aussteller"</span><span class="ot"> type=</span><span class="st">"lc:tHistoricalPerson"</span> /&gt;<span class="co">&lt;!-- author/creator of charter --&gt;</span></span>
+<span id="cb23-12"><a href="#cb23-12" tabindex="-1"></a>    &lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"mitsiegler"</span><span class="ot"> type=</span><span class="st">"lc:tSimpleHistoricalPerson"</span><span class="ot"> minOccurs=</span><span class="st">"0"</span><span class="ot"> maxOccurs=</span><span class="st">"unbounded"</span> /&gt;<span class="co">&lt;!-- sealer--&gt;</span></span>
+<span id="cb23-13"><a href="#cb23-13" tabindex="-1"></a>    &lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"ausstellungsort"</span><span class="ot"> type=</span><span class="st">"lc:tOrt"</span> /&gt;<span class="co">&lt;!-- place of issue --&gt;</span></span>
+<span id="cb23-14"><a href="#cb23-14" tabindex="-1"></a>    &lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"archiv"</span><span class="ot"> type=</span><span class="st">"lc:tArchiv"</span> /&gt;</span>
+<span id="cb23-15"><a href="#cb23-15" tabindex="-1"></a>    &lt;<span class="kw">xsd:element</span><span class="ot"> name=</span><span class="st">"siegel"</span>&gt; <span class="co">&lt;!-- seal --&gt;</span></span>
+<span id="cb23-16"><a href="#cb23-16" tabindex="-1"></a>      &lt;<span class="kw">xsd:complexType</span>&gt;</span>
+<span id="cb23-17"><a href="#cb23-17" tabindex="-1"></a>        &lt;<span class="kw">xsd:attribute</span><span class="ot"> name=</span><span class="st">"urspr"</span><span class="ot"> type=</span><span class="st">"xsd:nonNegativeInteger"</span> /&gt;<span class="co">&lt;!-- number of original seals --&gt;</span></span>
+<span id="cb23-18"><a href="#cb23-18" tabindex="-1"></a>        &lt;<span class="kw">xsd:attribute</span><span class="ot"> name=</span><span class="st">"erha"</span><span class="ot"> type=</span><span class="st">"xsd:nonNegativeInteger"</span> /&gt;<span class="co">&lt;!-- number of preserved seals --&gt;</span></span>
+<span id="cb23-19"><a href="#cb23-19" tabindex="-1"></a>      &lt;/<span class="kw">xsd:complexType</span>&gt;</span>
+<span id="cb23-20"><a href="#cb23-20" tabindex="-1"></a>    &lt;/<span class="kw">xsd:element</span>&gt; </span>
+<span id="cb23-21"><a href="#cb23-21" tabindex="-1"></a>   &lt;/<span class="kw">xsd:sequence</span>&gt;</span>
+<span id="cb23-22"><a href="#cb23-22" tabindex="-1"></a>&lt;/<span class="kw">xsd:complexType</span>&gt;</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 <hr>
 <p>[1]: [The World Wide Web Consortium (W3C)](<a href="https://www.w3schools.com/xml/xml_elements.asp" class="external-link uri">https://www.w3schools.com/xml/xml_elements.asp</a>&gt;](<a href="https://www.w3.org/" class="external-link uri">https://www.w3.org/</a>)<br>
 The consortium develops standards and guidelines for World Wide Web
