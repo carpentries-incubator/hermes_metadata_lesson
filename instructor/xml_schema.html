@@ -765,7 +765,7 @@ element to which it is to apply.</p>
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="co">&lt;!-- attribute covers the object element --&gt;</span></span>
-<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name</span><span class="er">"object"</span> <span class="er">type</span><span class="ot">=</span><span class="st">"string"</span>&gt;</span>
+<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"object"</span><span class="ot"> type=</span><span class="st">"string"</span>&gt;</span>
 <span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a>  &lt;<span class="kw">xs:complexType</span><span class="ot"> name=</span><span class="st">"objectType"</span><span class="ot"> abstract=</span><span class="st">"true"</span>&gt;</span>
 <span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a>    &lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"title"</span><span class="ot"> type=</span><span class="st">"string"</span><span class="ot"> maxOccurs=</span><span class="st">"1"</span>/&gt; </span>
 <span id="cb15-5"><a href="#cb15-5" tabindex="-1"></a>    &lt;<span class="kw">xs:attribute</span><span class="ot"> name=</span><span class="st">"lang"</span><span class="ot"> type=</span><span class="st">"string"</span><span class="ot"> default=</span><span class="st">"EN"</span>/&gt;</span>
@@ -939,7 +939,7 @@ are nested correctly as shown in the examples.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb23">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -991,7 +991,7 @@ notes do you get if the XML is not valid? Are they helpful?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb24">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1070,7 +1070,7 @@ note using the validator?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>The feedback from the validator would look something like this:</p>
 <blockquote>
@@ -1108,13 +1108,12 @@ of xs:schema.</li>
 <hr><p>[1]: [The World Wide Web Consortium (W3C)](<a href="https://www.w3schools.com/xml/xml_elements.asp" class="external-link uri">https://www.w3schools.com/xml/xml_elements.asp</a>&gt;](<a href="https://www.w3.org/" class="external-link uri">https://www.w3.org/</a>)<br>
 The consortium develops standards and guidelines for World Wide Web
 technologies. There you can find all the specifications for XML and XML
-schema as well as many more. [2]: LIDO – Lightweight Information
-Describing Objects is an XML harvesting schema. The LIDO schema is
-intended for delivering metadata, for use in a variety of online
-services, from an organization’s online collections database to portals
-of aggregated resources, as well as exposing, sharing, and connecting
-data on the web, <a href="http://www.lido-schema.org" class="external-link">LIDO
-schema</a>.</p>
+schema as well as many more.<br>
+[2]: LIDO – Lightweight Information Describing Objects is an XML
+harvesting schema. The LIDO schema is intended for delivering metadata,
+for use in a variety of online services, from an organization’s online
+collections database to portals of aggregated resources, as well as
+exposing, sharing, and connecting data on the web, <a href="http://www.lido-schema.org" class="external-link">LIDO schema</a>.</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
