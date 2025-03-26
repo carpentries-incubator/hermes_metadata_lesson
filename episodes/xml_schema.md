@@ -1,7 +1,7 @@
 ---
 title: "XML Schema"
-teaching: 30
-exercises: 15
+teaching: 60
+exercises: 30
 ---
 
 ::: questions 
@@ -28,12 +28,11 @@ It is characterised by the use of a schema tag as the container element for the 
 
 </xs:schema>
 
-or
-
 <xsd:schema>
 
 </xsd:schema>
 ```
+
 The prefix „xs“ or "xsd" denotes the namespace for the Schema (remember not to use : in XML tags, it is reserved for that!). 
 
 ### Namespaces
@@ -58,6 +57,7 @@ Example from LIDO Schema[2] for the gender of an actor with additional human-rea
 
 The xs:annotation is a container in which additional information can be embedded. If xs:documentation is used within the container, the information is processed in a human-readable way. If xs:appinfo is used within it, these are additional machine-readable notes. 
 
+
 Namespaces are specified for two reasons: First, they define elements and attributes more precisely, especially when they have different meanings in different sources and specifications from different standards need to be combined. Remember the problem with dates and names. They are a very common element and should be defined precisely. How should the date be recorded? As a time span or as an ISO value? Are first and last names recorded separately? Since there may be different rules in each standard, but they may refer to the same field name, namely "date" or "name," it is important to specify the source of the rules.  
 
 Second, they group together all the elements and attributes of an XML application so that software can easily recognize them.
@@ -71,7 +71,6 @@ A namespace is assigned in the header of the file by specifying a URI.
 The xmlns specification and the URI behind it refer to the W3 consortium namespace for an XML Schema as the standard for the entire document. All elements and attributes are defined according to this namespace. The URI (Uniform Resource Identifier) serves as a unique identifier as a reference to the specifications, but does not have to be a web address. Ideally, a web address is used that points to the underlying standard in the form of the xsd file and/or its documentation. 
 
 If multiple standards are used, or parts of other Schemas are adopted, a prefix should be assigned to the namespaces in order to know which elements or attributes belong to which standard:
-
 
 ```xsd
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -91,6 +90,7 @@ In addition, when creating an xsd file for a specially developed standard, a tar
   elementFormDefault="qualified"
   attributeFormDefault="unqualified">
 ```
+
 The default namespace in this example is the xsd namespace. A new namespace is created with this file: the lbacao namespace. All elements which does not refer to the xsd namespace would be marked with the prefix lc. 
 
 Other namespaces can also be imported into the schema with the following specification, allowing additional software (validators) to check compliance with this standard:
@@ -114,6 +114,7 @@ For example, we can specify that a place is always called place and that the cha
 ```xsd
 <xs:element name=“place“ type=“string“/>
 ```
+
 This defines the \<place\> XML tag such as \<place\>New York\</place\>. 
 
 ### Content restrictions
@@ -203,7 +204,6 @@ Xsd provides more indicators to order the elements or to define occurrence of el
 -  Sequence - The sequence indicator specifies that the child elements must appear in a specific order.
 
 ```xsd
-
 <xs:element name="artist">
   <xs:complexType>
     <xs:all>
@@ -213,7 +213,6 @@ Xsd provides more indicators to order the elements or to define occurrence of el
   </xs:complexType>
 </xs:element>
 ``` 
-
 
 **Occurrence indicators**, used to define how often an element can occur, treated like attributes:
 
@@ -232,7 +231,6 @@ Xsd provides more indicators to order the elements or to define occurrence of el
   </xs:complexType>
 </xs:element>
 ```
- 
 
 **Group indicators**, used to define related sets of elements, treated as tags:
 
@@ -240,7 +238,6 @@ Xsd provides more indicators to order the elements or to define occurrence of el
 - attributeGroup name
 
 ```xsd
-
 <xs:group name="artistgroup">
   <xs:sequence>
     <xs:element name="firstname" type="xs:string"/>
@@ -251,7 +248,6 @@ Xsd provides more indicators to order the elements or to define occurrence of el
 ``` 
 
 Of course, it is also possible to assign further attributes to the elements of a complexType. To do this, the attribute itself is created in the form of a simple element and assigned to the corresponding element to which it is to apply. 
-
 
 ```xsd
 <!-- attribute covers the object element -->
@@ -292,7 +288,6 @@ It should be noted that all attributes are optional by default when creating the
 If an attribute is allowed but should not be specified in more detail, the anyAttribute element is used: 
 
 ```xsd
-
 <xs:element name="creator">
   <xs:complexType>
     <xs:sequence>
@@ -326,9 +321,9 @@ You can also create an individual type for elements and attributes:
 
 <xsd:complexType name="tUrkunde">
   <xsd:sequence>
-…..
+
     <xsd:element name="aussteller" type="lc:tHistoricalPerson" /><!-- author/creator of charter →
-…..
+
   </xsd:sequence>
 </xsd:complexType>
 ```
@@ -362,13 +357,12 @@ The methods presented can also be nested within one another:
 
 </xsd:complexType>
 ```
-The element „ort“ itself is another complexType nested within the complexType „tArchiv“. This is done to assign a special attribute only to this element. 
 
+The element „ort“ itself is another complexType nested within the complexType „tArchiv“. This is done to assign a special attribute only to this element. 
 
 ::: callout
 An XML that conforms to a Schema is called valid.
 :::
-
 
 
 :::::: challenge
@@ -403,7 +397,6 @@ The example below shows the complexType from a real-world draft of an xsd for a 
 ```
 
 ::: solution
-
 ```xsd
 <xsd:complexType name="tUrkunde">
   <xsd:sequence>
@@ -438,7 +431,6 @@ The example below shows the complexType from a real-world draft of an xsd for a 
 Write a XML file that matches the [sample xsd file](interner Link). To validate the XML you can use the [validator](https://www.freeformatter.com/xml-validator-xsd.html). Of course, you can find another validator to check for differences. What notes do you get if the XML is not valid? Are they helpful? 
 
 ::: solution
-
 ```XML
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -479,6 +471,7 @@ March 2025 -->
   </urkunde>
 </lba_cao>
 ```
+
 As you can see, most of the fields are empty, but some data must be added. Since the xsd namespace is referenced, its rules apply. The dating element (datierung) has the from (von) and to (bis) attributes, which use xs:date as the type.
 xs:date is specified in the following form "YYYY-MM-DD" and all components are requiered. Therefore in the XML any date in this format has to be added. 
 The element "siegel" where the amounts of original and preserved seals are annotated has the type xs:nonNegativeInteger. This type is defined by a number equal to or greater than 0, so a number must be specified here as well.
@@ -494,7 +487,6 @@ The element "siegel" where the amounts of original and preserved seals are annot
 Did you try to add content to the element "datierung"? A validator would not accept the XML as correct. Can you imagine why it is not correct to fill in a content like \<datierung\>2025-03-25:2025-04-01\</datierung\>? Did you get a note using the validator? 
 
 ::: solution
-
 The feedback from the validator would look something like this:
 > Cvc-complex-type.2.1: Element 'datierung' Must Have No Character Or Element Information Item [children], Because The Type's Content Type Is Empty.
 The element "datierung" has no content. It is only defined by its attribute which have to be used. It is called an empty element within a complexType.
