@@ -168,7 +168,7 @@ Using xs:pattern you can set restriction on a series of numbers or letters. Ther
 
 A simple element contains only one piece of information. No other elements can be nested within it, nor can content information be stored in additional attributes. 
 
-### Complex Type
+### ComplexType
 
 What you will see more often in metadata schemas is the so-called complexType. This allows the element (later data field) to be defined much more precisely. Using this type it is possible to create for example a group with child elements and assign attributes to elements. 
 
@@ -196,7 +196,7 @@ This is proposed for the definition of an object, e.g., of the cultural heritage
 
 Xsd provides more indicators to order the elements or to define occurrence of elements:
 
-Order indicators, used to define the order of the elements, treated as tags:
+**Order indicators**, used to define the order of the elements, treated as tags:
 
 -  All - The all indicator specifies that the child elements can appear in any order, and that each child element must occur only once. 
 -  Choice - The choice indicator specifies that either one child element or another can occur.
@@ -215,7 +215,7 @@ Order indicators, used to define the order of the elements, treated as tags:
 ``` 
 
 
-Occurrence indicators, used to define how often an element can occur, treated like attributes:
+**Occurrence indicators**, used to define how often an element can occur, treated like attributes:
 
 - maxOccurs
 - minOccurs
@@ -234,7 +234,7 @@ Occurrence indicators, used to define how often an element can occur, treated li
 ```
  
 
-Group indicators, used to define related sets of elements, treated as tags:
+**Group indicators**, used to define related sets of elements, treated as tags:
 
 - Group name
 - attributeGroup name
@@ -251,6 +251,7 @@ Group indicators, used to define related sets of elements, treated as tags:
 ``` 
 
 Of course, it is also possible to assign further attributes to the elements of a complex type. To do this, the attribute itself is created in the form of a simple element and assigned to the corresponding element to which it is to apply. 
+
 
 ```xsd
 <!-- attribute covers the object element -->
@@ -305,7 +306,7 @@ If an attribute is allowed but should not be specified in more detail, the anyAt
 
 Now the creator can have any attribute in the XML, like e.g. an identifier or an alternative name. 
 
-#### Creating a customized type
+### Creating a customized type
 
 You can also create an individual type for elements and attributes:
 
@@ -368,6 +369,8 @@ The element „ort“ itself is another complexType nested within the complexTyp
 An XML that conforms to a schema is called valid.
 :::
 
+
+
 ::: challenge
 
 ### Exercise
@@ -398,9 +401,8 @@ The example below shows the complexType from a real-world draft of an xsd for a 
 </xsd:sequence>
 </xsd:complexType>
 ```
-:::
-:::
-### Solution
+
+::: solution
 
 ```xsd
 <xsd:complexType name="tUrkunde">
@@ -426,7 +428,7 @@ The example below shows the complexType from a real-world draft of an xsd for a 
    </xsd:sequence>
 </xsd:complexType>
 :::
-
+:::
 
 
 ::: challenge
@@ -434,9 +436,8 @@ The example below shows the complexType from a real-world draft of an xsd for a 
 ### Advanced Exercise
 
 Write a XML file that matches the [sample xsd file](interner Link). To validate the XML you can use the [validator](https://www.freeformatter.com/xml-validator-xsd.html). Of course, you can find another validator to check for differences. What notes do you get if the XML is not valid? Are they helpful? 
-:::
-:::
-### Solution
+
+::: solution
 
 ```XML
 
@@ -481,24 +482,30 @@ March 2025 -->
 As you can see, most of the fields are empty, but some data must be added. Since the xsd namespace is referenced, its rules apply. The dating element (datierung) has the from (von) and to (bis) attributes, which use xs:date as the type.
 xs:date is specified in the following form "YYYY-MM-DD" and all components are requiered. Therefore in the XML any date in this format has to be added. 
 The element "siegel" where the amounts of original and preserved seals are annotated has the type xs:nonNegativeInteger. This type is defined by a number equal to or greater than 0, so a number must be specified here as well.
-
+:::
 :::
 
+
+
 ::: challenge
+
 ### Question
 
 Did you try to add content to the element "datierung"? A validator would not accept the XML as correct. Can you imagine why it is not correct to fill in a content like \<datierung\>2025-03-25:2025-04-01\</datierung\>? Did you get a note using the validator? 
 
-:::
 ::: solution
-### Solution
 
 The feedback from the validator would look something like this:
 > Cvc-complex-type.2.1: Element 'datierung' Must Have No Character Or Element Information Item [children], Because The Type's Content Type Is Empty.
 The element "datierung" has no content. It is only defined by its attribute which have to be used. It is called an empty element within a complexType.
-::: 
+:::
+:::
 
-Keypoints
+::: keypoints
+-
+-
+-
+:::
 
 
 ----
