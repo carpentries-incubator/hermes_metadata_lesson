@@ -252,8 +252,8 @@ Of course, it is also possible to assign further attributes to the elements of a
 <!-- attribute covers the object element -->
 <xs:element name"object" type="string">
   <xs:complexType name="objectType" abstract="true">
-    <xs:element name="title" type="string" maxOccurs="1/> 
-    <xs:attribute name="lang" type="string" default=“EN“/>
+    <xs:element name="title" type="string" maxOccurs="1"/> 
+    <xs:attribute name="lang" type="string" default="EN"/>
   </xs:complexType>
 </xs:element>
 
@@ -421,6 +421,90 @@ The example below shows the complexType from a real-world draft of an xsd for a 
 :::
 :::
 
+It is more difficult to create valid XML from an xsd file:
+
+::: challenge
+
+### Advanced Exercise
+
+Write a XML file that matches the [sample xsd file](interner Link). To validate the XML you can use the [validator](https://www.freeformatter.com/xml-validator-xsd.html). Of course, you can find another validator to check for differences. What notes do you get if the XML is not valid? Are they helpful? 
+
+::: solution
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Author: Mathias Gutenbrunner, University Library Marburg 
+draft as part of the Marburger Urkundenrepositorium - Datenbank des CAO und LBA
+https://urkundenrepositorium.uni-marburg.de/home
+project website = https://www.uni-marburg.de/de/fb09/deutsche-philologie-des-mittelalters/forschung/marburger-urkundenrepositorium
+August 2021
+edited by Corinna Berg, Marburg Center for Digital Culture and Infrastructure, Philipps University of Marburg
+as part of the HERMES project https://hermes-hub.de/; development of an introduction to metadata standards
+March 2025 -->
+
+<!-- Changes:-->
+<!-- deleted original comments-->
+<!-- added new comments with translations -->
+
+
+<lba_cao xmlns="lbacao"
+         xmlns:lc="lbacao">
+  <urkunde> 
+    <id/>
+    <ausstellungsdatum/>
+    <datierung von="1855-01-31" bis="1855-01-31"/>
+    <aussteller gndid="">
+      <typ/>
+      <name/>
+    </aussteller> 
+    <mitsiegler gndid=""/>
+    <ausstellungsort gndid=""/>
+    <archiv>
+      <aufbewahrungsort/>
+      <ort gndid=""/>
+      <institution gndid=""/>
+      <signatur/>
+      <vorbesitzer/>
+    </archiv>
+    <siegel urspr="3" erha="1"/>
+  </urkunde>
+</lba_cao>
+```
+
+As you can see, most of the fields are empty, but some data must be added. Since the xsd namespace is referenced, its rules apply. The dating element (datierung) has the from (von) and to (bis) attributes, which use xs:date as the type.
+xs:date is specified in the following form "YYYY-MM-DD" and all components are requiered. Therefore in the XML any date in this format has to be added. 
+The element "siegel" where the amounts of original and preserved seals are annotated has the type xs:nonNegativeInteger. This type is defined by a number equal to or greater than 0, so a number must be specified here as well.
+:::
+:::
+
+There are other methods for defining the conditions for an XML document in an XML schema. You will find corresponding literature in this lesson under "more" --> "Reference" at the top of the lesson.
+
+::: challenge
+
+### Question
+
+Did you try to add content to the element "datierung"? A validator would not accept the XML as correct. Can you imagine why it is not correct to fill in a content like \<datierung\>2025-03-25:2025-04-01\</datierung\>? Did you get a note using the validator? 
+
+::: solution
+The feedback from the validator would look something like this:
+
+> Cvc-complex-type.2.1: Element 'datierung' Must Have No Character Or Element Information Item [children], Because the Type's Content Type Is Empty.
+ 
+The element "datierung" has no content. It is only defined by its attribute which have to be used. It is called an empty element within a complexType.
+:::
+:::
+
+
+
+  
+
+::: keypoints
+- XML Schema is helpful to describe allowable document content.
+- It uses XML syntax. If you are familiar with this language you can use it easily.
+- An XML that conforms to a Schema is called valid.
+- It is easy to validate the correctness of data of an XML by using a validator.
+- Your Schema can be reused in other Schemas as well as you can reuse other Schemas.
+- You can create your own data types derived from the standard types of xs:schema.
+:::
 
 ----
 [1]: [The World Wide Web Consortium (W3C)](https://www.w3schools.com/xml/xml_elements.asp>](https://www.w3.org/)  
