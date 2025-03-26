@@ -359,6 +359,67 @@ The methods presented can also be nested within one another:
 
 The element "ort" itself is another complexType nested within the complexType "tArchiv". This is done to assign a special attribute only to this element. 
 
+::: callout
+An XML that conforms to a Schema is called valid.
+:::
+
+::: challenge
+
+### Exercise
+
+The example below shows the complexType from a real-world draft of an xsd for a charter collection. Add the indentations so that the elements are nested correctly as shown in the examples.
+
+```xsd
+<xsd:complexType name="tUrkunde">
+<xsd:sequence>
+<xsd:element name="id" type="xsd:string" /> <!-- identifier -->
+<xsd:element name="ausstellungsdatum" type="xsd:string" /><!-- date of issue -->
+<xsd:element name="datierung"> <!-- dating --><!-- format: yyyy-mm-dd:yyyy-mm-dd -->
+<xsd:complexType> 
+<xsd:attribute name="von" type="xsd:date" /> 
+<xsd:attribute name="bis" type="xsd:date" /> 
+</xsd:complexType> 
+</xsd:element> 
+<xsd:element name="aussteller" type="lc:tHistoricalPerson" /><!-- author/creator of charter -->
+<xsd:element name="mitsiegler" type="lc:tSimpleHistoricalPerson" minOccurs="0" maxOccurs="unbounded" /><!-- sealer-->
+<xsd:element name="ausstellungsort" type="lc:tOrt" /><!-- place of issue -->
+<xsd:element name="archiv" type="lc:tArchiv" />
+<xsd:element name="siegel"> <!-- seal -->
+<xsd:complexType>
+<xsd:attribute name="urspr" type="xsd:nonNegativeInteger" /><!-- number of original seals -->
+<xsd:attribute name="erha" type="xsd:nonNegativeInteger" /><!-- number of preserved seals -->
+</xsd:complexType>
+</xsd:element> 
+</xsd:sequence>
+</xsd:complexType>
+```
+::: solution
+```xsd
+<xsd:complexType name="tUrkunde">
+  <xsd:sequence>
+    <xsd:element name="id" type="xsd:string" /> <!-- identifier -->
+    <xsd:element name="ausstellungsdatum" type="xsd:string" /><!-- date of issue -->
+    <xsd:element name="datierung"> <!-- dating --><!-- format: yyyy-mm-dd:yyyy-mm-dd -->
+      <xsd:complexType> 
+        <xsd:attribute name="von" type="xsd:date" /> 
+        <xsd:attribute name="bis" type="xsd:date" /> 
+      </xsd:complexType> 
+    </xsd:element> 
+    <xsd:element name="aussteller" type="lc:tHistoricalPerson" /><!-- author/creator of charter -->
+    <xsd:element name="mitsiegler" type="lc:tSimpleHistoricalPerson" minOccurs="0" maxOccurs="unbounded" /><!-- sealer-->
+    <xsd:element name="ausstellungsort" type="lc:tOrt" /><!-- place of issue -->
+    <xsd:element name="archiv" type="lc:tArchiv" />
+    <xsd:element name="siegel"> <!-- seal -->
+      <xsd:complexType>
+        <xsd:attribute name="urspr" type="xsd:nonNegativeInteger" /><!-- number of original seals -->
+        <xsd:attribute name="erha" type="xsd:nonNegativeInteger" /><!-- number of preserved seals -->
+      </xsd:complexType>
+    </xsd:element> 
+   </xsd:sequence>
+</xsd:complexType>
+```
+:::
+:::
 
 
 ----
