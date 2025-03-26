@@ -9,7 +9,6 @@ exercises: 30
 - What is a XML schema? 
 - What are the basic elements of a XML schema? 
 - What is a XML Schema used for?
-
 :::
 
 ::: objectives
@@ -106,13 +105,13 @@ The schemaLocation refers directly to the associated Schema - the xsd file - who
 A simple XML element is defined in the Schema by the specification xs:element and minimum the attributes name and type. 
 
 ```xsd
-<xs:element name=“descriptive name“ type=“string“>
+<xs:element name="descriptive name" type="string"></xs:element>
 ```
 
 For example, we can specify that a place is always called place and that the character type of the content is a string. This specification prevents the tag from being sometimes called place, sometimes location or even city:
 
 ```xsd
-<xs:element name=“place“ type=“string“/>
+<xs:element name="place" type="string"/>
 ```
 
 This defines the \<place\> XML tag such as \<place\>New York\</place\>. 
@@ -132,7 +131,7 @@ Content restrictions for a simple element can be set using so called facets. The
 </xs:element>
 ```
 
-With these restrictions for a datafield „age“, only values from 0 to 120 are allowed in the XML. 
+With these restrictions for a datafield "age", only values from 0 to 120 are allowed in the XML. 
 
 You can also use an enumeration constraint to limit the content to a set of values:
 
@@ -173,8 +172,8 @@ A simple element contains only one piece of information. No other elements can b
 
 What you will see more often in metadata schemas is the so-called complexType. This allows the element (later data field) to be defined much more precisely. Using this type it is possible to create for example a group with child elements and assign attributes to elements. 
 
-``` xsd
-<xs:element name=“object“>
+```xsd
+<xs:element name="object">
   <xs:complexType name="objectType" abstract="true"> 
     <xs:sequence> 
       <xs:element name="creator" type="xs:string" minOccurs="1"/> 
@@ -193,7 +192,7 @@ What you will see more often in metadata schemas is the so-called complexType. T
 </xs:element>
 ```
 
-This is proposed for the definition of an object, e.g., of the cultural heritage. Data fields are defined for the object itself, such as a title and creator or medium. At least one creator must be entered in the block for the object. The xs:sequence element (called „indicator“) specifies that the child elements must appear in the given sequence. Each child element can occur from 0 to any number of times. In addition, the creator's details are recorded in the second block, along with the life data. Only one creator's name may be entered in this block, so if there are multiple, each will receive its own details in a separate block. 
+This is proposed for the definition of an object, e.g., of the cultural heritage. Data fields are defined for the object itself, such as a title and creator or medium. At least one creator must be entered in the block for the object. The xs:sequence element (called "indicator") specifies that the child elements must appear in the given sequence. Each child element can occur from 0 to any number of times. In addition, the creator's details are recorded in the second block, along with the life data. Only one creator's name may be entered in this block, so if there are multiple, each will receive its own details in a separate block. 
 
 Xsd provides more indicators to order the elements or to define occurrence of elements:
 
@@ -219,7 +218,7 @@ Xsd provides more indicators to order the elements or to define occurrence of el
 - maxOccurs
 - minOccurs
 
-``` xsd
+```xsd
 <xs:element name=“object“>
   <xs:complexType name="objectType" abstract="true"> 
     <xs:sequence> 
@@ -276,13 +275,13 @@ In the first example above an attribute for the language is defined which is val
 Instead of a default value, the value can also be fixed:
 
 ```xsd
-<xs:attribute name="lang" type="string" fixed=“EN“/>
+<xs:attribute name="lang" type="string" fixed="EN"/>
 ```
 
 It should be noted that all attributes are optional by default when creating the XML element, unless the use of the attribute is specified as
 
 ```xsd
- <xs:attribute name=“name“ use=“required“/>
+ <xs:attribute name="name" use="required"/>
 ```
 
 If an attribute is allowed but should not be specified in more detail, the anyAttribute element is used: 
@@ -328,12 +327,12 @@ You can also create an individual type for elements and attributes:
 </xsd:complexType>
 ```
 
-In the simpleType the requirement for a GND identifier as a string data type is set. This defined „tGNDID“ type is used as an attribute in the complexType for the historical person. The complexType for the historical person is then again used as a type for the element „aussteller“ in the complexType „rUrkunde“. 
+In the simpleType the requirement for a GND identifier as a string data type is set. This defined "tGNDID" type is used as an attribute in the complexType for the historical person. The complexType for the historical person is then again used as a type for the element "aussteller" in the complexType "rUrkunde". 
 
 
 The XML output would look like that:
 
-```XML
+```xml
 <urkunde> 
   <aussteller gndid="https://d-nb.info/gnd/2001630-X">
     <typ>corporation</typ>
@@ -358,7 +357,7 @@ The methods presented can also be nested within one another:
 </xsd:complexType>
 ```
 
-The element „ort“ itself is another complexType nested within the complexType „tArchiv“. This is done to assign a special attribute only to this element. 
+The element "ort" itself is another complexType nested within the complexType "tArchiv". This is done to assign a special attribute only to this element. 
 
 ::: callout
 An XML that conforms to a Schema is called valid.
@@ -420,6 +419,7 @@ The example below shows the complexType from a real-world draft of an xsd for a 
     </xsd:element> 
    </xsd:sequence>
 </xsd:complexType>
+```
 :::::
 ::::::
 
@@ -431,8 +431,7 @@ The example below shows the complexType from a real-world draft of an xsd for a 
 Write a XML file that matches the [sample xsd file](interner Link). To validate the XML you can use the [validator](https://www.freeformatter.com/xml-validator-xsd.html). Of course, you can find another validator to check for differences. What notes do you get if the XML is not valid? Are they helpful? 
 
 ::: solution
-```XML
-
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- Author: Mathias Gutenbrunner, University Library Marburg 
 draft as part of the Marburger Urkundenrepositorium - Datenbank des CAO und LBA
