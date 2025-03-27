@@ -118,11 +118,11 @@
   Data and Metadata in the Humanities
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 59%" class="percentage">
-    59%
+<aside class="col-md-12 lesson-progress"><div style="width: 58%" class="percentage">
+    58%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 59%" aria-valuenow="59" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 58%" aria-valuenow="58" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -389,7 +389,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Metadata Encoding &amp; Transmission Standard (METS)</h1>
-        <p>Last updated on 2025-02-18 |
+        <p>Last updated on 2025-03-27 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/mets.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -465,6 +465,113 @@ with content in the METS object.</li>
 <span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a> &lt;<span class="kw">behaviorSec</span>/&gt;</span>
 <span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>&lt;/<span class="kw">mets</span>&gt;</span></code></pre>
 </div>
+<div id="exercise-part-i" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-part-i" class="callout-inner">
+<h3 class="callout-title">Exercise Part I</h3>
+<div class="callout-content">
+<p>Use the example from the XML exercise and assign the metadata
+elements to the structure of the METS standard.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>Using the first artwork record from the example file a XML with a
+METS structure could look like that:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>&lt;<span class="kw">mets</span>&gt;</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a> &lt;<span class="kw">metsHdr</span>&gt;</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>  &lt;<span class="kw">creator</span>&gt;Moma&lt;/<span class="kw">creator</span>&gt;</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>  &lt;<span class="kw">editor</span>&gt;me&lt;/<span class="kw">editor</span>&gt;</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>  &lt;<span class="kw">creationdate</span>&gt;today&lt;/<span class="kw">creationdate</span>&gt;</span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a> &lt;/<span class="kw">metsHdr</span>&gt;</span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a> &lt;<span class="kw">dmdSec</span>&gt;</span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Green-Blue-Red (for Parkett no. 35)&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;1993&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb2-12"><a href="#cb2-12" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Multiple of oil on canvas&lt;/<span class="kw">medium</span>&gt;</span>
+<span id="cb2-13"><a href="#cb2-13" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;composition: 11 7/16 × 15 3/4<span class="dv">&amp;quot;</span> (29 × 40 cm); sheet: 11 3/4 × 15 3/4<span class="dv">&amp;quot;</span> (29.9 × 40 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
+<span id="cb2-14"><a href="#cb2-14" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Drawings <span class="dv">&amp;amp;</span> Prints&lt;/<span class="kw">department</span>&gt;</span>
+<span id="cb2-15"><a href="#cb2-15" tabindex="-1"></a>  &lt;<span class="kw">artist</span>&gt;</span>
+<span id="cb2-16"><a href="#cb2-16" tabindex="-1"></a>    &lt;<span class="kw">name</span>&gt;Gerhard Richter&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb2-17"><a href="#cb2-17" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;4907&lt;/<span class="kw">constituentID</span>&gt;</span>
+<span id="cb2-18"><a href="#cb2-18" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
+<span id="cb2-19"><a href="#cb2-19" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;German, born 1932&lt;/<span class="kw">bio</span>&gt;</span>
+<span id="cb2-20"><a href="#cb2-20" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
+<span id="cb2-21"><a href="#cb2-21" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;German&lt;/<span class="kw">nationality</span>&gt;</span>
+<span id="cb2-22"><a href="#cb2-22" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1932&lt;/<span class="kw">beginDate</span>&gt;</span>
+<span id="cb2-23"><a href="#cb2-23" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;0&lt;/<span class="kw">endDate</span>&gt;</span>
+<span id="cb2-24"><a href="#cb2-24" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
+<span id="cb2-25"><a href="#cb2-25" tabindex="-1"></a>  &lt;/<span class="kw">artist</span>&gt;</span>
+<span id="cb2-26"><a href="#cb2-26" tabindex="-1"></a> &lt;/<span class="kw">dmdSec</span>&gt;   </span>
+<span id="cb2-27"><a href="#cb2-27" tabindex="-1"></a>    </span>
+<span id="cb2-28"><a href="#cb2-28" tabindex="-1"></a> &lt;<span class="kw">amdSec</span>&gt;</span>
+<span id="cb2-29"><a href="#cb2-29" tabindex="-1"></a>  &lt;<span class="kw">creditLine</span>&gt;Lillie P. Bliss Collection&lt;/<span class="kw">creditLine</span>&gt;</span>
+<span id="cb2-30"><a href="#cb2-30" tabindex="-1"></a>  &lt;<span class="kw">accessionNumber</span>&gt;1.1934&lt;/<span class="kw">accessionNumber</span>&gt;</span>
+<span id="cb2-31"><a href="#cb2-31" tabindex="-1"></a>  &lt;<span class="kw">dateAcquired</span>&gt;1998-03-05&lt;/<span class="kw">dateAcquired</span>&gt;</span>
+<span id="cb2-32"><a href="#cb2-32" tabindex="-1"></a>  &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
+<span id="cb2-33"><a href="#cb2-33" tabindex="-1"></a>  &lt;<span class="kw">objectID</span>&gt;61953&lt;/<span class="kw">objectID</span>&gt;</span>
+<span id="cb2-34"><a href="#cb2-34" tabindex="-1"></a> &lt;/<span class="kw">amdSec</span>&gt;</span>
+<span id="cb2-35"><a href="#cb2-35" tabindex="-1"></a></span>
+<span id="cb2-36"><a href="#cb2-36" tabindex="-1"></a> &lt;<span class="kw">fileSec</span>&gt;</span>
+<span id="cb2-37"><a href="#cb2-37" tabindex="-1"></a>  &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/78296&lt;/<span class="kw">url</span>&gt;</span>
+<span id="cb2-38"><a href="#cb2-38" tabindex="-1"></a>  &lt;<span class="kw">imageURL</span>&gt;https://www.moma.org/media/W1siZiIsIjQ0NjA2NyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=c6bd692fa0fe0685&lt;/<span class="kw">imageURL</span>&gt;</span>
+<span id="cb2-39"><a href="#cb2-39" tabindex="-1"></a>  &lt;<span class="kw">onView</span>&gt;<span class="dv">&amp;quot;</span>MoMA, Floor 2, 2 South<span class="dv">&amp;quot;</span>&lt;/<span class="kw">onView</span>&gt;</span>
+<span id="cb2-40"><a href="#cb2-40" tabindex="-1"></a> &lt;/<span class="kw">fileSec</span>&gt;</span>
+<span id="cb2-41"><a href="#cb2-41" tabindex="-1"></a></span>
+<span id="cb2-42"><a href="#cb2-42" tabindex="-1"></a> &lt;<span class="kw">structMap</span>/&gt;</span>
+<span id="cb2-43"><a href="#cb2-43" tabindex="-1"></a></span>
+<span id="cb2-44"><a href="#cb2-44" tabindex="-1"></a> &lt;<span class="kw">structLink</span>/&gt;</span>
+<span id="cb2-45"><a href="#cb2-45" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="#cb2-46" tabindex="-1"></a> &lt;<span class="kw">behaviorSec</span>/&gt;</span>
+<span id="cb2-47"><a href="#cb2-47" tabindex="-1"></a>  &lt;<span class="kw">onView</span>&gt;&lt;/<span class="kw">onView</span>&gt;</span>
+<span id="cb2-48"><a href="#cb2-48" tabindex="-1"></a></span>
+<span id="cb2-49"><a href="#cb2-49" tabindex="-1"></a>&lt;/<span class="kw">mets</span>&gt;</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="exercise-part-ii" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-part-ii" class="callout-inner">
+<h3 class="callout-title">Exercise Part II</h3>
+<div class="callout-content">
+<p>You can find examples for structured data in METS standard on the <a href="https://www.loc.gov/standards/mets/mets-examples.html" class="external-link">website of
+the Library of Congress</a>. What do you notice?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<p>You can figure out that: - In many examples the MODS standard is used
+within the METS structure. - The last sections are often missing or do
+not have many data. - The amdSec contains technical information of the
+form of digitization such as camera or scanner and their settings. - The
+amdSec is sometimes divided into further sections, e.g., rights and
+technical data.</p>
+</div>
+</div>
+</div>
+</div>
 <p>METS serves as a container for structuring metadata. The metadata
 fields are usually integrated into the METS structure in a specific
 standard for the individual fields and their order. These include
@@ -531,7 +638,7 @@ any links that you are not going to use.
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/mets.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/mets.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-02-18",
+  "dateModified": "2025-03-27",
   "datePublished": "2025-03-27"
 }
 
