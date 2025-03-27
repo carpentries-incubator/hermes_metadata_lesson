@@ -1,7 +1,7 @@
 ---
 title: "Metadata Encoding & Transmission Standard (METS)"
-teaching: 20
-exercises: 1
+teaching: 15
+exercises: 15
 ---
 
 ::: questions 
@@ -42,9 +42,93 @@ order for the metadata fields per se, but serves to structure them in a standard
  <structLink/>
  <behaviorSec/>
 </mets>
-``` 
-METS serves as a container for structuring metadata. The metadata fields are usually integrated into the METS structure in a specific standard for the individual fields and their order. 
-These include standards such as Cublin Core, MODS, or MARC.
+```
+  
+::: challenge
+
+### Exercise Part I
+
+Use the example from the XML exercise and assign the metadata elements to the structure of the METS standard. 
+
+::: solution 
+
+### Solution
+
+Using the first artwork record from the example file a XML with a METS structure could look like that:   
+```XML
+<mets>
+ <metsHdr>
+  <creator>Moma</creator>
+  <editor>me</editor>
+  <creationdate>today</creationdate>
+ </metsHdr>
+
+ <dmdSec>
+  <artwork>
+    <title>Green-Blue-Red (for Parkett no. 35)</title>
+    <date>1993</date>
+    <medium>Multiple of oil on canvas</medium>
+    <dimensions>composition: 11 7/16 × 15 3/4&quot; (29 × 40 cm); sheet: 11 3/4 × 15 3/4&quot; (29.9 × 40 cm)</dimensions>
+    <department>Drawings &amp; Prints</department>
+  <artist>
+    <name>Gerhard Richter</name>
+    <constituentID>4907</constituentID>
+    <artistBio>
+      <bio>German, born 1932</bio>
+    </artistBio>
+    <nationality>German</nationality>
+    <beginDate>1932</beginDate>
+    <endDate>0</endDate>
+    <gender>male</gender>
+  </artist>
+ </dmdSec>   
+    
+ <amdSec>
+  <creditLine>Lillie P. Bliss Collection</creditLine>
+  <accessionNumber>1.1934</accessionNumber>
+  <dateAcquired>1998-03-05</dateAcquired>
+  <cataloged>Y</cataloged>
+  <objectID>61953</objectID>
+ </amdSec>
+
+ <fileSec>
+  <url>https://www.moma.org/collection/works/78296</url>
+  <imageURL>https://www.moma.org/media/W1siZiIsIjQ0NjA2NyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=c6bd692fa0fe0685</imageURL>
+  <onView>&quot;MoMA, Floor 2, 2 South&quot;</onView>
+ </fileSec>
+
+ <structMap/>
+
+ <structLink/>
+
+ <behaviorSec/>
+  <onView></onView>
+
+</mets>
+```
+:::
+:::  
+
+::: challenge
+
+### Exercise Part II
+
+You can find examples for structured data in METS standard on the [website of the Library of Congress](https://www.loc.gov/standards/mets/mets-examples.html). What do you notice? 
+
+::: solution
+
+### Solution
+
+You can figure out that:
+- In many examples the MODS standard is used within the METS structure.
+- The last sections are often missing or do not have many data.
+- The amdSec contains technical information of the form of digitization such as camera or scanner and their settings.
+- The amdSec is sometimes divided into further sections, e.g., rights and technical data.
+:::
+:::
+
+
+METS serves as a container for structuring metadata. The metadata fields are usually integrated into the METS structure in a specific standard for the individual fields and their order. These include standards such as Cublin Core, MODS, or MARC.
 
 
 
