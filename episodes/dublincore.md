@@ -1,7 +1,7 @@
 ---
 title: "Dublin Core Metadata Element Set"
 teaching: 30
-exercises: 3
+exercises: 20
 ---
 
 ::: questions 
@@ -45,15 +45,17 @@ Dublin Core defines the metadata fields themselves, but not the structure for th
 
 ### Exercise
 
-View the specifications of the elements on the [website](https://www.dublincore.org/specifications/dublin-core/dces/).
-
 You have a photograph by Johan Hagemeyer. It is called "Albert Einstein, Pasadena". The photograph is of Albert Einstein. 
 It was taken in 1931 and loaned to the Museum in 1962. It is from the photographer's estate. Albert Einstein lived from 1879 to 1955 
 and was 52 years old when the photograph was taken. The photographer, Johan Hagemeyer, lived from 1884 to 1962 and the photo was taken in Pasadena. 
 The location is New York. The photograph measures 24.6 × 18.7 cm. The mount measures 45.6 × 35.4 cm. 
 
-You can find the object in the [MET collection](https://www.metmuseum.org/art/collection/search/270713). What information would you include in each metadata 
-field and why? Is there any information you are missing to fill in the fields? If so, which ones and why? Discuss in small groups.
+You can find the object in the [MET collection](https://www.metmuseum.org/art/collection/search/270713). View the specifications of the elements on the [website](https://www.dublincore.org/specifications/dublin-core/dces/) if you are unsure about how to annotate. 
+
+What information would you include in each metadata field and why?   
+Is there any information you are missing to fill in the fields? If so, which ones and why?  
+  
+Discuss in small groups.
 
 ::: solution
 
@@ -127,10 +129,68 @@ name=“dc.date“ scheme=“ISO1863“
 
 This assigns an attribute to the field, as already shown for XML. This attribute assigns the use of the ISO standard.
 
+### DCMI Metadata Terms  
+
 Under the dcterms namespace, we also find an extended set of elements that integrates the familiar 15 basic elements. 
 In addition, there are clarifications, e.g. for the date in the form of dcterms:dateAccepted, or new fields like dcterms:abstract. 
 
-This extension of the original elements is referred to as Qualified Dublin Core or DCMI metadata terms (“Dublin Core terms” for short). 
+This extension of the original elements is referred to as Qualified Dublin Core or DCMI metadata terms (“Dublin Core terms” for short):
+
+- abstract  
+- accessRights  
+- accrualMethod  
+- accrualPeriodicity  
+- accrualPolicy  
+- alternative  
+- audience  
+- available  
+- bibliographicCitation  
+- conformsTo  
+- contributor  
+- coverage  
+- created  
+- creator  
+- date  
+- dateAccepted  
+- dateCopyrighted  
+- dateSubmitted  
+- description  
+- educationLevel  
+- extent  
+- format 
+- hasFormat  
+- hasPart  
+- hasVersion  
+- identifier  
+- instructionalMethod  
+- isFormatOf  
+- isPartOf  
+- isReferencedBy  
+- isReplacedBy  
+- isRequiredBy  
+- issued  
+- isVersionOf  
+- language  
+- license  
+- mediator  
+- medium  
+- modified  
+- provenance  
+- publisher  
+- references  
+- relation  
+- replaces  
+- requires  
+- rights  
+- rightsHolder  
+- source  
+- spatial  
+- subject  
+- tableOfContents  
+- temporal  
+- title  
+- type  
+- valid  
 
 ::: challenge
 
