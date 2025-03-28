@@ -78,7 +78,7 @@ To illustrate, the relationship between the entity of the author "Franz Kafka" a
 This relationship has the advantage of enabling flexible interlinking of data. Additionally, the entity of the book can be linked to the entity of the publisher by the relationship "has published". 
 The term metadata model fits best here. First of all, it is an abstract and theoretical model that describes metadata in its context. 
 
-![graphic on entity-relationship](fig/triple.png)
+![Graphic Entity Relationship](fig/triple.png)
 
 The data is modeled in the form of so-called triples. A triple consists of a subject, an object, and a predicate. The predicate describes the relationship between the subject, the entity to be described, and the object, the entity linked to the subject: 
 
@@ -94,7 +94,7 @@ This approach is predominantly utilized in the domain of the semantic web, servi
 
 Discuss the following graphic in small groups. What is shown? How are data linked and can you image more data to be linked? 
 
-![image title](fig/graphstart.png)
+![Graphic Data Relation Exercise](fig/graphstart.png)
 
 
 ::: solution
