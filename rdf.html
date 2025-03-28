@@ -471,7 +471,7 @@ information to describe the predicate instead of using Dublin Core?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p><a href="https://www.wikidata.org/wiki/Property:P170" class="external-link">creator
 property</a>: The information listed in Wikidata for an entity is all
@@ -483,9 +483,9 @@ can be used similiar to the Dublin Core element of creator.</p>
 </div>
 </div>
 </div>
-<div id="exercise-1" class="callout discussion">
+<div id="exercise-1" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-1" class="callout-inner">
 <h3 class="callout-title">Exercise</h3>
@@ -493,21 +493,24 @@ can be used similiar to the Dublin Core element of creator.</p>
 <p>Use wikidata to create a triple for the following statements: 1)
 Michelangelo is creator of the Pietà. 2) Michelangelo was born in
 Caprese Michelangelo. 3) The Pietà is located in the St. Peter’s
-Basilica. ::: solution</p>
-<div class="section level3">
-<h3 id="solution-1">Solution<a class="anchor" aria-label="anchor" href="#solution-1"></a></h3>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>&lt;<span class="kw">https:</span><span class="er">//</span><span class="ot">www.wikidata.org</span><span class="er">/wiki/Q5592&gt;&lt;https://www.wikidata.org/wiki/Property:P170&gt;&lt;https://www.wikidata.org/wiki/Q235242&gt;</span></span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="er">&lt;https://www.wikidata.org/wiki/Q5592&gt;&lt;https://www.wikidata.org/wiki/Property:P19&gt;&lt;https://www.wikidata.org/wiki/Q52069&gt;</span></span>
-<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="er">&lt;https://www.wikidata.org/wiki/Q235242&gt;&lt;https://www.wikidata.org/wiki/Property:P276h&gt;&lt;ttps://www.wikidata.org/wiki/Q12512&gt;</span></span></code></pre>
+Basilica.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<pre><code>&lt;https://www.wikidata.org/wiki/Q5592&gt;&lt;https://www.wikidata.org/wiki/Property:P170&gt;&lt;https://www.wikidata.org/wiki/Q235242&gt;
+&lt;https://www.wikidata.org/wiki/Q5592&gt;&lt;https://www.wikidata.org/wiki/Property:P19&gt;&lt;https://www.wikidata.org/wiki/Q52069&gt;
+&lt;https://www.wikidata.org/wiki/Q235242&gt;&lt;https://www.wikidata.org/wiki/Property:P276h&gt;&lt;ttps://www.wikidata.org/wiki/Q12512&gt;</code></pre>
 </div>
 </div>
 </div>
 </div>
-</div>
-<p>:::</p>
 <div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
