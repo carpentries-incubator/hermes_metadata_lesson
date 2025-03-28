@@ -118,11 +118,11 @@
   Data and Metadata in the Humanities
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 65%" class="percentage">
-    65%
+<aside class="col-md-12 lesson-progress"><div style="width: 62%" class="percentage">
+    62%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 65%" aria-valuenow="65" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 62%" aria-valuenow="62" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -390,13 +390,13 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Dublin Core Metadata Element Set</h1>
-        <p>Last updated on 2025-02-19 |
+        <p>Last updated on 2025-03-28 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/dublincore.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
-        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 33 minutes</p>
+        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 50 minutes</p>
 
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -461,7 +461,6 @@ standards such as METS.</p>
 <div id="exercise" class="callout-inner">
 <h3 class="callout-title">Exercise</h3>
 <div class="callout-content">
-<p>View the specifications of the elements on the <a href="https://www.dublincore.org/specifications/dublin-core/dces/" class="external-link">website</a>.</p>
 <p>You have a photograph by Johan Hagemeyer. It is called “Albert
 Einstein, Pasadena”. The photograph is of Albert Einstein. It was taken
 in 1931 and loaned to the Museum in 1962. It is from the photographer’s
@@ -471,9 +470,13 @@ from 1884 to 1962 and the photo was taken in Pasadena. The location is
 New York. The photograph measures 24.6 × 18.7 cm. The mount measures
 45.6 × 35.4 cm.</p>
 <p>You can find the object in the <a href="https://www.metmuseum.org/art/collection/search/270713" class="external-link">MET
-collection</a>. What information would you include in each metadata
-field and why? Is there any information you are missing to fill in the
-fields? If so, which ones and why? Discuss in small groups.</p>
+collection</a>. View the specifications of the elements on the <a href="https://www.dublincore.org/specifications/dublin-core/dces/" class="external-link">website</a>
+if you are unsure about how to annotate.</p>
+<p>What information would you include in each metadata field and
+why?<br>
+Is there any information you are missing to fill in the fields? If so,
+which ones and why?</p>
+<p>Discuss in small groups.</p>
 </div>
 </div>
 </div>
@@ -564,13 +567,70 @@ attributes:</p>
 <p>name=“dc.date“ scheme=“ISO1863“</p>
 <p>This assigns an attribute to the field, as already shown for XML.
 This attribute assigns the use of the ISO standard.</p>
+<div class="section level3">
+<h3 id="dcmi-metadata-terms">DCMI Metadata Terms<a class="anchor" aria-label="anchor" href="#dcmi-metadata-terms"></a></h3>
 <p>Under the dcterms namespace, we also find an extended set of elements
 that integrates the familiar 15 basic elements. In addition, there are
 clarifications, e.g. for the date in the form of dcterms:dateAccepted,
 or new fields like dcterms:abstract.</p>
 <p>This extension of the original elements is referred to as Qualified
-Dublin Core or DCMI metadata terms (“Dublin Core terms” for short).</p>
-<div id="discussion-1" class="callout discussion">
+Dublin Core or DCMI metadata terms (“Dublin Core terms” for short):</p>
+<ul><li>abstract<br></li>
+<li>accessRights<br></li>
+<li>accrualMethod<br></li>
+<li>accrualPeriodicity<br></li>
+<li>accrualPolicy<br></li>
+<li>alternative<br></li>
+<li>audience<br></li>
+<li>available<br></li>
+<li>bibliographicCitation<br></li>
+<li>conformsTo<br></li>
+<li>contributor<br></li>
+<li>coverage<br></li>
+<li>created<br></li>
+<li>creator<br></li>
+<li>date<br></li>
+<li>dateAccepted<br></li>
+<li>dateCopyrighted<br></li>
+<li>dateSubmitted<br></li>
+<li>description<br></li>
+<li>educationLevel<br></li>
+<li>extent<br></li>
+<li>format</li>
+<li>hasFormat<br></li>
+<li>hasPart<br></li>
+<li>hasVersion<br></li>
+<li>identifier<br></li>
+<li>instructionalMethod<br></li>
+<li>isFormatOf<br></li>
+<li>isPartOf<br></li>
+<li>isReferencedBy<br></li>
+<li>isReplacedBy<br></li>
+<li>isRequiredBy<br></li>
+<li>issued<br></li>
+<li>isVersionOf<br></li>
+<li>language<br></li>
+<li>license<br></li>
+<li>mediator<br></li>
+<li>medium<br></li>
+<li>modified<br></li>
+<li>provenance<br></li>
+<li>publisher<br></li>
+<li>references<br></li>
+<li>relation<br></li>
+<li>replaces<br></li>
+<li>requires<br></li>
+<li>rights<br></li>
+<li>rightsHolder<br></li>
+<li>source<br></li>
+<li>spatial<br></li>
+<li>subject<br></li>
+<li>tableOfContents<br></li>
+<li>temporal<br></li>
+<li>title<br></li>
+<li>type<br></li>
+<li>valid</li>
+</ul><div id="discussion-1" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -596,6 +656,7 @@ area of the ingested resource.</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/mets.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
@@ -654,7 +715,7 @@ any links that you are not going to use.
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/instructor/dublincore.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/instructor/dublincore.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-02-19",
+  "dateModified": "2025-03-28",
   "datePublished": "2025-03-28"
 }
 
