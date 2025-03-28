@@ -119,10 +119,10 @@ You can find examples for structured data in METS standard on the [website of th
 
 ### Solution
 
-You can figure out that:
-- In many examples the MODS standard is used within the METS structure.
-- The last sections are often missing or do not have many data.
-- The amdSec contains technical information of the form of digitization such as camera or scanner and their settings.
+You can figure out that:  
+- In many examples the MODS standard is used within the METS structure.  
+- The last sections are often missing or do not have many data.  
+- The amdSec contains technical information of the form of digitization such as camera or scanner and their settings. 
 - The amdSec is sometimes divided into further sections, e.g., rights and technical data.
 :::
 :::
