@@ -61,7 +61,7 @@ Take a closer look at the [Wikidata resource of Frida Kahlos painting "The two F
 
 ### Exercise
 
-Use wikidata to create a triple for the following statements:
+Use wikidata to create a triple for the following statements:  
 1) Michelangelo is creator of the Pietà.
 2) Michelangelo was born in Caprese Michelangelo.
 3) The Pietà is located in the St. Peter's Basilica. 
