@@ -37,7 +37,7 @@ The predicate is also defined by a URI. This is possible, for example, when the 
 standard. The metadata fields of the standards have their own URIs. The relationship between author and book can be 
 modeled using the Dublin Core elements. The data format for RDF is typically XML. 
 
-```xml
+```
 <https://www.wikidata.org/wiki/Q5588><http://purl.org/dc/terms/creator><https://www.wikidata.org/wiki/Q3232010>
 ```
 This example means exactly the same as the previous example: Frida Kahlo is creator of "The two Fridas" by using the identifier of Wikidata and Dublin Core. 
