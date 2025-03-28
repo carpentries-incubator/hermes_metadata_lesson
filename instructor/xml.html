@@ -485,21 +485,8 @@ inside too:</p>
 </h3>
 <pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>&lt;<span class="kw">collection</span>&gt;&lt;<span class="kw">place</span>&gt;collection of the MET in New York&lt;/<span class="kw">place</span>&gt;&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
 </div>
-</div>
-<div class="section level4">
-<h4 id="attributes">Attributes<a class="anchor" aria-label="anchor" href="#attributes"></a></h4>
-<p>In XML, as in HTML, tags can also be assigned attributes, which
-define the content of the tags in more detail. They are named and the
-content is assigned to them with a = and enclosed in quotes:</p>
-<div class="codewrapper sourceCode" id="cb5">
-<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>&lt;<span class="kw">title</span><span class="ot"> lang=</span><span class="st">"author's original language"</span>&gt;Always give the title in the author's language&lt;/<span class="kw">title</span>&gt;</span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>&lt;<span class="kw">commonTitle</span><span class="ot"> lang=</span><span class="st">"title as commonly known"</span>&gt;Always give the title as it is commonly known&lt;/<span class="kw">commonTitle</span>&gt;</span></code></pre>
-</div>
-<p>There are some rules for characters used in XML for structure. They
-are replaced by a special character string, so that it won’t cause
+<p>There are some rules for characters used in XML for syntax structure.
+They are replaced by a special character string, so that it won’t cause
 problems if, for example, you want to use a &lt; in the content. This
 would cause an error because XML expects a closing tag. To avoid errors,
 the character is replaced with an entity reference:</p>
@@ -527,10 +514,23 @@ the character is replaced with an entity reference:</p>
 <td>”</td>
 <td>quotation mark</td>
 <td></td>
-</tr></tbody></table><div class="codewrapper sourceCode" id="cb6">
+</tr></tbody></table><div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>&lt;<span class="kw">photographer</span>&gt;Bernd <span class="dv">&amp;amp;</span> Hilla Becher&lt;/<span class="kw">photographer</span>&gt;</span></code></pre>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>&lt;<span class="kw">photographer</span>&gt;Bernd <span class="dv">&amp;amp;</span> Hilla Becher&lt;/<span class="kw">photographer</span>&gt;</span></code></pre>
+</div>
+</div>
+<div class="section level4">
+<h4 id="attributes">Attributes<a class="anchor" aria-label="anchor" href="#attributes"></a></h4>
+<p>In XML, as in HTML, tags can also be assigned attributes, which
+define the content of the tags in more detail. They are named and the
+content is assigned to them with a = and enclosed in quotes:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>&lt;<span class="kw">title</span><span class="ot"> lang=</span><span class="st">"author's original language"</span>&gt;Always give the title in the author's language&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>&lt;<span class="kw">commonTitle</span><span class="ot"> lang=</span><span class="st">"title as commonly known"</span>&gt;Always give the title as it is commonly known&lt;/<span class="kw">commonTitle</span>&gt;</span></code></pre>
 </div>
 <p>Attributes are also frequently used in a hierarchy to record
 information that applies to all underlying data:</p>
