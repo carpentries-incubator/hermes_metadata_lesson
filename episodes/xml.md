@@ -46,11 +46,10 @@ You may be familiar with this structure. The HTML language, which is used to org
 XML also provides the ability to have comments that are not automatically read:
 
 ```xml
-<!-- Here is the content of the comment, there is no closing tag -- >
+<!-- Here is the content of the comment, there is no closing tag -->
 ```
-
-#### Rules for naming tags^[1]
-
+  
+#### Rules for naming tags^[1]  
 
 Names:
 
@@ -74,7 +73,7 @@ In XML, all elements must be properly nested within each other, which means that
 ```
 
 
-#### Attributes
+#### Attributes  
 
 In XML, as in HTML, tags can also be assigned attributes, which define the content of the tags in more detail. They are named and the content is assigned to them with a = and enclosed in quotes:
 
@@ -93,8 +92,11 @@ There are some rules for characters used in XML for structure. They are replaced
 | \&gt; | > | greater than |
 | \&amp; | & | ampersand |
 | \&apos; | ' | apostrophe |
-| \&quot; | " | quotation mark |
+| \&quot; | " | quotation mark |  
 
+```xml
+<photographer>Bernd \&amp; Hilla Becher</photographer>
+```  
 
 Attributes are also frequently used in a hierarchy to record information that applies to all underlying data:
 
