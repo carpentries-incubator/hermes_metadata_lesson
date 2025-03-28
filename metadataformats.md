@@ -1,7 +1,7 @@
 ---
-title: "Introduction to Metadata File Formats"
+title: "Collecting data and metadata"
 teaching: 20
-exercises: 15
+exercises: 20
 ---
 
 ::: questions 
