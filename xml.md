@@ -95,7 +95,7 @@ There are some rules for characters used in XML for structure. They are replaced
 | \&quot; | " | quotation mark |  
 
 ```xml
-<photographer>Bernd \&amp; Hilla Becher</photographer>
+<photographer>Bernd &amp; Hilla Becher</photographer>
 ```  
 
 Attributes are also frequently used in a hierarchy to record information that applies to all underlying data:
