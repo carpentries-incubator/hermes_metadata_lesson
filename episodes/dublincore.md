@@ -105,7 +105,7 @@ dc.date.available or dc.date.issued
 
 ::: challenge 
 
-### Question
+### Discussion
 
 Which of the elements you have just worked on that you could not assign clearly or at all would you expand with a qualifier and how? 
 
@@ -117,8 +117,6 @@ Which of the elements you have just worked on that you could not assign clearly 
 * dc.date.submitted: 1962
 * dc.date.copyrighted: 2013
 * dc.date.issued: date the image was digitaly issued on the web collection for example
-* dc.format.image: 24.6 × 18.7 cm
-* dc.format.object: 45.6 × 35.4 cm
 
 :::
 :::
@@ -134,7 +132,7 @@ This assigns an attribute to the field, as already shown for XML. This attribute
 Under the dcterms namespace, we also find an extended set of elements that integrates the familiar 15 basic elements. 
 In addition, there are clarifications, e.g. for the date in the form of dcterms:dateAccepted, or new fields like dcterms:abstract. 
 
-This extension of the original elements is referred to as Qualified Dublin Core or DCMI metadata terms (“Dublin Core terms” for short):
+This extension of the original elements is referred to as DCMI metadata terms (“Dublin Core terms” for short):
 
 - abstract  
 - accessRights  
@@ -198,7 +196,10 @@ This extension of the original elements is referred to as Qualified Dublin Core 
 
 Take a look at the extended elements. You will find several date elements.
 
-Do you agree with the mapping in the solution to the last exercise? Why not? Which element would you choose? 
+Do you agree with the mapping in the solution to the last exercise?  
+Why not?   
+Which element would you choose?   
+You can find descriptions of the elements in the [userguide](https://www.dublincore.org/resources/userguide/creating_metadata/). There you will also find the above mentioned qualifiers which are used within Dublin Core, e.g., created, issued, modified etc. for the date element.  
 
 :::
 
