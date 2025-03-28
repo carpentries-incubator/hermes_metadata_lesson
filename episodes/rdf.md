@@ -47,13 +47,14 @@ This example means exactly the same as the previous example: Frida Kahlo is crea
 
 ### Exercise
 
-Take a closer look at the [Wikidata resource of Frida Kahlos painting "The two Fridas"](https://www.wikidata.org/wiki/Q5588). Can you find alternative information to describe the predicate instead of using Dublin Core?
+Take a closer look at the [Wikidata resource of Frida Kahlos painting "The two Fridas"](https://www.wikidata.org/wiki/Q3232010). Can you find alternative information to describe the predicate instead of using Dublin Core?
 
 ::: solution
 
 ### Solution
 
-[creator property](https://www.wikidata.org/wiki/Property:P170): The information listed in Wikidata for an entity is all labeled with properties such as location, genre, creator etc. These properties themselves have an identifier and are therefore standardized. All paintings can be modeled in a consistent way. The creator property can be used similiar to the Dublin Core element of creator. 
+[creator property](https://www.wikidata.org/wiki/Property:P170):  
+The information listed in Wikidata for an entity is all labeled with properties such as location, genre, creator etc. These properties themselves have an identifier and are therefore standardized. All paintings can be modeled in a consistent way. The creator property can be used similiar to the Dublin Core element of creator. 
 :::
 :::
 
