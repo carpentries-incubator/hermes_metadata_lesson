@@ -70,9 +70,22 @@ In XML, all elements must be properly nested within each other, which means that
 
 ```xml
 <collection><place>collection of the MET in New York</place></collection>
+```  
+  
+There are some rules for characters used in XML for syntax structure. They are replaced by a special character string, so that it won’t cause problems if, for example, you want to use a < in the content. This would cause an error because XML expects a closing tag. To avoid errors, the character is replaced with an entity reference: 
+  
+| string | character | meaning | 
+| ---- | ---- | ---- | ----|
+| \&lt; | < | less than |
+| \&gt; | > | greater than |
+| \&amp; | & | ampersand |
+| \&apos; | ' | apostrophe |
+| \&quot; | " | quotation mark |  
+  
+```xml
+<photographer>Bernd &amp; Hilla Becher</photographer>
 ```
-
-
+  
 #### Attributes  
 
 In XML, as in HTML, tags can also be assigned attributes, which define the content of the tags in more detail. They are named and the content is assigned to them with a = and enclosed in quotes:
@@ -81,23 +94,8 @@ In XML, as in HTML, tags can also be assigned attributes, which define the conte
 <title lang="author's original language">Always give the title in the author's language</title>
 
 <commonTitle lang="title as commonly known">Always give the title as it is commonly known</commonTitle>
-```
-
-
-There are some rules for characters used in XML for structure. They are replaced by a special character string, so that it won’t cause problems if, for example, you want to use a < in the content. This would cause an error because XML expects a closing tag. To avoid errors, the character is replaced with an entity reference: 
-
-| string | character | meaning | 
-| ---- | ---- | ---- | ----|
-| \&lt; | < | less than |
-| \&gt; | > | greater than |
-| \&amp; | & | ampersand |
-| \&apos; | ' | apostrophe |
-| \&quot; | " | quotation mark |  
-
-```xml
-<photographer>Bernd &amp; Hilla Becher</photographer>
 ```  
-
+  
 Attributes are also frequently used in a hierarchy to record information that applies to all underlying data:
 
 ```xml
