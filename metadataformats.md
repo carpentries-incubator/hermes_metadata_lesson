@@ -94,7 +94,7 @@ ID;artist;title;date
 3;Banksy;Girl with Ballon;2002
 ```
 
-When you opened the csv file, some parameters were queried before you could even open it. Here we can see why:
+When you opened the csv file in a spreadsheet software, some parameters were queried before you could even open it. Here we can see why:
 
 The data is separated by semicolons - the delimiters. Delimiter-separated files are often given a *.csv* extension even when the field separator is not a comma as the example demonstrate. In many files you may find the contents of the data fields enclosed in quotes. Individual records are separated by a line break. The first line often defines the column headings. If these parameters are entered correctly when the file is opened, the data is transferred to the appropriate fields in the spreadsheet. 
 
