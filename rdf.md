@@ -65,11 +65,12 @@ Use wikidata to create a triple for the following statements:
 1) Michelangelo is creator of the Pietà.
 2) Michelangelo was born in Caprese Michelangelo.
 3) The Pietà is located in the St. Peter's Basilica. 
+
 ::: solution
 
 ### Solution
 
-```xml
+```
 <https://www.wikidata.org/wiki/Q5592><https://www.wikidata.org/wiki/Property:P170><https://www.wikidata.org/wiki/Q235242>
 <https://www.wikidata.org/wiki/Q5592><https://www.wikidata.org/wiki/Property:P19><https://www.wikidata.org/wiki/Q52069>
 <https://www.wikidata.org/wiki/Q235242><https://www.wikidata.org/wiki/Property:P276h><ttps://www.wikidata.org/wiki/Q12512>
