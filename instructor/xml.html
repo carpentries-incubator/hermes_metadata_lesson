@@ -389,13 +389,13 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>XML</h1>
-        <p>Last updated on 2025-03-28 |
+        <p>Last updated on 2025-03-31 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/xml.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
-        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
+        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 40 minutes</p>
 
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -533,43 +533,22 @@ content is assigned to them with a = and enclosed in quotes:</p>
 <span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>&lt;<span class="kw">commonTitle</span><span class="ot"> lang=</span><span class="st">"title as commonly known"</span>&gt;Always give the title as it is commonly known&lt;/<span class="kw">commonTitle</span>&gt;</span></code></pre>
 </div>
 <p>Attributes are also frequently used in a hierarchy to record
-information that applies to all underlying data:</p>
+information that applies to all underlying data, like additional
+metadata for a collection or fonds:</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>&lt;<span class="kw">items</span><span class="ot"> collection=</span><span class="st">"archives_collection"</span><span class="ot"> place=</span><span class="st">"location"</span>&gt;</span>
-<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>	&lt;<span class="kw">item1</span>/&gt;</span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>	&lt;<span class="kw">item2</span>/&gt;</span>
-<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>&lt;/<span class="kw">items</span>&gt;</span></code></pre>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>&lt;<span class="kw">collection</span><span class="ot"> name=</span><span class="st">"Modern Art"</span><span class="ot"> place=</span><span class="st">"New York"</span>&gt;</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>  &lt;<span class="kw">item1</span>/&gt;</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>  &lt;<span class="kw">item2</span>/&gt;</span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
 </div>
-<p>However, it should be noted that the information contained in the
-attributes is more likely to be seen as metadata related to the content.
-In this example, it may be worth creating the information about the
-collection and its location as separate tags above the items.</p>
-<div class="codewrapper sourceCode" id="cb8">
-<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>&lt;<span class="kw">collection</span><span class="ot"> place=</span><span class="st">"New York"</span>&gt;</span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>	&lt;<span class="kw">item1</span>/&gt;</span>
-<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>	&lt;<span class="kw">item2</span>/&gt;</span>
-<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>&lt;/<span class="kw">collection</span>&gt;</span>
-<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a>&lt;<span class="kw">place</span>&gt;</span>
-<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a>	&lt;<span class="kw">collection</span>&gt;</span>
-<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a>		&lt;<span class="kw">item1</span>/&gt;</span>
-<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a>		&lt;<span class="kw">item2</span>/&gt;</span>
-<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a>	&lt;/<span class="kw">collection</span>&gt;</span>
-<span id="cb8-11"><a href="#cb8-11" tabindex="-1"></a>&lt;/<span class="kw">place</span>&gt;</span></code></pre>
-</div>
-<p>The indentation (using a tab) describes the hierarchy level. The
-collection is assigned to the location, and the items below it are on
-the same hierarchy level. The structure depends on the purpose of the
-collection and the data to be collected.</p>
-<p>The slash here at the end of the tag (self-closing tag) means that
-the element is currently empty and self-contained. It is not necessary
-to write an opening and closing tag if there are no other elements
-between them. You often see this in XML output when the metadata field
-has no content.</p>
+<p>The indentation describes the hierarchy level. The structure depends
+on the purpose of the collection and the data to be collected. The slash
+here at the end of the tag (self-closing tag) means that the element is
+currently empty and self-contained. It is not necessary to write an
+opening and closing tag if there are no other elements between them. You
+often see this in XML output when the metadata field has no content.</p>
 <div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -581,21 +560,21 @@ has no content.</p>
 color or the size and width of a section. This is also where the alt tag
 is created, which contains an alternative text to an image that is
 automatically read or displayed if the image cannot be retrieved:</p>
-<div class="codewrapper sourceCode" id="cb9">
+<div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">HTML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode html" tabindex="0"><code class="sourceCode html"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:blue;"</span><span class="ot"> width</span><span class="op">=</span><span class="st">"300"</span><span class="ot"> height</span><span class="op">=</span><span class="st">"500"</span><span class="dt">&gt;</span>This is a blue paragraph.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"image.jpg"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">"a girl with a pearl earring is standing in front of a house"</span><span class="dt">&gt;&lt;/</span><span class="kw">image</span><span class="dt">&gt;</span></span></code></pre>
+<pre class="sourceCode html" tabindex="0"><code class="sourceCode html"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:blue;"</span><span class="ot"> width</span><span class="op">=</span><span class="st">"300"</span><span class="ot"> height</span><span class="op">=</span><span class="st">"500"</span><span class="dt">&gt;</span>This is a blue paragraph.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"image.jpg"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">"a girl with a pearl earring is standing in front of a house"</span><span class="dt">&gt;&lt;/</span><span class="kw">image</span><span class="dt">&gt;</span></span></code></pre>
 </div>
 </div>
 </div>
 </div>
 <p>At the top of an XML document you will often find something called a
 prolog:</p>
-<div class="codewrapper sourceCode" id="cb10">
+<div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span></code></pre>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span></code></pre>
 </div>
 <p>It is optional, but provides information about the version and
 encoding used, and must be at the top if included.</p>
@@ -645,157 +624,157 @@ labelling?</li>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb11">
+<div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span>
-<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a>&lt;<span class="kw">artworks</span>&gt;</span>
-<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
-<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Green-Blue-Red (for Parkett no. 35)&lt;/<span class="kw">title</span>&gt;</span>
-<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
-<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Gerhard Richter&lt;/<span class="kw">name</span>&gt;</span>
-<span id="cb11-7"><a href="#cb11-7" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
-<span id="cb11-8"><a href="#cb11-8" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;4907&lt;/<span class="kw">constituentID</span>&gt;</span>
-<span id="cb11-9"><a href="#cb11-9" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
-<span id="cb11-10"><a href="#cb11-10" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;German, born 1932&lt;/<span class="kw">bio</span>&gt;</span>
-<span id="cb11-11"><a href="#cb11-11" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
-<span id="cb11-12"><a href="#cb11-12" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;German&lt;/<span class="kw">nationality</span>&gt;</span>
-<span id="cb11-13"><a href="#cb11-13" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1932&lt;/<span class="kw">beginDate</span>&gt;</span>
-<span id="cb11-14"><a href="#cb11-14" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;0&lt;/<span class="kw">endDate</span>&gt;</span>
-<span id="cb11-15"><a href="#cb11-15" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
-<span id="cb11-16"><a href="#cb11-16" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;1993&lt;/<span class="kw">date</span>&gt;</span>
-<span id="cb11-17"><a href="#cb11-17" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Multiple of oil on canvas&lt;/<span class="kw">medium</span>&gt;</span>
-<span id="cb11-18"><a href="#cb11-18" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;composition: 11 7/16 × 15 3/4<span class="dv">&amp;quot;</span> (29 × 40 cm); sheet: 11 3/4 × 15 3/4<span class="dv">&amp;quot;</span> (29.9 × 40 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
-<span id="cb11-19"><a href="#cb11-19" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Riva Castleman Endowment Fund, Lily Auchincloss Fund, and Gift of Parkett&lt;/<span class="kw">creditLine</span>&gt;</span>
-<span id="cb11-20"><a href="#cb11-20" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;110.1998.1&lt;/<span class="kw">accessionNumber</span>&gt;</span>
-<span id="cb11-21"><a href="#cb11-21" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Multiple&lt;/<span class="kw">classification</span>&gt;</span>
-<span id="cb11-22"><a href="#cb11-22" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Drawings <span class="dv">&amp;amp;</span> Prints&lt;/<span class="kw">department</span>&gt;</span>
-<span id="cb11-23"><a href="#cb11-23" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1998-03-05&lt;/<span class="kw">dateAcquired</span>&gt;</span>
-<span id="cb11-24"><a href="#cb11-24" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
-<span id="cb11-25"><a href="#cb11-25" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;61953&lt;/<span class="kw">objectID</span>&gt;</span>
-<span id="cb11-26"><a href="#cb11-26" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/61953&lt;/<span class="kw">url</span>&gt;</span>
-<span id="cb11-27"><a href="#cb11-27" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;&lt;/<span class="kw">imageURL</span>&gt;</span>
-<span id="cb11-28"><a href="#cb11-28" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;&lt;/<span class="kw">onView</span>&gt;</span>
-<span id="cb11-29"><a href="#cb11-29" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;29.0&lt;/<span class="kw">height</span>&gt;</span>
-<span id="cb11-30"><a href="#cb11-30" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;40.0&lt;/<span class="kw">width</span>&gt;</span>
-<span id="cb11-31"><a href="#cb11-31" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
-<span id="cb11-32"><a href="#cb11-32" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
-<span id="cb11-33"><a href="#cb11-33" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Untitled&lt;/<span class="kw">title</span>&gt;</span>
-<span id="cb11-34"><a href="#cb11-34" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
-<span id="cb11-35"><a href="#cb11-35" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Blinky Palermo&lt;/<span class="kw">name</span>&gt;</span>
-<span id="cb11-36"><a href="#cb11-36" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
-<span id="cb11-37"><a href="#cb11-37" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;4474&lt;/<span class="kw">constituentID</span>&gt;</span>
-<span id="cb11-38"><a href="#cb11-38" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
-<span id="cb11-39"><a href="#cb11-39" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;German, 1943–1977&lt;/<span class="kw">bio</span>&gt;</span>
-<span id="cb11-40"><a href="#cb11-40" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
-<span id="cb11-41"><a href="#cb11-41" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;German&lt;/<span class="kw">nationality</span>&gt;</span>
-<span id="cb11-42"><a href="#cb11-42" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1943&lt;/<span class="kw">beginDate</span>&gt;</span>
-<span id="cb11-43"><a href="#cb11-43" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;1977&lt;/<span class="kw">endDate</span>&gt;</span>
-<span id="cb11-44"><a href="#cb11-44" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
-<span id="cb11-45"><a href="#cb11-45" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;1970&lt;/<span class="kw">date</span>&gt;</span>
-<span id="cb11-46"><a href="#cb11-46" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Dyed cotton mounted on muslin&lt;/<span class="kw">medium</span>&gt;</span>
-<span id="cb11-47"><a href="#cb11-47" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;6' 6 3/4\" x 6' 6 3/4\" (200 x 200 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
-<span id="cb11-48"><a href="#cb11-48" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Gift of Jo Carole and Ronald S. Lauder&lt;/<span class="kw">creditLine</span>&gt;</span>
-<span id="cb11-49"><a href="#cb11-49" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;650.1997&lt;/<span class="kw">accessionNumber</span>&gt;</span>
-<span id="cb11-50"><a href="#cb11-50" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Painting&lt;/<span class="kw">classification</span>&gt;</span>
-<span id="cb11-51"><a href="#cb11-51" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Painting <span class="dv">&amp;amp;</span> Sculpture&lt;/<span class="kw">department</span>&gt;</span>
-<span id="cb11-52"><a href="#cb11-52" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1997-06-02&lt;/<span class="kw">dateAcquired</span>&gt;</span>
-<span id="cb11-53"><a href="#cb11-53" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
-<span id="cb11-54"><a href="#cb11-54" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;78283&lt;/<span class="kw">objectID</span>&gt;</span>
-<span id="cb11-55"><a href="#cb11-55" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/78283&lt;/<span class="kw">url</span>&gt;</span>
-<span id="cb11-56"><a href="#cb11-56" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;https://www.moma.org/media/W1siZiIsIjE1MTQ0MCJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=c54d00f27ed284be&lt;/<span class="kw">imageURL</span>&gt;</span>
-<span id="cb11-57"><a href="#cb11-57" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;&lt;/<span class="kw">onView</span>&gt;</span>
-<span id="cb11-58"><a href="#cb11-58" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;200.0&lt;/<span class="kw">height</span>&gt;</span>
-<span id="cb11-59"><a href="#cb11-59" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;200.0&lt;/<span class="kw">width</span>&gt;</span>
-<span id="cb11-60"><a href="#cb11-60" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
-<span id="cb11-61"><a href="#cb11-61" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
-<span id="cb11-62"><a href="#cb11-62" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Daylight Savings Time&lt;/<span class="kw">title</span>&gt;</span>
-<span id="cb11-63"><a href="#cb11-63" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
-<span id="cb11-64"><a href="#cb11-64" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Pierre Roy&lt;/<span class="kw">name</span>&gt;</span>
-<span id="cb11-65"><a href="#cb11-65" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
-<span id="cb11-66"><a href="#cb11-66" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;5065&lt;/<span class="kw">constituentID</span>&gt;</span>
-<span id="cb11-67"><a href="#cb11-67" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
-<span id="cb11-68"><a href="#cb11-68" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;French, 1880–1950&lt;/<span class="kw">bio</span>&gt;</span>
-<span id="cb11-69"><a href="#cb11-69" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
-<span id="cb11-70"><a href="#cb11-70" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;French&lt;/<span class="kw">nationality</span>&gt;</span>
-<span id="cb11-71"><a href="#cb11-71" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1880&lt;/<span class="kw">beginDate</span>&gt;</span>
-<span id="cb11-72"><a href="#cb11-72" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;1950&lt;/<span class="kw">endDate</span>&gt;</span>
-<span id="cb11-73"><a href="#cb11-73" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
-<span id="cb11-74"><a href="#cb11-74" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;1929&lt;/<span class="kw">date</span>&gt;</span>
-<span id="cb11-75"><a href="#cb11-75" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Oil on canvas&lt;/<span class="kw">medium</span>&gt;</span>
-<span id="cb11-76"><a href="#cb11-76" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;21 1/2 x 15<span class="dv">&amp;quot;</span> (54.6 x 38.1 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
-<span id="cb11-77"><a href="#cb11-77" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Gift of Mrs. Ray Slater Murphy&lt;/<span class="kw">creditLine</span>&gt;</span>
-<span id="cb11-78"><a href="#cb11-78" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;1.1931&lt;/<span class="kw">accessionNumber</span>&gt;</span>
-<span id="cb11-79"><a href="#cb11-79" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Painting&lt;/<span class="kw">classification</span>&gt;</span>
-<span id="cb11-80"><a href="#cb11-80" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Painting <span class="dv">&amp;amp;</span> Sculpture&lt;/<span class="kw">department</span>&gt;</span>
-<span id="cb11-81"><a href="#cb11-81" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1931-01-19&lt;/<span class="kw">dateAcquired</span>&gt;</span>
-<span id="cb11-82"><a href="#cb11-82" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
-<span id="cb11-83"><a href="#cb11-83" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;78294&lt;/<span class="kw">objectID</span>&gt;</span>
-<span id="cb11-84"><a href="#cb11-84" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/78294&lt;/<span class="kw">url</span>&gt;</span>
-<span id="cb11-85"><a href="#cb11-85" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;https://www.moma.org/media/W1siZiIsIjIzMzkzNyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=74825d4c62cd5a8a&lt;/<span class="kw">imageURL</span>&gt;</span>
-<span id="cb11-86"><a href="#cb11-86" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;&lt;/<span class="kw">onView</span>&gt;</span>
-<span id="cb11-87"><a href="#cb11-87" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;54.6&lt;/<span class="kw">height</span>&gt;</span>
-<span id="cb11-88"><a href="#cb11-88" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;38.1&lt;/<span class="kw">width</span>&gt;</span>
-<span id="cb11-89"><a href="#cb11-89" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
-<span id="cb11-90"><a href="#cb11-90" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
-<span id="cb11-91"><a href="#cb11-91" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;The Bather&lt;/<span class="kw">title</span>&gt;</span>
-<span id="cb11-92"><a href="#cb11-92" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
-<span id="cb11-93"><a href="#cb11-93" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Paul Cézanne&lt;/<span class="kw">name</span>&gt;</span>
-<span id="cb11-94"><a href="#cb11-94" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
-<span id="cb11-95"><a href="#cb11-95" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;1053&lt;/<span class="kw">constituentID</span>&gt;</span>
-<span id="cb11-96"><a href="#cb11-96" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
-<span id="cb11-97"><a href="#cb11-97" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;French, 1839–1906&lt;/<span class="kw">bio</span>&gt;</span>
-<span id="cb11-98"><a href="#cb11-98" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
-<span id="cb11-99"><a href="#cb11-99" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;French&lt;/<span class="kw">nationality</span>&gt;</span>
-<span id="cb11-100"><a href="#cb11-100" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1839&lt;/<span class="kw">beginDate</span>&gt;</span>
-<span id="cb11-101"><a href="#cb11-101" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;1906&lt;/<span class="kw">endDate</span>&gt;</span>
-<span id="cb11-102"><a href="#cb11-102" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
-<span id="cb11-103"><a href="#cb11-103" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;c. 1885&lt;/<span class="kw">date</span>&gt;</span>
-<span id="cb11-104"><a href="#cb11-104" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Oil on canvas&lt;/<span class="kw">medium</span>&gt;</span>
-<span id="cb11-105"><a href="#cb11-105" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;50 x 38 1/8<span class="dv">&amp;quot;</span> (127 x 96.8 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
-<span id="cb11-106"><a href="#cb11-106" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Lillie P. Bliss Collection&lt;/<span class="kw">creditLine</span>&gt;</span>
-<span id="cb11-107"><a href="#cb11-107" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;1.1934&lt;/<span class="kw">accessionNumber</span>&gt;</span>
-<span id="cb11-108"><a href="#cb11-108" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Painting&lt;/<span class="kw">classification</span>&gt;</span>
-<span id="cb11-109"><a href="#cb11-109" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Painting <span class="dv">&amp;amp;</span> Sculpture&lt;/<span class="kw">department</span>&gt;</span>
-<span id="cb11-110"><a href="#cb11-110" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1934-09-23&lt;/<span class="kw">dateAcquired</span>&gt;</span>
-<span id="cb11-111"><a href="#cb11-111" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
-<span id="cb11-112"><a href="#cb11-112" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;78296&lt;/<span class="kw">objectID</span>&gt;</span>
-<span id="cb11-113"><a href="#cb11-113" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/78296&lt;/<span class="kw">url</span>&gt;</span>
-<span id="cb11-114"><a href="#cb11-114" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;https://www.moma.org/media/W1siZiIsIjQ0NjA2NyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=c6bd692fa0fe0685&lt;/<span class="kw">imageURL</span>&gt;</span>
-<span id="cb11-115"><a href="#cb11-115" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;<span class="dv">&amp;quot;</span>MoMA, Floor 2, 2 South<span class="dv">&amp;quot;</span>&lt;/<span class="kw">onView</span>&gt;</span>
-<span id="cb11-116"><a href="#cb11-116" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;127.0&lt;/<span class="kw">height</span>&gt;</span>
-<span id="cb11-117"><a href="#cb11-117" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;96.8&lt;/<span class="kw">width</span>&gt;</span>
-<span id="cb11-118"><a href="#cb11-118" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
-<span id="cb11-119"><a href="#cb11-119" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
-<span id="cb11-120"><a href="#cb11-120" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Syntheses of Naples&lt;/<span class="kw">title</span>&gt;</span>
-<span id="cb11-121"><a href="#cb11-121" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
-<span id="cb11-122"><a href="#cb11-122" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Enrico Prampolini&lt;/<span class="kw">name</span>&gt;</span>
-<span id="cb11-123"><a href="#cb11-123" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
-<span id="cb11-124"><a href="#cb11-124" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;4720&lt;/<span class="kw">constituentID</span>&gt;</span>
-<span id="cb11-125"><a href="#cb11-125" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
-<span id="cb11-126"><a href="#cb11-126" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;Italian, 1894–1956&lt;/<span class="kw">bio</span>&gt;</span>
-<span id="cb11-127"><a href="#cb11-127" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
-<span id="cb11-128"><a href="#cb11-128" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;Italian&lt;/<span class="kw">nationality</span>&gt;</span>
-<span id="cb11-129"><a href="#cb11-129" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1894&lt;/<span class="kw">beginDate</span>&gt;</span>
-<span id="cb11-130"><a href="#cb11-130" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;1956&lt;/<span class="kw">endDate</span>&gt;</span>
-<span id="cb11-131"><a href="#cb11-131" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
-<span id="cb11-132"><a href="#cb11-132" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;before 1930&lt;/<span class="kw">date</span>&gt;</span>
-<span id="cb11-133"><a href="#cb11-133" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Oil on canvas&lt;/<span class="kw">medium</span>&gt;</span>
-<span id="cb11-134"><a href="#cb11-134" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;39 3/8 x 39 1/2<span class="dv">&amp;quot;</span> (100 x 100.3 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
-<span id="cb11-135"><a href="#cb11-135" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Gift of Dr. Julius Spitzer&lt;/<span class="kw">creditLine</span>&gt;</span>
-<span id="cb11-136"><a href="#cb11-136" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;1.1942&lt;/<span class="kw">accessionNumber</span>&gt;</span>
-<span id="cb11-137"><a href="#cb11-137" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Painting&lt;/<span class="kw">classification</span>&gt;</span>
-<span id="cb11-138"><a href="#cb11-138" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Painting <span class="dv">&amp;amp;</span> Sculpture&lt;/<span class="kw">department</span>&gt;</span>
-<span id="cb11-139"><a href="#cb11-139" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1941-12-10&lt;/<span class="kw">dateAcquired</span>&gt;</span>
-<span id="cb11-140"><a href="#cb11-140" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
-<span id="cb11-141"><a href="#cb11-141" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;78299&lt;/<span class="kw">objectID</span>&gt;</span>
-<span id="cb11-142"><a href="#cb11-142" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/78299&lt;/<span class="kw">url</span>&gt;</span>
-<span id="cb11-143"><a href="#cb11-143" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;https://www.moma.org/media/W1siZiIsIjE4NjgzNSJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=9740d0c731c867c2&lt;/<span class="kw">imageURL</span>&gt;</span>
-<span id="cb11-144"><a href="#cb11-144" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;&lt;/<span class="kw">onView</span>&gt;</span>
-<span id="cb11-145"><a href="#cb11-145" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;100.0&lt;/<span class="kw">height</span>&gt;</span>
-<span id="cb11-146"><a href="#cb11-146" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;100.3&lt;/<span class="kw">width</span>&gt;</span>
-<span id="cb11-147"><a href="#cb11-147" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
-<span id="cb11-148"><a href="#cb11-148" tabindex="-1"></a>&lt;/<span class="kw">artworks</span>&gt;</span></code></pre>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>&lt;<span class="kw">artworks</span>&gt;</span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Green-Blue-Red (for Parkett no. 35)&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Gerhard Richter&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
+<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;4907&lt;/<span class="kw">constituentID</span>&gt;</span>
+<span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-10"><a href="#cb10-10" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;German, born 1932&lt;/<span class="kw">bio</span>&gt;</span>
+<span id="cb10-11"><a href="#cb10-11" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-12"><a href="#cb10-12" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;German&lt;/<span class="kw">nationality</span>&gt;</span>
+<span id="cb10-13"><a href="#cb10-13" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1932&lt;/<span class="kw">beginDate</span>&gt;</span>
+<span id="cb10-14"><a href="#cb10-14" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;0&lt;/<span class="kw">endDate</span>&gt;</span>
+<span id="cb10-15"><a href="#cb10-15" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
+<span id="cb10-16"><a href="#cb10-16" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;1993&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb10-17"><a href="#cb10-17" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Multiple of oil on canvas&lt;/<span class="kw">medium</span>&gt;</span>
+<span id="cb10-18"><a href="#cb10-18" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;composition: 11 7/16 × 15 3/4<span class="dv">&amp;quot;</span> (29 × 40 cm); sheet: 11 3/4 × 15 3/4<span class="dv">&amp;quot;</span> (29.9 × 40 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
+<span id="cb10-19"><a href="#cb10-19" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Riva Castleman Endowment Fund, Lily Auchincloss Fund, and Gift of Parkett&lt;/<span class="kw">creditLine</span>&gt;</span>
+<span id="cb10-20"><a href="#cb10-20" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;110.1998.1&lt;/<span class="kw">accessionNumber</span>&gt;</span>
+<span id="cb10-21"><a href="#cb10-21" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Multiple&lt;/<span class="kw">classification</span>&gt;</span>
+<span id="cb10-22"><a href="#cb10-22" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Drawings <span class="dv">&amp;amp;</span> Prints&lt;/<span class="kw">department</span>&gt;</span>
+<span id="cb10-23"><a href="#cb10-23" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1998-03-05&lt;/<span class="kw">dateAcquired</span>&gt;</span>
+<span id="cb10-24"><a href="#cb10-24" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
+<span id="cb10-25"><a href="#cb10-25" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;61953&lt;/<span class="kw">objectID</span>&gt;</span>
+<span id="cb10-26"><a href="#cb10-26" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/61953&lt;/<span class="kw">url</span>&gt;</span>
+<span id="cb10-27"><a href="#cb10-27" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;&lt;/<span class="kw">imageURL</span>&gt;</span>
+<span id="cb10-28"><a href="#cb10-28" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;&lt;/<span class="kw">onView</span>&gt;</span>
+<span id="cb10-29"><a href="#cb10-29" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;29.0&lt;/<span class="kw">height</span>&gt;</span>
+<span id="cb10-30"><a href="#cb10-30" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;40.0&lt;/<span class="kw">width</span>&gt;</span>
+<span id="cb10-31"><a href="#cb10-31" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-32"><a href="#cb10-32" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-33"><a href="#cb10-33" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Untitled&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb10-34"><a href="#cb10-34" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
+<span id="cb10-35"><a href="#cb10-35" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Blinky Palermo&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb10-36"><a href="#cb10-36" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
+<span id="cb10-37"><a href="#cb10-37" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;4474&lt;/<span class="kw">constituentID</span>&gt;</span>
+<span id="cb10-38"><a href="#cb10-38" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-39"><a href="#cb10-39" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;German, 1943–1977&lt;/<span class="kw">bio</span>&gt;</span>
+<span id="cb10-40"><a href="#cb10-40" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-41"><a href="#cb10-41" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;German&lt;/<span class="kw">nationality</span>&gt;</span>
+<span id="cb10-42"><a href="#cb10-42" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1943&lt;/<span class="kw">beginDate</span>&gt;</span>
+<span id="cb10-43"><a href="#cb10-43" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;1977&lt;/<span class="kw">endDate</span>&gt;</span>
+<span id="cb10-44"><a href="#cb10-44" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
+<span id="cb10-45"><a href="#cb10-45" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;1970&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb10-46"><a href="#cb10-46" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Dyed cotton mounted on muslin&lt;/<span class="kw">medium</span>&gt;</span>
+<span id="cb10-47"><a href="#cb10-47" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;6' 6 3/4\" x 6' 6 3/4\" (200 x 200 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
+<span id="cb10-48"><a href="#cb10-48" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Gift of Jo Carole and Ronald S. Lauder&lt;/<span class="kw">creditLine</span>&gt;</span>
+<span id="cb10-49"><a href="#cb10-49" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;650.1997&lt;/<span class="kw">accessionNumber</span>&gt;</span>
+<span id="cb10-50"><a href="#cb10-50" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Painting&lt;/<span class="kw">classification</span>&gt;</span>
+<span id="cb10-51"><a href="#cb10-51" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Painting <span class="dv">&amp;amp;</span> Sculpture&lt;/<span class="kw">department</span>&gt;</span>
+<span id="cb10-52"><a href="#cb10-52" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1997-06-02&lt;/<span class="kw">dateAcquired</span>&gt;</span>
+<span id="cb10-53"><a href="#cb10-53" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
+<span id="cb10-54"><a href="#cb10-54" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;78283&lt;/<span class="kw">objectID</span>&gt;</span>
+<span id="cb10-55"><a href="#cb10-55" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/78283&lt;/<span class="kw">url</span>&gt;</span>
+<span id="cb10-56"><a href="#cb10-56" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;https://www.moma.org/media/W1siZiIsIjE1MTQ0MCJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=c54d00f27ed284be&lt;/<span class="kw">imageURL</span>&gt;</span>
+<span id="cb10-57"><a href="#cb10-57" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;&lt;/<span class="kw">onView</span>&gt;</span>
+<span id="cb10-58"><a href="#cb10-58" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;200.0&lt;/<span class="kw">height</span>&gt;</span>
+<span id="cb10-59"><a href="#cb10-59" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;200.0&lt;/<span class="kw">width</span>&gt;</span>
+<span id="cb10-60"><a href="#cb10-60" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-61"><a href="#cb10-61" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-62"><a href="#cb10-62" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Daylight Savings Time&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb10-63"><a href="#cb10-63" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
+<span id="cb10-64"><a href="#cb10-64" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Pierre Roy&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb10-65"><a href="#cb10-65" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
+<span id="cb10-66"><a href="#cb10-66" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;5065&lt;/<span class="kw">constituentID</span>&gt;</span>
+<span id="cb10-67"><a href="#cb10-67" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-68"><a href="#cb10-68" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;French, 1880–1950&lt;/<span class="kw">bio</span>&gt;</span>
+<span id="cb10-69"><a href="#cb10-69" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-70"><a href="#cb10-70" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;French&lt;/<span class="kw">nationality</span>&gt;</span>
+<span id="cb10-71"><a href="#cb10-71" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1880&lt;/<span class="kw">beginDate</span>&gt;</span>
+<span id="cb10-72"><a href="#cb10-72" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;1950&lt;/<span class="kw">endDate</span>&gt;</span>
+<span id="cb10-73"><a href="#cb10-73" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
+<span id="cb10-74"><a href="#cb10-74" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;1929&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb10-75"><a href="#cb10-75" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Oil on canvas&lt;/<span class="kw">medium</span>&gt;</span>
+<span id="cb10-76"><a href="#cb10-76" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;21 1/2 x 15<span class="dv">&amp;quot;</span> (54.6 x 38.1 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
+<span id="cb10-77"><a href="#cb10-77" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Gift of Mrs. Ray Slater Murphy&lt;/<span class="kw">creditLine</span>&gt;</span>
+<span id="cb10-78"><a href="#cb10-78" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;1.1931&lt;/<span class="kw">accessionNumber</span>&gt;</span>
+<span id="cb10-79"><a href="#cb10-79" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Painting&lt;/<span class="kw">classification</span>&gt;</span>
+<span id="cb10-80"><a href="#cb10-80" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Painting <span class="dv">&amp;amp;</span> Sculpture&lt;/<span class="kw">department</span>&gt;</span>
+<span id="cb10-81"><a href="#cb10-81" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1931-01-19&lt;/<span class="kw">dateAcquired</span>&gt;</span>
+<span id="cb10-82"><a href="#cb10-82" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
+<span id="cb10-83"><a href="#cb10-83" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;78294&lt;/<span class="kw">objectID</span>&gt;</span>
+<span id="cb10-84"><a href="#cb10-84" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/78294&lt;/<span class="kw">url</span>&gt;</span>
+<span id="cb10-85"><a href="#cb10-85" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;https://www.moma.org/media/W1siZiIsIjIzMzkzNyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=74825d4c62cd5a8a&lt;/<span class="kw">imageURL</span>&gt;</span>
+<span id="cb10-86"><a href="#cb10-86" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;&lt;/<span class="kw">onView</span>&gt;</span>
+<span id="cb10-87"><a href="#cb10-87" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;54.6&lt;/<span class="kw">height</span>&gt;</span>
+<span id="cb10-88"><a href="#cb10-88" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;38.1&lt;/<span class="kw">width</span>&gt;</span>
+<span id="cb10-89"><a href="#cb10-89" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-90"><a href="#cb10-90" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-91"><a href="#cb10-91" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;The Bather&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb10-92"><a href="#cb10-92" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
+<span id="cb10-93"><a href="#cb10-93" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Paul Cézanne&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb10-94"><a href="#cb10-94" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
+<span id="cb10-95"><a href="#cb10-95" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;1053&lt;/<span class="kw">constituentID</span>&gt;</span>
+<span id="cb10-96"><a href="#cb10-96" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-97"><a href="#cb10-97" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;French, 1839–1906&lt;/<span class="kw">bio</span>&gt;</span>
+<span id="cb10-98"><a href="#cb10-98" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-99"><a href="#cb10-99" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;French&lt;/<span class="kw">nationality</span>&gt;</span>
+<span id="cb10-100"><a href="#cb10-100" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1839&lt;/<span class="kw">beginDate</span>&gt;</span>
+<span id="cb10-101"><a href="#cb10-101" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;1906&lt;/<span class="kw">endDate</span>&gt;</span>
+<span id="cb10-102"><a href="#cb10-102" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
+<span id="cb10-103"><a href="#cb10-103" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;c. 1885&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb10-104"><a href="#cb10-104" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Oil on canvas&lt;/<span class="kw">medium</span>&gt;</span>
+<span id="cb10-105"><a href="#cb10-105" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;50 x 38 1/8<span class="dv">&amp;quot;</span> (127 x 96.8 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
+<span id="cb10-106"><a href="#cb10-106" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Lillie P. Bliss Collection&lt;/<span class="kw">creditLine</span>&gt;</span>
+<span id="cb10-107"><a href="#cb10-107" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;1.1934&lt;/<span class="kw">accessionNumber</span>&gt;</span>
+<span id="cb10-108"><a href="#cb10-108" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Painting&lt;/<span class="kw">classification</span>&gt;</span>
+<span id="cb10-109"><a href="#cb10-109" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Painting <span class="dv">&amp;amp;</span> Sculpture&lt;/<span class="kw">department</span>&gt;</span>
+<span id="cb10-110"><a href="#cb10-110" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1934-09-23&lt;/<span class="kw">dateAcquired</span>&gt;</span>
+<span id="cb10-111"><a href="#cb10-111" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
+<span id="cb10-112"><a href="#cb10-112" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;78296&lt;/<span class="kw">objectID</span>&gt;</span>
+<span id="cb10-113"><a href="#cb10-113" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/78296&lt;/<span class="kw">url</span>&gt;</span>
+<span id="cb10-114"><a href="#cb10-114" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;https://www.moma.org/media/W1siZiIsIjQ0NjA2NyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=c6bd692fa0fe0685&lt;/<span class="kw">imageURL</span>&gt;</span>
+<span id="cb10-115"><a href="#cb10-115" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;<span class="dv">&amp;quot;</span>MoMA, Floor 2, 2 South<span class="dv">&amp;quot;</span>&lt;/<span class="kw">onView</span>&gt;</span>
+<span id="cb10-116"><a href="#cb10-116" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;127.0&lt;/<span class="kw">height</span>&gt;</span>
+<span id="cb10-117"><a href="#cb10-117" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;96.8&lt;/<span class="kw">width</span>&gt;</span>
+<span id="cb10-118"><a href="#cb10-118" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-119"><a href="#cb10-119" tabindex="-1"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-120"><a href="#cb10-120" tabindex="-1"></a>    &lt;<span class="kw">title</span>&gt;Syntheses of Naples&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb10-121"><a href="#cb10-121" tabindex="-1"></a>    &lt;<span class="kw">artist</span>&gt;</span>
+<span id="cb10-122"><a href="#cb10-122" tabindex="-1"></a>      &lt;<span class="kw">name</span>&gt;Enrico Prampolini&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb10-123"><a href="#cb10-123" tabindex="-1"></a>    &lt;/<span class="kw">artist</span>&gt;</span>
+<span id="cb10-124"><a href="#cb10-124" tabindex="-1"></a>    &lt;<span class="kw">constituentID</span>&gt;4720&lt;/<span class="kw">constituentID</span>&gt;</span>
+<span id="cb10-125"><a href="#cb10-125" tabindex="-1"></a>    &lt;<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-126"><a href="#cb10-126" tabindex="-1"></a>      &lt;<span class="kw">bio</span>&gt;Italian, 1894–1956&lt;/<span class="kw">bio</span>&gt;</span>
+<span id="cb10-127"><a href="#cb10-127" tabindex="-1"></a>    &lt;/<span class="kw">artistBio</span>&gt;</span>
+<span id="cb10-128"><a href="#cb10-128" tabindex="-1"></a>    &lt;<span class="kw">nationality</span>&gt;Italian&lt;/<span class="kw">nationality</span>&gt;</span>
+<span id="cb10-129"><a href="#cb10-129" tabindex="-1"></a>    &lt;<span class="kw">beginDate</span>&gt;1894&lt;/<span class="kw">beginDate</span>&gt;</span>
+<span id="cb10-130"><a href="#cb10-130" tabindex="-1"></a>    &lt;<span class="kw">endDate</span>&gt;1956&lt;/<span class="kw">endDate</span>&gt;</span>
+<span id="cb10-131"><a href="#cb10-131" tabindex="-1"></a>    &lt;<span class="kw">gender</span>&gt;male&lt;/<span class="kw">gender</span>&gt;</span>
+<span id="cb10-132"><a href="#cb10-132" tabindex="-1"></a>    &lt;<span class="kw">date</span>&gt;before 1930&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb10-133"><a href="#cb10-133" tabindex="-1"></a>    &lt;<span class="kw">medium</span>&gt;Oil on canvas&lt;/<span class="kw">medium</span>&gt;</span>
+<span id="cb10-134"><a href="#cb10-134" tabindex="-1"></a>    &lt;<span class="kw">dimensions</span>&gt;39 3/8 x 39 1/2<span class="dv">&amp;quot;</span> (100 x 100.3 cm)&lt;/<span class="kw">dimensions</span>&gt;</span>
+<span id="cb10-135"><a href="#cb10-135" tabindex="-1"></a>    &lt;<span class="kw">creditLine</span>&gt;Gift of Dr. Julius Spitzer&lt;/<span class="kw">creditLine</span>&gt;</span>
+<span id="cb10-136"><a href="#cb10-136" tabindex="-1"></a>    &lt;<span class="kw">accessionNumber</span>&gt;1.1942&lt;/<span class="kw">accessionNumber</span>&gt;</span>
+<span id="cb10-137"><a href="#cb10-137" tabindex="-1"></a>    &lt;<span class="kw">classification</span>&gt;Painting&lt;/<span class="kw">classification</span>&gt;</span>
+<span id="cb10-138"><a href="#cb10-138" tabindex="-1"></a>    &lt;<span class="kw">department</span>&gt;Painting <span class="dv">&amp;amp;</span> Sculpture&lt;/<span class="kw">department</span>&gt;</span>
+<span id="cb10-139"><a href="#cb10-139" tabindex="-1"></a>    &lt;<span class="kw">dateAcquired</span>&gt;1941-12-10&lt;/<span class="kw">dateAcquired</span>&gt;</span>
+<span id="cb10-140"><a href="#cb10-140" tabindex="-1"></a>    &lt;<span class="kw">cataloged</span>&gt;Y&lt;/<span class="kw">cataloged</span>&gt;</span>
+<span id="cb10-141"><a href="#cb10-141" tabindex="-1"></a>    &lt;<span class="kw">objectID</span>&gt;78299&lt;/<span class="kw">objectID</span>&gt;</span>
+<span id="cb10-142"><a href="#cb10-142" tabindex="-1"></a>    &lt;<span class="kw">url</span>&gt;https://www.moma.org/collection/works/78299&lt;/<span class="kw">url</span>&gt;</span>
+<span id="cb10-143"><a href="#cb10-143" tabindex="-1"></a>    &lt;<span class="kw">imageURL</span>&gt;https://www.moma.org/media/W1siZiIsIjE4NjgzNSJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDEwMjR4MTAyNFx1MDAzZSJdXQ.jpg?sha=9740d0c731c867c2&lt;/<span class="kw">imageURL</span>&gt;</span>
+<span id="cb10-144"><a href="#cb10-144" tabindex="-1"></a>    &lt;<span class="kw">onView</span>&gt;&lt;/<span class="kw">onView</span>&gt;</span>
+<span id="cb10-145"><a href="#cb10-145" tabindex="-1"></a>    &lt;<span class="kw">height</span>&gt;100.0&lt;/<span class="kw">height</span>&gt;</span>
+<span id="cb10-146"><a href="#cb10-146" tabindex="-1"></a>    &lt;<span class="kw">width</span>&gt;100.3&lt;/<span class="kw">width</span>&gt;</span>
+<span id="cb10-147"><a href="#cb10-147" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
+<span id="cb10-148"><a href="#cb10-148" tabindex="-1"></a>&lt;/<span class="kw">artworks</span>&gt;</span></code></pre>
 </div>
 </div>
 </div>
@@ -903,7 +882,7 @@ any links that you are not going to use.
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/instructor/xml.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/instructor/xml.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-03-28",
+  "dateModified": "2025-03-31",
   "datePublished": "2025-03-31"
 }
 
