@@ -2,8 +2,9 @@
 site: sandpaper::sandpaper_site
 ---
 
-::: objectives 
-Objectives:
+::: objectives   
+
+### Objectives:
 
 - Providing a basic explanation of the theoretical and methodological implications of working with data.
 - Differentiate between analogue data, digitized data, and born-digital data.
@@ -15,9 +16,9 @@ Objectives:
 - Apply metadata concepts to practical challenges
 - Recognize the role of metadata in the humanities
 :::
-
+  
 ::: prereq
-- You need a spreadsheet software (e.g., Excel or LibreOfficeCalc) as well as an editor.
+This lesson is being developed specifically for researchers in the humanities and cultural studies and designed for learners with no prior experience.
 :::
 
 
