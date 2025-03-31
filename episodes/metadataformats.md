@@ -1,5 +1,5 @@
 ---
-title: "Collecting data and metadata"
+title: "Collecting, Storing, Processing"
 teaching: 20
 exercises: 20
 ---
@@ -19,7 +19,7 @@ exercises: 20
    
 :::
 
-## Introduction
+## Introduction to metadata formats
 
 
 ::: challenge
