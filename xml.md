@@ -1,6 +1,6 @@
 ---
 title: "XML"
-teaching: 15
+teaching: 25
 exercises: 15
 ---
 
@@ -86,7 +86,7 @@ There are some rules for characters used in XML for syntax structure. They are r
 <photographer>Bernd &amp; Hilla Becher</photographer>
 ```
   
-#### Attributes  
+#### Attributes    
 
 In XML, as in HTML, tags can also be assigned attributes, which define the content of the tags in more detail. They are named and the content is assigned to them with a = and enclosed in quotes:
 
@@ -94,38 +94,16 @@ In XML, as in HTML, tags can also be assigned attributes, which define the conte
 <title lang="author's original language">Always give the title in the author's language</title>
 
 <commonTitle lang="title as commonly known">Always give the title as it is commonly known</commonTitle>
-```  
-  
-Attributes are also frequently used in a hierarchy to record information that applies to all underlying data:
+```      
+Attributes are also frequently used in a hierarchy to record information that applies to all underlying data, like additional metadata for a collection or fonds:
 
 ```xml
-<items collection="archives_collection" place="location">
-	<item1/>
-	<item2/>
-</items>
-```
-
-
-However, it should be noted that the information contained in the attributes is more likely to be seen as metadata related to the content. In this example, it may be worth creating the information about the collection and its location as separate tags above the items.
-
-```xml
-<collection place="New York">
-	<item1/>
-	<item2/>
+<collection name="Modern Art" place="New York">
+  <item1/>
+  <item2/>
 </collection>
-
-<place>
-	<collection>
-		<item1/>
-		<item2/>
-	</collection>
-</place>
-```
-
-
-The indentation (using a tab) describes the hierarchy level. The collection is assigned to the location, and the items below it are on the same hierarchy level. The structure depends on the purpose of the collection and the data to be collected. 
-
-The slash here at the end of the tag (self-closing tag) means that the element is currently empty and self-contained. It is not necessary to write an opening and closing tag if there are no other elements between them. You often see this in XML output when the metadata field has no content.   
+```  
+The indentation describes the hierarchy level. The structure depends on the purpose of the collection and the data to be collected. The slash here at the end of the tag (self-closing tag) means that the element is currently empty and self-contained. It is not necessary to write an opening and closing tag if there are no other elements between them. You often see this in XML output when the metadata field has no content.   
 
 
 ::: callout
@@ -137,20 +115,17 @@ In HTML, attributes often contain style information, such as the font color or t
 ```
 :::
 
-
 At the top of an XML document you will often find something called a prolog:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 ```
-
-
-It is optional, but provides information about the version and encoding used, and must be at the top if included. 
+It is optional, but provides information about the version and encoding used, and must be at the top if included.   
 
 ::: callout
 XML documents that conform to this syntax rules are said to be "Well Formed" XML documents.
-::: 
-
+:::   
+  
 ::: challenge
 
 ### Exercise
