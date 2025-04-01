@@ -1048,7 +1048,7 @@ way?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>A simple way to store data in a structured way is using a spreadsheet
 like Excel.</p>
@@ -1095,7 +1095,7 @@ file</a> in your favorite spreadsheet application.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
 <li>Various parameters are queried when opening the csv file.</li>
@@ -1116,7 +1116,7 @@ and shared.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Possible sources of error and problems that can occur and should be
 discussed are the separators. A title with commas was intentionally
@@ -1713,7 +1713,7 @@ any links that you are not going to use.
 </ol>
 </div></section><section id="aio-json"><p>Content from <a href="json.html">JSON</a></p>
 <hr>
-<p>Last updated on 2025-03-28 |
+<p>Last updated on 2025-04-01 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/json.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 35 minutes</p>
@@ -1750,26 +1750,6 @@ any links that you are not going to use.
 <p>Another format in which metadata can be stored, annotated and
 exchanged is JSON (JavaScript Object Notation). Its syntax is inspired
 by JavaScript object notation.</p>
-<div id="json-keypoints" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
-</div>
-<div id="json-keypoints" class="callout-inner">
-<h3 class="callout-title">JSON keypoints</h3>
-<div class="callout-content">
-<ul>
-<li>(Meta)data elements are defined in key/value pairs.</li>
-<li>Keys are of data type string (in quotes).</li>
-<li>Values must be of data type string, number (float or integer),
-boolean, array or object.</li>
-<li>Elements are separated by commas.</li>
-<li>Curly braces hold objects.</li>
-<li>Square brackets hold arrays.</li>
-<li>In-line commenting is not supported.</li>
-</ul>
-</div>
-</div>
-</div>
 <section><h2 class="section-heading" id="json-data">JSON Data<a class="anchor" aria-label="anchor" href="#json-data"></a>
 </h2>
 <hr class="half-width">
@@ -1881,7 +1861,7 @@ the moma_artwork.csv and write the data into a json format.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2111,7 +2091,7 @@ brackets), although they only contain one value?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Of course, there are works of art and objects made by several
 artists. As this is a case that certainly occurs more frequently, the
@@ -2119,6 +2099,26 @@ data field for the value is defined directly in advance as an array in
 order to be able to map this case and not have to query it separately
 for each data record.</p>
 </div>
+</div>
+</div>
+</div>
+<div id="json-keypoints" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div id="json-keypoints" class="callout-inner">
+<h3 class="callout-title">JSON keypoints</h3>
+<div class="callout-content">
+<ul>
+<li>(Meta)data elements are defined in key/value pairs.</li>
+<li>Keys are of data type string (in quotes).</li>
+<li>Values must be of data type string, number (float or integer),
+boolean, array or object.</li>
+<li>Elements are separated by commas.</li>
+<li>Curly braces hold objects.</li>
+<li>Square brackets hold arrays.</li>
+<li>In-line commenting is not supported.</li>
+</ul>
 </div>
 </div>
 </div>
