@@ -10,8 +10,8 @@ exercises: 10
 :::
 
 ::: objectives
-- Differentiate between analogue data, digitized data, and born-digital data.
-- Understand how data is categorized, collected, and utilized within humanities research.
+- Differentiate between analogue data, digitised data, and born-digital data.
+- Understand how data is categorised, collected, and utilized within humanities research.
 - Explore the implications of data types for research methods and outcomes.
 :::
 
@@ -20,8 +20,8 @@ exercises: 10
 **Analogue Data:**
 Analogue data originates in physical, non-digital formats like handwritten documents, photographs, or physical artefacts.
 
-**Digitized Data:**
-Digitized data refers to analogue information that has been converted into digital formats through processes such as scanning, encoding, or transcription. This transition expands accessibility and usability of analogue resources, facilitating modern research methods. Grasping digitized data is critical for recognizing how traditional resources have been adapted to meet digital needs.
+**Digitised Data:**
+Digitised data refers to analogue information that has been converted into digital formats through processes such as scanning, encoding, or transcription. This transition expands accessibility and usability of analogue resources, facilitating modern research methods. Grasping digitised data is critical for recognizing how traditional resources have been adapted to meet digital needs.
 
 **Born-Digital Data:**
 Born-digital data is inherently created in digital environments and exists only in these formats—databases, digital texts, or media files that have never been in physical, analogue form. This distinction highlights how digital-first practices shape contemporary research in the humanities, emphasizing real-time creation and accessibility through digital platforms.
@@ -46,7 +46,7 @@ We cannot present analogue data here because everything we display on the monito
 
 Analogue Data are physical artefacts in the museum: The museum's collection includes numerous physical objects such as sculptures, paintings, and artefacts that exist solely in their original, non-digital form. For instance, the collection of ancient Egyptian art in the Metropolitan Museum comprises approximately 30,000 objects: https://www.metmuseum.org/about-the-met/collection-areas/egyptian-art.
 
-Digitized Data are for example digitized images: High-resolution photographs of artworks and artefacts, such as paintings, sculptures, and archaeological findings, have been digitized for research and accessibility. These images are accessible through the museum's online collection database.
+Digitised Data are for example digitised images: High-resolution photographs of artworks and artefacts, such as paintings, sculptures, and archaeological findings, have been digitized for research and accessibility. These images are accessible through the museum's online collection database.
 
 Born-Digital Data are some born-digital photographs or videos (https://www.metmuseum.org/art/collection/search/302616), as well as digital records and databases of its collections, including metadata and detailed descriptions of artworks. The museum's archives include born-digital materials such as exhibition records, curatorial files, and administrative documents created and stored digitally.
 
@@ -56,7 +56,7 @@ These types of data are utilized in different ways, each shaping and supporting 
 
 **Analogue data**, preserved in magazines, archives, or physical collections, provides the foundation for historical and material studies, offering direct engagement with original sources. Analogue data's tactile and contextual elements are invaluable for understanding its provenance and authenticity. Still, these data are often constrained by access limitations, requiring researchers to travel to specific locations.
 
-**Digitized data** transforms the accessibility of these physical sources, enabling remote access through digital platforms and repositories. This shift democratizes research by bridging geographic barriers and facilitating comparative studies. Additionally, digitization often incorporates metadata and search functionalities, enhancing the discoverability and usability of analogue sources. However, the process of digitization raises concerns about data integrity, potential loss of context, and the prioritization of certain collections over others.
+**Digitised data** transforms the accessibility of these physical sources, enabling remote access through digital platforms and repositories. This shift democratizes research by bridging geographic barriers and facilitating comparative studies. Additionally, digitisation often incorporates metadata and search functionalities, enhancing the discoverability and usability of analogue sources. However, the process of digitisation raises concerns about data integrity, potential loss of context, and the prioritization of certain collections over others.
 
 **Born-digital data**, by contrast, is inherently dynamic, designed for integration into digital environments. It supports collaborative and interdisciplinary research, as it can be shared, updated, and analyzed in real-time. The computational possibilities of born-digital data, including machine learning and data visualization, open new avenues for exploration, particularly in fields like Digital Humanities, data science, and social network analysis. Nonetheless, this type of data also poses challenges, such as ensuring long-term preservation, managing data privacy, and addressing the ephemerality of digital formats.
 
@@ -68,7 +68,7 @@ How do institutional infrastructures, such as libraries, archives, and data cent
 :::  
     
 ::: keypoints  
-- analogue data
-- digitized data
-- born-digital data  
+- Analogue data is preserved in magazines, archives, or physical collections. 
+- Digitised data is a transformation of analogue data into digital form. 
+- Born-digital data has no analogue representation. 
 :::  
