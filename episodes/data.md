@@ -5,14 +5,11 @@ exercises: 10
 ---
 
 ::: questions 
-
 - What is data in the humanities?
 - What are the distinctions between different types of data?
-
 :::
 
 ::: objectives
-
 - Differentiate between analogue data, digitized data, and born-digital data.
 - Understand how data is categorized, collected, and utilized within humanities research.
 - Explore the implications of data types for research methods and outcomes.
@@ -31,7 +28,6 @@ Born-digital data is inherently created in digital environments and exists only 
 
 
 ::: challenge
-
 ## Exercise
 
 Let’s explore some examples of these types of data!
@@ -42,12 +38,11 @@ Oops! We have a challenge!
 Can you identify what kind of problem do we have here?
 
 ::: solution 
-
 ## Output
 
 We cannot present analogue data here because everything we display on the monitor is digital!
 :::
-:::
+:::  
 
 Analogue Data are physical artefacts in the museum: The museum's collection includes numerous physical objects such as sculptures, paintings, and artefacts that exist solely in their original, non-digital form. For instance, the collection of ancient Egyptian art in the Metropolitan Museum comprises approximately 30,000 objects: https://www.metmuseum.org/about-the-met/collection-areas/egyptian-art.
 
@@ -66,19 +61,14 @@ These types of data are utilized in different ways, each shaping and supporting 
 **Born-digital data**, by contrast, is inherently dynamic, designed for integration into digital environments. It supports collaborative and interdisciplinary research, as it can be shared, updated, and analyzed in real-time. The computational possibilities of born-digital data, including machine learning and data visualization, open new avenues for exploration, particularly in fields like Digital Humanities, data science, and social network analysis. Nonetheless, this type of data also poses challenges, such as ensuring long-term preservation, managing data privacy, and addressing the ephemerality of digital formats.
 
 Moreover, these types of data often interact within hybrid research workflows. For instance, digitized analogue data can be enriched through computational analysis alongside born-digital datasets, creating new layers of insight. Similarly, born-digital data may prompt the re-examination of analogue sources, fostering a cyclical process of discovery and reinterpretation. This interplay highlights the evolving landscape of knowledge production, where diverse data types converge to address complex research questions. 
-
-::: callout
-
-## Outcome
-
-How do institutional infrastructures, such as libraries, archives, and data centres, support these processes and navigate the challenges of balancing preservation, access, and innovation?
-:::
   
+::: callout
+## Outcome
+How do institutional infrastructures, such as libraries, archives, and data centres, support these processes and navigate the challenges of balancing preservation, access, and innovation?
+:::  
+    
 ::: keypoints  
-
 - analogue data
 - digitized data
 - born-digital data  
-  
 :::  
-
