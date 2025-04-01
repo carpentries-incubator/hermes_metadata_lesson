@@ -21,7 +21,7 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Metadata
+## Metadata: Types, Functions, and Contexts
 
 Metadata is a form of data that describes other data. Metadata provides meaningful information that makes it easier to find, identify, understand, handle, and preserve the primary data.
 
@@ -91,3 +91,4 @@ This interplay between data and metadata underscores the layered nature of infor
 Descriptive metadata
 Structural metadata
 Administrative metadata
+:::
