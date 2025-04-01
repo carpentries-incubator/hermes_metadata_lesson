@@ -2,6 +2,10 @@
 site: sandpaper::sandpaper_site
 ---
    
+::: prereq
+This lesson is being developed specifically for researchers in the humanities and cultural studies and designed for learners with no prior experience.
+:::  
+
 ::: objectives   
 
 ### Objectives:
@@ -23,9 +27,6 @@ site: sandpaper::sandpaper_site
 - Identify the main elements of a XML Schema and write a valid XML file based on a simple XML Schema. 
 :::   
     
-::: prereq
-This lesson is being developed specifically for researchers in the humanities and cultural studies and designed for learners with no prior experience.
-:::
 
 
 
