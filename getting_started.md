@@ -4,7 +4,7 @@ teaching: 30
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: discussion
+:::::::::::::::::::::::::::::::::::::: questions
 
 ### Framing questions 
 
