@@ -74,11 +74,11 @@ Moreover, these types of data often interact within hybrid research workflows. F
 How do institutional infrastructures, such as libraries, archives, and data centres, support these processes and navigate the challenges of balancing preservation, access, and innovation?
 :::
 
-::: keypoints
+::: keypoints  
 
 - analogue data
 - digitized data
-- born-digital data
-
-:::
+- born-digital data  
+  
+:::  
 
