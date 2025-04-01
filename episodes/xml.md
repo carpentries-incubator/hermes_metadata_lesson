@@ -19,13 +19,10 @@ exercises: 15
 
 :::
 
-## XML
-
-
 One of the most widely used metadata formats in the cultural sector is XML (eXtensible Markup Language). It is used to describe, structure, hierarchise (if desired), store and transport data. XML refers to the file format and structure in which data is recorded. 
 
 
-#### XML elements
+## XML Elements
 
 An XML document contains XML elements to structure the data. They are formed using angle brackets and are divided into an opening tag and a closing tag, indicated by a leading slash. The content is placed in between. 
 
@@ -86,7 +83,7 @@ There are some rules for characters used in XML for syntax structure. They are r
 <photographer>Bernd &amp; Hilla Becher</photographer>
 ```
   
-#### Attributes    
+## Attributes    
 
 In XML, as in HTML, tags can also be assigned attributes, which define the content of the tags in more detail. They are named and the content is assigned to them with a = and enclosed in quotes:
 
@@ -305,8 +302,11 @@ Compare your XML with the documents of the other participants. What do you notic
 
 ::: instructor
 The exercise can be carried out as group work if there are many participants. Otherwise, someone can also present their solution at the end and it is discussed together. Discussion points should include the two ways of writing empty elements and making sure that special characters such as & are intercepted. There can also be a general discussion about the headings or naming of the tags or about what certain tags mean, e.g. onView means “on display” in the current exhibition. 
+:::  
+
+::: keypoints
+- XML is one of the most widely used metadata formats.
+- An XML document contains XML elements to structure the data.
 :::
-
-
 ______________________________________________
 [1]: [w3school XML elements](https://www.w3schools.com/xml/xml_elements.asp>)  
