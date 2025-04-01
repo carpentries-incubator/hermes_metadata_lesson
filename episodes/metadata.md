@@ -18,8 +18,7 @@ exercises: 0
 - Differentiate the major types of metadata.
 - Apply metadata concepts to practical challenges.
 - Recognize the role of metadata in the humanities.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::  
 
 ## Metadata Types, Functions, and Contexts
 
