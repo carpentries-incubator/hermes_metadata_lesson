@@ -1,7 +1,7 @@
 ---
 site: sandpaper::sandpaper_site
 ---
-
+   
 ::: objectives   
 
 ### Objectives:
@@ -21,8 +21,8 @@ site: sandpaper::sandpaper_site
 - Organize simple metadata within Dublin Core and METS.
 - Write triple for RDF schema.
 - Identify the main elements of a XML Schema and write a valid XML file based on a simple XML Schema. 
-:::
-  
+:::   
+    
 ::: prereq
 This lesson is being developed specifically for researchers in the humanities and cultural studies and designed for learners with no prior experience.
 :::
