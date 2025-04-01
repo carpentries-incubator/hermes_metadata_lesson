@@ -18,8 +18,8 @@ exercises: 0
 - Differentiate the major types of metadata.
 - Apply metadata concepts to practical challenges.
 - Recognize the role of metadata in the humanities.
-::::::::::::::::::::::::::::::::::::::::::::::::  
-
+::::::::::::::::::::::::::::::::::::::::::::::::    
+  
 ## Metadata Types, Functions, and Contexts
 
 Metadata is a form of data that describes other data. Metadata provides meaningful information that makes it easier to find, identify, understand, handle, and preserve the primary data.
@@ -83,8 +83,8 @@ This relativity highlights the importance of understanding the different levels 
 - **Metadata refers to information about that data, designed to describe, contextualize, or facilitate its organization and retrieval (e.g., the title, author, or genre classification).**
 
 This interplay between data and metadata underscores the layered nature of information management and the need for precision when working with both.
-:::
-
+:::  
+  
 ::: keypoints
 
 - descriptive metadata
