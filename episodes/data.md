@@ -1,7 +1,7 @@
 ---
 title: "Data"
 teaching: 30
-exercises: 1
+exercises: 10
 ---
 
 ::: questions 
@@ -73,7 +73,7 @@ Moreover, these types of data often interact within hybrid research workflows. F
 
 How do institutional infrastructures, such as libraries, archives, and data centres, support these processes and navigate the challenges of balancing preservation, access, and innovation?
 :::
-
+  
 ::: keypoints  
 
 - analogue data
