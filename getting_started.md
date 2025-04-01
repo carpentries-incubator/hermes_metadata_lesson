@@ -76,8 +76,8 @@ Digital humanities are inherently interdisciplinary, bringing together tradition
 
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
+Areas where digitization is important:  
 
-- digitalization
 - research methods
 - dissemination
 - cultural heritage
