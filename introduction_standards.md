@@ -19,7 +19,7 @@ exercises: 10
 - Familiar with the basic concepts and data relationships for standards and schemas.  
 :::
 
-## Introduction
+## Standard, Schema or Model?
 
 The terms *metadata standard*, *metadata schema*, and *metadata model* are often used synonymously. 
 The following is an attempt to differentiate between the terms *metadata standard*, *metadata schema* and *model*. 
@@ -105,6 +105,7 @@ The Gemeinsame Normdatei, maintained by the German National Library, is a compre
 :::
 :::
 
+    
 ::: callout 
 
 #### Data Value Standards
@@ -114,3 +115,13 @@ Value standards are vital for enhancing discoverability and ensuring that metada
 :::
 
 Collections of cultural heritage objects are frequently characterized by significant heterogeneity in terms of their content, age, retro-digitization methods, and associated data acquisition processes. The nature and extent of the recorded metadata also exhibit considerable variation across collections. Variations in data acquisition and storage practices further contribute to the heterogeneity observed. However, the objective of consolidating collections into online portals for enhanced visibility and accessibility necessitates the implementation of data standardization to a maximum extent feasible. It also helps research to ensure comparability across large quantities of objects. Standardizing large amounts of data from a wide variety of collections is costly in terms of time, money, and human resources, which are often in short supply. For this reason, minimum requirements for metadata have been discussed in recent years. A minimum data set developed in Germany will be briefly presented here.  
+  
+
+::: keypoints  
+
+ - metadata standard
+ - metadata schema
+ - metadata model  
+
+
+:::
