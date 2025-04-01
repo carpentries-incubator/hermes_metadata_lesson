@@ -84,4 +84,10 @@ This relativity highlights the importance of understanding the different levels 
 - **Metadata refers to information about that data, designed to describe, contextualize, or facilitate its organization and retrieval (e.g., the title, author, or genre classification).**
 
 This interplay between data and metadata underscores the layered nature of information management and the need for precision when working with both.
+:::
 
+::: keypoints
+
+Descriptive metadata
+Structural metadata
+Administrative metadata
