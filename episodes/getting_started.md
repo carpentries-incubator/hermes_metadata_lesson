@@ -4,12 +4,15 @@ teaching: 30
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: Framing questions 
+:::::::::::::::::::::::::::::::::::::: discussion
 
-- What does digitalization mean for the humanities? How is digitalization changing the humanities?
+### Framing questions 
+
+- What does digitalization mean for the humanities?  
+- How is digitalization changing the humanities?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-
+  
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Providing a basic explanation of the theoretical and methodological implications of working with data.
