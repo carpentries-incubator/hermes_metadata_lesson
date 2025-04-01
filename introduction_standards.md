@@ -118,10 +118,8 @@ Collections of cultural heritage objects are frequently characterized by signifi
   
 
 ::: keypoints  
-
- - metadata standard
- - metadata schema
- - metadata model  
-
-
+The terms *metadata standard*, *metadata schema*, and *metadata model* are often used synonymously. You can roughly distinguish them like this:  
+ - A metadata standard describes elements or a structure of metadata.  
+ - A metadata schema establishes a structure for metadata within a specific content, often integrating existing metadata standards.    
+ - A metadata model is an abstract and theoretical model that describes metadata in its context.  
 :::
