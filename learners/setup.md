@@ -2,25 +2,7 @@
 title: Setup
 ---
 
-This lesson is developed as an introduction to the meaning of data and metadata in the Humanities. Learners will get familiar with concepts of data and metadata as well as formats such as XML and JSON and metadata standards. It is being developed specifically for researchers in the humanities and cultural studies and designed for learners with no prior experience. 
-
-:::::: objectives
-
-### Learning objectives 
-
-After this lesson, learners   
-- are able to explain the terms "data" and "metadata" and their relevance to the humanities.   
-- are familiar with humanities concepts of the terms.  
-- are able to explain the difference between structured and unstructured data.  
-- are aware of the different types of data, e.g. analogue, digital and born digital.  
-- are aware of the different types of metadata, e.g. structural, administrative and descriptive.  
-- are able to identify the metadata of different types of objects.   
-- have a basic knowledge of data formats such as XML and JSON.  
-- are able to write simple XML and JSON formats.    
-- have knowledge of Dublin Core and METS metadata standards.  
-- are familiar with the basics of XML Schema.    
-
-::::::
+This lesson is developed as an introduction to the meaning of data and metadata in the Humanities. Learners will get familiar with concepts of data and metadata as well as formats such as XML and JSON and metadata standards. It is being developed specifically for researchers in the humanities and cultural studies and designed for learners with no prior experience.  
 
 ## Data Sets
 
