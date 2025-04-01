@@ -6,9 +6,9 @@ site: sandpaper::sandpaper_site
 This lesson is being developed specifically for researchers in the humanities and cultural studies and designed for learners with no prior experience.
 :::  
 
-::: objectives   
+This lesson is developed as an introduction to the meaning of data and metadata in the Humanities. Learners will get familiar with concepts of data and metadata as well as formats such as XML and JSON and metadata standards.
 
-### Objectives:
+### Objectives
 
 - Providing a basic explanation of the theoretical and methodological implications of working with data.
 - Differentiate between analogue data, digitized data, and born-digital data.
@@ -25,7 +25,7 @@ This lesson is being developed specifically for researchers in the humanities an
 - Organize simple metadata within Dublin Core and METS.
 - Write triple for RDF schema.
 - Identify the main elements of a XML Schema and write a valid XML file based on a simple XML Schema. 
-:::   
+  
     
 
 
