@@ -91,4 +91,5 @@ This interplay between data and metadata underscores the layered nature of infor
 Descriptive metadata
 Structural metadata
 Administrative metadata
+
 :::
