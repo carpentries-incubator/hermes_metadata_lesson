@@ -18,7 +18,7 @@ exercises: 1
 - Explore the implications of data types for research methods and outcomes.
 :::
 
-## Data
+## Types of Data
 
 **Analogue Data:**
 Analogue data originates in physical, non-digital formats like handwritten documents, photographs, or physical artefacts.
