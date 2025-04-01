@@ -894,7 +894,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The objects searchable in the Met Museum’s online collection
 primarily feature descriptive metadata, such as title, author, date, and
@@ -929,7 +929,7 @@ part of specific projects.</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>It depends on the context wether it is data (the book itself) or
 metadata (title in a library catalogue)</p>
@@ -1220,7 +1220,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-xml"><p>Content from <a href="xml.html">XML</a></p>
 <hr>
-<p>Last updated on 2025-03-31 |
+<p>Last updated on 2025-04-01 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/xml.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1254,16 +1254,13 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="xml">XML<a class="anchor" aria-label="anchor" href="#xml"></a>
-</h2>
-<hr class="half-width">
 <p>One of the most widely used metadata formats in the cultural sector
 is XML (eXtensible Markup Language). It is used to describe, structure,
 hierarchise (if desired), store and transport data. XML refers to the
 file format and structure in which data is recorded.</p>
-<div class="section level4">
-<h4 id="xml-elements">XML elements<a class="anchor" aria-label="anchor" href="#xml-elements"></a>
-</h4>
+<section><h2 class="section-heading" id="xml-elements">XML Elements<a class="anchor" aria-label="anchor" href="#xml-elements"></a>
+</h2>
+<hr class="half-width">
 <p>An XML document contains XML elements to structure the data. They are
 formed using angle brackets and are divided into an opening tag and a
 closing tag, indicated by a leading slash. The content is placed in
@@ -1292,7 +1289,6 @@ automatically read:</p>
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co">&lt;!-- Here is the content of the comment, there is no closing tag --&gt;</span></span></code></pre>
-</div>
 </div>
 <div class="section level4">
 <h4 id="rules-for-naming-tags">Rules for naming tags<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>
@@ -1371,9 +1367,9 @@ the character is replaced with an entity reference:</p>
 <pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>&lt;<span class="kw">photographer</span>&gt;Bernd <span class="dv">&amp;amp;</span> Hilla Becher&lt;/<span class="kw">photographer</span>&gt;</span></code></pre>
 </div>
 </div>
-<div class="section level4">
-<h4 id="attributes">Attributes<a class="anchor" aria-label="anchor" href="#attributes"></a>
-</h4>
+</section><section><h2 class="section-heading" id="attributes">Attributes<a class="anchor" aria-label="anchor" href="#attributes"></a>
+</h2>
+<hr class="half-width">
 <p>In XML, as in HTML, tags can also be assigned attributes, which
 define the content of the tags in more detail. They are named and the
 content is assigned to them with a = and enclosed in quotes:</p>
@@ -1647,6 +1643,20 @@ do you notice?</p>
 </div>
 </div>
 
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul>
+<li>XML is one of the most widely used metadata formats.</li>
+<li>An XML document contains XML elements to structure the data.</li>
+</ul>
+</div>
+</div>
+</div>
 <hr>
 <p>[1]: <a href="https://www.w3schools.com/xml/xml_elements.asp%3E" class="external-link">w3school XML
 elements</a></p>
@@ -1654,7 +1664,6 @@ elements</a></p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</div>
 </section><div class="footnotes footnotes-end-of-document">
 <hr>
 <ol>
@@ -1829,7 +1838,7 @@ the moma_artwork.csv and write the data into a json format.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2059,7 +2068,7 @@ brackets), although they only contain one value?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Of course, there are works of art and objects made by several
 artists. As this is a case that certainly occurs more frequently, the
@@ -2593,7 +2602,7 @@ elements to the structure of the METS standard.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Using the first artwork record from the example file a XML with a
 METS structure could look like that:</p>
@@ -2671,7 +2680,7 @@ the Library of Congress</a>. What do you notice?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>You can figure out that:<br>
 - In many examples the MODS standard is used within the METS
