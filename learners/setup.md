@@ -2,8 +2,6 @@
 title: Setup
 ---
 
-This lesson is developed as an introduction to the meaning of data and metadata in the Humanities. Learners will get familiar with concepts of data and metadata as well as formats such as XML and JSON and metadata standards. It is being developed specifically for researchers in the humanities and cultural studies and designed for learners with no prior experience.  
-
 ## Data Sets
 
 Download the [data zip file](/episodes/data/artworks_data.zip) and unzip it to your Desktop.
