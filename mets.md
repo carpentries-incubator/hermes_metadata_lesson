@@ -127,8 +127,6 @@ You can figure out that:
 :::
 :::
 
-
+::: keypoints
 METS serves as a container for structuring metadata. The metadata fields are usually integrated into the METS structure in a specific standard for the individual fields and their order. These include standards such as Cublin Core, MODS, or MARC.
-
-
-
+:::
