@@ -17,14 +17,14 @@ exercises: 0
 - Differentiate metadata from data.
 - Differentiate the major types of metadata.
 - Apply metadata concepts to practical challenges.
-- Recognize the role of metadata in the humanities.
+- Recognise the role of metadata in the humanities.
 ::::::::::::::::::::::::::::::::::::::::::::::::    
   
 ## Metadata Types, Functions, and Contexts
 
 Metadata is a form of data that describes other data. Metadata provides meaningful information that makes it easier to find, identify, understand, handle, and preserve the primary data.
 
-Data itself can be structured or "raw," meaning unprocessed or unstructured. In contrast, metadata is always processed and structured, designed to be understandable by both humans and machines. Metadata serves a functional purpose, such as organizing materials in a catalog or enabling the search and retrieval of resources in a database. It helps convey essential attributes of data, such as its origin, time period, and geographic coverage.
+Data itself can be structured or "raw," meaning unprocessed or unstructured. In contrast, metadata is always processed and structured, designed to be understandable by both humans and machines. Metadata serves a functional purpose, such as organising materials in a catalog or enabling the search and retrieval of resources in a database. It helps convey essential attributes of data, such as its origin, time period, and geographic coverage.
 
 There are three major **types of metadata**:
 
@@ -34,7 +34,7 @@ Descriptive metadata is crucial for discovering and identifying resources like b
 
 **Structural metadata** indicates how composite objects are assembled.
 
-For example, a digitized medieval manuscript in an online archive—structural metadata defines the hierarchy and organization of the manuscript:
+For example, a digitised medieval manuscript in an online archive—structural metadata defines the hierarchy and organization of the manuscript:
 
 - Page order (e.g., folio 1 recto, folio 1 verso).
 - Relationships between sections (e.g., chapters, marginalia, glosses).
@@ -57,7 +57,7 @@ Go back again to the online resources we reviewed. Find the data to which the me
 :::::::::::::::::::::::: solution 
 
 ## Output
-The objects searchable in the Met Museum's online collection primarily feature descriptive metadata, such as title, author, date, and size. Administrative metadata is largely limited to the inventory number, though additional administrative (meta)data, potentially sensitive in nature, may remain unpublished. Structural metadata is generally scarce, despite the suitability of many well-documented art and cultural objects for such detailed representation. However, creating structural metadata would require extensive indexing, which is often impractical. Institutions typically prioritize basic cataloguing with minimal metadata, while in-depth cataloguing is frequently undertaken as part of specific projects.
+The objects searchable in the Met Museum's online collection primarily feature descriptive metadata, such as title, author, date, and size. Administrative metadata is largely limited to the inventory number, though additional administrative (meta)data, potentially sensitive in nature, may remain unpublished. Structural metadata is generally scarce, despite the suitability of many well-documented art and cultural objects for such detailed representation. However, creating structural metadata would require extensive indexing, which is often impractical. Institutions typically prioritise basic cataloguing with minimal metadata, while in-depth cataloguing is frequently undertaken as part of specific projects.
 :::
 :::  
     
@@ -76,20 +76,20 @@ It depends on the context wether it is data (the book itself) or metadata (title
   
 The distinction between data and metadata often depends on the context in which the information is used. Data and metadata are relative concepts, and what serves as "data" in one scenario may function as "metadata" in another.
 
-For example, the text of Alice's Adventures in Wonderland itself—its words, chapters, and narrative—is typically considered data when analyzing its content, themes, or linguistic features. However, the title Alice's Adventures in Wonderland is metadata within the context of the book's cataloguing. In a library catalogue, the title is part of a structured system of metadata used to describe, organize, and enable the discovery of the book (along with other metadata fields like author, publication date, and ISBN).
+For example, the text of Alice's Adventures in Wonderland itself—its words, chapters, and narrative—is typically considered data when analysing its content, themes, or linguistic features. However, the title Alice's Adventures in Wonderland is metadata within the context of the book's cataloguing. In a library catalogue, the title is part of a structured system of metadata used to describe, organise, and enable the discovery of the book (along with other metadata fields like author, publication date, and ISBN).
 
 This relativity highlights the importance of understanding the different levels at which we interact with information. In essence:
 
 - **Data refers to the primary subject of study or use (e.g., the full text of the book).**
-- **Metadata refers to information about that data, designed to describe, contextualize, or facilitate its organization and retrieval (e.g., the title, author, or genre classification).**
+- **Metadata refers to information about that data, designed to describe, contextualise, or facilitate its organisation and retrieval (e.g., the title, author, or genre classification).**
 
 This interplay between data and metadata underscores the layered nature of information management and the need for precision when working with both.
     
     
 ::: keypoints
 
-- descriptive metadata
-- structural metadata
-- administrative metadata
+- Descriptive metadata describes a resource for purposes.
+- Structural metadata indicates how composite objects are assembled.
+- Administrative metadata provides information to help manage a resource.
 
 :::
