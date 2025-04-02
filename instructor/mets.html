@@ -118,11 +118,11 @@
   Data and Metadata in the Humanities
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 56%" class="percentage">
-    56%
+<aside class="col-md-12 lesson-progress"><div style="width: 55%" class="percentage">
+    55%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 56%" aria-valuenow="56" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 55%" aria-valuenow="55" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -380,13 +380,13 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Metadata Encoding &amp; Transmission Standard (METS)</h1>
-        <p>Last updated on 2025-04-01 |
+        <p>Last updated on 2025-04-02 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/mets.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
-        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
+        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 35 minutes</p>
 
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -423,9 +423,9 @@ METS</li>
 <hr class="half-width"><p>The standard is overseen by the Library of Congress.</p>
 <p>METS is an XML format defined by XML Schema for describing digital
 collections of objects with metadata. The standard does not specify a
-name or order for the metadata fields per se, but serves to structure
-them in a standardized way. It is often used for long-term archiving.
-The metadata are added in one of seven domains:</p>
+name or order for the metadata fields themselves, but serves to
+structure them in a standardised way. It is often used for long-term
+preservation. Metadata is added in one of seven domains:</p>
 <ol style="list-style-type: decimal"><li>METS Header: Metadata describing the METS document itself, including
 such information as creator, editor, etc.</li>
 <li>Descriptive Metadata Section: The section may point to descriptive
@@ -445,17 +445,18 @@ files and metadata that pertain to each element.</li>
 nodes in the hierarchy outlined in the Structural Map.</li>
 <li>Behavioral Section: can be used to associate executable behaviors
 with content in the METS object.</li>
-</ol><div class="codewrapper sourceCode" id="cb1">
+</ol><p>XML syntax:</p>
+<div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>&lt;<span class="kw">mets</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a> &lt;<span class="kw">metsHdr</span>/&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a> &lt;<span class="kw">dmdSec</span>/&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a> &lt;<span class="kw">amdSec</span>/&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a> &lt;<span class="kw">fileSec</span>/&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a> &lt;<span class="kw">structMap</span>/&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a> &lt;<span class="kw">structLink</span>/&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a> &lt;<span class="kw">behaviorSec</span>/&gt;</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a> &lt;<span class="kw">metsHdr</span>/&gt;<span class="co">&lt;!-- METS Header --&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a> &lt;<span class="kw">dmdSec</span>/&gt;<span class="co">&lt;!-- Descriptive Metadata Section --&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a> &lt;<span class="kw">amdSec</span>/&gt;<span class="co">&lt;!-- Administrative Metadata Section --&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a> &lt;<span class="kw">fileSec</span>/&gt;<span class="co">&lt;!-- File Section --&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a> &lt;<span class="kw">structMap</span>/&gt;<span class="co">&lt;!-- Structural Map --&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a> &lt;<span class="kw">structLink</span>/&gt;<span class="co">&lt;!-- Structural Links --&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a> &lt;<span class="kw">behaviorSec</span>/&gt;<span class="co">&lt;!-- Behavioral Section --&gt;</span></span>
 <span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>&lt;/<span class="kw">mets</span>&gt;</span></code></pre>
 </div>
 <div id="exercise-part-i" class="callout challenge">
@@ -560,8 +561,9 @@ the Library of Congress</a>. What do you notice?</p>
 structure.<br>
 - The last sections are often missing or do not have many data.<br>
 - The amdSec contains technical information of the form of digitization
-such as camera or scanner and their settings. - The amdSec is sometimes
-divided into further sections, e.g., rights and technical data.</p>
+such as camera or scanner and their settings.<br>
+- The amdSec is sometimes divided into further sections, e.g., rights
+and technical data.</p>
 </div>
 </div>
 </div>
@@ -642,7 +644,7 @@ any links that you are not going to use.
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/instructor/mets.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/instructor/mets.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-04-01",
+  "dateModified": "2025-04-02",
   "datePublished": "2025-04-02"
 }
 

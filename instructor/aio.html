@@ -1482,7 +1482,7 @@ format.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <ul>
 <li>Think about the headings in the table. Do you agree with this
@@ -1498,7 +1498,7 @@ labelling?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1661,7 +1661,7 @@ labelling?</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>It is likely that not all participants will complete the exercise in
 the time allotted, as the notation of XML is very complex. This is part
@@ -1688,7 +1688,7 @@ notice?</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>The exercise can be done in groups if there are many participants.
 Otherwise, someone can present their solution at the end and discuss it
@@ -2595,10 +2595,10 @@ any links that you are not going to use.
 </ol>
 </div></section><section id="aio-mets"><p>Content from <a href="mets.html">Metadata Encoding &amp; Transmission Standard (METS)</a></p>
 <hr>
-<p>Last updated on 2025-04-01 |
+<p>Last updated on 2025-04-02 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/mets.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 35 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -2637,9 +2637,9 @@ METS</li>
 <p>The standard is overseen by the Library of Congress.</p>
 <p>METS is an XML format defined by XML Schema for describing digital
 collections of objects with metadata. The standard does not specify a
-name or order for the metadata fields per se, but serves to structure
-them in a standardized way. It is often used for long-term archiving.
-The metadata are added in one of seven domains:</p>
+name or order for the metadata fields themselves, but serves to
+structure them in a standardised way. It is often used for long-term
+preservation. Metadata is added in one of seven domains:</p>
 <ol style="list-style-type: decimal">
 <li>METS Header: Metadata describing the METS document itself, including
 such information as creator, editor, etc.</li>
@@ -2661,17 +2661,18 @@ nodes in the hierarchy outlined in the Structural Map.</li>
 <li>Behavioral Section: can be used to associate executable behaviors
 with content in the METS object.</li>
 </ol>
+<p>XML syntax:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>&lt;<span class="kw">mets</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a> &lt;<span class="kw">metsHdr</span>/&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a> &lt;<span class="kw">dmdSec</span>/&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a> &lt;<span class="kw">amdSec</span>/&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a> &lt;<span class="kw">fileSec</span>/&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a> &lt;<span class="kw">structMap</span>/&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a> &lt;<span class="kw">structLink</span>/&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a> &lt;<span class="kw">behaviorSec</span>/&gt;</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a> &lt;<span class="kw">metsHdr</span>/&gt;<span class="co">&lt;!-- METS Header --&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a> &lt;<span class="kw">dmdSec</span>/&gt;<span class="co">&lt;!-- Descriptive Metadata Section --&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a> &lt;<span class="kw">amdSec</span>/&gt;<span class="co">&lt;!-- Administrative Metadata Section --&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a> &lt;<span class="kw">fileSec</span>/&gt;<span class="co">&lt;!-- File Section --&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a> &lt;<span class="kw">structMap</span>/&gt;<span class="co">&lt;!-- Structural Map --&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a> &lt;<span class="kw">structLink</span>/&gt;<span class="co">&lt;!-- Structural Links --&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a> &lt;<span class="kw">behaviorSec</span>/&gt;<span class="co">&lt;!-- Behavioral Section --&gt;</span></span>
 <span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>&lt;/<span class="kw">mets</span>&gt;</span></code></pre>
 </div>
 <div id="exercise-part-i" class="callout challenge">
@@ -2776,8 +2777,9 @@ the Library of Congress</a>. What do you notice?</p>
 structure.<br>
 - The last sections are often missing or do not have many data.<br>
 - The amdSec contains technical information of the form of digitization
-such as camera or scanner and their settings. - The amdSec is sometimes
-divided into further sections, e.g., rights and technical data.</p>
+such as camera or scanner and their settings.<br>
+- The amdSec is sometimes divided into further sections, e.g., rights
+and technical data.</p>
 </div>
 </div>
 </div>
@@ -2898,7 +2900,7 @@ which ones and why?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>contributor: MET (as a custodian and managing institution)</li>
@@ -2966,7 +2968,7 @@ assign clearly or at all would you expand with a qualifier and how?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Examples </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
 <li>dc.date.created: 1931</li>
