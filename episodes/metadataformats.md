@@ -1,7 +1,7 @@
 ---
 title: "Collecting, Storing, Processing"
 teaching: 20
-exercises: 20
+exercises: 10
 ---
 
 ::: questions 
@@ -30,19 +30,19 @@ Do you know formats in which data can be stored in a structured way?
 ::: solution
 
 ### Show me the solution
-A simple way to store data in a structured way is using a spreadsheet like Excel. 
+An easy way to store data in a structured way is to use a spreadsheet such as Excel.
 
 :::
 :::
 
 
-In order to store metadata and make it usable in other contexts, appropriate formats are required. The most common file formats in which metadata is stored include XML and JSON. A lot of data is also stored in the more familiar CSV format as a real-life example will show later.
+In order to store metadata and make it usable in other contexts, appropriate formats are required. The most common file formats used to store metadata are XML and JSON. A lot of data is also stored in the more familiar CSV format, as a real-world example will show later.
 
 
 #### Interoperability
 
 
-The advantage of using such a format is the interoperability of the data. This means that the data is recorded and stored by one person and can be opened and processed elsewhere, for example extended or integrated into another system, i.e. it can be operated with. Data from different sources can also be merged. 
+The advantage of using such a format is the interoperability of the data. This means that the data is collected and stored by one person and can be opened and processed elsewhere, e.g. extended or integrated into another system, i.e. it can be worked with. Data from different sources can also be merged.
 
 
 
@@ -61,18 +61,18 @@ Open the [artworksShort.csv file](https://github.com/HERMES-DKZ/metadata_lesson/
 
 ### Show me the solution
 
-- Various parameters are queried when opening the csv file.
-- Some data in the xslx file are formatted with colors as well as bold and italic text. You won't find this in the csv file. 
-- The data is in a tabular form in a spreadsheet available.
-- The data is structured into individual fields.
-- Content is named, data is labled/marked up.
-- The data is available in a digital file format that can be processed and shared.
+- Several parameters are queried when the csv file is opened.
+- Some data in the xslx file is formatted with colours and bold and italic text. You won't find this in the csv file. 
+- The data is in tabular form in a spreadsheet.
+- The data is broken down into individual fields.
+- Contents are named, data is labelled.
+- The data is in a digital file format that can be edited and shared.
     
 :::
 :::
 
 ::: instructor
-Possible sources of error and problems that can occur and should be discussed are the separators. A title with commas was intentionally built into the file so that this title can be displayed across several fields when different separators are selected. 
+One possible source of errors and problems that may occur and should be discussed is the delimiters. A title with commas has been deliberately included in the file so that this title can be displayed across several fields if different separators are selected.
 :::
 
 
@@ -94,9 +94,9 @@ ID;artist;title;date
 3;Banksy;Girl with Ballon;2002
 ```
 
-When you opened the csv file in a spreadsheet software, some parameters were queried before you could even open it. Here we can see why:
+When you opened the csv file in a spreadsheet program, some parameters were queried before you could even open it. Here we can see why:
 
-The data is separated by semicolons - the delimiters. Delimiter-separated files are often given a *.csv* extension even when the field separator is not a comma as the example demonstrate. In many files you may find the contents of the data fields enclosed in quotes. Individual records are separated by a line break. The first line often defines the column headings. If these parameters are entered correctly when the file is opened, the data is transferred to the appropriate fields in the spreadsheet. 
+The data is separated by semicolons - the delimiters. Delimiter-separated files are often given a *.csv* extension, even if the field separator is not a comma, as the example shows. In many files you will find the contents of the data fields enclosed in quotation marks. Records are separated by a line break. The first line often defines the column headers. If these parameters are entered correctly when the file is opened, the data will be transferred to the appropriate fields in the spreadsheet.
 
 
 
@@ -104,13 +104,13 @@ The data is separated by semicolons - the delimiters. Delimiter-separated files 
 
 
 
-In an xslx format, data can be saved, formatted and provided with formulas in several spreadsheets in one file. The data is organized into cells, which are arranged in rows and columns. The cells as well as the data values can be formatted including font styles, colors or borders. The data can be manipulated by using built-in functions, e.g., for calculating or analysing. It is also possible to visualize the analyzed data within the spreadsheet software like Excel. 
+An xslx format allows you to store, format and apply formulas to data in multiple spreadsheets in a single file. Data is organised into cells, which are arranged in rows and columns. Both the cells and the data values can be formatted, including fonts, colours and borders. The data can be manipulated using built-in functions, e.g. for calculation or analysis. It is also possible to visualise the analysed data in spreadsheet software such as Excel. 
 
-One of the disadvantages is the limitation of rows and columns (depending on the version, e.g. 1,048,576 rows and 16,385 columns per worksheet). Some features depend on the software version. Older tables may not always display correctly with the latest version due to lack of feature compatibility. 
+One of the disadvantages is the limited number of rows and columns (depending on the version, e.g. 1,048,576 rows and 16,385 columns per worksheet). Some features depend on the version of the software. Older tables may not always display correctly with the latest version due to lack of feature compatibility. 
 
-The CSV (comma-separated values) format stores tabular data in plain text which can be opened in a spreadsheet software. It is therefore humanreadable as well as machinereadable. There is always only one table. But more data can be stored because of the plain text format which makes it particularly efficient, since no superfluous data, such as formatting data, is stored. It is therefore suitable for data storage and exchange between applications or databases. 
+The CSV (comma-separated values) format stores tabular data in plain text that can be opened in spreadsheet software. It is therefore both human and machine readable. There is always only one table. However, the plain text format allows more data to be stored, making it particularly efficient as it does not store superfluous data such as formatting data. It is therefore suitable for storing and exchanging data between applications or databases. 
 
-One of its disadvantages is that it can only store simple tabular data, not more complex structures. As the example above shows, certain characters must be escaped, which makes it sensitive to errors. 
+One of its disadvantages is that it can only store simple tabular data, not more complex structures. As the example above shows, certain characters need to be escaped, making it sensitive to errors.
 
 
 
@@ -118,8 +118,7 @@ One of its disadvantages is that it can only store simple tabular data, not more
 
 
 
-When entering data into spreadsheets, there are a number of issues to consider to ensure that the data can be processed correctly. In addition to the comma-separated fields mentioned above, which can cause problems, there are many more aspects. Dates or names are a major source of error. Different spellings can lead to misinterpretation. How do you interpret the date 25-01-11 when it is written in a single field? Which part of the name is the first and which the last name of a person? 
-
+When entering data into spreadsheets, there are a number of issues that need to be considered to ensure that the data can be processed correctly. In addition to the comma-separated fields mentioned above, which can cause problems, there are many other issues. Dates or names are a major source of error. Different spellings can lead to misinterpretation. How do you interpret the date 25-01-11 if it is written in a single field? Which part of a name is the first name and which part is the surname of a person?
 
 ::: callout
 
@@ -130,19 +129,15 @@ For further reading see e.g., [Data Organization in Spreadsheets for Social Scie
 :::
 
 
-An important part of recording metadata is annotating the data. Labelling categories for people, such as artist or photographer for Walker Evans, helps to understand the content. This marking allows the data to be interpreted and is used differently depending on the format. In the spreadsheet example it is the column heading. When using a spreadsheet to annotate, for dates, it can be worth splitting the year, month and day into separate fields to avoid the problems described above. Later, you will learn about other ways to display dates correctly.  
+An important part of recording metadata is annotating the data. Labelling categories for people, such as artist or photographer for Walker Evans, helps to understand the content. This tagging allows the data to be interpreted and is used differently depending on the format. In the spreadsheet example, it is the column heading. If you are using a spreadsheet to annotate dates, it may be worth splitting the year, month and day into separate fields to avoid the problems described above. Later you will learn about other ways to display dates correctly.  
 
-Choosing a different format can help to avoid some of these difficulties. One option is to use a markup language. Based on the SGML meta-language, which contains the basic concepts of markup languages, such as elements and attributes, and the rules for their use, the various markup languages are used to structure and format text and data in a machine-readable way.
-
-_______________________________________
+Choosing a different format can help avoid some of these difficulties. One way is to use a markup language. Based on the SGML meta-language, which contains the basic concepts of markup languages, such as elements and attributes, and the rules for using them, markup languages are used to structure and format text and data in a machine-readable way.  
 
 ::: keypoints
 
-* Use a xslx format to store and analyze the data and if you need to format the data and the spreadsheet.
-* Use a format which is interoperable like csv for data storage or exchange and if you don't need to analyze or visualize the data with the application.
-* Marking up the data with for exmaple headers is helpful.
-* Be aware of the problems the data and metadata can cause when annotating them, e.g., the dates or names. 
+* Use an xslx format to store and analyse the data and if you need to format the data and spreadsheet.
+* Use an interoperable format such as csv to store or share data and if you don't need to analyse or visualise the data with the application.
+* Marking up the data with headers, for example, is helpful.
+* Be aware of the problems that data and metadata can cause when you annotate them, for example with dates or names.
 
 :::
-
-
