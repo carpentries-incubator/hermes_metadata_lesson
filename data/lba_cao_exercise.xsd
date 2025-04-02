@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Author: Mathias Gutenbrunner, University Library Marburg 
+     draft as part of the Marburger Urkundenrepositorium - Datenbank des CAO und LBA
+     https://urkundenrepositorium.uni-marburg.de/home
+     project website = https://www.uni-marburg.de/de/fb09/deutsche-philologie-des-mittelalters/forschung/marburger-urkundenrepositorium
+     August 2021
+     
+     edited by Corinna Berg, Marburg Center for Digital Culture and Infrastructure, Philipps University of Marburg
+     as part of the HERMES project https://hermes-hub.de/; development of an introduction to metadata standards
+     March 2025  -->
+
+<!-- Changes:-->
+<!-- deleted original comments-->
+<!-- added new comments with translations -->
+
+
+<xsd:schema
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="lbacao"
+  xmlns:lc="lbacao"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+
+
+
+<xsd:element name="lba_cao">
+  <xsd:complexType>
+    <xsd:sequence>
+      <xsd:element name="urkunde" type="lc:tUrkunde" minOccurs="0" maxOccurs="unbounded" /><!-- charter-->
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+
+
+
+<xsd:complexType name="tUrkunde">
+  <xsd:sequence>
+    <xsd:element name="id" type="xsd:string" /> <!-- identifier -->
+    <xsd:element name="ausstellungsdatum" type="xsd:string" /><!-- date of issue -->
+    <xsd:element name="datierung"> <!-- dating --><!-- format: yyyy-mm-dd:yyyy-mm-dd -->
+      <xsd:complexType> 
+        <xsd:attribute name="von" type="xsd:date" /> 
+        <xsd:attribute name="bis" type="xsd:date" /> 
+      </xsd:complexType> 
+    </xsd:element> 
+    <xsd:element name="aussteller" type="lc:tHistoricalPerson" /><!-- author/creator of charter  -->
+    <xsd:element name="mitsiegler" type="lc:tSimpleHistoricalPerson"  minOccurs="0" maxOccurs="unbounded" /><!-- sealer-->
+    <xsd:element name="ausstellungsort" type="lc:tOrt" /><!-- place of issue -->
+    <xsd:element name="archiv" type="lc:tArchiv" />
+    <xsd:element name="siegel"> <!-- seal -->
+      <xsd:complexType>
+         <xsd:attribute name="urspr" type="xsd:nonNegativeInteger" /><!-- number of original seals -->
+         <xsd:attribute name="erha" type="xsd:nonNegativeInteger" /><!-- number of preserved seals -->
+       </xsd:complexType>
+     </xsd:element>     
+  </xsd:sequence>
+</xsd:complexType>
+
+<xsd:simpleType name="tGNDID"><!-- GND identifier -->
+  <xsd:restriction base="xsd:string">
+  </xsd:restriction>
+</xsd:simpleType>
+
+<xsd:complexType name="tHistoricalPerson">
+  <xsd:all>
+    <xsd:element name="typ" type="xsd:string" />    
+    <xsd:element name="name" type="xsd:string" />
+  </xsd:all>
+  <xsd:attribute name="gndid" type="lc:tGNDID" />
+</xsd:complexType>
+
+<xsd:complexType name="tSimpleHistoricalPerson">
+  <xsd:attribute name="gndid" type="lc:tGNDID" />
+</xsd:complexType>
+
+<xsd:complexType name="tOrt">
+  <xsd:attribute name="gndid" type="lc:tGNDID" />
+</xsd:complexType>
+
+<xsd:complexType name="tArchiv">
+  <xsd:sequence>
+    <xsd:element name="aufbewahrungsort" type="xsd:string" /><!-- depository -->
+    <xsd:element name="ort"><!-- place -->
+     <xsd:complexType>
+      <xsd:attribute name="gndid" type="lc:tGNDID" />
+     </xsd:complexType> 
+    </xsd:element>
+    <xsd:element name="institution">
+      <xsd:complexType> 
+        <xsd:attribute name="gndid" type="lc:tGNDID" />
+      </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="signatur" type="xsd:string" /><!-- signature -->
+    <xsd:element name="vorbesitzer" type="xsd:string" minOccurs="0" maxOccurs="unbounded" /><!-- former owner -->
+  </xsd:sequence>
+</xsd:complexType>
+
+</xsd:schema>
