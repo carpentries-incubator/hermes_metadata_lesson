@@ -76,7 +76,7 @@ What do you think about the Minimum Record Recommendation?
 :::  
 
 ::: keypoints 
-The Minimum Data Set Recommendation is an attempt to formulate a minimum set of data fields for the publication of museum collections from the multitude and complexity of existing standards.
+The Minimum Record Recommendation is an attempt to formulate a minimum set of data fields for the publication of museum collections from the multitude and complexity of existing standards.
 :::  
 __________________________________________________
 
