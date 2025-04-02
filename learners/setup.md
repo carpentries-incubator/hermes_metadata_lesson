@@ -4,7 +4,7 @@ title: Setup
 
 ## Data Sets
 
-Download the [data zip file](/episodes/data/artworks_data.zip) and unzip it to your Desktop.
+Download the [data zip file](/episodes/data/artworks_data.zip) and unzip it to your Desktop. Download also the [lba_cao_exercise.xsd](/episodes/data/lba_cao_exercise.xsd). 
 
 This lesson utilizes slightly modified sample from:
 
