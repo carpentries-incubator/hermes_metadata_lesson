@@ -121,8 +121,8 @@ Take a closer look at the date element. You can find a list of all authorised qu
 
 In 2022 the Dublin Core Metadata Initiative published an extend set of elements: 
 
-### DCMI Metadata Terms  
-
+### DCMI Metadata Terms    
+  
 > Included are the fifteen terms of the Dublin Core™ Metadata Element Set (also known as "the Dublin Core") plus several dozen properties, classes, datatypes, and vocabulary encoding schemes. The "Dublin Core" plus these extension vocabularies are collectively referred to as "DCMI metadata terms" ("Dublin Core terms" for short). These terms are intended to be used in combination with metadata terms from other, compatible vocabularies in the context of application profiles.^[1]
 
 In addition, there are clarifications, e.g. for the date in the form of dcterms:dateAccepted, or new fields like dcterms:abstract. 
@@ -153,7 +153,7 @@ Take a look at the extended elements. You will find several date elements.
 Do you agree with the mapping in the solution to the last exercise?  
 Why not?   
 Which element would you choose?   
-You can find descriptions of the elements in the [User Guide](https://www.dublincore.org/resources/userguide/creating_metadata/). There you will also find the above-mentioned qualifiers which are used within Dublin Core, e.g., created, issued, modified etc. for the date element.  
+You can find descriptions of the elements in the [User Guide](https://www.dublincore.org/resources/userguide/creating_metadata/). 
 
 :::
 
