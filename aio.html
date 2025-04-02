@@ -694,7 +694,7 @@ we have here?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>We cannot present analogue data here because everything we display on
 the monitor is digital!</p>
@@ -1818,7 +1818,7 @@ the moma_artwork.csv and write the data into a json format.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2048,7 +2048,7 @@ even though they contain only one value?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Of course, there are works of art and objects made by several
 artists. As this is certainly a common case, the data field for the
@@ -2843,7 +2843,7 @@ which ones and why?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>contributor: MET (as a custodian and managing institution)</li>
@@ -2916,7 +2916,7 @@ for Johan Hagemeyer’s photo of Albert Einstein?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Examples </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
 <li>dc.date.created: 1931</li>
@@ -3086,7 +3086,7 @@ any links that you are not going to use.
 </ol>
 </div></section><section id="aio-rdf"><p>Content from <a href="rdf.html">Resource Description Framework (RDF)</a></p>
 <hr>
-<p>Last updated on 2025-03-28 |
+<p>Last updated on 2025-04-02 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/rdf.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3149,12 +3149,14 @@ together using the URIs. Remember the graphic in the introduction.</p>
 <p>The predicate is also defined by a URI. This is possible, for
 example, when the relationship is defined by a metadata standard. The
 metadata fields of the standards have their own URIs. The relationship
-between author and book can be modeled using the Dublin Core elements.
-The data format for RDF is typically XML.</p>
+between author and book can be modeled using the Dublin Core element
+“creator”.</p>
 <pre><code>&lt;https://www.wikidata.org/wiki/Q5588&gt;&lt;http://purl.org/dc/terms/creator&gt;&lt;https://www.wikidata.org/wiki/Q3232010&gt;</code></pre>
 <p>This example means exactly the same as the previous example: Frida
 Kahlo is creator of “The two Fridas” by using the identifier of Wikidata
 and Dublin Core.</p>
+<p>Technically, RDF can be implemented in several formats, including
+JSON-LD and RDF/XML - two special formats of JSON and XML for RDF.</p>
 <div id="exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -3173,7 +3175,7 @@ information to describe the predicate instead of using Dublin Core?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><a href="https://www.wikidata.org/wiki/Property:P170" class="external-link">creator
 property</a>:<br>
@@ -3205,7 +3207,7 @@ be used similiar to the Dublin Core element of creator.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <pre><code>&lt;https://www.wikidata.org/wiki/Q5592&gt;&lt;https://www.wikidata.org/wiki/Property:P170&gt;&lt;https://www.wikidata.org/wiki/Q235242&gt;
 &lt;https://www.wikidata.org/wiki/Q5592&gt;&lt;https://www.wikidata.org/wiki/Property:P19&gt;&lt;https://www.wikidata.org/wiki/Q52069&gt;
@@ -3224,7 +3226,10 @@ be used similiar to the Dublin Core element of creator.</p>
 <p>For more learning about RDF and Linked Open Data use the lesson on <a href="to%20be%20added">LOD</a>.</p>
 </div>
 </div>
-</div></section><section id="aio-xml_schema"><p>Content from <a href="xml_schema.html">XML Schema</a></p>
+</div>
+<p>::: keypoints - RDF is a standard model for data interchange on the
+Web. - Statements are modeled as triples. Using URIs, these triples link
+data and form a (mathematical) graph. - :::</p></section><section id="aio-xml_schema"><p>Content from <a href="xml_schema.html">XML Schema</a></p>
 <hr>
 <p>Last updated on 2025-04-02 |
 
