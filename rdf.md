@@ -1,7 +1,7 @@
 ---
 title: "Resource Description Framework (RDF)"
 teaching: 20
-exercises: 15
+exercises: 10
 ---
 
 ::: questions 
@@ -35,12 +35,13 @@ A Uniform Resource Identifier is an identifier consisting of a string of charact
 
 The predicate is also defined by a URI. This is possible, for example, when the relationship is defined by a metadata 
 standard. The metadata fields of the standards have their own URIs. The relationship between author and book can be 
-modeled using the Dublin Core elements. The data format for RDF is typically XML. 
-
+modeled using the Dublin Core element "creator". 
 ```
 <https://www.wikidata.org/wiki/Q5588><http://purl.org/dc/terms/creator><https://www.wikidata.org/wiki/Q3232010>
 ```
 This example means exactly the same as the previous example: Frida Kahlo is creator of "The two Fridas" by using the identifier of Wikidata and Dublin Core. 
+
+Technically, RDF can be implemented in several formats, including JSON-LD and RDF/XML - two special formats of JSON and XML for RDF.
 
 
 ::: challenge
@@ -82,5 +83,9 @@ Use wikidata to create a triple for the following statements:
 
 ::: callout 
 For more learning about RDF and Linked Open Data use the lesson on [LOD](to be added).
-:::
+:::  
 
+::: keypoints
+- RDF is a standard model for data interchange on the Web.
+- Statements are modeled as triples. Using URIs, these triples link data and form a (mathematical) graph.
+- :::
