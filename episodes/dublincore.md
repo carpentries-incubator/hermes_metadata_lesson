@@ -14,7 +14,7 @@ exercises: 20
 ::: objectives
 
 - Knowledge of the basics of the Dublin Core Metadata Element Set. 
-- Familiar with the difference between a simple Dublin Core Set and a qualified set.
+- Differentiate between a simple Dublin Core Set and a qualified set.
 :::
 
 
@@ -46,9 +46,7 @@ Dublin Core defines the metadata fields themselves, but not the structure for th
 ### Exercise
 
 You have a photograph by Johan Hagemeyer. It is called "Albert Einstein, Pasadena". The photograph is of Albert Einstein. 
-It was taken in 1931 and loaned to the Museum in 1962. It is from the photographer's estate. Albert Einstein lived from 1879 to 1955 
-and was 52 years old when the photograph was taken. The photographer, Johan Hagemeyer, lived from 1884 to 1962 and the photo was taken in Pasadena. 
-The location is New York. The photograph measures 24.6 × 18.7 cm. The mount measures 45.6 × 35.4 cm. 
+It was taken in 1931 and loaned to the Museum in 1962. It is from the photographer's estate. Albert Einstein lived from 1879 to 1955 and was 52 years old when the photograph was taken. The photographer, Johan Hagemeyer, lived from 1884 to 1962 and the photo was taken in Pasadena. The location is New York. The photograph measures 24.6 × 18.7 cm. The mount measures 45.6 × 35.4 cm. 
 
 You can find the object in the [MET collection](https://www.metmuseum.org/art/collection/search/270713). View the specifications of the elements on the [website](https://www.dublincore.org/specifications/dublin-core/dces/) if you are unsure about how to annotate. 
 
@@ -89,25 +87,25 @@ What did you discuss? What data was unclear?
 
 :::
 
-
-
-This initial simple indexing of data using Dublin Core can be extended to more precise information. After all, how do we know which date is meant? The date of creation? The date of submission? 
+After all, how do we know which date is meant? The date of creation? The date of submission? The original DC terms have been extended to make the information about the data more precise. 
 
 ## Qualified Dublin Core 
 
-A Dublin Core element looks like this:
+First, qualifiers were introduced. A qualifier describes an element more precisely. 
+
+A simple Dublin Core element looks like this:
 
 dc.date
 
-*dc* describes the namespace (in this case Dublin Core) and *date* describes the element. Both can now be extended by a so-called qualifier, which specifies the date:
+*dc* describes the namespace (in this case Dublin Core - you can read more about namespaces in the XML Schema chapter) and *date* describes the element. Both can now be extended by a qualifier, which specifies the element, e.g.,:
 
-dc.date.available or dc.date.issued 
+dc.relation.hasversion or dc.relation.isversionof
 
 ::: challenge 
 
-### Discussion
+### Exercise
 
-Which of the elements you have just worked on that you could not assign clearly or at all would you expand with a qualifier and how? 
+Take a closer look at the date element. You can find a list of all authorised qualifiers for date elements on the [Dublin Core Website](https://www.dublincore.org/specifications/dublin-core/usageguide/qualifiers/). What qualifiers would you use for the date elements for Johan Hagemeyer's photo of Albert Einstein?  
 
 ::: solution
 
@@ -121,74 +119,28 @@ Which of the elements you have just worked on that you could not assign clearly 
 :::
 :::
 
-In addition, controlled vocabulary can be used via the use of attributes: 
-
-name=“dc.date“ scheme=“ISO1863“ 
-
-This assigns an attribute to the field, as already shown for XML. This attribute assigns the use of the ISO standard.
+In 2022 the Dublin Core Metadata Initiative published an extend set of elements: 
 
 ### DCMI Metadata Terms  
 
-Under the dcterms namespace, we also find an extended set of elements that integrates the familiar 15 basic elements. 
+> Included are the fifteen terms of the Dublin Core™ Metadata Element Set (also known as "the Dublin Core") plus several dozen properties, classes, datatypes, and vocabulary encoding schemes. The "Dublin Core" plus these extension vocabularies are collectively referred to as "DCMI metadata terms" ("Dublin Core terms" for short). These terms are intended to be used in combination with metadata terms from other, compatible vocabularies in the context of application profiles.^[1]
+
 In addition, there are clarifications, e.g. for the date in the form of dcterms:dateAccepted, or new fields like dcterms:abstract. 
 
-This extension of the original elements is referred to as DCMI metadata terms (“Dublin Core terms” for short):
+Terms:  
 
-- abstract  
-- accessRights  
-- accrualMethod  
-- accrualPeriodicity  
-- accrualPolicy  
-- alternative  
-- audience  
-- available  
-- bibliographicCitation  
-- conformsTo  
-- contributor  
-- coverage  
-- created  
-- creator  
-- date  
-- dateAccepted  
-- dateCopyrighted  
-- dateSubmitted  
-- description  
-- educationLevel  
-- extent  
-- format 
-- hasFormat  
-- hasPart  
-- hasVersion  
-- identifier  
-- instructionalMethod  
-- isFormatOf  
-- isPartOf  
-- isReferencedBy  
-- isReplacedBy  
-- isRequiredBy  
-- issued  
-- isVersionOf  
-- language  
-- license  
-- mediator  
-- medium  
-- modified  
-- provenance  
-- publisher  
-- references  
-- relation  
-- replaces  
-- requires  
-- rights  
-- rightsHolder  
-- source  
-- spatial  
-- subject  
-- tableOfContents  
-- temporal  
-- title  
-- type  
-- valid  
+|abstract|accessRights|accrualMethod|accrualPeriodicity|accrualPolicy|
+|alternative|audience|available|bibliographicCitation|conformsTo|
+|contributor|coverage|created|creator|date|
+|dateAccepted|dateCopyrighted|dateSubmitted|description|educationLevel|
+|extent|format|hasFormat|hasPart|hasVersion|
+|identifier|instructionalMethod|isFormatOf|isPartOf|isReferencedBy|
+|isReplacedBy|isRequiredBy|issued|isVersionOf|language|
+|license|mediator|medium|modified|provenance|
+|publisher|references|relation|replaces|requires|
+|rights|rightsHolder|source|spatial|subject|
+|tableOfContents|temporal|title|type|valid|    
+
 
 ::: challenge
 
@@ -199,13 +151,14 @@ Take a look at the extended elements. You will find several date elements.
 Do you agree with the mapping in the solution to the last exercise?  
 Why not?   
 Which element would you choose?   
-You can find descriptions of the elements in the [userguide](https://www.dublincore.org/resources/userguide/creating_metadata/). There you will also find the above mentioned qualifiers which are used within Dublin Core, e.g., created, issued, modified etc. for the date element.  
+You can find descriptions of the elements in the [User Guide](https://www.dublincore.org/resources/userguide/creating_metadata/). There you will also find the above-mentioned qualifiers which are used within Dublin Core, e.g., created, issued, modified etc. for the date element.  
 
 :::
 
 When we talk or read about Dublin Core, we often notice that what used to be called a (metadata) field is now called an element in Dublin Core. 
-You will often encounter the mixing of different terms - as described above for standard, schema, and model. 
-When you read the term element from now on, it refers to the data field to which content is assigned when data is captured. 
-Think XML. The element is identified by tags, with the value in between. This combination is used to describe an area of the ingested resource. 
+You will often find the terms mixed up - as described above for standard, schema, and model. When you read the term element from now on, it refers to the data field to which content is assigned when data is captured. Think XML. The element is identified by tags, with the value in between. This combination is used to describe an area of the ingested resource.   
 
+_____________________________________________________  
+
+[1]: [DCMI Metadata Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
 
