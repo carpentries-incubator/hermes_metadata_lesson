@@ -55,7 +55,8 @@ The terms listed here are defined solely within this context and do not claim to
 
 **Data Preservation** – Strategies for the long-term safeguarding of digital and analog data against loss or degradation.
 
-**Data Types (Computing)** - 
+**Data Types (Computing)** -   
+   
 | data type | explanation | example |
 | ---- | ---- | ---- |
 | string | set of character | this can be a sentence |
