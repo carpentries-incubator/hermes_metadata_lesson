@@ -380,7 +380,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Minimum Record Recommendation</h1>
-        <p>Last updated on 2025-03-28 |
+        <p>Last updated on 2025-04-02 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/minimumrecord.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -422,21 +422,34 @@ Museums and Collections<br></li>
 Group, which was established in 2022 by the Museum and Media Desks of
 the German Digital Library (DDB), the Working Group on Digitisation of
 the „Konferenz der Museumsberatungsstellen in den Ländern“  (KMBL) and
-digiS Berlin. The objective of the Working Group is to submit the data
-to the German Digital Library, for example. This online database, which
-is intended to make cultural heritage in Germany accessible digitally,
-free of charge, and at any time, is an initiative of the German Digital
-Library. The database brings together the offerings of various museums,
-collections, and archives in Germany through the submission of their
-data.</p>
-<p>The development of the recommendation was grounded in a comprehensive
-set of principles and standards that are indispensable for the
-management of research data. Primarily, it incorporates the FAIR
-principles (findable, accessible, interoperable, re-usable).
-Additionally, it integrates the CARE principles (collective benefit,
-authority to control, responsibility, ethics), particularly within the
-context of colonial studies. Furthermore, the recommendation also takes
-into account the minimum information required for the LIDO standard:</p>
+digiS Berlin<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. The aim of the working group is to
+contribute the data to the German Digital Library<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> and the Europeana
+online database<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. The German Digital Library online
+database, which aims to make cultural heritage in Germany digitally
+accessible at any time and free of charge, is an initiative of the
+German Digital Library. The database brings together the offerings of
+various museums, collections and archives in Germany through the
+submission of their data. The Europeana database is the digital cultural
+portal for Europe’s cultural heritage.</p>
+<blockquote>
+<p>The Minimum Record Recommendation <span class="math display">\[therefore\]</span> specifies the most important
+data elements for the online publication of object information from
+museums and collections and provides information on how these elements
+should be filled in. The “Minimum Record” is the smallest possible
+intersection of relevant data elements that ensures a minimum level of
+data quality across most disciplines and museum types. <span class="math display">\[...\]</span> The Minimum Record Recommendation is
+intended to pave the way for smaller and larger museums and collections
+to publish their data online and to communicate relevant standards in an
+easy-to-understand, low-threshold approach.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+</blockquote>
+<p>The development of the Recommendation was based on a comprehensive
+set of principles and standards that are essential for the management of
+research data. First and foremost, it incorporates the FAIR principles
+(findable, accessible, interoperable, re-usable). It also incorporates
+the CARE principles (collective benefit, authority to control,
+responsibility, ethics), particularly in the context of colonial
+studies. The recommendation also takes into account the minimum
+information requirements of the LIDO standard:</p>
 <blockquote>
 <p>It has been shown that LIDO is not always easy to understand due to
 its language (XML-based) and structure (high degree of nesting,
@@ -446,19 +459,15 @@ and collections. The aim of the Minimum Record Recommendation is to take
 advantage of LIDO’s benefits (structuring, controlled vocabulary
 integration, broad international acceptance) and to focus on the
 smallest possible intersection of data elements that are important for
-online publication across most disciplines and museum types.”<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+online publication across most disciplines and museum types.”<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
 </blockquote>
-<p>This demonstrates the strong interlinking that underlies many
-standards. The minimal data set also incorporates other standards and
-their principles, as well as basic recommendations from the specialist
-community (museums) in order to increase compatibility. This also
-includes the Europeana Data Model, which can be used to enter data into
-the Europeana online database. The Europeana database is the digital
-cultural portal for Europe’s cultural heritage.</p>
-<p>It is imperative that the data record contain a number of mandatory
-fields, the entry and supply of which is obligatory. The use of other
-data fields is merely recommended, such as object description, material,
-dimensions, and so forth.</p>
+<p>This illustrates the strong interrelationship that underlies many
+standards, and which we will encounter again in the following
+chapters.</p>
+<p>It is essential that the record contains a number of mandatory
+fields, which must be entered and supplied. The use of other data
+fields, such as object description, material, dimensions and so on, is
+only recommended.</p>
 <p>Data elements that are usually populated during data entry:</p>
 <ul><li>Object title or name (mandatory)</li>
 <li>Object type or designation (mandatory)</li>
@@ -468,14 +477,16 @@ dimensions, and so forth.</p>
 <li>Materials (recommended)</li>
 <li>Techniques (recommended)</li>
 <li>Measurements (recommended)</li>
-<li>Event in object history [element set] (mandatory)
+<li>Event in object history <span class="math display">\[element
+set\]</span> (mandatory)
 <ul><li>Event type (mandatory)</li>
 <li>Person/corporate body (conditionally mandatory)</li>
 <li>Date (conditionally mandatory)</li>
 <li>Place (conditionally mandatory)</li>
 </ul></li>
 <li>Subject keyword (recommended)</li>
-<li>Media file [element set] (mandatory)
+<li>Media file <span class="math display">\[element set\]</span>
+(mandatory)
 <ul><li>Link to media file (mandatory)</li>
 <li>Usage rights of media file (mandatory)</li>
 <li>Rights holder of media file (conditionally mandatory)</li>
@@ -492,34 +503,52 @@ the local database system:</p>
 <li>Usage rights of metadata record (mandatory)</li>
 <li>Link to published metadata record (recommended)</li>
 <li>Record date (recommended)</li>
-</ul><p>The technical design of the data is carried out in accordance with
-existing standards. This is achieved by incorporating these standards
-into the mandatory fields. Various standards of the DDB (German Digital
-Library) are available for this purpose, and they can be saved in XML or
-RDF format, including DDB-METS/MODS.</p>
-<div id="discussion" class="callout discussion">
+</ul><div id="discussion" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="discussion" class="callout-inner">
 <h3 class="callout-title">Discussion</h3>
 <div class="callout-content">
-<ul><li>What do you think about the Minimum Record Recommendation?</li>
-<li>Do you find it helpful?</li>
-<li>Can you imagine to fill out all of the mandatory data fields?</li>
-<li>What could be challenging?</li>
-</ul></div>
+<p>What do you think about the Minimum Record Recommendation?<br>
+* Do you find it helpful?<br>
+* Can you imagine filling in all the mandatory fields?<br>
+* What might be a challenge?</p>
 </div>
 </div>
-<p>[2]: <a href="https://wiki.deutsche-digitale-bibliothek.de/pages/viewpage.action?pageId=218628162#FAQs(English)-WhyistheMinimumRecordRecommendationLIDO-compliant?" class="external-link">FAQ
-Minimum Record Recommendation</a>, further elaboration on LIDO will be
-provided subsequently.</p>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<p>The Minimum Data Set Recommendation is an attempt to formulate a
+minimum set of data fields for the publication of museum collections
+from the multitude and complexity of existing standards.</p>
+</div>
+</div>
+</div>
+<hr><p>[1]: <a href="https://wiki.deutsche-digitale-bibliothek.de/pages/viewpage.action?pageId=218628097" class="external-link">Minimum
+Record Recommendation</a><br>
+[2]: <a href="https://www.deutsche-digitale-bibliothek.de/?lang=en" class="external-link">Deutsche
+Digitale Bibliothek</a><br>
+[3]: <a href="https://www.europeana.eu/en" class="external-link">Europeana</a><br>
+[4]: <a href="https://wiki.deutsche-digitale-bibliothek.de/pages/viewpage.action?pageId=218628097" class="external-link">Minimum
+Record Recommendation</a><br>
+[5]: <a href="https://wiki.deutsche-digitale-bibliothek.de/pages/viewpage.action?pageId=218628162#FAQs(English)-WhatisthepurposeoftheLIDOsnippetsonthedataelementpages(%22ExpressioninLIDO%22)?" class="external-link">Why
+is the Minimum Record Recommendation LIDO-compliant?</a></p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
 </section><div class="footnotes footnotes-end-of-document">
-<hr><ol><li id="fn1"><p>2<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<hr><ol><li id="fn1"><p>1<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>2<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>3<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>4<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>5<a href="#fnref5" class="footnote-back">↩︎</a></p></li>
 </ol></div>
 
 
@@ -582,7 +611,7 @@ any links that you are not going to use.
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/instructor/minimumrecord.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/instructor/minimumrecord.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-03-28",
+  "dateModified": "2025-04-02",
   "datePublished": "2025-04-02"
 }
 
