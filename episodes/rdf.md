@@ -83,9 +83,9 @@ Use wikidata to create a triple for the following statements:
 
 ::: callout 
 For more learning about RDF and Linked Open Data use the lesson on [LOD](to be added).
-:::  
-
+:::   
+  
 ::: keypoints
-- RDF is a standard model for data interchange on the Web.
+- RDF is a standard model for data interchange on the Web.  
 - Statements are modeled as triples. Using URIs, these triples link data and form a (mathematical) graph.
-- :::
+:::
