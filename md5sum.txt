@@ -17,6 +17,6 @@
 "episodes/rdf.md" "1c84f6b6b8c3a7ba7f8ca77e670ee8a5" "site/built/rdf.md" "2025-04-02"
 "episodes/xml_schema.md" "ec1f8bb0ff7e78ffaffd0c0e3ad9f791" "site/built/xml_schema.md" "2025-04-02"
 "instructors/instructor-notes.md" "cae72b6712578d74a49fea7513099f8c" "site/built/instructor-notes.md" "2023-03-16"
-"learners/setup.md" "547fb6e96c776dca717d7f1a134bd716" "site/built/setup.md" "2025-04-01"
+"learners/setup.md" "29a7d9378761c29c69a441069622d053" "site/built/setup.md" "2025-04-02"
 "learners/reference.md" "24ed1413a63beb61c2f0a1c643384750" "site/built/reference.md" "2025-03-11"
 "profiles/learner-profiles.md" "c6f2fba637991f29c33df651b97a4f9a" "site/built/learner-profiles.md" "2025-04-01"
