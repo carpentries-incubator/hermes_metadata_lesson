@@ -129,6 +129,7 @@ In addition, there are clarifications, e.g. for the date in the form of dcterms:
 
 Terms:  
 
+|----|----|----|----|----|
 |abstract|accessRights|accrualMethod|accrualPeriodicity|accrualPolicy|
 |alternative|audience|available|bibliographicCitation|conformsTo|
 |contributor|coverage|created|creator|date|
