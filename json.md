@@ -21,7 +21,7 @@ Another format in which metadata can be stored, annotated and exchanged is JSON 
 
 ## JSON Data
 
-JSON data is written as key/value pairs. A key/value pair consists of a key, followed by a colon, followed by a value. The key is the name – the label – for the content in the value field. Keys are always written in double quotes. The indication of the value depends on its data type. The entire content is enclosed in curly brackets. 
+JSON data is written as key/value pairs. A key/value pair consists of a key, followed by a colon, followed by a value. The key is the name - the label - for the content in the value field. Keys are always written in quotation marks. The display of the value depends on its data type. The entire content is enclosed in curly brackets.. 
 
 
 ```JSON
@@ -41,7 +41,7 @@ Values cannot be one of the following data types:
 
 
 | data type | explanation | example as JSON value |
-| ---- | ---- | ---- | ---- |
+| ---- | ---- | ---- | 
 | string | set of character | "string" : „Can be a sentence or a name or a date and is written in double quotes“ |
 | integer | whole number | "integer" : 12 |
 | float | floating-point number | "float" :  3.5 |
@@ -53,11 +53,11 @@ Values cannot be one of the following data types:
 #### JSON vs XML
 
 * Both are human and machine readable.
-* Both can be structured hierarchical (values within values).
-* Both can be parsed and used by lots of programming languages.  
+* Both can be structured hierarchically (values within values).
+* Both can be parsed and used by many programming languages.
 
 **But**
-JSON is shorter than XML and in data processing easier to use. JSON can use arrays, so that a set of multiple values can be stored and processed easily within one key but interpreted as multiple values. Whereas in XML multiple values can be written in one tag, but they will not be processed like that as the content of a tag is not interpreted as multiple values even if the data is separated with a comma or other characters.   
+JSON is shorter than XML and easier to use in data processing. JSON can use arrays, so a set of multiple values can be stored and easily processed within a key, but interpreted as multiple values. XML, on the other hand, allows multiple values to be written in a tag, but they are not processed as such because the contents of a tag are not interpreted as multiple values, even if the data is separated by a comma or other character.
   
 
 ::: challenge
@@ -264,7 +264,7 @@ Use the artwork from the last exercise, which you have chosen from the moma_artw
   "Width (cm)": 100.3
 }]
 ```
-This is not the only correct way to annotate the data in a json file. You can freely decide whether you want to name the keys according to the headings from the csv or whether you want to enter the information of the individual data records one-to-one as values. 
+This is not the only correct way to annotate the data in a json file. You are free to choose whether you want to name the keys according to the headings in the csv, or whether you want to enter the information from each record one-to-one as values.
 
 You can use a validator to check that a json file is correct. This checks the syntax of the json for formal errors, e.g., [Json Formatter & Validator](https://jsonformatter.curiousconcept.com/). 
 :::
@@ -276,28 +276,22 @@ You can use a validator to check that a json file is correct. This checks the sy
 ::: challenge
 ### Question
 
-What do you think? Why are the values, which contain the information about the artist, created as arrays (recognizable by the square brackets), although they only contain one value? 
+What do you think? Why are the values containing the artist information created as arrays (recognisable by the square brackets), even though they contain only one value?
 
 ::: solution
 
 
-Of course, there are works of art and objects made by several artists. As this is a case that certainly occurs more frequently, the data field for the value is defined directly in advance as an array in order to be able to map this case and not have to query it separately for each data record. 
+Of course, there are works of art and objects made by several artists. As this is certainly a common case, the data field for the value is defined as an array in advance, to be able to handle this case and not have to query it separately for each record.
 :::
 :::  
 
 ::: keypoints
 
-## JSON keypoints
-
 * (Meta)data elements are defined in key/value pairs.
-* Keys are of data type string (in quotes).
-* Values must be of data type string, number (float or integer), boolean, array or object.
+* Keys are of the datatype string (in quotes).
+* Values must be of type string, number (float or integer), boolean, array or object.
 * Elements are separated by commas.
-* Curly braces hold objects.
-* Square brackets hold arrays.
-* In-line commenting is not supported.
+* Curly braces contain objects.
+* Square brackets contain arrays.
+* In-line comments are not supported.
 :::
-
-
-
-
