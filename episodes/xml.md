@@ -38,13 +38,7 @@ The tags are given a name that describes the content:
 <artist>Walker Evans</artist>
 ```
 
-You may be familiar with this structure. The HTML language, which is used to organize web pages, has a similar structure. It is also based on SGML. HTML makes it possible to mark up the typical elements of a text-oriented document - such as headings, paragraphs, lists, or tables - as such on a web page and to structure the page semantically. 
-
-XML also provides the ability to have comments that are not automatically read:
-
-```xml
-<!-- Here is the content of the comment, there is no closing tag -->
-```
+You may be familiar with this structure. The HTML language, which is used to organise web pages, has a similar structure. It is also based on SGML. HTML makes it possible to mark up the typical elements of a text-based document - such as headings, paragraphs, lists or tables - as such on a web page and to structure the page semantically. Unlike HTML, where there are rules for naming tags - such as \<h1\>\</h1\> for headings - XML tags can be named freely, subject to a few technical rules. This makes it particularly interesting for use in the development of metadata standards and ontologies.  
   
 #### Rules for naming tags^[1]  
 
@@ -60,16 +54,21 @@ Best Naming Practices:
 
 * Create descriptive names.
 * Create short and simple names.
-* Avoid - / . / : in the names, e.g. \<first-name\>, and be aware that : is reserved for namespaces which have a special function.
+* Avoid - / . / : in the names, e.g. \<first-name\>, and be aware that : is reserved for namespaces which have a special function.  
 
+XML also provides the ability to have comments that are not automatically read:
 
-In XML, all elements must be properly nested within each other, which means that an element opened inside another element must be closed inside too:
+```xml
+<!-- Here is the content of the comment, there is no closing tag -->
+```
+
+In XML, all elements must be properly nested, which means that an element opened inside another element must also be closed inside it:
 
 ```xml
 <collection><place>collection of the MET in New York</place></collection>
 ```  
   
-There are some rules for characters used in XML for syntax structure. They are replaced by a special character string, so that it won’t cause problems if, for example, you want to use a < in the content. This would cause an error because XML expects a closing tag. To avoid errors, the character is replaced with an entity reference: 
+There are some rules for characters used in XML for syntax structure. These are replaced by a special string so that it won't cause problems if, for example, you want to use a < in the content. This would cause an error because XML expects a closing tag. To avoid errors, the character is replaced with an entity reference:
   
 | string | character | meaning | 
 | ---- | ---- | ---- | ----|
@@ -85,14 +84,14 @@ There are some rules for characters used in XML for syntax structure. They are r
   
 ## Attributes    
 
-In XML, as in HTML, tags can also be assigned attributes, which define the content of the tags in more detail. They are named and the content is assigned to them with a = and enclosed in quotes:
+In XML, as in HTML, tags can also have attributes, which define the content of the tags in more detail. They are named and the content is assigned to them with a = and enclosed in quotes:
 
 ```xml
 <title lang="author's original language">Always give the title in the author's language</title>
 
 <commonTitle lang="title as commonly known">Always give the title as it is commonly known</commonTitle>
 ```      
-Attributes are also frequently used in a hierarchy to record information that applies to all underlying data, like additional metadata for a collection or fonds:
+Attributes are also often used in a hierarchy to record information that applies to all the underlying data:
 
 ```xml
 <collection name="Modern Art" place="New York">
@@ -100,11 +99,11 @@ Attributes are also frequently used in a hierarchy to record information that ap
   <item2/>
 </collection>
 ```  
-The indentation describes the hierarchy level. The structure depends on the purpose of the collection and the data to be collected. The slash here at the end of the tag (self-closing tag) means that the element is currently empty and self-contained. It is not necessary to write an opening and closing tag if there are no other elements between them. You often see this in XML output when the metadata field has no content.   
+The indentation describes the level of hierarchy. The structure depends on the purpose of the collection and the data to be collected. The slash here at the end of the tag (self-closing tag) means that the element is currently empty and self-contained. It is not necessary to write an opening and closing tag if there are no other elements between them. You often see this in XML output when the metadata field is empty. 
 
 
 ::: callout
-In HTML, attributes often contain style information, such as the font color or the size and width of a section. This is also where the alt tag is created, which contains an alternative text to an image that is automatically read or displayed if the image cannot be retrieved:
+In HTML, attributes often contain style information, such as the font colour or the size and width of a section. They also create the alt tag, which provides alternative text for an image that is automatically read or displayed if the image cannot be retrieved:
 
 ```html
 <p style="color:blue;" width="300" height="500">This is a blue paragraph.</p>
@@ -131,7 +130,7 @@ Open the [moma_artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/
 
 ::: hint
 
-* Think about the headings in the spreadsheet. Do you agree with this labelling? 
+* Think about the headings in the table. Do you agree with this labelling? 
 *  You can use tabs to create a hierarchy.
 
 :::
@@ -289,24 +288,28 @@ Open the [moma_artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/
 </artworks>
 ```
 :::
-:::
-
-
+:::  
+  
+::: instructor
+It is likely that not all participants will complete the exercise in the time allotted, as the notation of XML is very complex. This is part of the learning process and can be discussed afterwards. Alternatively, more time can be allocated to the exercise.
+:::   
+  
 ::: discussion
 
 ### Discussion
 
-Compare your XML with the documents of the other participants. What do you notice?
+Compare your XML with the other participants' documents. What do you notice?
 
 :::
 
 ::: instructor
-The exercise can be carried out as group work if there are many participants. Otherwise, someone can also present their solution at the end and it is discussed together. Discussion points should include the two ways of writing empty elements and making sure that special characters such as & are intercepted. There can also be a general discussion about the headings or naming of the tags or about what certain tags mean, e.g. onView means “on display” in the current exhibition. 
+The exercise can be done in groups if there are many participants. Otherwise, someone can present their solution at the end and discuss it together. Discussion points should include the two ways of writing empty elements and making sure that special characters such as & are caught. There can also be a general discussion about the headings or naming of the tags, or what certain tags mean, e.g. onView means 'on view' in the current exhibition.
 :::  
 
 ::: keypoints
 - XML is one of the most widely used metadata formats.
 - An XML document contains XML elements to structure the data.
+- Attributes provide additional information about elements or groups of elements.
 :::
 ______________________________________________
 [1]: [w3school XML elements](https://www.w3schools.com/xml/xml_elements.asp>)  
