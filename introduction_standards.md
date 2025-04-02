@@ -119,7 +119,7 @@ Cultural heritage collections are often characterised by considerable heterogene
 
 ::: keypoints  
 The terms metadata standard, metadata schema and metadata model are often used interchangeably. They can be broadly distinguished as follows:  
- - A metadata standard describes elements or a structure of metadata.  
- - A metadata schema provides a structure for metadata within a specific content, often integrating existing metadata standards.    
+ - A metadata standard describes elements or a structure of metadata and is mainly defined for technical implementation.
+ - A metadata schema provides a structure for metadata within a specific content, often integrating existing metadata standards.  
  - A metadata model is an abstract and theoretical model that describes metadata in its context.
 :::
