@@ -1,7 +1,7 @@
 ---
 title: "Metadata Encoding & Transmission Standard (METS)"
 teaching: 15
-exercises: 15
+exercises: 20
 ---
 
 ::: questions 
@@ -21,8 +21,7 @@ exercises: 15
 
 The standard is overseen by the Library of Congress.
 
-METS is an XML format defined by XML Schema for describing digital collections of objects with metadata. The standard does not specify a name or 
-order for the metadata fields per se, but serves to structure them in a standardized way. It is often used for long-term archiving. The metadata are added in one of seven domains: 
+METS is an XML format defined by XML Schema for describing digital collections of objects with metadata. The standard does not specify a name or order for the metadata fields themselves, but serves to structure them in a standardised way. It is often used for long-term preservation. Metadata is added in one of seven domains:  
 
 1. METS Header: Metadata describing the METS document itself, including such information as creator, editor, etc.
 2. Descriptive Metadata Section: The section may point to descriptive metadata external to the METS document, or contain internally embedded descriptive metadata, or both. 
@@ -32,15 +31,17 @@ order for the metadata fields per se, but serves to structure them in a standard
 6. Structural Links: to record the existence of hyperlinks between nodes in the hierarchy outlined in the Structural Map.
 7. Behavioral Section: can be used to associate executable behaviors with content in the METS object.
 
+XML syntax:   
+
 ```XML
 <mets>
- <metsHdr/>
- <dmdSec/>
- <amdSec/>
- <fileSec/>
- <structMap/>
- <structLink/>
- <behaviorSec/>
+ <metsHdr/><!-- METS Header -->
+ <dmdSec/><!-- Descriptive Metadata Section -->
+ <amdSec/><!-- Administrative Metadata Section -->
+ <fileSec/><!-- File Section -->
+ <structMap/><!-- Structural Map -->
+ <structLink/><!-- Structural Links -->
+ <behaviorSec/><!-- Behavioral Section -->
 </mets>
 ```
   
@@ -122,7 +123,7 @@ You can find examples for structured data in METS standard on the [website of th
 You can figure out that:  
 - In many examples the MODS standard is used within the METS structure.  
 - The last sections are often missing or do not have many data.  
-- The amdSec contains technical information of the form of digitization such as camera or scanner and their settings. 
+- The amdSec contains technical information of the form of digitization such as camera or scanner and their settings.   
 - The amdSec is sometimes divided into further sections, e.g., rights and technical data.
 :::
 :::
