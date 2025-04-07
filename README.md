@@ -26,9 +26,9 @@ This lesson is being developed as part of the joint project [HERMES – Humaniti
 
 ## Authors
 
-[Corinna Berg](https://github.com/KassieBee) (Maintainer) responsible for contents of episodes 5 - 13.
+[Corinna Berg](https://github.com/KassieBee) (Maintainer) responsible for contents of episodes 4 - 12.
 
-[Ksenia Stanicka-Brzezicka](https://github.com/kseniastanicka) responsible for contents of episodes 1 - 4. 
+[Ksenia Stanicka-Brzezicka](https://github.com/kseniastanicka) responsible for contents of episodes 1 - 3. 
 
 ## License
 Lesson content is published with a CC-BY license.
