@@ -18,7 +18,7 @@ carpentry: 'incubator'
 carpentry_description: 'Lesson Description'
 
 # Overall title for pages.
-title: 'Data and Metadata in the Humanities'
+title: 'Data and Metadata in the Humanities: Structures, Schemas, and Standards'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: '2025-01-08' 
