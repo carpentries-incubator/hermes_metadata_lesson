@@ -895,7 +895,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The objects searchable in the Met Museum’s online collection
 primarily feature descriptive metadata, such as title, author, date, and
@@ -930,7 +930,7 @@ part of specific projects.</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>It depends on the context wether it is data (the book itself) or
 metadata (title in a library catalogue)</p>
@@ -1222,7 +1222,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-xml"><p>Content from <a href="xml.html">XML</a></p>
 <hr>
-<p>Last updated on 2025-04-02 |
+<p>Last updated on 2025-04-11 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/xml.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1256,10 +1256,10 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<p>One of the most widely used metadata formats in the cultural sector
-is XML (eXtensible Markup Language). It is used to describe, structure,
-hierarchise (if desired), store and transport data. XML refers to the
-file format and structure in which data is recorded.</p>
+<p>One of the most widely used file formats in the cultural sector is
+XML (eXtensible Markup Language). It is used to describe, structure,
+store and transport data. XML refers to the file format as well as to
+the structure in which data is recorded: the markup language.</p>
 <section><h2 class="section-heading" id="xml-elements">XML Elements<a class="anchor" aria-label="anchor" href="#xml-elements"></a>
 </h2>
 <hr class="half-width">
@@ -1319,7 +1319,17 @@ element opened inside another element must also be closed inside it:</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>&lt;<span class="kw">collection</span>&gt;&lt;<span class="kw">place</span>&gt;collection of the MET in New York&lt;/<span class="kw">place</span>&gt;&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>&lt;<span class="kw">collection</span>&gt;&lt;<span class="kw">name</span>&gt;MET&lt;/<span class="kw">name</span>&gt;&lt;<span class="kw">place</span>&gt;New York&lt;/<span class="kw">place</span>&gt;&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
+</div>
+<p>An indentation can be used to make the structure more
+human-readable:</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>&lt;<span class="kw">collection</span>&gt;</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>  &lt;<span class="kw">name</span>&gt;MET&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>  &lt;<span class="kw">place</span>&gt;collection of the MET in New York&lt;/<span class="kw">place</span>&gt;</span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
 </div>
 <p>There are some rules for characters used in XML for syntax structure.
 These are replaced by a special string so that it won’t cause problems
@@ -1366,64 +1376,43 @@ character is replaced with an entity reference:</p>
 </tr>
 </tbody>
 </table>
-<div class="codewrapper sourceCode" id="cb5">
+<div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>&lt;<span class="kw">photographer</span>&gt;Bernd <span class="dv">&amp;amp;</span> Hilla Becher&lt;/<span class="kw">photographer</span>&gt;</span></code></pre>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>&lt;<span class="kw">photographer</span>&gt;Bernd <span class="dv">&amp;amp;</span> Hilla Becher&lt;/<span class="kw">photographer</span>&gt;</span></code></pre>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="attributes">Attributes<a class="anchor" aria-label="anchor" href="#attributes"></a>
 </h2>
 <hr class="half-width">
 <p>In XML, as in HTML, tags can also have attributes, which define the
-content of the tags in more detail. They are named and the content is
-assigned to them with a = and enclosed in quotes:</p>
-<div class="codewrapper sourceCode" id="cb6">
-<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>&lt;<span class="kw">title</span><span class="ot"> lang=</span><span class="st">"author's original language"</span>&gt;Always give the title in the author's language&lt;/<span class="kw">title</span>&gt;</span>
-<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>&lt;<span class="kw">commonTitle</span><span class="ot"> lang=</span><span class="st">"title as commonly known"</span>&gt;Always give the title as it is commonly known&lt;/<span class="kw">commonTitle</span>&gt;</span></code></pre>
-</div>
-<p>Attributes are also often used in a hierarchy to record information
-that applies to all the underlying data:</p>
+content of the tags in more detail like separate metadata. They are
+named and the content is assigned to them with a = and enclosed in
+quotes:</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>&lt;<span class="kw">collection</span><span class="ot"> name=</span><span class="st">"Modern Art"</span><span class="ot"> place=</span><span class="st">"New York"</span>&gt;</span>
-<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>  &lt;<span class="kw">item1</span>/&gt;</span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>  &lt;<span class="kw">item2</span>/&gt;</span>
-<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>&lt;<span class="kw">title</span><span class="ot"> lang=</span><span class="st">"author's original language"</span>&gt;Always give the title in the author's language&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>&lt;<span class="kw">commonTitle</span><span class="ot"> lang=</span><span class="st">"title as commonly known"</span>&gt;Always give the title as it is commonly known&lt;/<span class="kw">commonTitle</span>&gt;</span></code></pre>
 </div>
-<p>The indentation describes the level of hierarchy. The structure
-depends on the purpose of the collection and the data to be collected.
-The slash here at the end of the tag (self-closing tag) means that the
-element is currently empty and self-contained. It is not necessary to
-write an opening and closing tag if there are no other elements between
-them. You often see this in XML output when the metadata field is
-empty.</p>
-<div id="callout1" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout</h3>
-<div class="callout-content">
-<p>In HTML, attributes often contain style information, such as the font
-colour or the size and width of a section. They also create the alt tag,
-which provides alternative text for an image that is automatically read
-or displayed if the image cannot be retrieved:</p>
+<p>Attributes are also often used in a hierarchy to record information
+that applies to all the underlying data:</p>
 <div class="codewrapper sourceCode" id="cb8">
-<h3 class="code-label">HTML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode html" tabindex="0"><code class="sourceCode html"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:blue;"</span><span class="ot"> width</span><span class="op">=</span><span class="st">"300"</span><span class="ot"> height</span><span class="op">=</span><span class="st">"500"</span><span class="dt">&gt;</span>This is a blue paragraph.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"image.jpg"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">"a girl with a pearl earring is standing in front of a house"</span><span class="dt">&gt;&lt;/</span><span class="kw">image</span><span class="dt">&gt;</span></span></code></pre>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>&lt;<span class="kw">collection</span><span class="ot"> name=</span><span class="st">"Modern Art"</span><span class="ot"> place=</span><span class="st">"New York"</span>&gt;</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>  &lt;<span class="kw">item1</span>/&gt;</span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>  &lt;<span class="kw">item2</span>/&gt;</span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
 </div>
-</div>
-</div>
-</div>
+<p>The slash here at the end of the tag (self-closing tag) means that
+the element is currently empty and self-contained. It is not necessary
+to write an opening and closing tag if there are no other elements
+between them. You often see this in XML output when the metadata field
+is empty.</p>
 <p>At the top of an XML document you will often find something called a
-prolog:</p>
+prolog or declaration:</p>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1431,14 +1420,14 @@ prolog:</p>
 </div>
 <p>It is optional, but provides information about the version and
 encoding used, and must be at the top if included.</p>
-<div id="callout2" class="callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
 <h3 class="callout-title">Callout</h3>
 <div class="callout-content">
-<p>XML documents that conform to this syntax rules are said to be “Well
+<p>XML documents that conform to all this rules are said to be “Well
 Formed” XML documents.</p>
 </div>
 </div>
@@ -1461,7 +1450,7 @@ format.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <ul>
 <li>Think about the headings in the table. Do you agree with this
@@ -1477,7 +1466,7 @@ labelling?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2843,7 +2832,7 @@ which ones and why?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>contributor: MET (as a custodian and managing institution)</li>
@@ -2916,7 +2905,7 @@ for Johan Hagemeyer’s photo of Albert Einstein?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Examples </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
 <li>dc.date.created: 1931</li>
@@ -4073,8 +4062,8 @@ any links that you are not going to use.
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/aio.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/aio.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-04-08",
-  "datePublished": "2025-04-08"
+  "dateModified": "2025-04-11",
+  "datePublished": "2025-04-11"
 }
 
   </script><script>
