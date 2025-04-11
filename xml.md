@@ -19,7 +19,7 @@ exercises: 15
 
 :::
 
-One of the most widely used metadata formats in the cultural sector is XML (eXtensible Markup Language). It is used to describe, structure, hierarchise (if desired), store and transport data. XML refers to the file format and structure in which data is recorded. 
+One of the most widely used file formats in the cultural sector is XML (eXtensible Markup Language). It is used to describe, structure, store and transport data. XML refers to the file format as well as to the structure in which data is recorded: the markup language. 
 
 
 ## XML Elements
@@ -65,9 +65,17 @@ XML also provides the ability to have comments that are not automatically read:
 In XML, all elements must be properly nested, which means that an element opened inside another element must also be closed inside it:
 
 ```xml
-<collection><place>collection of the MET in New York</place></collection>
+<collection><name>MET</name><place>New York</place></collection>
 ```  
-  
+An indentation can be used to make the structure more human-readable:
+
+```xml
+<collection>
+  <name>MET</name>
+  <place>collection of the MET in New York</place>
+</collection>
+```
+
 There are some rules for characters used in XML for syntax structure. These are replaced by a special string so that it won't cause problems if, for example, you want to use a < in the content. This would cause an error because XML expects a closing tag. To avoid errors, the character is replaced with an entity reference:
   
 | string | character | meaning | 
@@ -84,7 +92,7 @@ There are some rules for characters used in XML for syntax structure. These are 
   
 ## Attributes    
 
-In XML, as in HTML, tags can also have attributes, which define the content of the tags in more detail. They are named and the content is assigned to them with a = and enclosed in quotes:
+In XML, as in HTML, tags can also have attributes, which define the content of the tags in more detail like separate metadata. They are named and the content is assigned to them with a = and enclosed in quotes:
 
 ```xml
 <title lang="author's original language">Always give the title in the author's language</title>
@@ -98,20 +106,10 @@ Attributes are also often used in a hierarchy to record information that applies
   <item1/>
   <item2/>
 </collection>
-```  
-The indentation describes the level of hierarchy. The structure depends on the purpose of the collection and the data to be collected. The slash here at the end of the tag (self-closing tag) means that the element is currently empty and self-contained. It is not necessary to write an opening and closing tag if there are no other elements between them. You often see this in XML output when the metadata field is empty. 
-
-
-::: callout
-In HTML, attributes often contain style information, such as the font colour or the size and width of a section. They also create the alt tag, which provides alternative text for an image that is automatically read or displayed if the image cannot be retrieved:
-
-```html
-<p style="color:blue;" width="300" height="500">This is a blue paragraph.</p>
-<img src="image.jpg" alt="a girl with a pearl earring is standing in front of a house"></image>
 ```
-:::
+The slash here at the end of the tag (self-closing tag) means that the element is currently empty and self-contained. It is not necessary to write an opening and closing tag if there are no other elements between them. You often see this in XML output when the metadata field is empty. 
 
-At the top of an XML document you will often find something called a prolog:
+At the top of an XML document you will often find something called a prolog or declaration:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -119,7 +117,7 @@ At the top of an XML document you will often find something called a prolog:
 It is optional, but provides information about the version and encoding used, and must be at the top if included.   
 
 ::: callout
-XML documents that conform to this syntax rules are said to be "Well Formed" XML documents.
+XML documents that conform to all this rules are said to be "Well Formed" XML documents.
 :::   
   
 ::: challenge
