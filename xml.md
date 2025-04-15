@@ -92,7 +92,7 @@ There are some rules for characters used in XML for syntax structure. These are 
   
 ## Attributes    
 
-In XML, as in HTML, tags can also have attributes, which define the content of the tags in more detail like separate metadata. They are named and the content is assigned to them with a = and enclosed in quotes:
+In XML, as in HTML, tags can also have attributes, which define the content of the tags in more detail like separate metadata for the element. They are named and the content is assigned to them with a = and enclosed in quotes:
 
 ```xml
 <title lang="author's original language">Always give the title in the author's language</title>
@@ -114,7 +114,7 @@ At the top of an XML document you will often find something called a prolog or d
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 ```
-It is optional, but provides information about the version and encoding used, and must be at the top if included.   
+It is optional, but provides information about the version and encoding[2] used, and must be at the top if included.   
 
 ::: callout
 XML documents that conform to all this rules are said to be "Well Formed" XML documents.
@@ -166,7 +166,8 @@ Open the [moma_artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/
     <onView></onView>
     <height>29.0</height>
     <width>40.0</width>
-  </artwork>
+  </artwork>  
+
   <artwork>
     <title>Untitled</title>
     <artist>
@@ -195,7 +196,8 @@ Open the [moma_artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/
     <onView></onView>
     <height>200.0</height>
     <width>200.0</width>
-  </artwork>
+  </artwork>  
+
   <artwork>
     <title>Daylight Savings Time</title>
     <artist>
@@ -224,7 +226,8 @@ Open the [moma_artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/
     <onView></onView>
     <height>54.6</height>
     <width>38.1</width>
-  </artwork>
+  </artwork>  
+
   <artwork>
     <title>The Bather</title>
     <artist>
@@ -253,7 +256,8 @@ Open the [moma_artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/
     <onView>&quot;MoMA, Floor 2, 2 South&quot;</onView>
     <height>127.0</height>
     <width>96.8</width>
-  </artwork>
+  </artwork>  
+
   <artwork>
     <title>Syntheses of Naples</title>
     <artist>
@@ -305,9 +309,10 @@ The exercise can be done in groups if there are many participants. Otherwise, so
 :::  
 
 ::: keypoints
-- XML is one of the most widely used metadata formats.
+- XML is one of the most widely used metadata file formats.
 - An XML document contains XML elements to structure the data.
 - Attributes provide additional information about elements or groups of elements.
 :::
 ______________________________________________
 [1]: [w3school XML elements](https://www.w3schools.com/xml/xml_elements.asp>)  
+[2]: For further information see "glossary". 
