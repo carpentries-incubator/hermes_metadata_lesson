@@ -41,7 +41,7 @@ Values cannot be one of the following data types:
 
 #### Different Data Types as Values
 
-| data type | explanation | example as JSON value |
+| data type | explanation | example as key/value pair |
 | ---- | ---- | ------ | 
 | string | set of character | "string" : „Can be a sentence or a name or a date and is written in double quotes“ |
 | integer | whole number | "integer" : 12 |
