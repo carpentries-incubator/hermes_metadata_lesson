@@ -17,11 +17,11 @@ exercises: 20
 :::
 
 
-Another format in which metadata can be stored, annotated and exchanged is JSON (JavaScript Object Notation). Its syntax is inspired by JavaScript object notation. 
+Another file format in which metadata can be stored, annotated and exchanged is JSON (JavaScript Object Notation). Its syntax is inspired by JavaScript object notation. 
 
 ## JSON Data
 
-JSON data is written as key/value pairs. A key/value pair consists of a key, followed by a colon, followed by a value. The key is the name - the label - for the content in the value field. Keys are always written in quotation marks. The display of the value depends on its data type. The entire content is enclosed in curly brackets.. 
+JSON data is written as key/value pairs. A key/value pair consists of a key, followed by a colon, followed by a value. The key is the name - the label - for the content in the value field. Keys are always written in quotation marks. The display of the value depends on its data type. The entire content is enclosed in curly brackets. 
 
 
 ```JSON
@@ -39,9 +39,10 @@ Values cannot be one of the following data types:
 * a date (dates are written as strings in double quotes – so be aware of problems that may cause) 
 * undefined   
 
+#### Different Data Types as Values
 
 | data type | explanation | example as JSON value |
-| ---- | ---- | ---- | 
+| ---- | ---- | ------ | 
 | string | set of character | "string" : „Can be a sentence or a name or a date and is written in double quotes“ |
 | integer | whole number | "integer" : 12 |
 | float | floating-point number | "float" :  3.5 |
@@ -264,7 +265,25 @@ Use the artwork from the last exercise, which you have chosen from the moma_artw
   "Width (cm)": 100.3
 }]
 ```
-This is not the only correct way to annotate the data in a json file. You are free to choose whether you want to name the keys according to the headings in the csv, or whether you want to enter the information from each record one-to-one as values.
+This is not the only correct way to annotate the data in a json file. You are free to choose, e.g., whether you want to name the keys according to the headings in the csv, or whether you want to enter the information from each record one-to-one as values. And also you can choose other ways to structure the data, for example:
+
+```json
+[{"artwork" : {"separatePairs" : "containing all information only on the artwork as separate key/value pairs",
+                "title" : "title",
+                "artist" : "artist",
+                "year" : 2025}
+  "artist" : {"artistInformation" : "containing all information only on the artist",
+                "ArtistBio": ["Nationality, Lifespan"],
+                "Nationality": "Somewhere",
+                "BeginDate": 1000,
+                "EndDate": 2000,
+                "Gender": "gender"}           
+  "administrativeData" : {"informationAdData" : "containing all information only on the administrative data of the recording",
+                "DateAcquired": "1941-12-10",
+                "Cataloged": "Y", 
+                "OnView": ""}
+}]
+```  
 
 You can use a validator to check that a json file is correct. This checks the syntax of the json for formal errors, e.g., [Json Formatter & Validator](https://jsonformatter.curiousconcept.com/). 
 :::
