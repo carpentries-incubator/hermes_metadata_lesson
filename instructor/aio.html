@@ -1048,7 +1048,7 @@ way?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>An easy way to store data in a structured way is to use a spreadsheet
 such as Excel.</p>
@@ -1095,7 +1095,7 @@ file</a> in your favorite spreadsheet application.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul>
 <li>Several parameters are queried when the csv file is opened.</li>
@@ -1116,7 +1116,7 @@ shared.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>One possible source of errors and problems that may occur and should
 be discussed is the delimiters. A title with commas has been
@@ -1242,7 +1242,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-xml"><p>Content from <a href="xml.html">XML</a></p>
 <hr>
-<p>Last updated on 2025-04-15 |
+<p>Last updated on 2025-04-17 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/xml.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 40 minutes</p>
@@ -1280,14 +1280,16 @@ any links that you are not going to use.
 <p>One of the most widely used file formats in the cultural sector is
 XML (eXtensible Markup Language). It is used to describe, structure,
 store and transport data. XML refers to the file format as well as to
-the structure in which data is recorded: the markup language.</p>
+the syntax in which data is recorded: the markup language. By marking up
+the text with what are called tags, data and metadata can be combined in
+a single document.</p>
 <section><h2 class="section-heading" id="xml-elements">XML Elements<a class="anchor" aria-label="anchor" href="#xml-elements"></a>
 </h2>
 <hr class="half-width">
 <p>An XML document contains XML elements to structure the data. They are
-formed using angle brackets and are divided into an opening tag and a
-closing tag, indicated by a leading slash. The content is placed in
-between.</p>
+formed using tags in angle brackets and are divided into an opening tag
+and a closing tag, indicated by a leading slash. The content is placed
+in between.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1342,16 +1344,30 @@ element opened inside another element must also be closed inside it:</p>
 </h3>
 <pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>&lt;<span class="kw">collection</span>&gt;&lt;<span class="kw">name</span>&gt;MET&lt;/<span class="kw">name</span>&gt;&lt;<span class="kw">place</span>&gt;New York&lt;/<span class="kw">place</span>&gt;&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
 </div>
-<p>An indentation can be used to make the structure more
-human-readable:</p>
+<p>An indentation can be used to make the structure more human-readable
+especially if the nesting of the elements is deep:</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>&lt;<span class="kw">collection</span>&gt;</span>
 <span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>  &lt;<span class="kw">name</span>&gt;MET&lt;/<span class="kw">name</span>&gt;</span>
 <span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>  &lt;<span class="kw">place</span>&gt;collection of the MET in New York&lt;/<span class="kw">place</span>&gt;</span>
-<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>  &lt;<span class="kw">artist</span>&gt;</span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>    &lt;<span class="kw">name</span>&gt;Fullname&lt;/<span class="kw">name</span>&gt;</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>    &lt;<span class="kw">dateOfBirth</span>&gt;</span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a>      &lt;<span class="kw">day</span>&gt;Day of Birth&lt;/<span class="kw">day</span>&gt;</span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a>      &lt;<span class="kw">month</span>&gt;Month of Birth&lt;/<span class="kw">month</span>&gt;</span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a>      &lt;<span class="kw">year</span>&gt;Year of Birth&lt;/<span class="kw">year</span>&gt;</span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a>    &lt;/<span class="kw">dateOfBirth</span>&gt;</span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a>  &lt;/<span class="kw">artist</span>&gt;</span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a>&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
 </div>
+<p>As this example shows, XML documents have a tree structure. They
+start with the root element and then branch out deeper and deeper. The
+tag /<artist></artist> is also called a parent element and the subordinated
+elements /<name></name> and /<dateofbirth></dateofbirth> are child elements. The tag
+/<dateofbirth></dateofbirth> again is the parent element for the tags of day, month
+and year as child elements.</p>
 <p>There are some rules for characters used in XML for syntax structure.
 These are replaced by a special string so that it won’t cause problems
 if, for example, you want to use a &lt; in the content. This would cause
@@ -1474,9 +1490,9 @@ format.</p>
 <div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <ul>
-<li>Think about the headings in the table. Do you agree with this
-labelling?</li>
-<li>You can use tabs to create a hierarchy.</li>
+<li>Is there a structure for the data? Can data be collected under a
+category?</li>
+<li>You can use indentation to create a hierarchy.</li>
 </ul>
 </div>
 </div>
@@ -1645,6 +1661,17 @@ labelling?</li>
 <span id="cb10-151"><a href="#cb10-151" tabindex="-1"></a>  &lt;/<span class="kw">artwork</span>&gt;</span>
 <span id="cb10-152"><a href="#cb10-152" tabindex="-1"></a>&lt;/<span class="kw">artworks</span>&gt;</span></code></pre>
 </div>
+<p>This is one possible solution. You can choose other ways to structure
+the data by nesting elements like “artistBio” or “gender” within a
+parent element like “artist”:</p>
+<div class="codewrapper sourceCode" id="cb11">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>&lt;<span class="kw">artist</span>&gt;</span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a>  &lt;<span class="kw">artistBio</span>/&gt;</span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a>  &lt;<span class="kw">gender</span>/&gt;</span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a>&lt;/<span class="kw">artist</span>&gt;</span></code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -1659,7 +1686,8 @@ labelling?</li>
 <p>It is likely that not all participants will complete the exercise in
 the time allotted, as the notation of XML is very complex. This is part
 of the learning process and can be discussed afterwards. Alternatively,
-more time can be allocated to the exercise.</p>
+more time can be allocated to the exercise or only selected elements
+have to be written in XML.</p>
 </div>
 </div>
 </div>
@@ -1870,7 +1898,7 @@ the moma_artwork.csv and write the data into a json format.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2121,7 +2149,7 @@ even though they contain only one value?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Of course, there are works of art and objects made by several
 artists. As this is certainly a common case, the data field for the
@@ -2345,7 +2373,7 @@ linked?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Not only is the name of the author entity included, but also its GND
 database identifier. The Gemeinsame Normdatei (GND), maintained by the
