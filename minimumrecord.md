@@ -68,7 +68,8 @@ Data fields that are usually populated during or after export from the local dat
 
 ### Discussion
 
-What do you think about the Minimum Record Recommendation?    
+What do you think about the Minimum Record Recommendation?
+  
 * Do you find it helpful?  
 * Can you imagine filling in all the mandatory fields?  
 * What might be a challenge?  
