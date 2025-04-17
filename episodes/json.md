@@ -272,13 +272,13 @@ This is not the only correct way to annotate the data in a json file. You are fr
   "artwork" : {"separatePairs" : "containing all information only on the artwork as separate key/value pairs",
                 "title" : "title",
                 "artist" : "artist",
-                "year" : 2025}
+                "year" : 2025},
   "artist" : {"artistInformation" : "containing all information only on the artist",
                 "ArtistBio": ["Nationality, Lifespan"],
                 "Nationality": "Somewhere",
                 "BeginDate": 1000,
                 "EndDate": 2000,
-                "Gender": "gender"}           
+                "Gender": "gender"},           
   "administrativeData" : {"informationAdData" : "containing all information only on the administrative data of the recording",
                 "DateAcquired": "1941-12-10",
                 "Cataloged": "Y", 
