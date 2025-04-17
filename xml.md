@@ -19,12 +19,12 @@ exercises: 15
 
 :::
 
-One of the most widely used file formats in the cultural sector is XML (eXtensible Markup Language). It is used to describe, structure, store and transport data. XML refers to the file format as well as to the structure in which data is recorded: the markup language. 
+One of the most widely used file formats in the cultural sector is XML (eXtensible Markup Language). It is used to describe, structure, store and transport data. XML refers to the file format as well as to the syntax in which data is recorded: the markup language. By marking up the text with what are called tags, data and metadata can be combined in a single document.
 
 
 ## XML Elements
 
-An XML document contains XML elements to structure the data. They are formed using angle brackets and are divided into an opening tag and a closing tag, indicated by a leading slash. The content is placed in between. 
+An XML document contains XML elements to structure the data. They are formed using tags in angle brackets and are divided into an opening tag and a closing tag, indicated by a leading slash. The content is placed in between. 
 
 ```xml
 <tag>element</tag>
@@ -67,14 +67,23 @@ In XML, all elements must be properly nested, which means that an element opened
 ```xml
 <collection><name>MET</name><place>New York</place></collection>
 ```  
-An indentation can be used to make the structure more human-readable:
+An indentation can be used to make the structure more human-readable especially if the nesting of the elements is deep:
 
 ```xml
 <collection>
   <name>MET</name>
   <place>collection of the MET in New York</place>
+  <artist>
+    <name>Fullname</name>
+    <dateOfBirth>
+      <day>Day of Birth</day>
+      <month>Month of Birth</month>
+      <year>Year of Birth</year>
+    </dateOfBirth>
+  </artist>
 </collection>
 ```
+As this example shows, XML documents have a tree structure. They start with the root element and then branch out deeper and deeper. The tag /<artist/> is also called a parent element and the subordinated elements /<name/> and /<dateOfBirth/> are child elements. The tag /<dateOfBirth/> again is the parent element for the tags of day, month and year as child elements. 
 
 There are some rules for characters used in XML for syntax structure. These are replaced by a special string so that it won't cause problems if, for example, you want to use a < in the content. This would cause an error because XML expects a closing tag. To avoid errors, the character is replaced with an entity reference:
   
@@ -128,9 +137,9 @@ Open the [moma_artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/
 
 ::: hint
 
-* Think about the headings in the table. Do you agree with this labelling? 
-*  You can use tabs to create a hierarchy.
-
+* Is there a structure for the data? Can data be collected under a category?
+* You can use indentation to create a hierarchy.
+   
 :::
   
 ::: solution
@@ -289,11 +298,19 @@ Open the [moma_artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/
   </artwork>
 </artworks>
 ```
+This is one possible solution. You can choose other ways to structure the data by nesting elements like "artistBio" or "gender" within a parent element like "artist":
+
+```xml
+<artist>
+  <artistBio/>
+  <gender/>
+</artist>
+```  
 :::
 :::  
   
 ::: instructor
-It is likely that not all participants will complete the exercise in the time allotted, as the notation of XML is very complex. This is part of the learning process and can be discussed afterwards. Alternatively, more time can be allocated to the exercise.
+It is likely that not all participants will complete the exercise in the time allotted, as the notation of XML is very complex. This is part of the learning process and can be discussed afterwards. Alternatively, more time can be allocated to the exercise or only selected elements have to be written in XML.
 :::   
   
 ::: discussion
