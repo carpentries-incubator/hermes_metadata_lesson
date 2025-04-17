@@ -25,10 +25,11 @@ JSON data is written as key/value pairs. A key/value pair consists of a key, fol
 
 
 ```JSON
-{„name“ : „Kim Sneider“,
+[{
+„name“ : „Kim Sneider“,
 „age“ : 39,
 „children“ : [„Ben“, „Tove“, „Nina“]
-}
+}]
 ```
 
 ## Values  
@@ -50,8 +51,8 @@ Values cannot be one of the following data types:
 | array | collection of values | "array" : [„Didi“, 35, „Whatever“, true] |
 | JSON object | a set of JSON data | "object" : {„name“ : „Kim“, „age“ : 39} |                           
   
-
-#### JSON vs XML
+  
+## JSON vs XML
 
 * Both are human and machine readable.
 * Both can be structured hierarchically (values within values).
