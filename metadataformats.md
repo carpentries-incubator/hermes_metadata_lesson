@@ -19,7 +19,7 @@ exercises: 10
    
 :::
 
-## Introduction to metadata formats
+## Introduction to metadata file formats
 
 
 ::: challenge
