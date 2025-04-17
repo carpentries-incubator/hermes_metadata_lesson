@@ -268,7 +268,8 @@ Use the artwork from the last exercise, which you have chosen from the moma_artw
 This is not the only correct way to annotate the data in a json file. You are free to choose, e.g., whether you want to name the keys according to the headings in the csv, or whether you want to enter the information from each record one-to-one as values. And also you can choose other ways to structure the data, for example:
 
 ```json
-[{"artwork" : {"separatePairs" : "containing all information only on the artwork as separate key/value pairs",
+[{
+  "artwork" : {"separatePairs" : "containing all information only on the artwork as separate key/value pairs",
                 "title" : "title",
                 "artist" : "artist",
                 "year" : 2025}
