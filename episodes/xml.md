@@ -83,7 +83,7 @@ An indentation can be used to make the structure more human-readable especially 
   </artist>
 </collection>
 ```
-As this example shows, XML documents have a tree structure. They start with the root element and then branch out deeper and deeper. The tag /<artist/> is also called a parent element and the subordinated elements /<name/> and /<dateOfBirth/> are child elements. The tag /<dateOfBirth/> again is the parent element for the tags of day, month and year as child elements. 
+As this example shows, XML documents have a tree structure. They start with the root element and then branch out deeper and deeper. The tag \<artist\> is also called a parent element and the subordinated elements \<name\> and \<dateOfBirth\> are child elements. The tag \<dateOfBirth\> again is the parent element for the tags of day, month and year as child elements. 
 
 There are some rules for characters used in XML for syntax structure. These are replaced by a special string so that it won't cause problems if, for example, you want to use a < in the content. This would cause an error because XML expects a closing tag. To avoid errors, the character is replaced with an entity reference:
   
