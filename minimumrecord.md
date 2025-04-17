@@ -18,9 +18,9 @@ exercises: 10
 ## Minimum Record Recommendation for Museums and Collections
 
 The recommendation was formulated by the Minimum Record Working Group, which was established in 2022 by the Museum and Media Desks of the German Digital Library (DDB), the Working Group on Digitisation of the „Konferenz der Museumsberatungsstellen in den Ländern“  (KMBL) and digiS Berlin^[1]. 
-The aim of the working group is to contribute the data to the German Digital Library^[2] and the Europeana online database^[3]. The German Digital Library online database, which aims to make cultural heritage in Germany digitally accessible at any time and free of charge, is an initiative of the German Digital Library. The database brings together the offerings of various museums, collections and archives in Germany through the submission of their data. The Europeana database is the digital cultural portal for Europe's cultural heritage.
+The aim of the working group is to contribute the data to the German Digital Library^[2] and the Europeana online database^[3]. The German Digital Library online database, which aims to make cultural heritage in Germany digitally accessible at any time and free of charge, is an initiative of the German Digital Library. The database brings together the offerings of various museums, collections and archives in Germany through the submission of their data. The Europeana database is the digital cultural portal for Europe's cultural heritage.  
 
-> The Minimum Record Recommendation \[therefore\] specifies the most important data elements for the online publication of object information from museums and collections and provides information on how these elements should be filled in. The "Minimum Record" is the smallest possible intersection of relevant data elements that ensures a minimum level of data quality across most disciplines and museum types. \[...\] The Minimum Record Recommendation is intended to pave the way for smaller and larger museums and collections to publish their data online and to communicate relevant standards in an easy-to-understand, low-threshold approach.^[4]
+> The Minimum Record Recommendation [therefore] specifies the most important data elements for the online publication of object information from museums and collections and provides information on how these elements should be filled in. The "Minimum Record" is the smallest possible intersection of relevant data elements that ensures a minimum level of data quality across most disciplines and museum types. [...] The Minimum Record Recommendation is intended to pave the way for smaller and larger museums and collections to publish their data online and to communicate relevant standards in an easy-to-understand, low-threshold approach.^[4]
 
 The development of the Recommendation was based on a comprehensive set of principles and standards that are essential for the management of research data. First and foremost, it incorporates the FAIR principles (findable, accessible, interoperable, re-usable). It also incorporates the CARE principles (collective benefit, authority to control, responsibility, ethics), particularly in the context of colonial studies. The recommendation also takes into account the minimum information requirements of the LIDO standard:
 
@@ -40,13 +40,13 @@ Data elements that are usually populated during data entry:
 * Materials (recommended)
 * Techniques (recommended)
 * Measurements (recommended)
-* Event in object history \[element set\] (mandatory)
+* Event in object history [element set] (mandatory)
     * Event type (mandatory)
     * Person/corporate body (conditionally mandatory)
     * Date (conditionally mandatory)
     * Place (conditionally mandatory)
 * Subject keyword (recommended)
-* Media file \[element set\] (mandatory)
+* Media file [element set] (mandatory)
     * Link to media file (mandatory)
     * Usage rights of media file (mandatory)
     * Rights holder of media file (conditionally mandatory)
@@ -68,7 +68,7 @@ Data fields that are usually populated during or after export from the local dat
 
 ### Discussion
 
-What do you think about the Minimum Record Recommendation?  
+What do you think about the Minimum Record Recommendation?    
 * Do you find it helpful?  
 * Can you imagine filling in all the mandatory fields?  
 * What might be a challenge?  
