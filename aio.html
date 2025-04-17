@@ -895,7 +895,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The objects searchable in the Met Museum’s online collection
 primarily feature descriptive metadata, such as title, author, date, and
@@ -930,7 +930,7 @@ part of specific projects.</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>It depends on the context wether it is data (the book itself) or
 metadata (title in a library catalogue)</p>
@@ -1450,7 +1450,7 @@ format.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <ul>
 <li>Think about the headings in the table. Do you agree with this
@@ -1466,7 +1466,7 @@ labelling?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1816,7 +1816,7 @@ the moma_artwork.csv and write the data into a json format.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2029,14 +2029,14 @@ choose other ways to structure the data, for example:</p>
 <span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>  <span class="dt">"artwork"</span> <span class="fu">:</span> <span class="fu">{</span><span class="dt">"separatePairs"</span> <span class="fu">:</span> <span class="st">"containing all information only on the artwork as separate key/value pairs"</span><span class="fu">,</span></span>
 <span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>                <span class="dt">"title"</span> <span class="fu">:</span> <span class="st">"title"</span><span class="fu">,</span></span>
 <span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>                <span class="dt">"artist"</span> <span class="fu">:</span> <span class="st">"artist"</span><span class="fu">,</span></span>
-<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>                <span class="dt">"year"</span> <span class="fu">:</span> <span class="dv">2025</span><span class="fu">}</span></span>
-<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a>  <span class="st">"artist"</span> <span class="er">:</span> <span class="fu">{</span><span class="dt">"artistInformation"</span> <span class="fu">:</span> <span class="st">"containing all information only on the artist"</span><span class="fu">,</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>                <span class="dt">"year"</span> <span class="fu">:</span> <span class="dv">2025</span><span class="fu">},</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a>  <span class="dt">"artist"</span> <span class="fu">:</span> <span class="fu">{</span><span class="dt">"artistInformation"</span> <span class="fu">:</span> <span class="st">"containing all information only on the artist"</span><span class="fu">,</span></span>
 <span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>                <span class="dt">"ArtistBio"</span><span class="fu">:</span> <span class="ot">[</span><span class="st">"Nationality, Lifespan"</span><span class="ot">]</span><span class="fu">,</span></span>
 <span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a>                <span class="dt">"Nationality"</span><span class="fu">:</span> <span class="st">"Somewhere"</span><span class="fu">,</span></span>
 <span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a>                <span class="dt">"BeginDate"</span><span class="fu">:</span> <span class="dv">1000</span><span class="fu">,</span></span>
 <span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a>                <span class="dt">"EndDate"</span><span class="fu">:</span> <span class="dv">2000</span><span class="fu">,</span></span>
-<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a>                <span class="dt">"Gender"</span><span class="fu">:</span> <span class="st">"gender"</span><span class="fu">}</span>           </span>
-<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a>  <span class="st">"administrativeData"</span> <span class="er">:</span> <span class="fu">{</span><span class="dt">"informationAdData"</span> <span class="fu">:</span> <span class="st">"containing all information only on the administrative data of the recording"</span><span class="fu">,</span></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a>                <span class="dt">"Gender"</span><span class="fu">:</span> <span class="st">"gender"</span><span class="fu">},</span>           </span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a>  <span class="dt">"administrativeData"</span> <span class="fu">:</span> <span class="fu">{</span><span class="dt">"informationAdData"</span> <span class="fu">:</span> <span class="st">"containing all information only on the administrative data of the recording"</span><span class="fu">,</span></span>
 <span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a>                <span class="dt">"DateAcquired"</span><span class="fu">:</span> <span class="st">"1941-12-10"</span><span class="fu">,</span></span>
 <span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a>                <span class="dt">"Cataloged"</span><span class="fu">:</span> <span class="st">"Y"</span><span class="fu">,</span> </span>
 <span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a>                <span class="dt">"OnView"</span><span class="fu">:</span> <span class="st">""</span><span class="fu">}</span></span>
@@ -2067,7 +2067,7 @@ even though they contain only one value?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Of course, there are works of art and objects made by several
 artists. As this is certainly a common case, the data field for the
@@ -2291,7 +2291,7 @@ linked?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Not only is the name of the author entity included, but also its GND
 database identifier. The Gemeinsame Normdatei (GND), maintained by the
@@ -2655,7 +2655,7 @@ elements to the structure of the METS standard.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Using the first artwork record from the example file a XML with a
 METS structure could look like that:</p>
@@ -2733,7 +2733,7 @@ the Library of Congress</a>. What do you notice?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>You can figure out that:<br>
 - In many examples the MODS standard is used within the METS
@@ -3194,7 +3194,7 @@ information to describe the predicate instead of using Dublin Core?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><a href="https://www.wikidata.org/wiki/Property:P170" class="external-link">creator
 property</a>:<br>
@@ -3226,7 +3226,7 @@ be used similiar to the Dublin Core element of creator.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <pre><code>&lt;https://www.wikidata.org/wiki/Q5592&gt;&lt;https://www.wikidata.org/wiki/Property:P170&gt;&lt;https://www.wikidata.org/wiki/Q235242&gt;
 &lt;https://www.wikidata.org/wiki/Q5592&gt;&lt;https://www.wikidata.org/wiki/Property:P19&gt;&lt;https://www.wikidata.org/wiki/Q52069&gt;
