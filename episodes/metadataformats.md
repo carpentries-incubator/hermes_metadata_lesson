@@ -15,7 +15,7 @@ exercises: 10
 
 - Knowledge of basics of CSV format for storing and processing metadata. 
 - Familiar with the structure of a simple CSV file.
-- Knowledge of the main difference between a xslx and a csv format.
+- Knowledge of the main difference between an xslx and a csv format.
    
 :::
 
