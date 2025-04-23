@@ -26,9 +26,9 @@ JSON data is written as key/value pairs. A key/value pair consists of a key, fol
 
 ```JSON
 [{
-„name“ : „Kim Sneider“,
-„age“ : 39,
-„children“ : [„Ben“, „Tove“, „Nina“]
+"name" : "Kim Sneider",
+"age" : 39,
+"children" : ["Ben", "Tove", "Nina"]
 }]
 ```
 
