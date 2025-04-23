@@ -305,12 +305,19 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         12. XML Schema
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#xsd-xml-schema-definition">XSD (XML Schema Definition)</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -373,7 +380,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>XML Schema</h1>
-        <p>Last updated on 2025-04-02 |
+        <p>Last updated on 2025-04-23 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/xml_schema.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -416,12 +423,18 @@
 Humanities. To ensure that data is properly standardized and
 interoperable—allowing it to be imported into, for example, cultural
 heritage databases—technical schemas are used. In the humanities and
-cultural studies, XML Schema is a common choice. While it is not the
-only option, it is widely used to define the structure, elements, and
-technical rules of an XML document, thereby establishing consistent
-annotation guidelines. The syntax is XML. A XML Schema is stored in the
-.xsd (XML Schema Definition) file format.</p>
-<p>It is characterised by the use of a schema tag as the container
+cultural studies, XML Schema is a common choice. There are different
+schema languages to express XML Schema. While it is not the only option,
+the XML Schema Definition (XSD) is widely used to define the structure,
+elements, and technical rules of a XML document, thereby establishing
+consistent annotation guidelines. The filename extension is .xsd.</p>
+<section><h2 class="section-heading" id="xsd-xml-schema-definition">XSD (XML Schema Definition)<a class="anchor" aria-label="anchor" href="#xsd-xml-schema-definition"></a></h2>
+<hr class="half-width"><p>By using the XML-based XML Schema Definition you can define:</p>
+<ul><li>the elements and attributes of a XML document<br></li>
+<li>the number and order of child elements<br></li>
+<li>data types and default or fixed values for elements and
+attributes</li>
+</ul><p>It is characterised by the use of a schema tag as the container
 element for the whole document:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -435,8 +448,9 @@ element for the whole document:</p>
 <span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>&lt;/<span class="kw">xsd:schema</span>&gt;</span></code></pre>
 </div>
 <p>The prefix „xs“ or “xsd” indicates the namespace for the Schema.
-Remember not to use : in XML tags. It is reserved for denoting the
-namespace.</p>
+Remember not to use : in XML tags. Since the colon is a meta character
+with a reserved meaning, do not use it beyond the referencing of
+namespaces.</p>
 <div class="section level3">
 <h3 id="namespaces">Namespaces<a class="anchor" aria-label="anchor" href="#namespaces"></a></h3>
 <div id="callout1" class="callout">
@@ -448,7 +462,7 @@ namespace.</p>
 <div class="callout-content">
 <p>A namespace contains a set of rules and is defined in the xsd file.
 Existing namespaces can also be included there and these rules are also
-referenced in an XML document.</p>
+referenced in a XML document.</p>
 </div>
 </div>
 </div>
@@ -490,7 +504,7 @@ first and last names recorded separately? Since there may be different
 rules in each standard, but they may refer to the same field name,
 namely “date” or “name”, it is important to specify the source of the
 rules.</p>
-<p>Secondly, they group together all the elements and attributes of an
+<p>Secondly, they group together all the elements and attributes of a
 XML application so that software can easily recognise them.</p>
 <p>A namespace is assigned in the header of the file by using xmlns as
 an attribute and a URI as the content.</p>
@@ -500,13 +514,11 @@ an attribute and a URI as the content.</p>
 <pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>&lt;<span class="kw">xs:schema</span><span class="ot"> xmlns=</span><span class="st">"http://www.w3.org/2001/XMLSchema"</span>&gt;</span></code></pre>
 </div>
 <p>The xmlns specification and the URI behind it refer to the W3
-consortium namespace for an XML Schema as the standard for the entire
+consortium namespace for a XML Schema as the standard for the entire
 document. All elements and attributes are defined according to this
-namespace. The URI (Uniform Resource Identifier) serves as a unique
-identifier to reference the specifications, but does not have to be a
-web address. Ideally, a web address is used that points to the
-underlying standard in the form of the xsd file and/or its
-documentation.</p>
+namespace. The URI (Uniform Resource Identifier) serves as an unique
+identifier to reference the specifications, it is usually a web address
+(URL).</p>
 <p>Where multiple standards are used, or parts of other schemas are
 adopted, the namespaces should be prefixed in order to identify which
 elements or attributes belong to which standard:</p>
@@ -524,7 +536,7 @@ describe links between resources.</p>
 <p>When specifying multiple standards, if no prefix is specified for a
 standard, that standard is the default specification for the entire
 document and all elements without a prefix refer to that standard.</p>
-<p>In addition, when creating an xsd file for a specially developed
+<p>In addition, when creating a xsd file for a specially developed
 standard, a targetNamespace is specified. This is the name of the
 namespace whose technical details are defined in this xsd file and which
 is then referenced in the XML document.</p>
@@ -550,8 +562,8 @@ check compliance with this standard:</p>
 </div>
 <p>The schemaLocation refers directly to the associated Schema - the xsd
 file - whose specifications are adopted for the document. Special
-software (validators) can be used to check whether an XML document
-conforms to the technical rules specified in an xsd file.</p>
+software (validators) can be used to check whether a XML document
+conforms to the technical rules specified in a xsd file.</p>
 </div>
 <div class="section level3">
 <h3 id="simple-element">Simple Element<a class="anchor" aria-label="anchor" href="#simple-element"></a></h3>
@@ -881,7 +893,9 @@ to this element.</p>
 <div class="callout-inner">
 <h3 class="callout-title">Callout</h3>
 <div class="callout-content">
-<p>An XML that conforms to a Schema is called valid.</p>
+<p>An XML that conforms to a Schema is called valid. It should not be
+confused with well-formed, which refers to compliance with fundamental
+XML rules.</p>
 </div>
 </div>
 </div>
@@ -929,7 +943,7 @@ correctly as shown in the examples.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb23">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -981,7 +995,7 @@ notes do you get if the XML is not valid? Are they helpful?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb24">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1060,7 +1074,7 @@ note using the validator?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>The feedback from the validator would look something like this:</p>
 <blockquote>
@@ -1110,10 +1124,7 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
 </div>
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/rdf.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -1171,8 +1182,8 @@ any links that you are not going to use.
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/instructor/xml_schema.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/instructor/xml_schema.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-04-02",
-  "datePublished": "2025-04-22"
+  "dateModified": "2025-04-23",
+  "datePublished": "2025-04-23"
 }
 
   </script><script>
