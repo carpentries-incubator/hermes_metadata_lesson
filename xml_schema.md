@@ -18,7 +18,16 @@ exercises: 30
 - Ability to understand simple XML Schemas.
 :::
 
-As you have learned there are standards for annotating data in the Humanities. To ensure that data is properly standardized and interoperable—allowing it to be imported into, for example, cultural heritage databases—technical schemas are used. In the humanities and cultural studies, XML Schema is a common choice. While it is not the only option, it is widely used to define the structure, elements, and technical rules of an XML document, thereby establishing consistent annotation guidelines. The syntax is XML. A XML Schema is stored in the .xsd (XML Schema Definition) file format. 
+As you have learned there are standards for annotating data in the Humanities. To ensure that data is properly standardized and interoperable—allowing it to be imported into, for example, cultural heritage databases—technical schemas are used. In the humanities and cultural studies, XML Schema is a common choice. There are different schema languages to express XML Schema. While it is not the only option, the XML Schema Definition (XSD) is widely used to define the structure, elements, and technical rules of a XML document, thereby establishing consistent annotation guidelines. The filename extension is .xsd. 
+
+## XSD (XML Schema Definition) 
+
+By using the XML-based XML Schema Definition you can define:  
+
+* the elements and attributes of a XML document  
+* the number and order of child elements  
+* data types and default or fixed values for elements and attributes  
+
 
 It is characterised by the use of a schema tag as the container element for the whole document: 
 
@@ -32,12 +41,12 @@ It is characterised by the use of a schema tag as the container element for the 
 </xsd:schema>
 ```
 
-The prefix „xs“ or "xsd" indicates the namespace for the Schema. Remember not to use : in XML tags. It is reserved for denoting the namespace.  
+The prefix „xs“ or "xsd" indicates the namespace for the Schema. Remember not to use : in XML tags. Since the colon is a meta character with a reserved meaning, do not use it beyond the referencing of namespaces.
 
 ### Namespaces
 
 ::: callout
-A namespace contains a set of rules and is defined in the xsd file. Existing namespaces can also be included there and these rules are also referenced in an XML document. 
+A namespace contains a set of rules and is defined in the xsd file. Existing namespaces can also be included there and these rules are also referenced in a XML document. 
 ::: 
 
 The namespace mechanism for XML data has been developed by the W3 Consortium[1]. A namespace is a set of rules that provides specifications for XML elements and attributes. For example, it describes how elements and attributes are named or used. A namespace can be technically stored in the form of an xsd file or in the form of theoretical documentation. Technical specifications can be requirements for data types or minimum or maximum values. Documentation usually describes contextual relationships or rules for using controlled vocabularies or thesauri. Specifications from the documentation may be technically incorporated into the schema. Otherwise, they may be found as comments in the file. 
@@ -58,7 +67,7 @@ The xs:annotation is a container in which additional information can be embedded
 
 Namespaces are specified for two reasons: First, they define elements and attributes more precisely, especially when they have different meanings in different sources and specifications from different standards need to be combined. Consider the problem of dates and names. They are a very common element and should be defined precisely. How should the date be recorded? As a period of time or as an ISO value? Are first and last names recorded separately? Since there may be different rules in each standard, but they may refer to the same field name, namely "date" or "name", it is important to specify the source of the rules.
 
-Secondly, they group together all the elements and attributes of an XML application so that software can easily recognise them.
+Secondly, they group together all the elements and attributes of a XML application so that software can easily recognise them.
 
 A namespace is assigned in the header of the file by using xmlns as an attribute and a URI as the content. 
 
@@ -66,7 +75,7 @@ A namespace is assigned in the header of the file by using xmlns as an attribute
 <xs:schema xmlns="http://www.w3.org/2001/XMLSchema">
 ```
 
-The xmlns specification and the URI behind it refer to the W3 consortium namespace for an XML Schema as the standard for the entire document. All elements and attributes are defined according to this namespace. The URI (Uniform Resource Identifier) serves as a unique identifier to reference the specifications, but does not have to be a web address. Ideally, a web address is used that points to the underlying standard in the form of the xsd file and/or its documentation.  
+The xmlns specification and the URI behind it refer to the W3 consortium namespace for a XML Schema as the standard for the entire document. All elements and attributes are defined according to this namespace. The URI (Uniform Resource Identifier) serves as an unique identifier to reference the specifications, it is usually a web address (URL).  
 
 Where multiple standards are used, or parts of other schemas are adopted, the namespaces should be prefixed in order to identify which elements or attributes belong to which standard:
 
@@ -79,7 +88,7 @@ In the file, the prefix refers to the standard used for that element or attribut
 
 When specifying multiple standards, if no prefix is specified for a standard, that standard is the default specification for the entire document and all elements without a prefix refer to that standard. 
 
-In addition, when creating an xsd file for a specially developed standard, a targetNamespace is specified. This is the name of the namespace whose technical details are defined in this xsd file and which is then referenced in the XML document. 
+In addition, when creating a xsd file for a specially developed standard, a targetNamespace is specified. This is the name of the namespace whose technical details are defined in this xsd file and which is then referenced in the XML document. 
 
 ```xsd
 <xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
@@ -97,7 +106,7 @@ Other namespaces can also be imported into the schema with the following specifi
 <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/03/xml.xsd">
 ```
 
-The schemaLocation refers directly to the associated Schema - the xsd file - whose specifications are adopted for the document. Special software (validators) can be used to check whether an XML document conforms to the technical rules specified in an xsd file. 
+The schemaLocation refers directly to the associated Schema - the xsd file - whose specifications are adopted for the document. Special software (validators) can be used to check whether a XML document conforms to the technical rules specified in a xsd file. 
 
 ### Simple Element 
 
@@ -359,7 +368,7 @@ The methods presented can also be nested within one another:
 The element "ort" itself is another complexType nested within the complexType "tArchiv". This is done to assign a special attribute only to this element. 
 
 ::: callout
-An XML that conforms to a Schema is called valid.
+An XML that conforms to a Schema is called valid. It should not be confused with well-formed, which refers to compliance with fundamental XML rules.
 :::
 
 ::: challenge
