@@ -12,7 +12,7 @@ exercises: 10
 
 ::: objectives
 
-- Knowledge of the basics of the Minimum Record Recommendation for Museums and Collections  
+- Learn the basics of the Minimum Record Recommendation for Museums and Collections  
 :::
 
 ## Minimum Record Recommendation for Museums and Collections
@@ -22,13 +22,13 @@ The aim of the working group is to contribute the data to the German Digital Lib
 
 > The Minimum Record Recommendation [therefore] specifies the most important data elements for the online publication of object information from museums and collections and provides information on how these elements should be filled in. The "Minimum Record" is the smallest possible intersection of relevant data elements that ensures a minimum level of data quality across most disciplines and museum types. [...] The Minimum Record Recommendation is intended to pave the way for smaller and larger museums and collections to publish their data online and to communicate relevant standards in an easy-to-understand, low-threshold approach.^[4]
 
-The development of the Recommendation was based on a comprehensive set of principles and standards that are essential for the management of research data. First and foremost, it incorporates the FAIR principles (findable, accessible, interoperable, re-usable). It also incorporates the CARE principles (collective benefit, authority to control, responsibility, ethics), particularly in the context of colonial studies. The recommendation also takes into account the minimum information requirements of the LIDO standard:
+The Recommendation's development was based on a comprehensive set of principles and standards that are essential for the management of research data. First and foremost, it incorporates the FAIR principles (findable, accessible, interoperable, re-usable). It also incorporates the CARE principles (collective benefit, authority to control, responsibility, ethics), particularly in the context of colonial studies. The recommendation also takes into account the minimum information requirements of the LIDO standard:
 
-> It has been shown that LIDO is not always easy to understand due to its language (XML-based) and structure (high degree of nesting, repeating element sets). In some cases, LIDO - a highly complex and flexible standard - exceeds the specific needs and capacities of museums and collections. The aim of the Minimum Record Recommendation is to take advantage of LIDO's benefits (structuring, controlled vocabulary integration, broad international acceptance) and to focus on the smallest possible intersection of data elements that are important for online publication across most disciplines and museum types."^[5]
+> It has been shown that LIDO is not always easy to understand due to its language (XML-based) and structure (high degree of nesting, repeating element sets). In some cases, LIDO - a highly complex and flexible standard - exceeds the specific needs and capacities of museums and collections. The aim of the Minimum Record Recommendation is to take advantage of LIDO's benefits (structuring, controlled vocabulary integration, broad international acceptance) and to focus on the smallest possible intersection of data elements that are important for online publication across most disciplines and museum types.^[5]
 
-This illustrates the strong interrelationship that underlies many standards, and which we will encounter again in the following chapters.
+This illustrates the strong correlation between many standards, which we will encounter again in the following chapters.
 
-It is essential that the record contains a number of mandatory fields, which must be entered and supplied. The use of other data fields, such as object description, material, dimensions and so on, is only recommended.  
+The record contains a number of mandatory fields. The use of other data fields, such as object description, material, dimensions and so on, is only recommended.  
 
 Data elements that are usually populated during data entry:
 
@@ -77,7 +77,7 @@ What do you think about the Minimum Record Recommendation?
 :::  
 
 ::: keypoints 
-The Minimum Record Recommendation is an attempt to formulate a minimum set of data fields for the publication of museum collections from the multitude and complexity of existing standards.
+The Minimum Record Recommendation is an attempt to formulate a minimum set of data fields for the publication of museum collections.
 :::  
 __________________________________________________
 

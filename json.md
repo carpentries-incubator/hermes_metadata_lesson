@@ -12,8 +12,8 @@ exercises: 20
 
 ::: objectives
 
-- Knowledge of JSON format for storing and processing metadata. 
-- Familiar with the structure of a simple JSON file. 
+- Understand the JSON format for storing and processing metadata. 
+- Learn the structure of a simple JSON file. 
 :::
 
 
@@ -21,7 +21,7 @@ Another file format in which metadata can be stored, annotated and exchanged is 
 
 ## JSON Data
 
-JSON data is written as key/value pairs. A key/value pair consists of a key, followed by a colon, followed by a value. The key is the name - the label - for the content in the value field. Keys are always written in quotation marks. The display of the value depends on its data type. The entire content is enclosed in curly brackets. 
+JSON data is written as key/value pairs. A key/value pair consists of a key, followed by a colon, followed by a value. The key is the name - the label - for the content in the value field. Keys are always written in quotation marks. How the value is marked depends on its data type. The entire content is enclosed in curly brackets. 
 
 
 ```JSON
@@ -34,17 +34,17 @@ JSON data is written as key/value pairs. A key/value pair consists of a key, fol
 
 ## Values  
 
-Values cannot be one of the following data types:
+Value in a JSON file cannot be:
 
 * a function
-* a date (dates are written as strings in double quotes – so be aware of problems that may cause) 
+* a date (dates are written as strings in double quotes – so be aware of problems that might cause) 
 * undefined   
 
 #### Different Data Types as Values
 
 | data type | explanation | example as key/value pair |
 | ---- | ---- | ------ | 
-| string | set of character | "string" : „Can be a sentence or a name or a date and is written in double quotes“ |
+| string | set of characters | "string" : „Can be a sentence or a name or a date and is written in double quotes“ |
 | integer | whole number | "integer" : 12 |
 | float | floating-point number | "float" :  3.5 |
 | boolean | truth value | "boolean" : true/false |
@@ -65,7 +65,7 @@ JSON is shorter than XML and easier to use in data processing. JSON can use arra
 ::: challenge
 ### Exercise
 
-Use the artwork from the last exercise, which you have chosen from the moma_artwork.csv and write the data into a json format. 
+Use the artwork that you chose from moma_artwork.csv in the previous exercise and write the data in JSON format this time. 
 
 ::: solution
 
@@ -266,7 +266,7 @@ Use the artwork from the last exercise, which you have chosen from the moma_artw
   "Width (cm)": 100.3
 }]
 ```
-This is not the only correct way to annotate the data in a json file. You are free to choose, e.g., whether you want to name the keys according to the headings in the csv, or whether you want to enter the information from each record one-to-one as values. And also you can choose other ways to structure the data, for example:
+This is not the only correct way to annotate the data in a JSON file. You are free to choose, e.g., whether you want to name the keys according to the headings in the CSV, or you want to enter the information from each record one-to-one as values. You can also choose other ways to structure the data, for example:
 
 ```json
 [{
@@ -287,7 +287,7 @@ This is not the only correct way to annotate the data in a json file. You are fr
 }]
 ```  
 
-You can use a validator to check that a json file is correct. This checks the syntax of the json for formal errors, e.g., [Json Formatter & Validator](https://jsonformatter.curiousconcept.com/). 
+You can use a validator - such as [Json Formatter & Validator](https://jsonformatter.curiousconcept.com/) - to check whether a JSON file is formatted correctly.
 :::
 :::
 
@@ -297,22 +297,22 @@ You can use a validator to check that a json file is correct. This checks the sy
 ::: challenge
 ### Question
 
-What do you think? Why are the values containing the artist information created as arrays (recognisable by the square brackets), even though they contain only one value?
+Why are the values containing the artist information created as arrays (recognisable by the square brackets), even though they contain only one value?
 
 ::: solution
 
 
-Of course, there are works of art and objects made by several artists. As this is certainly a common case, the data field for the value is defined as an array in advance, to be able to handle this case and not have to query it separately for each record.
+There are works of art and objects made by several artists. As this is a common case, the data field for the value is defined as an array in advance, to be able to handle this case and not have to query it separately for each record.
 :::
 :::  
 
 ::: keypoints
 
 * (Meta)data elements are defined in key/value pairs.
-* Keys are of the datatype string (in quotes).
-* Values must be of type string, number (float or integer), boolean, array or object.
+* Keys are strings and appear in quotation marks.
+* Values can be strings, numbers (float or integer), boolean, arrays or objects.
 * Elements are separated by commas.
-* Curly braces contain objects.
+* Curly brackets contain objects.
 * Square brackets contain arrays.
 * In-line comments are not supported.
 :::

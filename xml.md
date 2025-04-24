@@ -13,13 +13,13 @@ exercises: 15
 
 ::: objectives
 
-- Knowledge of XML format for storing and processing metadata. 
-- Familiar with the structure of a simple XML file. 
-- Able to write extracted metadata in a simple XML format.
+- Understand the XML format for storing and processing metadata. 
+- Understand the structure of a simple XML file. 
+- Learn to write extracted metadata in a simple XML format.
 
 :::
 
-One of the most widely used file formats in the cultural sector is XML (eXtensible Markup Language). It is used to describe, structure, store and transport data. XML refers to the file format as well as to the syntax in which data is recorded: the markup language. By marking up the text with what are called tags, data and metadata can be combined in a single document.
+One of the most widely-used file formats in the cultural sector is XML (eXtensible Markup Language). It is used to describe, structure, store and transport data. XML refers both to the file format and the syntax (markup language) in which data is recorded. By marking up the text with "tags", data and metadata can be combined in a single document.
 
 
 ## XML Elements
@@ -54,9 +54,10 @@ Best Naming Practices:
 
 * Create descriptive names.
 * Create short and simple names.
-* Avoid - / . / : in the names, e.g. \<first-name\>, and be aware that : is reserved for namespaces which have a special function.  
+* Avoid - / . / : in the names -e.g. \<first-name\>.
+* : is reserved for namespaces that have a special function.  
 
-XML also provides the ability to have comments that are not automatically read:
+In XML, it is also possible to include comments that are not automatically read by the machine:
 
 ```xml
 <!-- Here is the content of the comment, there is no closing tag -->
@@ -67,7 +68,7 @@ In XML, all elements must be properly nested, which means that an element opened
 ```xml
 <collection><name>MET</name><place>New York</place></collection>
 ```  
-An indentation can be used to make the structure more human-readable especially if the nesting of the elements is deep:
+Indentation can be used to make the structure more human-readable, especially if elements' nesting is deep:
 
 ```xml
 <collection>
@@ -83,9 +84,9 @@ An indentation can be used to make the structure more human-readable especially 
   </artist>
 </collection>
 ```
-As this example shows, XML documents have a tree structure. They start with the root element and then branch out deeper and deeper. The tag \<artist\> is also called a parent element and the subordinated elements \<name\> and \<dateOfBirth\> are child elements. The tag \<dateOfBirth\> again is the parent element for the tags of day, month and year as child elements. 
+As this example shows, XML documents have a tree structure. They start with the root element and then branch out deeper and deeper. The tag \<artist\> is called a parent element and the subordinated elements \<name\> and \<dateOfBirth\> are child elements. In the deeper level, \<dateOfBirth\> is the parent element for the tags day, month and year as child elements. 
 
-There are some rules for characters used in XML for syntax structure. These are replaced by a special string so that it won't cause problems if, for example, you want to use a < in the content. This would cause an error because XML expects a closing tag. To avoid errors, the character is replaced with an entity reference:
+Characters used in the structure of the XML syntax must comply with certain rules. Certain characters, such as "<" meaning "is less than", must be replaced by a special string so that they won't cause problems. If you just use "<", XML understands it as an opening tag and expects it to be closed at some point. To avoid errors in this and similar cases, the character is replaced with an entity reference:
   
 | string | character | meaning | 
 | ---- | ---- | ---- | ----|
@@ -101,14 +102,14 @@ There are some rules for characters used in XML for syntax structure. These are 
   
 ## Attributes    
 
-In XML, as in HTML, tags can also have attributes, which define the content of the tags in more detail like separate metadata for the element. They are named and the content is assigned to them with a = and enclosed in quotes:
+In XML, as in HTML, tags can also have attributes, which define the content of the tags in more detail. These attributes provide metadata for the element that they refer to. They are named, the content is assigned to them with a =, and they are enclosed in quotation marks:
 
 ```xml
 <title lang="author's original language">Always give the title in the author's language</title>
 
 <commonTitle lang="title as commonly known">Always give the title as it is commonly known</commonTitle>
 ```      
-Attributes are also often used in a hierarchy to record information that applies to all the underlying data:
+Attributes are often used in a hierarchy to record information that applies to all the underlying data:
 
 ```xml
 <collection name="Modern Art" place="New York">
@@ -116,28 +117,28 @@ Attributes are also often used in a hierarchy to record information that applies
   <item2/>
 </collection>
 ```
-The slash here at the end of the tag (self-closing tag) means that the element is currently empty and self-contained. It is not necessary to write an opening and closing tag if there are no other elements between them. You often see this in XML output when the metadata field is empty. 
+The slash here at the end of the tag (self-closing tag) means that the element is empty and self-contained. It is not necessary to write an opening and closing tag if there are no other elements between them. You often see this in XML output when the metadata field is empty. 
 
 At the top of an XML document you will often find something called a prolog or declaration:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 ```
-It is optional, but provides information about the version and encoding[2] used, and must be at the top if included.   
+It is optional, but provides information about the version and encoding[2] used. If included, it should always be at the top of the document.   
 
 ::: callout
-XML documents that conform to all this rules are said to be "Well Formed" XML documents.
+XML documents that conform to all these rules are considered "Well-Formed" XML documents.
 :::   
   
 ::: challenge
 
 ### Exercise
 
-Open the [moma_artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/moma_artworks.csv). Use the given data of one artwork and write it in an XML format. 
+Open the [moma_artworks.csv file](https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/moma_artworks.csv). Choose the data of an artwork and write it in the XML format. 
 
 ::: hint
 
-* Is there a structure for the data? Can data be collected under a category?
+* Does the data have a structure? Can it be collected under one category?
 * You can use indentation to create a hierarchy.
    
 :::
@@ -317,19 +318,19 @@ It is likely that not all participants will complete the exercise in the time al
 
 ### Discussion
 
-Compare your XML with the other participants' documents. What do you notice?
+Compare your XML file with the other participants' documents. What do you notice?
 
 :::
 
 ::: instructor
-The exercise can be done in groups if there are many participants. Otherwise, someone can present their solution at the end and discuss it together. Discussion points should include the two ways of writing empty elements and making sure that special characters such as & are caught. There can also be a general discussion about the headings or naming of the tags, or what certain tags mean, e.g. onView means 'on view' in the current exhibition.
+The exercise can be done in groups if there are many participants. Otherwise, someone can present their solution in the end and discuss it together. Discussion topics should include the two ways of writing empty elements and making sure that special characters such as & are caught. There can also be a general discussion about the headings or naming of the tags, or what certain tags mean, e.g. onView means 'on view' in the current exhibition.
 :::  
 
 ::: keypoints
-- XML is one of the most widely used metadata file formats.
+- XML is one of the most widely-used metadata file formats.
 - An XML document contains XML elements to structure the data.
 - Attributes provide additional information about elements or groups of elements.
 :::
 ______________________________________________
 [1]: [w3school XML elements](https://www.w3schools.com/xml/xml_elements.asp>)  
-[2]: For further information see "glossary". 
+[2]: For further information see the "glossary". 

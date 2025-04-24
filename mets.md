@@ -13,15 +13,13 @@ exercises: 20
 
 ::: objectives
 
-- Knowledge of the basics of the Metadata Encoding & Transmission Standard
-- Familiar with the important elements for structuring data in METS
+- Learn the basics of the Metadata Encoding & Transmission Standard
+- Learn to structure data in METS
 :::
 
 ## METS Metadata Encoding & Transmission Standard
 
-The standard is overseen by the Library of Congress.
-
-METS is an XML format defined by XML Schema for describing digital collections of objects with metadata. The standard does not specify a name or order for the metadata fields themselves, but serves to structure them in a standardised way. It is often used for long-term preservation. Metadata is added in one of seven domains:  
+Provided by the Library of Congress, METS is an XML format defined by XML Schema for describing digital collections of objects with metadata. The standard does not specify a name or order for the metadata fields themselves, but serves to structure them in a standardised way. It is often used for long-term preservation. Metadata is added in one of seven domains:  
 
 1. METS Header: Metadata describing the METS document itself, including such information as creator, editor, etc.
 2. Descriptive Metadata Section: The section may point to descriptive metadata external to the METS document, or contain internally embedded descriptive metadata, or both. 
@@ -55,7 +53,7 @@ Use the example from the XML exercise and assign the metadata elements to the st
 
 ### Solution
 
-Using the first artwork record from the example file a XML with a METS structure could look like that:   
+
 ```XML
 <mets>
  <metsHdr>
@@ -114,7 +112,7 @@ Using the first artwork record from the example file a XML with a METS structure
 
 ### Exercise Part II
 
-You can find examples for structured data in METS standard on the [website of the Library of Congress](https://www.loc.gov/standards/mets/mets-examples.html). What do you notice? 
+You can find examples for structured data in the METS standard on the [website of the Library of Congress](https://www.loc.gov/standards/mets/mets-examples.html). What do you notice? 
 
 ::: solution
 
@@ -122,8 +120,8 @@ You can find examples for structured data in METS standard on the [website of th
 
 You can figure out that:  
 - In many examples the MODS standard is used within the METS structure.  
-- The last sections are often missing or do not have many data.  
-- The amdSec contains technical information of the form of digitization such as camera or scanner and their settings.   
+- The last sections are often missing or do not contain much data.  
+- The amdSec contains technical information on the technical means of digitisation such as camera or scanner and their settings.   
 - The amdSec is sometimes divided into further sections, e.g., rights and technical data.
 :::
 :::
