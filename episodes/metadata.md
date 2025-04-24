@@ -34,18 +34,18 @@ Descriptive metadata is crucial for discovering and identifying resources like b
 
 **Structural metadata** indicates how composite objects are assembled.
 
-For example, a digitised medieval manuscript in an online archive—structural metadata defines the hierarchy and organization of the manuscript:
+For example, the structural metadata of a digitised medieval manuscript in an online archive defines the hierarchy and organization of the manuscript:
 
-- Page order (e.g., folio 1 recto, folio 1 verso).
-- Relationships between sections (e.g., chapters, marginalia, glosses).
-- Links between text and corresponding images, such as illuminations or annotations.
+- Page order (e.g., folio 1 recto, folio 1 verso)
+- Relationships between sections (e.g., chapters, marginalia, glosses)
+- Links between text and corresponding images, such as illuminations or annotations
 
 **Administrative metadata** provides information to help manage a resource, such as when and how it was created, file type and other technical information, and who can access it. There are several subsets of administrative data, including: 
 
-− Rights management metadata, which deals with intellectual property rights,
-− Preservation metadata, which contains information needed to archive and preserve a resource.
+− Rights management metadata, which deals with intellectual property rights
+− Preservation metadata, which contains information needed to archive and preserve a resource
 
-Administrative metadata is essential for managing the lifecycle of resources. For example, rights management metadata informs whether a researcher can legally reproduce an image in a publication, while preservation metadata supports digital preservation practices to protect fragile manuscripts.
+Administrative metadata is essential for managing the life cycle of resources. For example, rights management metadata informs whether a researcher can legally reproduce an image in a publication, while preservation metadata supports digital preservation practices to protect fragile manuscripts.
 
 
 ::::::::::::::::::::::::::::::::::::: challenge 
@@ -64,19 +64,19 @@ The objects searchable in the Met Museum's online collection primarily feature d
 ::: challenge
 ## Challenge 2: 
 
-“Alice's Adventures in Wonderland” – is it data or metadata?
+Is the book “Alice's Adventures in Wonderland” data or metadata?
 
 ::: solution 
 
 ## Output
-It depends on the context wether it is data (the book itself) or metadata (title in a library catalogue) 
+It depends on the context whether it is considered data (the book itself) or metadata (title in a library catalogue). 
 
 :::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::  
   
 The distinction between data and metadata often depends on the context in which the information is used. Data and metadata are relative concepts, and what serves as "data" in one scenario may function as "metadata" in another.
 
-For example, the text of Alice's Adventures in Wonderland itself—its words, chapters, and narrative—is typically considered data when analysing its content, themes, or linguistic features. However, the title Alice's Adventures in Wonderland is metadata within the context of the book's cataloguing. In a library catalogue, the title is part of a structured system of metadata used to describe, organise, and enable the discovery of the book (along with other metadata fields like author, publication date, and ISBN).
+For example, the text of "Alice's Adventures in Wonderland" — its words, chapters, and narrative — is typically considered data when analysing its content, themes, or linguistic features. However, the title "Alice's Adventures in Wonderland"" is metadata within the context of the book's cataloguing. In a library catalogue, the title is part of a structured system of metadata used to describe, organise, and enable the discovery of the book (along with other metadata fields like author, publication date, and ISBN).
 
 This relativity highlights the importance of understanding the different levels at which we interact with information. In essence:
 

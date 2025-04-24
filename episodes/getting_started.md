@@ -8,8 +8,8 @@ exercises: 0
 
 ### Framing questions 
 
-- What does digitalization mean for the humanities?  
-- How is digitalization changing the humanities?
+- What does digitalisation mean for the humanities?  
+- How is digitalisation changing the humanities?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
   
@@ -20,7 +20,7 @@ exercises: 0
 
 ## Introduction
 
-Digitalization profoundly impacts the humanities by transforming how knowledge is produced, accessed, and interpreted. Almost everything today is reduced to data, interconnected through processes of digitization, visualization, and publication. Culture and history are increasingly manifested in networked forms, a development greatly enhanced by digital technologies. In this context, data and metadata play essential roles. This lesson is developed as an introduction to the meaning of data and metadata in the Humanities. Learners will get familiar with concepts of data and metadata as well as formats such as XML and JSON and metadata standards.
+digitalisation profoundly impacts the humanities by transforming how knowledge is produced, accessed, and interpreted. Almost everything today is reduced to data, interconnected through processes of digitization, visualization, and publication. Culture and history are increasingly manifested in networked forms, a development greatly enhanced by digital technologies. In this context, data and metadata play essential roles. This lesson is developed as an introduction to the meaning of data and metadata in the Humanities. Learners will get familiar with concepts of data and metadata as well as formats such as XML and JSON and metadata standards.
 
 ## Exploratory Questions
 
@@ -33,7 +33,7 @@ Take a moment to reflect:
 - Have you ever visited an archive to conduct research in person? 
 - Have you ever explored a museum’s (or library’s) website to access digital resources? 
 
-Think about how many aspects of your work and daily life are now digital and how much of this vast digitalization feels like second nature.
+Think about how many aspects of your work and daily life are now digital and how much of this vast digitalisation feels like second nature.
 
 
 
@@ -45,12 +45,12 @@ What challenges did you encounter when researching or interpreting information p
 
 
 
-**Digitalization profoundly impacts the humanities by transforming how knowledge is produced, accessed, and interpreted. Almost everything today is reduced to data, interconnected through processes of digitization, visualization, and publication. Culture and history are increasingly manifested in networked forms, a development greatly enhanced by digital technologies.**
+**digitalisation profoundly impacts the humanities by transforming how knowledge is produced, accessed, and interpreted. Almost everything today is reduced to data, interconnected through processes of digitization, visualization, and publication. Culture and history are increasingly manifested in networked forms, a development greatly enhanced by digital technologies.**
 
 In this context, **data** and **metadata** play an essential roles. **Data** refers to raw information such as texts, images, or records, while **metadata** provides context — descriptions, tags, or details about how and when the data was created.
 
 
-The foundation of digitalization is the creation of data. Whether it's text, image, or sound, everything is converted into data that must be described and organized. This is where metadata, i.e. information about the data, becomes crucial.
+The foundation of digitalisation is the creation of data. Whether it's text, image, or sound, everything is converted into data that must be described and organized. This is where metadata, i.e. information about the data, becomes crucial.
 
 
 When working with digital resources, both data and metadata are critical for organizing, searching, and interpreting information. Your challenges with doing research online reflect the complexities of managing these elements. These complexities include ensuring accuracy, maintaining context, and effectively handling large amounts of information.
