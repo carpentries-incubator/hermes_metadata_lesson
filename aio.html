@@ -699,7 +699,7 @@ we have here?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>We cannot present analogue data here because everything we display on
 the monitor is digital!</p>
@@ -903,7 +903,7 @@ metadata this is?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The objects searchable in the Met Museum’s online collection
 primarily feature descriptive metadata, such as title, author, date, and
@@ -938,7 +938,7 @@ part of specific projects.</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>It depends on the context whether it is considered data (the book
 itself) or metadata (title in a library catalogue).</p>
@@ -1050,7 +1050,7 @@ way?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>An easy way to store data in a structured way is to use a spreadsheet
 such as Excel.</p>
@@ -1097,7 +1097,7 @@ file</a> in your favorite spreadsheet application.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul>
 <li>Several parameters are queried when the csv file is opened.</li>
@@ -1708,7 +1708,7 @@ any links that you are not going to use.
 </ol>
 </div></section><section id="aio-json"><p>Content from <a href="json.html">JSON</a></p>
 <hr>
-<p>Last updated on 2025-04-23 |
+<p>Last updated on 2025-04-29 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/json.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1732,9 +1732,11 @@ any links that you are not going to use.
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
+<p>After completing this episode, participants should be able to</p>
 <ul>
-<li>Knowledge of JSON format for storing and processing metadata.</li>
-<li>Familiar with the structure of a simple JSON file.</li>
+<li>describe JSON format for storing and processing metadata.<br>
+</li>
+<li>investigate and write a simple JSON file.</li>
 </ul>
 </div>
 </div>
@@ -1750,7 +1752,7 @@ by JavaScript object notation.</p>
 <p>JSON data is written as key/value pairs. A key/value pair consists of
 a key, followed by a colon, followed by a value. The key is the name -
 the label - for the content in the value field. Keys are always written
-in quotation marks. The display of the value depends on its data type.
+in quotation marks. How the value is marked depends on its data type.
 The entire content is enclosed in curly brackets.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1764,11 +1766,11 @@ The entire content is enclosed in curly brackets.</p>
 </section><section><h2 class="section-heading" id="values">Values<a class="anchor" aria-label="anchor" href="#values"></a>
 </h2>
 <hr class="half-width">
-<p>Values cannot be one of the following data types:</p>
+<p>Value in a JSON file cannot be:</p>
 <ul>
 <li>a function</li>
 <li>a date (dates are written as strings in double quotes – so be aware
-of problems that may cause)</li>
+of problems that might cause)</li>
 <li>undefined</li>
 </ul>
 <div class="section level4">
@@ -1788,7 +1790,7 @@ of problems that may cause)</li>
 <tbody>
 <tr class="odd">
 <td>string</td>
-<td>set of character</td>
+<td>set of characters</td>
 <td>“string” : „Can be a sentence or a name or a date and is written in
 double quotes“</td>
 </tr>
@@ -1842,8 +1844,8 @@ a comma or other character.</p>
 <div id="exercise" class="callout-inner">
 <h3 class="callout-title">Exercise</h3>
 <div class="callout-content">
-<p>Use the artwork from the last exercise, which you have chosen from
-the moma_artwork.csv and write the data into a json format.</p>
+<p>Use the artwork that you chose from moma_artwork.csv in the previous
+exercise and write the data in JSON format this time.</p>
 </div>
 </div>
 </div>
@@ -1852,7 +1854,7 @@ the moma_artwork.csv and write the data into a json format.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2053,11 +2055,11 @@ the moma_artwork.csv and write the data into a json format.</p>
 <span id="cb2-194"><a href="#cb2-194" tabindex="-1"></a>  <span class="dt">"Width (cm)"</span><span class="fu">:</span> <span class="fl">100.3</span></span>
 <span id="cb2-195"><a href="#cb2-195" tabindex="-1"></a><span class="fu">}</span><span class="ot">]</span></span></code></pre>
 </div>
-<p>This is not the only correct way to annotate the data in a json file.
+<p>This is not the only correct way to annotate the data in a JSON file.
 You are free to choose, e.g., whether you want to name the keys
-according to the headings in the csv, or whether you want to enter the
-information from each record one-to-one as values. And also you can
-choose other ways to structure the data, for example:</p>
+according to the headings in the CSV, or you want to enter the
+information from each record one-to-one as values. You can also choose
+other ways to structure the data, for example:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -2092,9 +2094,9 @@ Validator</a>.</p>
 <div id="question" class="callout-inner">
 <h3 class="callout-title">Question</h3>
 <div class="callout-content">
-<p>What do you think? Why are the values containing the artist
-information created as arrays (recognisable by the square brackets),
-even though they contain only one value?</p>
+<p>Why are the values containing the artist information created as
+arrays (recognisable by the square brackets), even though they contain
+only one value?</p>
 </div>
 </div>
 </div>
@@ -2103,12 +2105,12 @@ even though they contain only one value?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<p>Of course, there are works of art and objects made by several
-artists. As this is certainly a common case, the data field for the
-value is defined as an array in advance, to be able to handle this case
-and not have to query it separately for each record.</p>
+<p>There are works of art and objects made by several artists. As this
+is certainly a common case, the data field for the value is defined as
+an array in advance, to be able to handle this case and not have to
+query it separately for each record.</p>
 </div>
 </div>
 </div>
@@ -2122,11 +2124,11 @@ and not have to query it separately for each record.</p>
 <div class="callout-content">
 <ul>
 <li>(Meta)data elements are defined in key/value pairs.</li>
-<li>Keys are of the datatype string (in quotes).</li>
-<li>Values must be of type string, number (float or integer), boolean,
-array or object.</li>
+<li>Keys are strings and appear in quotation marks.</li>
+<li>Values can be strings, numbers (float or integer), boolean, arrays
+or objects.</li>
 <li>Elements are separated by commas.</li>
-<li>Curly braces contain objects.</li>
+<li>Curly brackets contain objects.</li>
 <li>Square brackets contain arrays.</li>
 <li>In-line comments are not supported.</li>
 </ul>
@@ -2321,7 +2323,7 @@ the data linked? Can you think of other data that could be linked?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Not only is the name of the author is included as an entity, but also
 its GND database identifier. The Gemeinsame Normdatei (GND), maintained
@@ -2687,7 +2689,7 @@ elements to the structure of the METS standard.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Using the first artwork record from the example file a XML with a
 METS structure could look like that:</p>
@@ -2765,7 +2767,7 @@ the Library of Congress</a>. What do you notice?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>You can figure out that:<br>
 - In many examples the MODS standard is used within the METS
@@ -2895,7 +2897,7 @@ which ones and why?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>contributor: MET (as a custodian and managing institution)</li>
@@ -2968,7 +2970,7 @@ for Johan Hagemeyer’s photo of Albert Einstein?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Examples </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
 <li>dc.date.created: 1931</li>

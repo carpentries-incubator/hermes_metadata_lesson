@@ -382,7 +382,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>JSON</h1>
-        <p>Last updated on 2025-04-23 |
+        <p>Last updated on 2025-04-29 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/json.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -410,8 +410,9 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Knowledge of JSON format for storing and processing metadata.</li>
-<li>Familiar with the structure of a simple JSON file.</li>
+<p>After completing this episode, participants should be able to</p>
+<ul><li>describe JSON format for storing and processing metadata.<br></li>
+<li>investigate and write a simple JSON file.</li>
 </ul></div>
 </div>
 </div>
@@ -424,7 +425,7 @@ by JavaScript object notation.</p>
 <hr class="half-width"><p>JSON data is written as key/value pairs. A key/value pair consists of
 a key, followed by a colon, followed by a value. The key is the name -
 the label - for the content in the value field. Keys are always written
-in quotation marks. The display of the value depends on its data type.
+in quotation marks. How the value is marked depends on its data type.
 The entire content is enclosed in curly brackets.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -436,10 +437,10 @@ The entire content is enclosed in curly brackets.</p>
 <span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="fu">}</span><span class="ot">]</span></span></code></pre>
 </div>
 </section><section><h2 class="section-heading" id="values">Values<a class="anchor" aria-label="anchor" href="#values"></a></h2>
-<hr class="half-width"><p>Values cannot be one of the following data types:</p>
+<hr class="half-width"><p>Value in a JSON file cannot be:</p>
 <ul><li>a function</li>
 <li>a date (dates are written as strings in double quotes – so be aware
-of problems that may cause)</li>
+of problems that might cause)</li>
 <li>undefined</li>
 </ul><div class="section level4">
 <h4 id="different-data-types-as-values">Different Data Types as Values<a class="anchor" aria-label="anchor" href="#different-data-types-as-values"></a></h4>
@@ -447,7 +448,7 @@ of problems that may cause)</li>
 <th>explanation</th>
 <th>example as key/value pair</th>
 </tr></thead><tbody><tr class="odd"><td>string</td>
-<td>set of character</td>
+<td>set of characters</td>
 <td>“string” : „Can be a sentence or a name or a date and is written in
 double quotes“</td>
 </tr><tr class="even"><td>integer</td>
@@ -484,8 +485,8 @@ a comma or other character.</p>
 <div id="exercise" class="callout-inner">
 <h3 class="callout-title">Exercise</h3>
 <div class="callout-content">
-<p>Use the artwork from the last exercise, which you have chosen from
-the moma_artwork.csv and write the data into a json format.</p>
+<p>Use the artwork that you chose from moma_artwork.csv in the previous
+exercise and write the data in JSON format this time.</p>
 </div>
 </div>
 </div>
@@ -494,7 +495,7 @@ the moma_artwork.csv and write the data into a json format.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -695,11 +696,11 @@ the moma_artwork.csv and write the data into a json format.</p>
 <span id="cb2-194"><a href="#cb2-194" tabindex="-1"></a>  <span class="dt">"Width (cm)"</span><span class="fu">:</span> <span class="fl">100.3</span></span>
 <span id="cb2-195"><a href="#cb2-195" tabindex="-1"></a><span class="fu">}</span><span class="ot">]</span></span></code></pre>
 </div>
-<p>This is not the only correct way to annotate the data in a json file.
+<p>This is not the only correct way to annotate the data in a JSON file.
 You are free to choose, e.g., whether you want to name the keys
-according to the headings in the csv, or whether you want to enter the
-information from each record one-to-one as values. And also you can
-choose other ways to structure the data, for example:</p>
+according to the headings in the CSV, or you want to enter the
+information from each record one-to-one as values. You can also choose
+other ways to structure the data, for example:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -734,9 +735,9 @@ Validator</a>.</p>
 <div id="question" class="callout-inner">
 <h3 class="callout-title">Question</h3>
 <div class="callout-content">
-<p>What do you think? Why are the values containing the artist
-information created as arrays (recognisable by the square brackets),
-even though they contain only one value?</p>
+<p>Why are the values containing the artist information created as
+arrays (recognisable by the square brackets), even though they contain
+only one value?</p>
 </div>
 </div>
 </div>
@@ -745,12 +746,12 @@ even though they contain only one value?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<p>Of course, there are works of art and objects made by several
-artists. As this is certainly a common case, the data field for the
-value is defined as an array in advance, to be able to handle this case
-and not have to query it separately for each record.</p>
+<p>There are works of art and objects made by several artists. As this
+is certainly a common case, the data field for the value is defined as
+an array in advance, to be able to handle this case and not have to
+query it separately for each record.</p>
 </div>
 </div>
 </div>
@@ -763,11 +764,11 @@ and not have to query it separately for each record.</p>
 <h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul><li>(Meta)data elements are defined in key/value pairs.</li>
-<li>Keys are of the datatype string (in quotes).</li>
-<li>Values must be of type string, number (float or integer), boolean,
-array or object.</li>
+<li>Keys are strings and appear in quotation marks.</li>
+<li>Values can be strings, numbers (float or integer), boolean, arrays
+or objects.</li>
 <li>Elements are separated by commas.</li>
-<li>Curly braces contain objects.</li>
+<li>Curly brackets contain objects.</li>
 <li>Square brackets contain arrays.</li>
 <li>In-line comments are not supported.</li>
 </ul></div>
@@ -835,7 +836,7 @@ any links that you are not going to use.
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/json.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/json.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-04-23",
+  "dateModified": "2025-04-29",
   "datePublished": "2025-04-29"
 }
 
