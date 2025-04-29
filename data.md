@@ -9,10 +9,13 @@ exercises: 10
 - What are the distinctions between different types of data?
 :::
 
-::: objectives
-- Differentiate between analogue data, digitised data, and born-digital data.
-- Understand how data is categorized, collected, and utilized within humanities research.
-- Explore the implications of different data types for different research methods and outcomes.
+::: objectives   
+
+After completing this episode, participants should be able to  
+
+- differentiate between analogue data, digitised data, and born-digital data,
+- understand how data is categorized, collected, and utilized within humanities research,
+- explore the implications of different data types for different research methods and outcomes.
 :::
 
 ## Types of Data
