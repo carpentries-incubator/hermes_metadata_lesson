@@ -11,10 +11,12 @@ exercises: 20
 
 :::
 
-::: objectives
+::: objectives  
 
-- Knowledge of the basics of the Dublin Core Metadata Element Set. 
-- Differentiate between a simple Dublin Core Set and a qualified set.
+After completing this episode, participants should be able to  
+
+- identify basic elements from the Dublin Core Metadata Element Set. 
+- differentiate between a simple Dublin Core Set and a qualified set.
 :::
 
 
@@ -38,8 +40,8 @@ the simple version of the set consists of 15 core elements for describing a reso
 * Title
 * Type
   
-All fields are optional, not mandatory, can appear multiple times, and, unlike other metadata standards or schemas, can appear in any order. 
-Dublin Core defines the metadata fields themselves, but not the structure for them, which is why it is often integrated with structuring standards such as METS. 
+All fields are optional, can appear multiple times, and, unlike other metadata standards or schemas, can appear in any order. 
+Dublin Core defines the metadata fields themselves, but not the structure for them, which is why it is often combined with structuring standards such as METS. 
 
 ::: challenge 
 
@@ -83,11 +85,11 @@ This could be one of many possible solutions.
 
 ### Discussion
 
-What did you discuss? What data was unclear? 
+What did you discuss? What were the issues?
 
 :::
 
-After all, how do we know which date is meant? The date of creation? The date of submission? The original DC terms have been extended to make the information about the data more precise. 
+After all, how do we know which date is meant? The date of creation or of submission? The original DC terms have been extended to make the information about the data more precise. 
 
 ## Qualified Dublin Core 
 
@@ -121,7 +123,7 @@ Take a closer look at the date element. You can find a list of all authorised qu
 
 ### DCMI Metadata Terms      
 
-In 2022 the Dublin Core Metadata Initiative published an extend set of elements.   
+In 2022 the Dublin Core Metadata Initiative published an extended set of elements.   
 
 > Included are the fifteen terms of the Dublin Core™ Metadata Element Set (also known as "the Dublin Core") plus several dozen properties, classes, datatypes, and vocabulary encoding schemes. The "Dublin Core" plus these extension vocabularies are collectively referred to as "DCMI metadata terms" ("Dublin Core terms" for short). These terms are intended to be used in combination with metadata terms from other, compatible vocabularies in the context of application profiles.^[1]
 
@@ -150,7 +152,7 @@ Terms:
 
 Take a look at the extended elements. You will find several date elements.
 
-Do you agree with the mapping in the solution to the last exercise?  
+Do you agree with the mapping presented in the solution of the last exercise?    
 Why not?   
 Which element would you choose?   
 You can find descriptions of the elements in the [User Guide](https://www.dublincore.org/resources/userguide/creating_metadata/). 
@@ -158,7 +160,7 @@ You can find descriptions of the elements in the [User Guide](https://www.dublin
 :::
 
 When we talk or read about Dublin Core, we often notice that what used to be called a (metadata) field is now called an element in Dublin Core. 
-You will often find the terms mixed up - as described above for standard, schema, and model. When you read the term element from now on, it refers to the data field to which content is assigned when data is captured. Think XML. The element is identified by tags, with the value in between. This combination is used to describe an area of the ingested resource.  
+You will often find that the definitions of terms overlap - as described above for standard, schema, and model. When you read the term element from now on, it refers to the data field to which content is assigned when data is captured. Think XML. The element is identified by tags, with the value in between. This combination is used to describe an area of the ingested resource.  
 
 ::: keypoints
 - The Dublin Core Standard provides a simple Set of 15 elements as well as a extend set with additional properties, classes, datatypes, and vocabulary encoding schemes.
