@@ -273,6 +273,7 @@
         <ul><li><a href="#standard-schema-or-model">Standard, Schema or Model?</a></li>
 <li><a href="#metadata-standard">Metadata Standard</a></li>
 <li><a href="#metadata-schema">Metadata Schema</a></li>
+<li><a href="#conceptual-model">Conceptual Model</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -382,7 +383,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Introduction to Metadata Standards and Schemas</h1>
-        <p>Last updated on 2025-04-02 |
+        <p>Last updated on 2025-04-29 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/introduction_standards.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -411,12 +412,12 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Knowledge of the terms metadata standard, metadata schema and
-metadata model.</li>
-<li>Familiar with the basic ideas of standard, schema and model.</li>
-<li>Familiar with the basic concepts and data relationships for
-standards, schemas and models.<br></li>
-</ul></div>
+<p>After completing this episode, participants should be able to<br>
+- explain the terms <em>metadata standard</em>, <em>metadata schema</em>
+and <em>metadata model</em>. - memorize the basic ideas of standard,
+schema and model. - summarize the basic concepts and data relationships
+for standards, schemas and models.</p>
+</div>
 </div>
 </div>
 </div>
@@ -424,23 +425,22 @@ standards, schemas and models.<br></li>
 <section><h2 class="section-heading" id="standard-schema-or-model">Standard, Schema or Model?<a class="anchor" aria-label="anchor" href="#standard-schema-or-model"></a></h2>
 <hr class="half-width"><p>The terms <em>metadata standard</em>, <em>metadata schema</em>, and
 <em>metadata model</em> are often used synonymously. The following is an
-attempt to differentiate between the terms <em>metadata standard</em>,
-<em>metadata schema</em> and <em>model</em>. However, it must be
+attempt to differentiate between the terms. However, it must be
 emphasized that this is not a universal claim; rather, it is intended to
 facilitate a better understanding of the structures of data
 standardization, as there are no universally accepted definitions of
 these terms.</p>
 </section><section><h2 class="section-heading" id="metadata-standard">Metadata Standard<a class="anchor" aria-label="anchor" href="#metadata-standard"></a></h2>
 <hr class="half-width"><p>A metadata standard is a technical specification that describes how
-data should be annotated or structured, and includes principles and
-implementation issues for using the standard. There are several ways to
-standardise data. On the one hand, each element or data field is
-uniquely named (e.g. author, title, etc.) and can be specified by rules
-in the form of attributes (e.g. data type). On the other hand, a
-structure for recording the data can be defined in terms of groups or
-categories, such as administrative, technical and descriptive metadata.
-Both methods provide a basic description and organisation of the data,
-thereby standardising it. Of course, a combination of the two is also
+data should be annotated or structured. There are several ways to
+standardise data. Two of the main concepts will be presented in this
+lesson. On the one hand, each element or data field is uniquely named
+(e.g. author, title, etc.) and can be specified by rules in the form of
+attributes (e.g. data type). On the other hand, a structure for
+recording the data can be defined in terms of groups or categories, such
+as administrative, technical and descriptive metadata. Both methods
+provide a basic description and organisation of the data, thereby
+standardising it. Of course, a combination of the two is also
 possible.</p>
 <p>There are different standards for different topics and communities.
 This ensures that, for example, the rules for recording data in an
@@ -480,52 +480,50 @@ this way.</p>
 </ul></li>
 </ul></div>
 </section><section><h2 class="section-heading" id="metadata-schema">Metadata Schema<a class="anchor" aria-label="anchor" href="#metadata-schema"></a></h2>
-<hr class="half-width"><p>The term <em>metadata schema</em> is most often used to structure
-data within a specific context, and there are countless standards for
-each discipline or specific purpose. During the development phase, an
-existing metadata standard can be integrated. Its rules are then applied
-to the metadata fields, which in turn are placed in a larger
+<hr class="half-width"><p>A <em>metadata schema</em> is mostly used to structure data within a
+specific context, and there are countless standards for each discipline
+or specific purpose. During the development phase of the data structure,
+an existing metadata standard can be integrated. Its rules are then
+applied to the metadata fields, which in turn are placed in a larger
 context.</p>
-<p>Imagine you want to describe a photograph of a building. There is the
-creator metadata element. Whose name would you annotate? The
-photographer’s name or the architect’s name? Now you could add a role as
-a metadata element to further describe the context of the personal data.
-You might also want to structure the data for the photo and the building
-it depicts separately to display the information accurately. A schema
-can map a custom structure or hierarchy of a collection, as well as
-define data fields for specific subjects. As a result, a schema places
-the data in a desired context and establishes the relationships between
-the data.</p>
-<div class="section level4">
-<h4 id="conceptual-model">Conceptual Model<a class="anchor" aria-label="anchor" href="#conceptual-model"></a></h4>
-<p>The term <em>conceptual model</em> is often used in this context.
-Conceptual models, also known as semantic data models, are typically
-abstractions of real-world entities. They are used to formally
+<p>Imagine you want to describe the photograph of a building. In the
+metadata, you have an element called “creator”. Whose name would you
+enter here? The photographer’s or the architect’s? Here, you can add
+“role”” as a metadata element to further describe the context of the
+personal data. You might also want to structure the data for the photo
+and the building it depicts separately to display the information
+accurately. A schema can map a custom structure or the hierarchy of a
+collection, as well as define data fields for specific subjects. As a
+result, a schema places the data in a desired context and establishes
+the relationships between information contained in it.</p>
+</section><section><h2 class="section-heading" id="conceptual-model">Conceptual Model<a class="anchor" aria-label="anchor" href="#conceptual-model"></a></h2>
+<hr class="half-width"><p><em>Conceptual model</em>s, also known as semantic data models, are
+typically abstractions of real-world entities. They are used to formally
 articulate the data of a collection or specialised domain in an abstract
 way. An example of such a model is the Entity-Relationship Model, which
-describes the relationship between two data entities. To illustrate, the
+describes the relationship between two data entities. For example, the
 relationship between the entity of the author “Franz Kafka” and the
 entity of the book “The Trial” can be defined by the relationship “has
-written”. The advantage of this relationship is that it allows flexible
-linking of data. In addition, the entity “book” can be linked to the
-entity “publisher” by the relationship “has published”. The term
-metadata model is most appropriate here. First of all, it is an abstract
-and theoretical model that describes metadata in its context.</p>
-<figure><img src="fig/triple.png" alt="Graphic Entity Relationship" class="figure mx-auto d-block"><div class="figcaption">Graphic Entity Relationship</div>
-</figure><p>The data is modelled in the form of triples. A triple consists of a
-subject, an object and a predicate. The predicate describes the
-relationship between the subject, the entity to be described, and the
-object, the entity associated with the subject:</p>
+written”.<br>
+The advantage of this relationship is that it allows flexible linking of
+data. In addition, the entity “book” can be linked to the entity
+“publisher” by the relationship “has published”.</p>
+<figure><img src="fig/triple.png" alt="Figure of Entity Relationships in a Conceptual Model, using triples to link data" class="figure mx-auto d-block"><div class="figcaption">Entity Relationships in the Conceptual
+Model</div>
+</figure><p>In the conceptual model, data is modelled in the form of triples. A
+triple consists of a subject, an object and a predicate. The predicate
+describes the relationship between the subject, the entity to be
+described, and the object (the entity associated with the subject):</p>
 <p>author (subject) has written (predicate) book (object).</p>
 <p>An object can become the subject of another triple, and vice versa,
 as the example above illustrates.</p>
-<p>This approach is mainly used in the field of the Semantic Web, where
-it serves as the basic framework for linked open data [link to lesson],
-which aims to achieve the maximum degree of interconnection between data
-sets. Entities in this context are provided with unique identifiers in
-the metadata, which in turn represent entities that have their own
-metadata. To illustrate, an entity can be described by its identifier in
-the context of the Wikimedia Foundation’s knowledge base, known as
+<p>This approach is mainly used in the Semantic Web, where it serves as
+the basic framework for linked open data. Linked open data aims to
+achieve the maximum degree of interconnection between data sets.
+Entities in this context are provided with unique identifiers in the
+metadata, which in turn represent entities that have their own metadata.
+To illustrate, an entity can be described by its identifier in the
+context of the Wikimedia Foundation’s knowledge base, known as
 “Wikidata”. By establishing these links, the data available in this
 repository is being used indirectly.</p>
 <div id="exercise" class="callout challenge">
@@ -536,9 +534,8 @@ repository is being used indirectly.</p>
 <h3 class="callout-title">Exercise:</h3>
 <div class="callout-content">
 <p>Discuss the following diagram in small groups. What is shown? How is
-the data linked and can you think of other data that could be
-linked?</p>
-<figure><img src="fig/graphstart.png" alt="Graphic Data Relation Exercise" class="figure mx-auto d-block"><div class="figcaption">Graphic Data Relation Exercise</div>
+the data linked? Can you think of other data that could be linked?</p>
+<figure><img src="fig/graphstart.png" alt="Figure of Exercise on Data Relations" class="figure mx-auto d-block"><div class="figcaption">Graphic Data Relation Exercise</div>
 </figure></div>
 </div>
 </div>
@@ -549,9 +546,9 @@ linked?</p>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>Not only is the name of the author entity included, but also its GND
-database identifier. The Gemeinsame Normdatei (GND), maintained by the
-Deutsche Nationalbibliothek (German National Library), is a
+<p>Not only is the name of the author is included as an entity, but also
+its GND database identifier. The Gemeinsame Normdatei (GND), maintained
+by the Deutsche Nationalbibliothek (German National Library), is a
 comprehensive database describing persons, corporations, conferences,
 geographies, subject headings and works. Within the GND, the author
 entity is also a metadata entity containing biographical data. Linking
@@ -598,15 +595,15 @@ heterogeneity in terms of content, age, retro-digitisation methods and
 associated data capture processes. There is also considerable variation
 in the nature and extent of metadata recorded across collections.
 Differences in data acquisition and storage practices also contribute to
-the heterogeneity observed. However, the goal of consolidating
-collections into online portals for improved visibility and
-accessibility requires the implementation of data standardisation to the
-greatest extent possible. It also helps research to ensure comparability
-across large numbers of objects. Standardising large amounts of data
-from diverse collections is costly in terms of time, money and human
-resources, which are often in short supply. For this reason, minimum
-metadata requirements have been discussed in recent years. A minimum
-data set developed in Germany is briefly presented here.</p>
+this heterogeneity. However, the goal of consolidating collections into
+online portals for improved visibility and accessibility requires the
+implementation of data standardisation to the greatest extent possible.
+It also helps research to ensure comparability across large numbers of
+objects. Standardising large amounts of data from diverse collections is
+costly in terms of time, money and human resources, which are often in
+short supply. For this reason, minimum metadata requirements have been
+discussed in recent years. A minimum data set developed in Germany is
+briefly presented here.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -617,8 +614,8 @@ data set developed in Germany is briefly presented here.</p>
 <p>The terms metadata standard, metadata schema and metadata model are
 often used interchangeably. They can be broadly distinguished as
 follows:<br>
-- A metadata standard describes elements or a structure of metadata and
-is mainly defined for technical implementation.<br>
+- A metadata standard describes the elements or structure of metadata
+and is mainly defined for technical implementation.<br>
 - A metadata schema provides a structure for metadata within a specific
 content, often integrating existing metadata standards.<br>
 - A metadata model is an abstract and theoretical model that describes
@@ -630,7 +627,6 @@ metadata in its context.</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="json.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
@@ -689,7 +685,7 @@ any links that you are not going to use.
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/introduction_standards.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/introduction_standards.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-04-02",
+  "dateModified": "2025-04-29",
   "datePublished": "2025-04-29"
 }
 
