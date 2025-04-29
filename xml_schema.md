@@ -228,7 +228,7 @@ XSD provides more indicators to order the elements or to define the occurrence o
 - minOccurs
 
 ```xsd
-<xs:element name=“object“>
+<xs:element name="object">
   <xs:complexType name="objectType" abstract="true"> 
     <xs:sequence> 
       <xs:element name="creator" type="xs:string" minOccurs="1" maxOccurs="3"/>
