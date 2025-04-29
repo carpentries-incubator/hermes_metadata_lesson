@@ -373,7 +373,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Resource Description Framework (RDF)</h1>
-        <p>Last updated on 2025-04-02 |
+        <p>Last updated on 2025-04-29 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/rdf.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -393,7 +393,7 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul><li>What is the Resource Description Framework (RDF)?</li>
-<li>How are information linked using triple and URI?</li>
+<li>How can information be linked using triples and URI?<br></li>
 </ul></div>
 </div>
 </div>
@@ -401,10 +401,11 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Knowledge of the basics of the Resource Description Framework
-(RDF).</li>
-<li>Familiar with the core concept of using URIs for linking data in the
-RDF.</li>
+<p>After completing this episode, participants should be able to</p>
+<ul><li>describe the basics of the Resource Description Framework
+(RDF),</li>
+<li>name the elements of a triple,</li>
+<li>find URI for RDF triple elements and create RDF statements.</li>
 </ul></div>
 </div>
 </div>
@@ -422,24 +423,24 @@ is called an RDF model.</p>
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>&lt;<span class="kw">subject</span>/&gt;&lt;<span class="kw">predicate</span>/&gt;&lt;<span class="kw">object</span>/&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>&lt;<span class="kw">painter</span>&gt;Frida Kahlo&gt;&lt;/<span class="kw">painter</span>&gt;&lt;<span class="kw">creator</span>&gt;is creator of&lt;/<span class="kw">creator</span>&gt;&lt;<span class="kw">painting</span>&gt;The two fridas&lt;/<span class="kw">painting</span>&gt;</span></code></pre>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>&lt;<span class="kw">artist</span>&gt;Frida Kahlo&gt;&lt;/<span class="kw">artist</span>&gt;&lt;<span class="kw">creator</span>&gt;is creator of&lt;/<span class="kw">creator</span>&gt;&lt;<span class="kw">artwork</span>&gt;The two fridas&lt;/<span class="kw">artwork</span>&gt;</span></code></pre>
 </div>
 <p>The subject and predicate are always resources. This means that they
 are entities with an extended set of information. The object can be
 either a resource or a literal. Literals are strings that can be
 interpreted using a specified data type like boolean values, numbers, or
-dates, for example. Unique identifiers (URIs) are used to identify
-resources.</p>
-<p>A Uniform Resource Identifier is an identifier consisting of a string
-of characters used to identify an abstract or physical resource. They
-are built in a similar way to a web address (URL). The aforementioned
-GND or Wikidata IDs are examples. Different sources can be linked
-together using the URIs. Remember the graphic in the introduction.</p>
+dates. Unique identifiers (e.g. URI) are used to identify resources.</p>
+<p>A Uniform Resource Identifier (URI) is an identifier consisting of a
+string of characters used to identify an abstract or physical resource.
+They are built in a similar way as a web address (URL). The
+aforementioned GND or Wikidata IDs are examples. Different sources can
+be linked together using the URI. Remember the graphic in the
+introduction.</p>
 <p>The predicate is also defined by a URI. This is possible, for
 example, when the relationship is defined by a metadata standard. The
-metadata fields of the standards have their own URIs. The relationship
-between author and book can be modeled using the Dublin Core element
-“creator”.</p>
+metadata fields of the standards have their own URI. The relationship
+between an artist and her artwork can be modeled using the Dublin Core
+element “creator”.</p>
 <pre><code>&lt;https://www.wikidata.org/wiki/Q5588&gt;&lt;http://purl.org/dc/terms/creator&gt;&lt;https://www.wikidata.org/wiki/Q3232010&gt;</code></pre>
 <p>This example means exactly the same as the previous example: Frida
 Kahlo is creator of “The two Fridas” by using the identifier of Wikidata
@@ -454,8 +455,8 @@ JSON-LD and RDF/XML - two special formats of JSON and XML for RDF.</p>
 <h3 class="callout-title">Exercise</h3>
 <div class="callout-content">
 <p>Take a closer look at the <a href="https://www.wikidata.org/wiki/Q3232010" class="external-link">Wikidata resource of Frida
-Kahlos painting “The two Fridas”</a>. Can you find alternative
-information to describe the predicate instead of using Dublin Core?</p>
+Kahlos painting “The two Fridas”</a>. Can you find an alternative way of
+describing the predicate instead of using Dublin Core?</p>
 </div>
 </div>
 </div>
@@ -464,7 +465,7 @@ information to describe the predicate instead of using Dublin Core?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><a href="https://www.wikidata.org/wiki/Property:P170" class="external-link">creator
 property</a>:<br>
@@ -485,7 +486,7 @@ be used similiar to the Dublin Core element of creator.</p>
 <h3 class="callout-title">Exercise</h3>
 <div class="callout-content">
 <p>Use wikidata to create a triple for the following statements:<br>
-1) Michelangelo is creator of the Pietà.<br>
+1) Michelangelo is the creator of the Pietà.<br>
 2) Michelangelo was born in Caprese Michelangelo.<br>
 3) The Pietà is located in the St. Peter’s Basilica.</p>
 </div>
@@ -496,23 +497,12 @@ be used similiar to the Dublin Core element of creator.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <pre><code>&lt;https://www.wikidata.org/wiki/Q5592&gt;&lt;https://www.wikidata.org/wiki/Property:P170&gt;&lt;https://www.wikidata.org/wiki/Q235242&gt;
 &lt;https://www.wikidata.org/wiki/Q5592&gt;&lt;https://www.wikidata.org/wiki/Property:P19&gt;&lt;https://www.wikidata.org/wiki/Q52069&gt;
 &lt;https://www.wikidata.org/wiki/Q235242&gt;&lt;https://www.wikidata.org/wiki/Property:P276h&gt;&lt;ttps://www.wikidata.org/wiki/Q12512&gt;</code></pre>
 </div>
-</div>
-</div>
-</div>
-<div id="callout1" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout</h3>
-<div class="callout-content">
-<p>For more learning about RDF and Linked Open Data use the lesson on <a href="to%20be%20added">LOD</a>.</p>
 </div>
 </div>
 </div>
@@ -524,8 +514,9 @@ be used similiar to the Dublin Core element of creator.</p>
 <h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul><li>RDF is a standard model for data interchange on the Web.<br></li>
-<li>Statements are modeled as triples. Using URIs, these triples link
-data and form a (mathematical) graph.</li>
+<li>Statements are modeled as triples. Using URI, these triples link
+data (and thus all the information behind it) and form a (mathematical)
+graph.</li>
 </ul></div>
 </div>
 </div>
@@ -594,7 +585,7 @@ any links that you are not going to use.
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/rdf.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/rdf.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-04-02",
+  "dateModified": "2025-04-29",
   "datePublished": "2025-04-29"
 }
 
