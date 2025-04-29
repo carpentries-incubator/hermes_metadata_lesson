@@ -128,7 +128,7 @@ At the top of an XML document you will often find something called a prolog or d
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 ```
-It is optional, but provides information about the version and encoding[2] used. If included, it must be placed at the top of the document above the root element. The XML prolog or declaration does not have a closing tag.  
+It is optional, but provides information about the version and encoding^[2] used. If included, it must be placed at the top of the document above the root element. The XML prolog or declaration does not have a closing tag.  
 
 ::: callout
 XML documents that conform to all these rules are considered "Well-Formed" XML documents.
