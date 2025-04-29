@@ -14,8 +14,8 @@ exercises: 20
 ::: objectives
 After completing this episode, participants should be able to  
 
-- describe the basic concept of the Metadata Encoding & Transmission Standard  
-- discuss the important elements for structuring data in METS  
+- describe the basic concept of the Metadata Encoding & Transmission Standard,  
+- discuss the important elements for structuring data in METS.  
 :::
 
 ## METS Metadata Encoding & Transmission Standard
