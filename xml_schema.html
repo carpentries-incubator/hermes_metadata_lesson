@@ -380,7 +380,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>XML Schema</h1>
-        <p>Last updated on 2025-04-23 |
+        <p>Last updated on 2025-04-29 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/xml_schema.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -409,9 +409,10 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Knowledge of basic elements of an XML Schema.</li>
-<li>Familiar with the basic structure.</li>
-<li>Ability to understand simple XML Schemas.</li>
+<p>After completing this episode, participants should be able to</p>
+<ul><li>identify the basic elements of an XML Schema,<br></li>
+<li>recognise the basic structure,<br></li>
+<li>investigate a simple XML Schema.</li>
 </ul></div>
 </div>
 </div>
@@ -419,8 +420,8 @@
 </div>
 <p>As you have learned there are standards for annotating data in the
 Humanities. To ensure that data is properly standardized and
-interoperable—allowing it to be imported into, for example, cultural
-heritage databases—technical schemas are used. In the humanities and
+interoperable — allowing it to be imported into, for example, cultural
+heritage databases — technical schemas are used. In the humanities and
 cultural studies, XML Schema is a common choice. There are different
 schema languages to express XML Schema. While it is not the only option,
 the XML Schema Definition (XSD) is widely used to define the structure,
@@ -447,7 +448,7 @@ element for the whole document:</p>
 </div>
 <p>The prefix „xs“ or “xsd” indicates the namespace for the Schema.
 Remember not to use : in XML tags. Since the colon is a meta character
-with a reserved meaning, do not use it beyond the referencing of
+with a reserved meaning, do not use it anywhere except when referencing
 namespaces.</p>
 <div class="section level3">
 <h3 id="namespaces">Namespaces<a class="anchor" aria-label="anchor" href="#namespaces"></a></h3>
@@ -459,8 +460,9 @@ namespaces.</p>
 <h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>A namespace contains a set of rules and is defined in the xsd file.
-Existing namespaces can also be included there and these rules are also
-referenced in an XML document.</p>
+Other, existing namespaces can also be included in a certain namespace.
+The rules defined by existing namespaces are also referenced in the XML
+document.</p>
 </div>
 </div>
 </div>
@@ -491,17 +493,16 @@ additional human-readable notes:</p>
 <p>The xs:annotation is a container in which additional information can
 be embedded. When xs:documentation is used within the container, the
 information is processed in a human readable way. If xs:appinfo is used
-within it, this is additional machine-readable information.</p>
-<p>Namespaces are specified for two reasons: First, they define elements
-and attributes more precisely, especially when they have different
-meanings in different sources and specifications from different
-standards need to be combined. Consider the problem of dates and names.
-They are a very common element and should be defined precisely. How
-should the date be recorded? As a period of time or as an ISO value? Are
-first and last names recorded separately? Since there may be different
-rules in each standard, but they may refer to the same field name,
-namely “date” or “name”, it is important to specify the source of the
-rules.</p>
+within it, it means that information is machine-readable.</p>
+<p>Namespaces are given for two reasons: First, they define elements and
+attributes more precisely, especially when they have different meanings
+in different sources and specifications from different standards need to
+be combined. Consider the problem of dates and names. They are a very
+common element and should be defined precisely. How should the date be
+recorded? As a period of time or as an ISO value? Are first and last
+names recorded separately? Since there may be different rules in each
+standard, but they may refer to the same field name, namely “date” or
+“name”, it is important to specify the source of the rules.</p>
 <p>Secondly, they group together all the elements and attributes of an
 XML application so that software can easily recognise them.</p>
 <p>A namespace is assigned in the header of the file by using xmlns as
@@ -536,8 +537,8 @@ standard, that standard is the default specification for the entire
 document and all elements without a prefix refer to that standard.</p>
 <p>In addition, when creating an xsd file for a specially developed
 standard, a targetNamespace is specified. This is the name of the
-namespace whose technical details are defined in this xsd file and which
-is then referenced in the XML document.</p>
+namespace, the technical details of which are defined in this xsd file,
+and which will then be referenced in the XML document.</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -559,23 +560,23 @@ check compliance with this standard:</p>
 <pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>&lt;<span class="kw">xs:import</span><span class="ot"> namespace=</span><span class="st">"http://www.w3.org/XML/1998/namespace"</span><span class="ot"> schemaLocation=</span><span class="st">"http://www.w3.org/2001/03/xml.xsd"</span>&gt;</span></code></pre>
 </div>
 <p>The schemaLocation refers directly to the associated Schema - the xsd
-file - whose specifications are adopted for the document. Special
+file - the specifications of which are adopted for the document. Special
 software (validators) can be used to check whether an XML document
 conforms to the technical rules specified in an xsd file.</p>
 </div>
 <div class="section level3">
 <h3 id="simple-element">Simple Element<a class="anchor" aria-label="anchor" href="#simple-element"></a></h3>
 <p>A simple XML element is defined in the Schema by the specification
-xs:element and minimum the attributes name and type.</p>
+xs:element and the attributes name and type at least.</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode xsd" tabindex="0"><code class="sourceCode xml"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>&lt;<span class="kw">xs:element</span><span class="ot"> name=</span><span class="st">"descriptive name"</span><span class="ot"> type=</span><span class="st">"string"</span>&gt;&lt;/<span class="kw">xs:element</span>&gt;</span></code></pre>
 </div>
-<p>For example, we can specify that a place is always called place and
+<p>For example, we can specify that a place is always called “place” and
 that the character type of the content is a string. This specification
-prevents the tag from being sometimes called place, sometimes location
-or even city:</p>
+prevents the tag from sometimes being called “place”, sometimes
+“location” or even “city”:</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -618,7 +619,7 @@ set of values:</p>
 <span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>  &lt;/<span class="kw">xs:simpleType</span>&gt;</span>
 <span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a>&lt;/<span class="kw">xs:element</span>&gt;</span></code></pre>
 </div>
-<p>Using xs:pattern you can set restriction on a series of numbers or
+<p>Using xs:pattern you can set restrictions on a series of numbers or
 letters. There are other constraints for values in XML, e.g., whiteSpace
 or length:</p>
 <div class="section level4">
@@ -666,11 +667,10 @@ in additional attributes.</p>
 </div>
 <div class="section level3">
 <h3 id="complextype">ComplexType<a class="anchor" aria-label="anchor" href="#complextype"></a></h3>
-<p>What you will see more often in metadata schemas is something called
-complexType. This allows the element (later data field) to be defined
-much more precisely. Using this type it is possible, for example, to
-create a group with child elements and to assign attributes to
-elements.</p>
+<p>You will often encounter complexType in metadata schemas. This allows
+the element (later data field) to be defined much more precisely. Using
+this type, it is possible, for example, to create a group with child
+elements and to assign attributes to elements.</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -692,24 +692,24 @@ elements.</p>
 <span id="cb11-16"><a href="#cb11-16" tabindex="-1"></a>  &lt;/<span class="kw">xs:complexType</span>&gt; </span>
 <span id="cb11-17"><a href="#cb11-17" tabindex="-1"></a>&lt;/<span class="kw">xs:element</span>&gt;</span></code></pre>
 </div>
-<p>This is suggested for the definition of an object, e.g. cultural
-heritage. Data fields are defined for the object itself, such as title
-and creator or medium. At least one creator must be specified in the
-block for the object. The xs:sequence element (called “indicator”)
-specifies that the child elements must appear in the specified order.
-Each child element can occur from 0 to any number of times. In addition,
-the creator’s details are recorded in the second block, together with
-the life data. Only one creator’s name may be entered in this block, so
-if there are multiple creators, each will have their own details in a
-separate block.</p>
-<p>Xsd provides more indicators to order the elements or to define
+<p>The above is suggested for the definition of an object, e.g. in
+cultural heritage. Data fields are defined for the object itself, such
+as title and creator or medium. At least one creator must be specified
+in the block for the object. The xs:sequence element (called
+“indicator”) specifies that the child elements must appear in the
+specified order. Each child element can occur from 0 to any number of
+times. In addition, the creator’s details are recorded in the second
+block, together with the life data. Only one creator’s name may be
+entered in this block. So if there are multiple creators, each will have
+their own details in a separate block.</p>
+<p>XSD provides more indicators to order the elements or to define the
 occurrence of elements:</p>
 <p><strong>Order indicators</strong>, used to define the order of the
 elements, treated as tags:</p>
 <ul><li>All - The all indicator specifies that the child elements can appear
 in any order, and that each child element must occur only once.</li>
-<li>Choice - The choice indicator specifies that either one child
-element or another can occur.</li>
+<li>Choice - The choice indicator specifies that either one of the child
+elements of choice can occur.</li>
 <li>Sequence - The sequence indicator specifies that the child elements
 must appear in a specific order.</li>
 </ul><div class="codewrapper sourceCode" id="cb12">
@@ -757,10 +757,10 @@ elements, treated as tags:</p>
 <span id="cb14-6"><a href="#cb14-6" tabindex="-1"></a>  &lt;/<span class="kw">xs:sequence</span>&gt;</span>
 <span id="cb14-7"><a href="#cb14-7" tabindex="-1"></a>&lt;/<span class="kw">xs:group</span>&gt; </span></code></pre>
 </div>
-<p>Of course, it is also possible to assign further attributes to the
-elements of a complexType. To do this, the attribute itself is created
-in the form of a simple element and assigned to the corresponding
-element to which it is to apply.</p>
+<p>It is also possible to assign further attributes to the elements of a
+complexType. To do this, the attribute itself is created in the form of
+a simple element and assigned to the corresponding element to which it
+is to be applied.</p>
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -784,8 +784,8 @@ element to which it is to apply.</p>
 <span id="cb15-18"><a href="#cb15-18" tabindex="-1"></a>  &lt;/<span class="kw">xsd:sequence</span>&gt;</span>
 <span id="cb15-19"><a href="#cb15-19" tabindex="-1"></a>&lt;/<span class="kw">xsd:complexType</span>&gt;</span></code></pre>
 </div>
-<p>In the first example above, a language attribute is defined that
-applies to the entire element. If the language is not specified, the
+<p>In the first example above, a language attribute is defined that is
+applied to the entire element. If the language is not specified, the
 default value is ‘English’. In the second example, the attribute is
 defined as a child of the “place” element, and is therefore only valid
 for that element.</p>
@@ -797,7 +797,7 @@ for that element.</p>
 </div>
 <p>It should be noted that all attributes are optional by default when
 creating the XML element, unless the use of the attribute is specified
-as</p>
+as required:</p>
 <div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -850,11 +850,11 @@ attributes:</p>
 <span id="cb19-20"><a href="#cb19-20" tabindex="-1"></a><span class="co">&lt;/xsd:complexType&gt;</span></span></code></pre>
 </div>
 <p>In the simpleType the requirement for a GND identifier is set as a
-string data type. This defined type “tGNDID” is used as an attribute in
-the complexType for the historical person. The complexType for the
-historical person is then used again as a type for the element
+string. The defined type “tGNDID” is used as an attribute in the
+complexType for the historical personality. The complexType for the
+historical personality is then used again as a type for the element
 “aussteller” in the complexType “rUrkunde”.</p>
-<p>The XML output would look like that:</p>
+<p>The XML output would look like this:</p>
 <div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -865,7 +865,7 @@ historical person is then used again as a type for the element
 <span id="cb20-5"><a href="#cb20-5" tabindex="-1"></a>  &lt;/<span class="kw">aussteller</span>&gt; </span>
 <span id="cb20-6"><a href="#cb20-6" tabindex="-1"></a>&lt;/<span class="kw">urkunde</span>&gt; </span></code></pre>
 </div>
-<p>The methods presented can also be nested within one another:</p>
+<p>The methods presented can also be nested in each other:</p>
 <div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">XSD<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -973,7 +973,7 @@ correctly as shown in the examples.</p>
 </div>
 </div>
 </div>
-<p>It is more difficult to create valid XML from an xsd file:</p>
+<p>It is more difficult to create a valid XML from an xsd file:</p>
 <div id="advanced-exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1037,9 +1037,9 @@ notes do you get if the XML is not valid? Are they helpful?</p>
 <span id="cb24-37"><a href="#cb24-37" tabindex="-1"></a>&lt;/<span class="kw">lba_cao</span>&gt;</span></code></pre>
 </div>
 <p>As you can see, most of the fields are empty, but some data needs to
-be added. As the xsd namespace is referenced, its rules apply. The
-dating element has the “from” and “to” attributes which use xs:date as
-the type. xs:date is specified in the following form “YYYY-MM-DD” and
+be added. Since the xsd namespace is referenced, its rules must apply.
+The dating element has the “from” and “to” attributes which use xs:date
+as the type. xs:date is specified in the following form “YYYY-MM-DD” and
 all components are required. Therefore, any date in this format must be
 added in the XML. The element “seal”, which annotates the number of
 original and preserved seals, has the type xs:nonNegativeInteger. This
@@ -1059,9 +1059,9 @@ an XML Schema. You can find references to these in this lesson under
 <div id="question" class="callout-inner">
 <h3 class="callout-title">Question</h3>
 <div class="callout-content">
-<p>Did you try to add content to the element “datierung”? A validator
-would not accept the XML as correct. Can you imagine why it is not
-correct to fill in a content like
+<p>Did you try to add content to the element “datierung”? If you do, the
+validator will not accept the XML as correct. Can you imagine why it is
+not correct to fill in a content like
 &lt;datierung&gt;2025-03-25:2025-04-01&lt;/datierung&gt;? Did you get a
 note using the validator?</p>
 </div>
@@ -1094,7 +1094,7 @@ complexType.</p>
 <div class="callout-inner">
 <h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
-<ul><li>XML Schema is helpful to describe allowable document content. It is
+<ul><li>XML Schema is helpful to describe allowed document content. It is
 the “grammar” for XML.</li>
 <li>It uses XML syntax. If you are familiar with this language you can
 use it easily.</li>
@@ -1116,7 +1116,7 @@ schema as well as many more.<br>
 harvesting schema. The LIDO schema is intended for delivering metadata,
 for use in a variety of online services, from an organization’s online
 collections database to portals of aggregated resources, as well as
-exposing, sharing, and connecting data on the web, <a href="http://www.lido-schema.org" class="external-link">LIDO schema</a>.</p>
+exposing, sharing, and connecting data on the web, <a href="https://www.lido-schema.org" class="external-link">LIDO schema</a>.</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
@@ -1180,7 +1180,7 @@ any links that you are not going to use.
   "url": "https://HERMES-DKZ.github.io/metadata_lesson/xml_schema.html",
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/xml_schema.html",
   "dateCreated": "2025-01-08",
-  "dateModified": "2025-04-23",
+  "dateModified": "2025-04-29",
   "datePublished": "2025-04-29"
 }
 
