@@ -14,8 +14,8 @@ exercises: 10
 ::: objectives
 After completing this episode, participants should be able to  
 
-- describe the basic structure of a CSV format for storing and processing metadata. 
-- open and investigate a simple CSV file.
+- describe the basic structure of a CSV format for storing and processing metadata, 
+- open and investigate a simple CSV file,
 - explain the main difference between an xslx and a csv format.
    
 :::
