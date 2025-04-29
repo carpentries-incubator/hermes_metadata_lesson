@@ -14,9 +14,10 @@ exercises: 10
 
 ::: objectives
 
-After completing this episode, participants should be able to    
-- explain the terms *metadata standard*, *metadata schema* and *metadata model*.   
-- memorize the basic ideas of standard, schema and model.  
+After completing this episode, participants should be able to
+
+- explain the terms *metadata standard*, *metadata schema* and *metadata model*,     
+- memorize the basic ideas of standard, schema and model,    
 - summarize the basic concepts and data relationships for standards, schemas and models.  
 :::
 
