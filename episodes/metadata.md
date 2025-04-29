@@ -13,11 +13,13 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Understand metadata basics.
-- Differentiate metadata from data.
-- Differentiate the major types of metadata.
-- Apply metadata concepts to practical challenges.
-- Recognise the role of metadata in the humanities.
+After completing this episode, participants should be able to  
+
+- understand metadata basics,
+- differentiate metadata from data,
+- differentiate the major types of metadata,
+- apply metadata concepts to practical challenges,
+- recognise the role of metadata in the humanities.
 ::::::::::::::::::::::::::::::::::::::::::::::::    
   
 ## Metadata Types, Functions, and Contexts
