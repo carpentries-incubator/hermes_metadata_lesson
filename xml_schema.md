@@ -47,12 +47,12 @@ The prefix „xs“ or "xsd" indicates the namespace for the Schema. Remember no
 ### Namespaces
 
 ::: callout
-A namespace contains a set of rules and is defined in the xsd file. Other, existing namespaces can also be included in a certain namespace. The rules defined by existing namespaces are also referenced in the XML document. 
+A namespace contains a set of rules and is defined in the XSD file. Other, existing namespaces can also be included in a certain namespace. The rules defined by existing namespaces are also referenced in the XML document. 
 ::: 
 
-The namespace mechanism for XML data has been developed by the W3 Consortium[1]. A namespace is a set of rules that provides specifications for XML elements and attributes. For example, it describes how elements and attributes are named or used. A namespace can be technically stored in the form of an xsd file or in the form of theoretical documentation. Technical specifications can be requirements for data types or minimum or maximum values. Documentation usually describes contextual relationships or rules for using controlled vocabularies or thesauri. Specifications from the documentation may be technically incorporated into the schema. Otherwise, they may be found as comments in the file. 
+The namespace mechanism for XML data has been developed by the W3 Consortium^[1]. A namespace is a set of rules that provides specifications for XML elements and attributes. For example, it describes how elements and attributes are named or used. A namespace can be technically stored in the form of an xsd file or in the form of theoretical documentation. Technical specifications can be requirements for data types or minimum or maximum values. Documentation usually describes contextual relationships or rules for using controlled vocabularies or thesauri. Specifications from the documentation may be technically incorporated into the schema. Otherwise, they may be found as comments in the file. 
 
-Example from LIDO Schema[2] for the gender of an actor with additional human-readable notes: 
+Example from LIDO Schema^[2] for the gender of an actor with additional human-readable notes: 
 
 ```xsd
 <xsd:element name="genderActor" type="lido:textComplexType" minOccurs="0" maxOccurs="unbounded">
@@ -107,7 +107,7 @@ Other namespaces can also be imported into the schema with the following specifi
 <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/03/xml.xsd">
 ```
 
-The schemaLocation refers directly to the associated Schema - the xsd file - the specifications of which are adopted for the document. Special software (validators) can be used to check whether an XML document conforms to the technical rules specified in an xsd file. 
+The schemaLocation refers directly to the associated Schema - the XSD file - the specifications of which are adopted for the document. Special software (validators) can be used to check whether an XML document conforms to the technical rules specified in an XSD file. 
 
 ### Simple Element 
 
