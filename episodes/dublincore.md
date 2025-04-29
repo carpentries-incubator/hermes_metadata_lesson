@@ -15,7 +15,7 @@ exercises: 20
 
 After completing this episode, participants should be able to  
 
-- identify basic elements from the Dublin Core Metadata Element Set. 
+- identify basic elements from the Dublin Core Metadata Element Set,   
 - differentiate between a simple Dublin Core Set and a qualified set.
 :::
 
