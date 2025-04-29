@@ -30,7 +30,6 @@ Born-digital data is inherently created in digital environments and exists only 
 ::: challenge
 ## Exercise
 
-**<span style="color:red">It is not clear what this exercise is trying to do. What is the problem?! </span>**
 
 **Analogue vs. Digital – What Are We Really Looking At?**
 
@@ -65,7 +64,6 @@ In your own field of study, where do you encounter the analogue-to-digital trans
 
 We're viewing the painting on a computer screen. Everything we see is displayed digitally. Although the original object is analogue, our interaction with it is entirely digital. The painting has been digitized—converted into data (e.g., pixels, metadata) that can be stored, processed, displayed by computers, shared, searched, and manipulated. We are not interacting with the analogue object itself, but with its digital representation. This transformation allows broader access but also introduces limitations: aspects like scale, texture, or true colour may be lost, and we experience only a digital approximation. Understanding this transformation is key to working with data in the digital humanities and is critical for thinking about how cultural knowledge is shaped by the digital medium.   
 
-**<span style="color:red">End of comment </span>**
 :::
 :::  
 
