@@ -32,17 +32,38 @@ Born-digital data is inherently created in digital environments and exists only 
 
 **<span style="color:red">It is not clear what this exercise is trying to do. What is the problem?! </span>**
 
-Let’s explore some examples of these different data types.
+**Analogue vs. Digital – What Are We Really Looking At?**
 
-Let's take a look at data from the [Metropolitan Museum of Modern Art](https://www.metmuseum.org/)'s collection. 
+This exercise invites you to explore how analogue and digital data differ by looking at a cultural heritage object. It focuses on what happens when physical artworks are made accessible through digital media. 
+Let’s take some data from the Metropolitan Museum of Modern Art’s collection.   
 
-Oops! We have a challenge!
-Can you identify what kind of problem do we have here?
+Guiding Question
+What kind of data are we working with when we interact with digitised cultural objects? What happens to the qualities of analogue objects when they are transformed into digital representations?   
+
+Step 1: Observation
+Choose a digital image of an object from the Metropolitan Museum of Modern Art’s online collection (or from another digital museum resource).
+Reflect on the following questions:
+What kind of object is this originally?
+What can you observe on the screen?
+What might be missing compared to experiencing the object in person?   
+
+Step 2: Guided Discussion
+With the following questions:
+If the original artwork is analogue (physical), and we’re viewing it on a screen, what kind of data are we really working with?
+What happens to the object’s materiality when it is digitized?
+How does digital representation affect our understanding or interpretation?
+What do we gain, and what do we lose, in this transformation?   
+
+Step 3: Reflection
+Consider:
+What qualities of an object are difficult or impossible to capture digitally?
+Which digital formats (e.g., high-resolution images, 3D models, metadata) attempt to compensate for these limitations?
+In your own field of study, where do you encounter the analogue-to-digital transformation? How does it affect your research or interpretation?
 
 ::: solution 
 ## Output
 
-We cannot present analogue data here because everything we display on the monitor is digital!
+We're viewing the painting on a computer screen. Everything we see is displayed digitally. Although the original object is analogue, our interaction with it is entirely digital. The painting has been digitized—converted into data (e.g., pixels, metadata) that can be stored, processed, displayed by computers, shared, searched, and manipulated. We are not interacting with the analogue object itself, but with its digital representation. This transformation allows broader access but also introduces limitations: aspects like scale, texture, or true colour may be lost, and we experience only a digital approximation. Understanding this transformation is key to working with data in the digital humanities and is critical for thinking about how cultural knowledge is shaped by the digital medium.   
 
 **<span style="color:red">End of comment </span>**
 :::
