@@ -36,24 +36,28 @@ Born-digital data is inherently created in digital environments and exists only 
 This exercise invites you to explore how analogue and digital data differ by looking at a cultural heritage object. It focuses on what happens when physical artworks are made accessible through digital media. 
 Let’s take some data from the Metropolitan Museum of Modern Art’s collection.   
 
-Guiding Question
+Guiding Question   
+
 What kind of data are we working with when we interact with digitised cultural objects? What happens to the qualities of analogue objects when they are transformed into digital representations?   
 
-Step 1: Observation
+Step 1: Observation   
+
 Choose a digital image of an object from the Metropolitan Museum of Modern Art’s online collection (or from another digital museum resource).
 Reflect on the following questions:
 What kind of object is this originally?
 What can you observe on the screen?
 What might be missing compared to experiencing the object in person?   
 
-Step 2: Guided Discussion
+Step 2: Guided Discussion   
+
 With the following questions:
 If the original artwork is analogue (physical), and we’re viewing it on a screen, what kind of data are we really working with?
 What happens to the object’s materiality when it is digitized?
 How does digital representation affect our understanding or interpretation?
 What do we gain, and what do we lose, in this transformation?   
 
-Step 3: Reflection
+Step 3: Reflection   
+
 Consider:
 What qualities of an object are difficult or impossible to capture digitally?
 Which digital formats (e.g., high-resolution images, 3D models, metadata) attempt to compensate for these limitations?
