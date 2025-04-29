@@ -13,9 +13,11 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
   
-::::::::::::::::::::::::::::::::::::: objectives
+::::::::::::::::::::::::::::::::::::: objectives  
 
-- Providing a basic explanation of the theoretical and methodological implications of working with data.
+After completing this episode, participants should be able to
+
+- providing a basic explanation of the theoretical and methodological implications of working with data.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introduction
