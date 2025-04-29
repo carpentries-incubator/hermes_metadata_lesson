@@ -13,7 +13,7 @@ exercises: 10
 ::: objectives
 After completing this episode, participants should be able to
 
--summarize the basic concept of the Minimum Record Recommendation for Museums and Collections  
+- summarize the basic concept of the Minimum Record Recommendation for Museums and Collections  
 :::
 
 ## Minimum Record Recommendation for Museums and Collections
