@@ -13,7 +13,7 @@ exercises: 20
 ::: objectives
 After completing this episode, participants should be able to  
 
-- describe JSON format for storing and processing metadata.   
+- describe JSON format for storing and processing metadata,   
 - investigate and write a simple JSON file. 
 :::
 
