@@ -703,7 +703,7 @@ we have here?</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>We cannot present analogue data here because everything we display on
 the monitor is digital!</p>
@@ -1255,7 +1255,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-xml"><p>Content from <a href="xml.html">XML</a></p>
 <hr>
-<p>Last updated on 2025-04-17 |
+<p>Last updated on 2025-04-29 |
 
         <a href="https://github.com/HERMES-DKZ/metadata_lesson/edit/main/episodes/xml.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 40 minutes</p>
@@ -1271,6 +1271,8 @@ any links that you are not going to use.
 <h3 class="card-title">Questions</h3>
 <ul>
 <li>What is XML?</li>
+<li>What are the elements of XML?<br>
+</li>
 <li>How do you annotate data in XML?</li>
 </ul>
 </div>
@@ -1280,10 +1282,13 @@ any links that you are not going to use.
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
+<p>After completing this episode, participants should be able to</p>
 <ul>
-<li>Knowledge of XML format for storing and processing metadata.</li>
-<li>Familiar with the structure of a simple XML file.</li>
-<li>Able to write extracted metadata in a simple XML format.</li>
+<li>describe the XML format for storing and processing metadata,</li>
+<li>name syntax rules for a well-formed XML file,<br>
+</li>
+<li>investigate the structure of a simple XML file,</li>
+<li>write extracted metadata in a simple XML format.</li>
 </ul>
 </div>
 </div>
@@ -1294,8 +1299,8 @@ any links that you are not going to use.
 XML (eXtensible Markup Language). It is used to describe, structure,
 store and transport data. XML refers to the file format as well as to
 the syntax in which data is recorded: the markup language. By marking up
-the text with what are called tags, data and metadata can be combined in
-a single document.</p>
+the text with <em>tags</em>, data and metadata can be combined in a
+single document.</p>
 <section><h2 class="section-heading" id="xml-elements">XML Elements<a class="anchor" aria-label="anchor" href="#xml-elements"></a>
 </h2>
 <hr class="half-width">
@@ -1336,12 +1341,16 @@ of metadata standards and ontologies.</p>
 <li>Can contain letters, digits, hyphens, underscores, and periods.</li>
 <li>Cannot contain spaces.</li>
 </ul>
-<p>Best Naming Practices:</p>
+<p>Best Naming Practices and what to consider:</p>
 <ul>
 <li>Create descriptive names.</li>
 <li>Create short and simple names.</li>
-<li>Avoid - / . / : in the names, e.g. &lt;first-name&gt;, and be aware
-that : is reserved for namespaces which have a special function.</li>
+<li>Avoid - / . / : in the names, e.g. &lt;first-name&gt; (: is reserved
+for namespaces which have a special function).</li>
+<li>XML tags are case sensitive. The tag <name> is different from the
+tag <name>.</name></name>
+</li>
+<li>XML does not truncate multiple white-spaces.</li>
 </ul>
 <p>XML also provides the ability to have comments that are not
 automatically read:</p>
@@ -1357,8 +1366,8 @@ element opened inside another element must also be closed inside it:</p>
 </h3>
 <pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>&lt;<span class="kw">collection</span>&gt;&lt;<span class="kw">name</span>&gt;MET&lt;/<span class="kw">name</span>&gt;&lt;<span class="kw">place</span>&gt;New York&lt;/<span class="kw">place</span>&gt;&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
 </div>
-<p>An indentation can be used to make the structure more human-readable
-especially if the nesting of the elements is deep:</p>
+<p>Indentation can be used to make the structure more human-readable,
+especially if elements’ nesting is deep:</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1377,15 +1386,16 @@ especially if the nesting of the elements is deep:</p>
 </div>
 <p>As this example shows, XML documents have a tree structure. They
 start with the root element and then branch out deeper and deeper. The
-tag &lt;artist&gt; is also called a parent element and the subordinated
-elements &lt;name&gt; and &lt;dateOfBirth&gt; are child elements. The
-tag &lt;dateOfBirth&gt; again is the parent element for the tags of day,
-month and year as child elements.</p>
-<p>There are some rules for characters used in XML for syntax structure.
-These are replaced by a special string so that it won’t cause problems
-if, for example, you want to use a &lt; in the content. This would cause
-an error because XML expects a closing tag. To avoid errors, the
-character is replaced with an entity reference:</p>
+tag &lt;artist&gt; is called a parent element and the subordinated
+elements &lt;name&gt; and &lt;dateOfBirth&gt; are child elements. In the
+deeper level, &lt;dateOfBirth&gt; is the parent element for the tags
+day, month and year as child elements.</p>
+<p>Characters used in the structure of the XML syntax must comply with
+certain rules. Certain characters, such as “&lt;” meaning “is less
+than”, must be replaced by a special string so that they won’t cause
+problems. If you just use “&lt;”, XML understands it as an opening tag
+and expects it to be closed at some point. To avoid errors in this and
+similar cases, the character is replaced with an entity reference:</p>
 <table class="table">
 <thead><tr class="header">
 <th>string</th>
@@ -1436,9 +1446,9 @@ character is replaced with an entity reference:</p>
 </h2>
 <hr class="half-width">
 <p>In XML, as in HTML, tags can also have attributes, which define the
-content of the tags in more detail like separate metadata for the
-element. They are named and the content is assigned to them with a = and
-enclosed in quotes:</p>
+content of the tags in more detail. These attributes provide metadata
+for the element that they refer to. They are named, the content is
+assigned to them with a =, and they are enclosed in quotation marks:</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1446,8 +1456,8 @@ enclosed in quotes:</p>
 <span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a></span>
 <span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>&lt;<span class="kw">commonTitle</span><span class="ot"> lang=</span><span class="st">"title as commonly known"</span>&gt;Always give the title as it is commonly known&lt;/<span class="kw">commonTitle</span>&gt;</span></code></pre>
 </div>
-<p>Attributes are also often used in a hierarchy to record information
-that applies to all the underlying data:</p>
+<p>Attributes are often used in a hierarchy to record information that
+applies to all the underlying data:</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1457,10 +1467,9 @@ that applies to all the underlying data:</p>
 <span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
 </div>
 <p>The slash here at the end of the tag (self-closing tag) means that
-the element is currently empty and self-contained. It is not necessary
-to write an opening and closing tag if there are no other elements
-between them. You often see this in XML output when the metadata field
-is empty.</p>
+the element is empty and self-contained. It is not necessary to write an
+opening and closing tag if there are no other elements between them. You
+often see this in XML output when the metadata field is empty.</p>
 <p>At the top of an XML document you will often find something called a
 prolog or declaration:</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -1469,7 +1478,9 @@ prolog or declaration:</p>
 <pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span></code></pre>
 </div>
 <p>It is optional, but provides information about the version and
-encoding[2] used, and must be at the top if included.</p>
+encoding[2] used. If included, it must be placed at the top of the
+document above the root element. The XML prolog or declaration does not
+have a closing tag.</p>
 <div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1477,8 +1488,8 @@ encoding[2] used, and must be at the top if included.</p>
 <div class="callout-inner">
 <h3 class="callout-title">Callout</h3>
 <div class="callout-content">
-<p>XML documents that conform to all this rules are said to be “Well
-Formed” XML documents.</p>
+<p>XML documents that conform to all these rules are considered
+“Well-Formed” XML documents.</p>
 </div>
 </div>
 </div>
@@ -1490,7 +1501,7 @@ Formed” XML documents.</p>
 <h3 class="callout-title">Exercise</h3>
 <div class="callout-content">
 <p>Open the <a href="https://github.com/HERMES-DKZ/metadata_lesson/blob/main/episodes/data/moma_artworks.csv" class="external-link">moma_artworks.csv
-file</a>. Use the given data of one artwork and write it in an XML
+file</a>. Choose the data of an artwork and write it in the XML
 format.</p>
 </div>
 </div>
@@ -1712,8 +1723,8 @@ have to be written in XML.</p>
 <div id="discussion" class="callout-inner">
 <h3 class="callout-title">Discussion</h3>
 <div class="callout-content">
-<p>Compare your XML with the other participants’ documents. What do you
-notice?</p>
+<p>Compare your XML file with the other participants’ documents. What do
+you notice?</p>
 </div>
 </div>
 </div>
@@ -1725,8 +1736,8 @@ notice?</p>
 <div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>The exercise can be done in groups if there are many participants.
-Otherwise, someone can present their solution at the end and discuss it
-together. Discussion points should include the two ways of writing empty
+Otherwise, someone can present their solution in the end and discuss it
+together. Discussion topics should include the two ways of writing empty
 elements and making sure that special characters such as &amp; are
 caught. There can also be a general discussion about the headings or
 naming of the tags, or what certain tags mean, e.g. onView means ‘on
@@ -1754,7 +1765,7 @@ of elements.</li>
 <hr>
 <p>[1]: <a href="https://www.w3schools.com/xml/xml_elements.asp%3E" class="external-link">w3school XML
 elements</a><br>
-[2]: For further information see “glossary”.</p>
+[2]: For further information see the <em>glossary</em>.</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
@@ -1913,7 +1924,7 @@ exercise and write the data in JSON format this time.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2164,7 +2175,7 @@ only one value?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>There are works of art and objects made by several artists. As this
 is certainly a common case, the data field for the value is defined as
@@ -2966,7 +2977,7 @@ which ones and why?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>contributor: MET (as a custodian and managing institution)</li>
@@ -3039,7 +3050,7 @@ for Johan Hagemeyer’s photo of Albert Einstein?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Examples </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul>
 <li>dc.date.created: 1931</li>
@@ -3301,7 +3312,7 @@ describing the predicate instead of using Dublin Core?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p><a href="https://www.wikidata.org/wiki/Property:P170" class="external-link">creator
 property</a>:<br>
@@ -3333,7 +3344,7 @@ be used similiar to the Dublin Core element of creator.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <pre><code>&lt;https://www.wikidata.org/wiki/Q5592&gt;&lt;https://www.wikidata.org/wiki/Property:P170&gt;&lt;https://www.wikidata.org/wiki/Q235242&gt;
 &lt;https://www.wikidata.org/wiki/Q5592&gt;&lt;https://www.wikidata.org/wiki/Property:P19&gt;&lt;https://www.wikidata.org/wiki/Q52069&gt;
