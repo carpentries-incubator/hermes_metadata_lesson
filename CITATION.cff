@@ -17,10 +17,10 @@ authors:
     email: ksenia.stanicka@uni-marburg.de
     affiliation: Philipps-Universität Marburg
   - given-names: Corinna
-    family-names: 'Berg '
+    family-names: Berg
     email: corinna.berg@uni-marburg.de
-    affiliation: 'Philipps-Universität Marburg '
-    orcid: 'https://orcid.org/0009-0003-4021-0475'
+    affiliation: Philipps-Universität Marburg
+    orcid: https://orcid.org/0009-0003-4021-0475
 identifiers:
   - type: url
     value: 'https://hermes-dkz.github.io/metadata_lesson/'
