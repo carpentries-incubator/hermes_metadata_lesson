@@ -88,9 +88,11 @@ learners:
 
 # Information for Instructors
 instructors: 
+- instructor-notes.md
 
 # Learner Profiles
 profiles: 
+- learner-profiles.md
 
 # Customisation ---------------------------------------------
 #
