@@ -24,7 +24,7 @@ This lesson is developed as an introduction to the meaning of data and metadata 
 - Name the main concepts of the minimum record recommendation, the Dublin Core metadata standard as well as the METS standard.
 - Organize simple metadata within Dublin Core and METS.
 - Write triple for RDF schema.
-- Identify the main elements of a XML Schema and write a valid XML file based on a simple XML Schema. 
+- Identify the main elements of an XML Schema and write a valid XML file based on a simple XML Schema. 
   
     
 
