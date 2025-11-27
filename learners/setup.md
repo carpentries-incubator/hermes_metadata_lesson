@@ -4,7 +4,7 @@ title: Setup
 
 ## Data Sets
 
-Download the [data zip file](https://github.com/carpentries-incubator/hermes_metadata_lesson/blob/main/episodes/data/artworks_data.zip)) and unzip it to your Desktop. Download also the [lba_cao_exercise.xsd](https://github.com/carpentries-incubator/hermes_metadata_lesson/blob/main/episodes/data/lba_cao_exercise.xsd). 
+Download the [data zip file](https://github.com/carpentries-incubator/hermes_metadata_lesson/blob/main/episodes/data/artworks_data.zip) and unzip it to your Desktop. Download also the [lba_cao_exercise.xsd](https://github.com/carpentries-incubator/hermes_metadata_lesson/blob/main/episodes/data/lba_cao_exercise.xsd). 
 
 This lesson utilizes slightly modified sample from:
 
