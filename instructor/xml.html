@@ -512,27 +512,27 @@ than”, must be replaced by a special string so that they won’t cause
 problems. If you just use “&lt;”, XML understands it as an opening tag
 and expects it to be closed at some point. To avoid errors in this and
 similar cases, the character is replaced with an entity reference:</p>
-<table class="table"><thead><tr class="header"><th>string</th>
+<table class="table"><thead><tr><th>string</th>
 <th>character</th>
 <th>meaning</th>
 <th></th>
-</tr></thead><tbody><tr class="odd"><td>&amp;lt;</td>
+</tr></thead><tbody><tr><td>&amp;lt;</td>
 <td>&lt;</td>
 <td>less than</td>
 <td></td>
-</tr><tr class="even"><td>&amp;gt;</td>
+</tr><tr><td>&amp;gt;</td>
 <td>&gt;</td>
 <td>greater than</td>
 <td></td>
-</tr><tr class="odd"><td>&amp;amp;</td>
+</tr><tr><td>&amp;amp;</td>
 <td>&amp;</td>
 <td>ampersand</td>
 <td></td>
-</tr><tr class="even"><td>&amp;apos;</td>
+</tr><tr><td>&amp;apos;</td>
 <td>’</td>
 <td>apostrophe</td>
 <td></td>
-</tr><tr class="odd"><td>&amp;quot;</td>
+</tr><tr><td>&amp;quot;</td>
 <td>”</td>
 <td>quotation mark</td>
 <td></td>
@@ -550,16 +550,16 @@ assigned to them with a =, and they are enclosed in quotation marks:</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb7-1"><a href="#cb7-1" tabindex="-1" aria-label="code-block-7-1"></a>&lt;<span class="kw">title</span><span class="ot"> lang=</span><span class="st">"author's original language"</span>&gt;Always give the title in the author's language&lt;/<span class="kw">title</span>&gt;</span>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb7-1"><a href="#cb7-1" tabindex="-1" aria-label="code-block-7-1"></a>&lt;<span class="kw">title</span> <span class="ot">lang=</span><span class="st">"author's original language"</span>&gt;Always give the title in the author's language&lt;/<span class="kw">title</span>&gt;</span>
 <span id="cb7-2"><a href="#cb7-2" tabindex="-1" aria-label="code-block-7-2"></a></span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1" aria-label="code-block-7-3"></a>&lt;<span class="kw">commonTitle</span><span class="ot"> lang=</span><span class="st">"title as commonly known"</span>&gt;Always give the title as it is commonly known&lt;/<span class="kw">commonTitle</span>&gt;</span></code></pre>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1" aria-label="code-block-7-3"></a>&lt;<span class="kw">commonTitle</span> <span class="ot">lang=</span><span class="st">"title as commonly known"</span>&gt;Always give the title as it is commonly known&lt;/<span class="kw">commonTitle</span>&gt;</span></code></pre>
 </div>
 <p>Attributes are often used in a hierarchy to record information that
 applies to all the underlying data:</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb8-1"><a href="#cb8-1" tabindex="-1" aria-label="code-block-8-1"></a>&lt;<span class="kw">collection</span><span class="ot"> name=</span><span class="st">"Modern Art"</span><span class="ot"> place=</span><span class="st">"New York"</span>&gt;</span>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb8-1"><a href="#cb8-1" tabindex="-1" aria-label="code-block-8-1"></a>&lt;<span class="kw">collection</span> <span class="ot">name=</span><span class="st">"Modern Art"</span> <span class="ot">place=</span><span class="st">"New York"</span>&gt;</span>
 <span id="cb8-2"><a href="#cb8-2" tabindex="-1" aria-label="code-block-8-2"></a>  &lt;<span class="kw">item1</span>/&gt;</span>
 <span id="cb8-3"><a href="#cb8-3" tabindex="-1" aria-label="code-block-8-3"></a>  &lt;<span class="kw">item2</span>/&gt;</span>
 <span id="cb8-4"><a href="#cb8-4" tabindex="-1" aria-label="code-block-8-4"></a>&lt;/<span class="kw">collection</span>&gt;</span></code></pre>
@@ -573,7 +573,7 @@ prolog or declaration:</p>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb9-1"><a href="#cb9-1" tabindex="-1" aria-label="code-block-9-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span></code></pre>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb9-1"><a href="#cb9-1" tabindex="-1" aria-label="code-block-9-1"></a><span class="fu">&lt;?xml</span> <span class="ot">version=</span><span class="st">"1.0"</span> <span class="ot">encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span></code></pre>
 </div>
 <p>It is optional, but provides information about the version and
 encoding<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>
@@ -630,7 +630,7 @@ category?</li>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb10-1"><a href="#cb10-1" tabindex="-1" aria-label="code-block-10-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">"1.0"</span><span class="ot"> encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb10-1"><a href="#cb10-1" tabindex="-1" aria-label="code-block-10-1"></a><span class="fu">&lt;?xml</span> <span class="ot">version=</span><span class="st">"1.0"</span> <span class="ot">encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span>
 <span id="cb10-2"><a href="#cb10-2" tabindex="-1" aria-label="code-block-10-2"></a>&lt;<span class="kw">artworks</span>&gt;</span>
 <span id="cb10-3"><a href="#cb10-3" tabindex="-1" aria-label="code-block-10-3"></a>  &lt;<span class="kw">artwork</span>&gt;</span>
 <span id="cb10-4"><a href="#cb10-4" tabindex="-1" aria-label="code-block-10-4"></a>    &lt;<span class="kw">title</span>&gt;Green-Blue-Red (for Parkett no. 35)&lt;/<span class="kw">title</span>&gt;</span>
@@ -934,7 +934,7 @@ any links that you are not going to use.
   "identifier": "https://HERMES-DKZ.github.io/metadata_lesson/instructor/xml.html",
   "dateCreated": "2025-01-08",
   "dateModified": "2025-04-29",
-  "datePublished": "2026-04-28"
+  "datePublished": "2026-05-05"
 }
 
   </script><script>
